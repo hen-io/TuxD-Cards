@@ -4,6 +4,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
+  const CARD_VERSION = '1.0.0';
 
   function resolveLang(raw) {
     const l = String(raw || '').toLowerCase();
@@ -1560,10 +1561,16 @@
             composed: true,
           }));
         });
+
+        const versionLabel = document.createElement('div');
+        versionLabel.textContent = `TuxD Card v${CARD_VERSION}`;
+        versionLabel.style.cssText = 'font-size: 11px; color: var(--secondary-text-color, #888); text-align: right; margin-bottom: 4px;';
+        this.appendChild(versionLabel);
+
         this.appendChild(this._form);
       } else if (cardType !== this._lastSchemaType) {
         this._lastSchemaType = cardType;
-        this._config = Object.assign({ card: cardType }, RENDERERS[cardType].defaultConfig());
+        this._config = Object.assign({ type: this._config.type, card: cardType }, RENDERERS[cardType].defaultConfig());
         this.dispatchEvent(new CustomEvent('config-changed', {
           detail: { config: this._config },
           bubbles: true,
