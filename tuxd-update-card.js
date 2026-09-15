@@ -169,21 +169,36 @@
       cursor: pointer;
       font-size: 13px;
       font-weight: 500;
-      color: var(--primary-color);
+      color: var(--primary-text-color);
       list-style: none;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 6px;
       user-select: none;
     }
     summary.changelog-heading::-webkit-details-marker { display: none; }
-    summary.changelog-heading .chevron {
-      width: 10px;
-      height: 10px;
+    summary.changelog-heading .heading-text { color: var(--primary-color); }
+    summary.changelog-heading .chevron-btn {
       flex: 0 0 auto;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--secondary-text-color);
+    }
+    summary.changelog-heading:hover .chevron-btn {
+      background: rgba(var(--rgb-primary-text-color, 0, 0, 0), 0.08);
+      color: var(--primary-text-color);
+    }
+    summary.changelog-heading .chevron {
+      width: 18px;
+      height: 18px;
       transition: transform 0.15s ease;
     }
-    details[open] summary.changelog-heading .chevron { transform: rotate(90deg); }
+    details[open] summary.changelog-heading .chevron { transform: rotate(180deg); }
     .summary-text {
       margin-top: 10px;
       font-size: 13px;
@@ -371,8 +386,14 @@
 
         const heading = document.createElement('summary');
         heading.className = 'changelog-heading';
-        heading.innerHTML = '<svg class="chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
-        heading.appendChild(document.createTextNode(this._t('updatesHeading')));
+        const headingText = document.createElement('span');
+        headingText.className = 'heading-text';
+        headingText.textContent = this._t('updatesHeading');
+        heading.appendChild(headingText);
+        const chevronBtn = document.createElement('span');
+        chevronBtn.className = 'chevron-btn';
+        chevronBtn.innerHTML = '<svg class="chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>';
+        heading.appendChild(chevronBtn);
         changelog.appendChild(heading);
 
         const text = document.createElement('div');
