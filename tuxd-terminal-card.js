@@ -6,6 +6,7 @@
   const EDITOR_TAG = 'tuxd-terminal-card-editor';
   const DEFAULT_MAX_LINES = 300;
   const DEFAULT_HEIGHT = '320px';
+  const DEFAULT_MAX_HISTORY = 100;
 
   const I18N = {
     en: {
@@ -24,6 +25,8 @@
         text_color: 'Text color (e.g. #7ce6ff)',
         text_size: 'Text size (e.g. 13px)',
         language: 'Language',
+        theme: 'Theme',
+        max_history: 'Max command history',
       },
     },
     nb: {
@@ -42,6 +45,8 @@
         text_color: 'Tekstfarge (f.eks. #7ce6ff)',
         text_size: 'Tekststørrelse (f.eks. 13px)',
         language: 'Språk',
+        theme: 'Tema',
+        max_history: 'Maks kommandohistorikk',
       },
     },
   };
@@ -52,12 +57,42 @@
     { value: 'nb', label: 'Norsk (bokmål)' },
   ];
 
+  const THEMES = {
+    ha: {},
+    green: {
+      bg: '#0a0f0c', text: '#39ff6a', textRgb: '57, 255, 106',
+      accent: '#39ff6a', accentRgb: '57, 255, 106', border: 'rgba(57, 255, 106, 0.25)',
+    },
+    amber: {
+      bg: '#100b06', text: '#ffb000', textRgb: '255, 176, 0',
+      accent: '#ffb000', accentRgb: '255, 176, 0', border: 'rgba(255, 176, 0, 0.25)',
+    },
+    blue: {
+      bg: '#060b14', text: '#5ad1ff', textRgb: '90, 209, 255',
+      accent: '#5ad1ff', accentRgb: '90, 209, 255', border: 'rgba(90, 209, 255, 0.25)',
+    },
+    light: {
+      bg: '#f7f8f7', text: '#1b1f1e', textRgb: '27, 31, 30',
+      accent: '#1c8f6e', accentRgb: '28, 143, 110', border: 'rgba(0, 0, 0, 0.12)',
+    },
+  };
+
+  const THEME_OPTIONS = [
+    { value: 'ha', label: 'Home Assistant (default)' },
+    { value: 'green', label: 'Classic Green' },
+    { value: 'amber', label: 'Amber' },
+    { value: 'blue', label: 'Cyberpunk Blue' },
+    { value: 'light', label: 'Light' },
+  ];
+
   const EDITOR_SCHEMA = [
     { name: 'input_entity', required: true, selector: { entity: { domain: ['text', 'input_text'] } } },
     { name: 'output_entity', required: true, selector: { entity: { domain: ['sensor'] } } },
     { name: 'title', selector: { text: {} } },
+    { name: 'theme', selector: { select: { mode: 'dropdown', options: THEME_OPTIONS } } },
     { name: 'height', selector: { text: {} } },
     { name: 'max_lines', selector: { number: { mode: 'box', min: 10, max: 5000 } } },
+    { name: 'max_history', selector: { number: { mode: 'box', min: 0, max: 1000 } } },
     { name: 'auto_scroll', selector: { boolean: {} } },
     { name: 'text_color', selector: { text: {} } },
     { name: 'text_size', selector: { text: {} } },
@@ -115,12 +150,12 @@
       color: var(--primary-text-color);
     }
     .output {
-      flex: 1;
+      flex: 0 0 auto;
       overflow-y: auto;
       padding: 12px 16px;
       font-size: var(--tuxd-text-size, 13px);
       line-height: 1.5;
-      min-height: 120px;
+      box-sizing: border-box;
       background: var(--secondary-background-color, transparent);
     }
     .output::-webkit-scrollbar { width: 8px; }
@@ -188,11 +223,15 @@
         throw new Error('tuxd-terminal-card: "input_entity" and "output_entity" are required');
       }
       this._config = Object.assign(
-        { max_lines: DEFAULT_MAX_LINES, height: DEFAULT_HEIGHT, auto_scroll: true },
+        { max_lines: DEFAULT_MAX_LINES, height: DEFAULT_HEIGHT, auto_scroll: true, max_history: DEFAULT_MAX_HISTORY },
         config
       );
       this._lastOutputState = undefined;
       this._unavailable = false;
+      if (this._historyLoadedFor !== this._config.input_entity) {
+        this._historyLoadedFor = this._config.input_entity;
+        this._loadHistory();
+      }
       if (this._hass) {
         this._render();
       }
@@ -245,6 +284,53 @@
       return dict[key] || I18N.en[key] || key;
     }
 
+    _historyKey() {
+      return `tuxd-terminal-card-history:${this._config.input_entity}`;
+    }
+
+    _loadHistory() {
+      this._history = [];
+      try {
+        const raw = window.localStorage.getItem(this._historyKey());
+        const parsed = raw ? JSON.parse(raw) : null;
+        if (Array.isArray(parsed)) this._history = parsed.filter((v) => typeof v === 'string');
+      } catch (e) {
+      }
+      this._historyIndex = this._history.length;
+    }
+
+    _saveHistory() {
+      try {
+        window.localStorage.setItem(this._historyKey(), JSON.stringify(this._history));
+      } catch (e) {
+      }
+    }
+
+    _applyTheme(card) {
+      const theme = THEMES[this._config.theme] || THEMES.ha;
+      if (theme.bg) {
+        card.style.setProperty('--ha-card-background', theme.bg);
+        card.style.setProperty('--card-background-color', theme.bg);
+        card.style.setProperty('--secondary-background-color', 'transparent');
+      }
+      if (theme.text) {
+        card.style.setProperty('--primary-text-color', theme.text);
+        card.style.setProperty('--secondary-text-color', theme.text);
+      }
+      if (theme.textRgb) {
+        card.style.setProperty('--rgb-primary-text-color', theme.textRgb);
+      }
+      if (theme.accent) {
+        card.style.setProperty('--primary-color', theme.accent);
+      }
+      if (theme.accentRgb) {
+        card.style.setProperty('--rgb-primary-color', theme.accentRgb);
+      }
+      if (theme.border) {
+        card.style.setProperty('--divider-color', theme.border);
+      }
+    }
+
     _updateAvailability() {
       const inState = this._hass.states[this._config.input_entity];
       const outState = this._hass.states[this._config.output_entity];
@@ -268,6 +354,7 @@
       root.appendChild(style);
 
       const card = document.createElement('ha-card');
+      this._applyTheme(card);
       const msg = document.createElement('div');
       msg.className = 'unavailable';
       msg.textContent = this._t('notFound') + missingEntity;
@@ -284,6 +371,7 @@
       root.appendChild(style);
 
       const card = document.createElement('ha-card');
+      this._applyTheme(card);
       if (this._config.text_color) {
         card.style.setProperty('--tuxd-text-color', this._config.text_color);
       }
@@ -314,7 +402,7 @@
 
       const output = document.createElement('div');
       output.className = 'output';
-      output.style.maxHeight = this._config.height || DEFAULT_HEIGHT;
+      output.style.height = this._config.height || DEFAULT_HEIGHT;
       output.addEventListener('mouseup', () => {
         const sel = window.getSelection();
         if (!sel || sel.toString() === '') {
@@ -421,8 +509,10 @@
       if (!value || !this._hass || !this._config) return;
 
       this._history.push(value);
-      if (this._history.length > 100) this._history.shift();
+      const maxHistory = this._config.max_history === 0 ? 0 : (this._config.max_history || DEFAULT_MAX_HISTORY);
+      while (this._history.length > maxHistory) this._history.shift();
       this._historyIndex = this._history.length;
+      this._saveHistory();
 
       const domain = this._config.input_entity.split('.')[0];
       this._hass.callService(domain, 'set_value', {
@@ -437,7 +527,7 @@
   class TuxdTerminalCardEditor extends HTMLElement {
     setConfig(config) {
       this._config = Object.assign(
-        { max_lines: DEFAULT_MAX_LINES, height: DEFAULT_HEIGHT, auto_scroll: true },
+        { max_lines: DEFAULT_MAX_LINES, height: DEFAULT_HEIGHT, auto_scroll: true, max_history: DEFAULT_MAX_HISTORY, theme: 'ha' },
         config
       );
       this._buildForm();
