@@ -1,6 +1,6 @@
 {
-  "name": "TuxD Terminal Card",
+  "name": "TuxD Cards",
   "content_in_root": true,
   "filename": "tuxd-terminal-card.js",
-  "render_readme": false
+  "render_readme": true
 }

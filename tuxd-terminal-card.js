@@ -27,6 +27,8 @@
         language: 'Language',
         theme: 'Theme',
         max_history: 'Max command history',
+        background_color: 'Output background color',
+        hide_header: 'Hide header (terminal only)',
       },
     },
     nb: {
@@ -47,6 +49,8 @@
         language: 'Språk',
         theme: 'Tema',
         max_history: 'Maks kommandohistorikk',
+        background_color: 'Bakgrunnsfarge (output)',
+        hide_header: 'Skjul topptekst (kun terminal)',
       },
     },
   };
@@ -94,8 +98,10 @@
     { name: 'max_lines', selector: { number: { mode: 'box', min: 10, max: 5000 } } },
     { name: 'max_history', selector: { number: { mode: 'box', min: 0, max: 1000 } } },
     { name: 'auto_scroll', selector: { boolean: {} } },
+    { name: 'hide_header', selector: { boolean: {} } },
     { name: 'text_color', selector: { text: {} } },
     { name: 'text_size', selector: { text: {} } },
+    { name: 'background_color', selector: { text: {} } },
     { name: 'language', selector: { select: { mode: 'dropdown', options: LANGUAGE_OPTIONS } } },
   ];
 
@@ -156,7 +162,7 @@
       font-size: var(--tuxd-text-size, 13px);
       line-height: 1.5;
       box-sizing: border-box;
-      background: var(--secondary-background-color, transparent);
+      background: var(--tuxd-output-bg, var(--secondary-background-color, transparent));
     }
     .output::-webkit-scrollbar { width: 8px; }
     .output::-webkit-scrollbar-thumb { background: var(--divider-color); border-radius: 8px; }
@@ -177,7 +183,7 @@
       align-items: center;
       gap: 8px;
       padding: 10px 16px;
-      border-top: 1px solid var(--divider-color);
+      background: var(--tuxd-output-bg, var(--secondary-background-color, transparent));
     }
     .prompt { color: var(--primary-color); font-weight: 600; }
     input {
@@ -188,7 +194,7 @@
       outline: none;
       color: var(--primary-text-color);
       font: inherit;
-      font-size: 13px;
+      font-size: var(--tuxd-text-size, 13px);
       caret-color: var(--primary-color);
     }
     input::placeholder { color: var(--secondary-text-color); opacity: 0.7; }
@@ -306,6 +312,36 @@
       }
     }
 
+    _outputHistoryKey() {
+      return `tuxd-terminal-card-output:${this._config.output_entity}`;
+    }
+
+    _loadOutputHistory() {
+      try {
+        const raw = window.localStorage.getItem(this._outputHistoryKey());
+        const parsed = raw ? JSON.parse(raw) : null;
+        if (Array.isArray(parsed)) {
+          parsed.forEach((line) => this._appendLine(line, false));
+        }
+      } catch (e) {
+      }
+    }
+
+    _saveOutputHistory() {
+      try {
+        const lines = Array.from(this._outputEl.children).map((el) => el.textContent);
+        window.localStorage.setItem(this._outputHistoryKey(), JSON.stringify(lines));
+      } catch (e) {
+      }
+    }
+
+    _clearOutputHistory() {
+      try {
+        window.localStorage.removeItem(this._outputHistoryKey());
+      } catch (e) {
+      }
+    }
+
     _applyTheme(card) {
       const theme = THEMES[this._config.theme] || THEMES.ha;
       if (theme.bg) {
@@ -379,26 +415,32 @@
         const size = typeof this._config.text_size === 'number' ? `${this._config.text_size}px` : this._config.text_size;
         card.style.setProperty('--tuxd-text-size', size);
       }
+      if (this._config.background_color) {
+        card.style.setProperty('--tuxd-output-bg', this._config.background_color);
+      }
 
-      const header = document.createElement('div');
-      header.className = 'header';
+      if (!this._config.hide_header) {
+        const header = document.createElement('div');
+        header.className = 'header';
 
-      const title = document.createElement('span');
-      title.className = 'title';
-      title.textContent = this._config.title || this._t('title');
-      header.appendChild(title);
+        const title = document.createElement('span');
+        title.className = 'title';
+        title.textContent = this._config.title || this._t('title');
+        header.appendChild(title);
 
-      const clearBtn = document.createElement('button');
-      clearBtn.className = 'clear';
-      clearBtn.type = 'button';
-      clearBtn.title = this._t('clear');
-      clearBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"/></svg>';
-      clearBtn.addEventListener('click', () => {
-        this._outputEl.innerHTML = '';
-      });
-      header.appendChild(clearBtn);
+        const clearBtn = document.createElement('button');
+        clearBtn.className = 'clear';
+        clearBtn.type = 'button';
+        clearBtn.title = this._t('clear');
+        clearBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"/></svg>';
+        clearBtn.addEventListener('click', () => {
+          this._outputEl.innerHTML = '';
+          this._clearOutputHistory();
+        });
+        header.appendChild(clearBtn);
 
-      card.appendChild(header);
+        card.appendChild(header);
+      }
 
       const output = document.createElement('div');
       output.className = 'output';
@@ -411,6 +453,7 @@
       });
       card.appendChild(output);
       this._outputEl = output;
+      this._loadOutputHistory();
 
       const inputrow = document.createElement('div');
       inputrow.className = 'inputrow';
@@ -458,7 +501,7 @@
       this._appendLine(value);
     }
 
-    _appendLine(text) {
+    _appendLine(text, persist) {
       const isCmd = typeof text === 'string' && text.indexOf('$ ') === 0;
       const line = document.createElement('div');
       line.className = isCmd ? 'line cmd' : 'line';
@@ -473,6 +516,8 @@
       if (this._config.auto_scroll !== false) {
         this._outputEl.scrollTop = this._outputEl.scrollHeight;
       }
+
+      if (persist !== false) this._saveOutputHistory();
     }
 
     _onKeydown(ev) {
@@ -527,7 +572,7 @@
   class TuxdTerminalCardEditor extends HTMLElement {
     setConfig(config) {
       this._config = Object.assign(
-        { max_lines: DEFAULT_MAX_LINES, height: DEFAULT_HEIGHT, auto_scroll: true, max_history: DEFAULT_MAX_HISTORY, theme: 'ha' },
+        { max_lines: DEFAULT_MAX_LINES, height: DEFAULT_HEIGHT, auto_scroll: true, max_history: DEFAULT_MAX_HISTORY, theme: 'ha', hide_header: false },
         config
       );
       this._buildForm();
