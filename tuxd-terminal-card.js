@@ -3,9 +3,30 @@
   'use strict';
 
   const CARD_TAG = 'tuxd-terminal-card';
-  const DEFAULT_TITLE = 'Terminal';
   const DEFAULT_MAX_LINES = 300;
   const DEFAULT_HEIGHT = '320px';
+
+  const I18N = {
+    en: {
+      title: 'Terminal',
+      placeholder: 'Type a command and press Enter...',
+      clear: 'Clear screen',
+      notFound: 'Entity not found: ',
+      run: 'Run',
+    },
+    nb: {
+      title: 'Terminal',
+      placeholder: 'Skriv en kommando og trykk Enter...',
+      clear: 'Tøm skjermen',
+      notFound: 'Finner ikke enhet: ',
+      run: 'Kjør',
+    },
+  };
+
+  function resolveLang(raw) {
+    const l = String(raw || '').toLowerCase();
+    return (l === 'nb' || l === 'nn' || l === 'no') ? 'nb' : 'en';
+  }
 
   const STYLE = `
     :host { display: block; }
@@ -56,7 +77,7 @@
       flex: 1;
       overflow-y: auto;
       padding: 12px 16px;
-      font-size: 13px;
+      font-size: var(--tuxd-text-size, 13px);
       line-height: 1.5;
       min-height: 120px;
       background: var(--secondary-background-color, transparent);
@@ -68,8 +89,9 @@
       word-break: break-word;
       opacity: 0;
       animation: tuxd-fadein 0.15s ease forwards;
+      color: var(--tuxd-text-color, var(--primary-text-color));
     }
-    .line.cmd { color: var(--primary-color); }
+    .line.cmd { color: var(--tuxd-text-color, var(--primary-color)); }
     @keyframes tuxd-fadein {
       from { opacity: 0; transform: translateY(2px); }
       to { opacity: 1; transform: translateY(0); }
@@ -125,7 +147,7 @@
         throw new Error('tuxd-terminal-card: "input_entity" and "output_entity" are required');
       }
       this._config = Object.assign(
-        { title: DEFAULT_TITLE, max_lines: DEFAULT_MAX_LINES, height: DEFAULT_HEIGHT },
+        { max_lines: DEFAULT_MAX_LINES, height: DEFAULT_HEIGHT, auto_scroll: true },
         config
       );
       this._lastOutputState = undefined;
@@ -162,10 +184,20 @@
       const output = list.find((e) => e.indexOf('sensor.') === 0 && e.indexOf('terminal_output') !== -1);
       return {
         type: 'custom:' + CARD_TAG,
-        title: DEFAULT_TITLE,
         input_entity: input || '',
         output_entity: output || '',
       };
+    }
+
+    _lang() {
+      if (this._config && this._config.language) return resolveLang(this._config.language);
+      const hassLang = this._hass && (this._hass.language || (this._hass.locale && this._hass.locale.language));
+      return resolveLang(hassLang);
+    }
+
+    _t(key) {
+      const dict = I18N[this._lang()] || I18N.en;
+      return dict[key] || I18N.en[key] || key;
     }
 
     _updateAvailability() {
@@ -193,7 +225,7 @@
       const card = document.createElement('ha-card');
       const msg = document.createElement('div');
       msg.className = 'unavailable';
-      msg.textContent = 'Entity not found: ' + missingEntity;
+      msg.textContent = this._t('notFound') + missingEntity;
       card.appendChild(msg);
       root.appendChild(card);
     }
@@ -207,19 +239,26 @@
       root.appendChild(style);
 
       const card = document.createElement('ha-card');
+      if (this._config.text_color) {
+        card.style.setProperty('--tuxd-text-color', this._config.text_color);
+      }
+      if (this._config.text_size) {
+        const size = typeof this._config.text_size === 'number' ? `${this._config.text_size}px` : this._config.text_size;
+        card.style.setProperty('--tuxd-text-size', size);
+      }
 
       const header = document.createElement('div');
       header.className = 'header';
 
       const title = document.createElement('span');
       title.className = 'title';
-      title.textContent = this._config.title || DEFAULT_TITLE;
+      title.textContent = this._config.title || this._t('title');
       header.appendChild(title);
 
       const clearBtn = document.createElement('button');
       clearBtn.className = 'clear';
       clearBtn.type = 'button';
-      clearBtn.title = 'Clear screen';
+      clearBtn.title = this._t('clear');
       clearBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"/></svg>';
       clearBtn.addEventListener('click', () => {
         this._outputEl.innerHTML = '';
@@ -250,7 +289,7 @@
 
       const input = document.createElement('input');
       input.type = 'text';
-      input.placeholder = 'Type a command and press Enter...';
+      input.placeholder = this._t('placeholder');
       input.autocomplete = 'off';
       input.autocapitalize = 'off';
       input.spellcheck = false;
@@ -261,7 +300,7 @@
       const send = document.createElement('button');
       send.className = 'send';
       send.type = 'button';
-      send.textContent = 'Run';
+      send.textContent = this._t('run');
       send.addEventListener('click', () => this._submit());
       inputrow.appendChild(send);
 
@@ -298,7 +337,9 @@
         this._outputEl.removeChild(this._outputEl.firstChild);
       }
 
-      this._outputEl.scrollTop = this._outputEl.scrollHeight;
+      if (this._config.auto_scroll !== false) {
+        this._outputEl.scrollTop = this._outputEl.scrollHeight;
+      }
     }
 
     _onKeydown(ev) {
