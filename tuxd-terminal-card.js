@@ -9,75 +9,67 @@
 
   const STYLE = `
     :host { display: block; }
-    .card {
+    ha-card {
       display: flex;
       flex-direction: column;
-      background: linear-gradient(180deg, #0b0f10, #0d1512);
-      border-radius: 14px;
-      border: 1px solid rgba(70, 255, 170, 0.14);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), inset 0 0 40px rgba(46, 255, 170, 0.03);
       overflow: hidden;
       font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace;
-      color: #d7ffe9;
+      color: var(--primary-text-color);
     }
-    .titlebar {
+    .header {
       display: flex;
       align-items: center;
-      padding: 10px 14px;
-      background: rgba(255, 255, 255, 0.03);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      gap: 8px;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--divider-color);
     }
-    .dots {
-      display: flex;
-      gap: 6px;
-      flex: 0 0 auto;
-    }
-    .dot { width: 10px; height: 10px; border-radius: 50%; }
-    .dot.red { background: #ff5f57; }
-    .dot.yellow { background: #febc2e; }
-    .dot.green { background: #28c840; }
     .title {
       flex: 1 1 auto;
-      text-align: center;
-      font-size: 12px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: rgba(215, 255, 233, 0.55);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--secondary-text-color);
       user-select: none;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-    .actions { flex: 0 0 auto; display: flex; }
     .clear {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: transparent;
       border: none;
-      color: rgba(215, 255, 233, 0.45);
+      color: var(--secondary-text-color);
       cursor: pointer;
-      font-size: 14px;
-      line-height: 1;
       padding: 4px 6px;
       border-radius: 6px;
       font-family: inherit;
     }
-    .clear:hover { background: rgba(255, 255, 255, 0.08); color: #eafff5; }
+    .clear svg { width: 16px; height: 16px; fill: currentColor; }
+    .clear:hover {
+      background: rgba(var(--rgb-primary-text-color, 0, 0, 0), 0.06);
+      color: var(--primary-text-color);
+    }
     .output {
       flex: 1;
       overflow-y: auto;
-      padding: 12px 14px;
+      padding: 12px 16px;
       font-size: 13px;
       line-height: 1.5;
       min-height: 120px;
+      background: var(--secondary-background-color, transparent);
     }
     .output::-webkit-scrollbar { width: 8px; }
-    .output::-webkit-scrollbar-thumb { background: rgba(46, 255, 170, 0.18); border-radius: 8px; }
+    .output::-webkit-scrollbar-thumb { background: var(--divider-color); border-radius: 8px; }
     .line {
       white-space: pre-wrap;
       word-break: break-word;
       opacity: 0;
       animation: tuxd-fadein 0.15s ease forwards;
     }
-    .line.cmd { color: #7ce6ff; }
+    .line.cmd { color: var(--primary-color); }
     @keyframes tuxd-fadein {
       from { opacity: 0; transform: translateY(2px); }
       to { opacity: 1; transform: translateY(0); }
@@ -86,37 +78,36 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      padding: 10px 14px;
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
-      background: rgba(255, 255, 255, 0.02);
+      padding: 10px 16px;
+      border-top: 1px solid var(--divider-color);
     }
-    .prompt { color: #2ee6a5; font-weight: 600; }
+    .prompt { color: var(--primary-color); font-weight: 600; }
     input {
       flex: 1;
       min-width: 0;
       background: transparent;
       border: none;
       outline: none;
-      color: #eafff5;
+      color: var(--primary-text-color);
       font: inherit;
       font-size: 13px;
-      caret-color: #2ee6a5;
+      caret-color: var(--primary-color);
     }
-    input::placeholder { color: rgba(215, 255, 233, 0.28); }
+    input::placeholder { color: var(--secondary-text-color); opacity: 0.7; }
     button.send {
       flex: 0 0 auto;
-      background: rgba(46, 255, 170, 0.1);
-      border: 1px solid rgba(46, 255, 170, 0.3);
-      color: #2ee6a5;
+      background: rgba(var(--rgb-primary-color, 3, 169, 244), 0.1);
+      border: 1px solid rgba(var(--rgb-primary-color, 3, 169, 244), 0.35);
+      color: var(--primary-color);
       border-radius: 8px;
-      padding: 6px 10px;
+      padding: 6px 12px;
       font-size: 12px;
       cursor: pointer;
       font-family: inherit;
     }
-    button.send:hover { background: rgba(46, 255, 170, 0.18); }
+    button.send:hover { background: rgba(var(--rgb-primary-color, 3, 169, 244), 0.18); }
     button.send:active { transform: translateY(1px); }
-    .unavailable { padding: 16px; color: #ff8a8a; font-size: 13px; }
+    .unavailable { padding: 16px; color: var(--error-color, #db4437); font-size: 13px; }
   `;
 
   class TuxdTerminalCard extends HTMLElement {
@@ -199,8 +190,7 @@
       style.textContent = STYLE;
       root.appendChild(style);
 
-      const card = document.createElement('div');
-      card.className = 'card';
+      const card = document.createElement('ha-card');
       const msg = document.createElement('div');
       msg.className = 'unavailable';
       msg.textContent = 'Entity not found: ' + missingEntity;
@@ -216,40 +206,27 @@
       style.textContent = STYLE;
       root.appendChild(style);
 
-      const card = document.createElement('div');
-      card.className = 'card';
+      const card = document.createElement('ha-card');
 
-      const titlebar = document.createElement('div');
-      titlebar.className = 'titlebar';
-
-      const dots = document.createElement('div');
-      dots.className = 'dots';
-      ['red', 'yellow', 'green'].forEach((c) => {
-        const d = document.createElement('span');
-        d.className = 'dot ' + c;
-        dots.appendChild(d);
-      });
-      titlebar.appendChild(dots);
+      const header = document.createElement('div');
+      header.className = 'header';
 
       const title = document.createElement('span');
       title.className = 'title';
       title.textContent = this._config.title || DEFAULT_TITLE;
-      titlebar.appendChild(title);
+      header.appendChild(title);
 
-      const actions = document.createElement('div');
-      actions.className = 'actions';
       const clearBtn = document.createElement('button');
       clearBtn.className = 'clear';
       clearBtn.type = 'button';
       clearBtn.title = 'Clear screen';
-      clearBtn.textContent = '✕';
+      clearBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"/></svg>';
       clearBtn.addEventListener('click', () => {
         this._outputEl.innerHTML = '';
       });
-      actions.appendChild(clearBtn);
-      titlebar.appendChild(actions);
+      header.appendChild(clearBtn);
 
-      card.appendChild(titlebar);
+      card.appendChild(header);
 
       const output = document.createElement('div');
       output.className = 'output';
