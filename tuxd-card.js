@@ -4,7 +4,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '0.1.7';
+  const CARD_VERSION = '0.1.8';
 
   function resolveLang(raw) {
     const l = String(raw || '').toLowerCase();
@@ -27,7 +27,7 @@
         clear: 'Clear screen',
         notFound: 'Entity not found: ',
         run: 'Run',
-        stop: 'Stop running command (or press Ctrl+C)',
+        clearHistory: 'Clear command history',
         editor: {
           input_entity: 'Input entity (text)',
           output_entity: 'Output entity (sensor)',
@@ -87,7 +87,7 @@
         clear: 'Tøm skjermen',
         notFound: 'Finner ikke enhet: ',
         run: 'Kjør',
-        stop: 'Stopp kjørende kommando (eller trykk Ctrl+C)',
+        clearHistory: 'Tøm kommandohistorikk',
         editor: {
           input_entity: 'Input-entitet (text)',
           output_entity: 'Output-entitet (sensor)',
@@ -279,25 +279,6 @@
     }
     button.send:hover { background: rgba(var(--rgb-primary-color, 3, 169, 244), 0.18); }
     button.send:active { transform: translateY(1px); }
-    button.stop {
-      flex: 0 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: transparent;
-      border: none;
-      color: var(--secondary-text-color);
-      cursor: pointer;
-      padding: 4px 6px;
-      border-radius: 6px;
-      font-family: inherit;
-    }
-    button.stop svg { width: 18px; height: 18px; fill: currentColor; }
-    button.stop:hover {
-      background: rgba(var(--rgb-error-color, 219, 68, 55), 0.12);
-      color: var(--error-color, #db4437);
-    }
-    button.stop:active { transform: translateY(1px); }
     .unavailable { padding: 16px; color: var(--error-color, #db4437); font-size: 13px; }
   `;
 
@@ -414,6 +395,12 @@
         window.localStorage.setItem(this._historyKey(), JSON.stringify(this._history));
       } catch (e) {
       }
+    }
+
+    _clearCommandHistory() {
+      this._history = [];
+      this._historyIndex = 0;
+      this._saveHistory();
     }
 
     _outputHistoryKey() {
@@ -576,13 +563,13 @@
       inputrow.appendChild(input);
       this._inputEl = input;
 
-      const stop = document.createElement('button');
-      stop.className = 'stop';
-      stop.type = 'button';
-      stop.title = this._t('stop');
-      stop.innerHTML = '<svg viewBox="0 0 24 24"><path d="M6 6h12v12H6z"/></svg>';
-      stop.addEventListener('click', () => this._stopCommand());
-      inputrow.appendChild(stop);
+      const clearHistoryBtn = document.createElement('button');
+      clearHistoryBtn.className = 'clear';
+      clearHistoryBtn.type = 'button';
+      clearHistoryBtn.title = this._t('clearHistory');
+      clearHistoryBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6a7 7 0 0 1 7-7 7 7 0 0 1 7 7 7 7 0 0 1-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A9 9 0 1 0 13 3zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8z"/></svg>';
+      clearHistoryBtn.addEventListener('click', () => this._clearCommandHistory());
+      inputrow.appendChild(clearHistoryBtn);
 
       const send = document.createElement('button');
       send.className = 'send';
