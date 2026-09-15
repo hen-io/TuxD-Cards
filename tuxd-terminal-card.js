@@ -480,7 +480,6 @@
       });
       card.appendChild(output);
       this._outputEl = output;
-      this._loadOutputHistory();
 
       const inputrow = document.createElement('div');
       inputrow.className = 'inputrow';
@@ -519,6 +518,14 @@
 
       card.appendChild(inputrow);
       root.appendChild(card);
+
+      this._loadOutputHistory();
+
+      if (this._config.auto_scroll !== false) {
+        window.requestAnimationFrame(() => {
+          if (this._outputEl) this._outputEl.scrollTop = this._outputEl.scrollHeight;
+        });
+      }
     }
 
     _syncOutput(firstRun) {
