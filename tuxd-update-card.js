@@ -194,8 +194,8 @@
       color: var(--primary-text-color);
     }
     summary.changelog-heading .chevron {
-      width: 18px;
-      height: 18px;
+      width: 20px;
+      height: 20px;
       transition: transform 0.15s ease;
     }
     details[open] summary.changelog-heading .chevron { transform: rotate(180deg); }

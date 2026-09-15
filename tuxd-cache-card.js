@@ -260,6 +260,8 @@
     }
 
     _render() {
+      const config = this._config || {};
+
       const root = this.shadowRoot;
       root.innerHTML = '';
       const style = document.createElement('style');
@@ -284,7 +286,7 @@
       infoDiv.className = 'info';
       const title = document.createElement('div');
       title.className = 'title';
-      title.textContent = this._config.title || this._t('defaultTitle');
+      title.textContent = config.title || this._t('defaultTitle');
       infoDiv.appendChild(title);
 
       const detail = document.createElement('div');

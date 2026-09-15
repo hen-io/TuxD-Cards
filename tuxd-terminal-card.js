@@ -7,6 +7,7 @@
   const DEFAULT_MAX_LINES = 300;
   const DEFAULT_HEIGHT = '320px';
   const DEFAULT_MAX_HISTORY = 100;
+  const STOP_SENTINEL = '__tuxd_stop__';
 
   const I18N = {
     en: {
@@ -19,7 +20,6 @@
       editor: {
         input_entity: 'Input entity (text)',
         output_entity: 'Output entity (sensor)',
-        stop_entity: 'Stop entity (button, optional)',
         title: 'Title',
         height: 'Height (e.g. 320px)',
         max_lines: 'Max lines',
@@ -43,7 +43,6 @@
       editor: {
         input_entity: 'Input-entitet (text)',
         output_entity: 'Output-entitet (sensor)',
-        stop_entity: 'Stopp-entitet (button, valgfri)',
         title: 'Tittel',
         height: 'Høyde (f.eks. 320px)',
         max_lines: 'Maks antall linjer',
@@ -96,7 +95,6 @@
   const EDITOR_SCHEMA = [
     { name: 'input_entity', required: true, selector: { entity: { domain: ['text', 'input_text'] } } },
     { name: 'output_entity', required: true, selector: { entity: { domain: ['sensor'] } } },
-    { name: 'stop_entity', selector: { entity: { domain: ['button'] } } },
     { name: 'title', selector: { text: {} } },
     { name: 'theme', selector: { select: { mode: 'dropdown', options: THEME_OPTIONS } } },
     { name: 'height', selector: { text: {} } },
@@ -296,14 +294,11 @@
       const list = entities || [];
       const input = list.find((e) => e.indexOf('text.') === 0 && e.indexOf('terminal_input') !== -1);
       const output = list.find((e) => e.indexOf('sensor.') === 0 && e.indexOf('terminal_output') !== -1);
-      const stop = list.find((e) => e.indexOf('button.') === 0 && e.indexOf('terminal_stop') !== -1);
-      const config = {
+      return {
         type: 'custom:' + CARD_TAG,
         input_entity: input || '',
         output_entity: output || '',
       };
-      if (stop) config.stop_entity = stop;
-      return config;
     }
 
     _lang() {
@@ -499,15 +494,13 @@
       inputrow.appendChild(input);
       this._inputEl = input;
 
-      if (this._config.stop_entity) {
-        const stop = document.createElement('button');
-        stop.className = 'stop';
-        stop.type = 'button';
-        stop.title = this._t('stop');
-        stop.innerHTML = '<svg viewBox="0 0 24 24"><path d="M6 6h12v12H6z"/></svg>';
-        stop.addEventListener('click', () => this._stopCommand());
-        inputrow.appendChild(stop);
-      }
+      const stop = document.createElement('button');
+      stop.className = 'stop';
+      stop.type = 'button';
+      stop.title = this._t('stop');
+      stop.innerHTML = '<svg viewBox="0 0 24 24"><path d="M6 6h12v12H6z"/></svg>';
+      stop.addEventListener('click', () => this._stopCommand());
+      inputrow.appendChild(stop);
 
       const send = document.createElement('button');
       send.className = 'send';
@@ -546,7 +539,7 @@
     }
 
     _appendLine(text, persist) {
-      const isCmd = typeof text === 'string' && text.indexOf('$ ') === 0;
+      const isCmd = typeof text === 'string' && (/^\S+:~\$ /.test(text) || text.indexOf('$ ') === 0);
       const line = document.createElement('div');
       line.className = isCmd ? 'line cmd' : 'line';
       line.textContent = text === '' ? ' ' : text;
@@ -587,9 +580,12 @@
     }
 
     _stopCommand() {
-      if (!this._hass || !this._config || !this._config.stop_entity) return;
-      const domain = this._config.stop_entity.split('.')[0];
-      this._hass.callService(domain, 'press', { entity_id: this._config.stop_entity });
+      if (!this._hass || !this._config || !this._config.input_entity) return;
+      const domain = this._config.input_entity.split('.')[0];
+      this._hass.callService(domain, 'set_value', {
+        entity_id: this._config.input_entity,
+        value: STOP_SENTINEL,
+      });
     }
 
     _historyStep(direction) {
