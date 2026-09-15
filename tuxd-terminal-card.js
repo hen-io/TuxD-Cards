@@ -15,9 +15,11 @@
       clear: 'Clear screen',
       notFound: 'Entity not found: ',
       run: 'Run',
+      stop: 'Stop running command (or press Ctrl+C)',
       editor: {
         input_entity: 'Input entity (text)',
         output_entity: 'Output entity (sensor)',
+        stop_entity: 'Stop entity (button, optional)',
         title: 'Title',
         height: 'Height (e.g. 320px)',
         max_lines: 'Max lines',
@@ -37,9 +39,11 @@
       clear: 'Tøm skjermen',
       notFound: 'Finner ikke enhet: ',
       run: 'Kjør',
+      stop: 'Stopp kjørende kommando (eller trykk Ctrl+C)',
       editor: {
         input_entity: 'Input-entitet (text)',
         output_entity: 'Output-entitet (sensor)',
+        stop_entity: 'Stopp-entitet (button, valgfri)',
         title: 'Tittel',
         height: 'Høyde (f.eks. 320px)',
         max_lines: 'Maks antall linjer',
@@ -92,6 +96,7 @@
   const EDITOR_SCHEMA = [
     { name: 'input_entity', required: true, selector: { entity: { domain: ['text', 'input_text'] } } },
     { name: 'output_entity', required: true, selector: { entity: { domain: ['sensor'] } } },
+    { name: 'stop_entity', selector: { entity: { domain: ['button'] } } },
     { name: 'title', selector: { text: {} } },
     { name: 'theme', selector: { select: { mode: 'dropdown', options: THEME_OPTIONS } } },
     { name: 'height', selector: { text: {} } },
@@ -211,6 +216,25 @@
     }
     button.send:hover { background: rgba(var(--rgb-primary-color, 3, 169, 244), 0.18); }
     button.send:active { transform: translateY(1px); }
+    button.stop {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: none;
+      color: var(--secondary-text-color);
+      cursor: pointer;
+      padding: 4px 6px;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+    button.stop svg { width: 18px; height: 18px; fill: currentColor; }
+    button.stop:hover {
+      background: rgba(var(--rgb-error-color, 219, 68, 55), 0.12);
+      color: var(--error-color, #db4437);
+    }
+    button.stop:active { transform: translateY(1px); }
     .unavailable { padding: 16px; color: var(--error-color, #db4437); font-size: 13px; }
   `;
 
@@ -272,11 +296,14 @@
       const list = entities || [];
       const input = list.find((e) => e.indexOf('text.') === 0 && e.indexOf('terminal_input') !== -1);
       const output = list.find((e) => e.indexOf('sensor.') === 0 && e.indexOf('terminal_output') !== -1);
-      return {
+      const stop = list.find((e) => e.indexOf('button.') === 0 && e.indexOf('terminal_stop') !== -1);
+      const config = {
         type: 'custom:' + CARD_TAG,
         input_entity: input || '',
         output_entity: output || '',
       };
+      if (stop) config.stop_entity = stop;
+      return config;
     }
 
     _lang() {
@@ -473,6 +500,16 @@
       inputrow.appendChild(input);
       this._inputEl = input;
 
+      if (this._config.stop_entity) {
+        const stop = document.createElement('button');
+        stop.className = 'stop';
+        stop.type = 'button';
+        stop.title = this._t('stop');
+        stop.innerHTML = '<svg viewBox="0 0 24 24"><path d="M6 6h12v12H6z"/></svg>';
+        stop.addEventListener('click', () => this._stopCommand());
+        inputrow.appendChild(stop);
+      }
+
       const send = document.createElement('button');
       send.className = 'send';
       send.type = 'button';
@@ -530,7 +567,22 @@
       } else if (ev.key === 'ArrowDown') {
         ev.preventDefault();
         this._historyStep(1);
+      } else if ((ev.ctrlKey || ev.metaKey) && (ev.key === 'c' || ev.key === 'C')) {
+        const input = ev.target;
+        const inputHasSelection = typeof input.selectionStart === 'number' && input.selectionStart !== input.selectionEnd;
+        const docSel = window.getSelection();
+        const docHasSelection = !!(docSel && String(docSel).length);
+        if (!inputHasSelection && !docHasSelection) {
+          ev.preventDefault();
+          this._stopCommand();
+        }
       }
+    }
+
+    _stopCommand() {
+      if (!this._hass || !this._config || !this._config.stop_entity) return;
+      const domain = this._config.stop_entity.split('.')[0];
+      this._hass.callService(domain, 'press', { entity_id: this._config.stop_entity });
     }
 
     _historyStep(direction) {
