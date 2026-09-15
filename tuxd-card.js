@@ -4,7 +4,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '1.0.0';
+  const CARD_VERSION = '0.1.7';
 
   function resolveLang(raw) {
     const l = String(raw || '').toLowerCase();
