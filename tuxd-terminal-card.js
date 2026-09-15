@@ -3,6 +3,7 @@
   'use strict';
 
   const CARD_TAG = 'tuxd-terminal-card';
+  const EDITOR_TAG = 'tuxd-terminal-card-editor';
   const DEFAULT_MAX_LINES = 300;
   const DEFAULT_HEIGHT = '320px';
 
@@ -13,6 +14,17 @@
       clear: 'Clear screen',
       notFound: 'Entity not found: ',
       run: 'Run',
+      editor: {
+        input_entity: 'Input entity (text)',
+        output_entity: 'Output entity (sensor)',
+        title: 'Title',
+        height: 'Height (e.g. 320px)',
+        max_lines: 'Max lines',
+        auto_scroll: 'Auto-scroll',
+        text_color: 'Text color (e.g. #7ce6ff)',
+        text_size: 'Text size (e.g. 13px)',
+        language: 'Language',
+      },
     },
     nb: {
       title: 'Terminal',
@@ -20,8 +32,37 @@
       clear: 'Tøm skjermen',
       notFound: 'Finner ikke enhet: ',
       run: 'Kjør',
+      editor: {
+        input_entity: 'Input-entitet (text)',
+        output_entity: 'Output-entitet (sensor)',
+        title: 'Tittel',
+        height: 'Høyde (f.eks. 320px)',
+        max_lines: 'Maks antall linjer',
+        auto_scroll: 'Automatisk rulling',
+        text_color: 'Tekstfarge (f.eks. #7ce6ff)',
+        text_size: 'Tekststørrelse (f.eks. 13px)',
+        language: 'Språk',
+      },
     },
   };
+
+  const LANGUAGE_OPTIONS = [
+    { value: '', label: 'Auto' },
+    { value: 'en', label: 'English' },
+    { value: 'nb', label: 'Norsk (bokmål)' },
+  ];
+
+  const EDITOR_SCHEMA = [
+    { name: 'input_entity', required: true, selector: { entity: { domain: ['text', 'input_text'] } } },
+    { name: 'output_entity', required: true, selector: { entity: { domain: ['sensor'] } } },
+    { name: 'title', selector: { text: {} } },
+    { name: 'height', selector: { text: {} } },
+    { name: 'max_lines', selector: { number: { mode: 'box', min: 10, max: 5000 } } },
+    { name: 'auto_scroll', selector: { boolean: {} } },
+    { name: 'text_color', selector: { text: {} } },
+    { name: 'text_size', selector: { text: {} } },
+    { name: 'language', selector: { select: { mode: 'dropdown', options: LANGUAGE_OPTIONS } } },
+  ];
 
   function resolveLang(raw) {
     const l = String(raw || '').toLowerCase();
@@ -176,6 +217,10 @@
 
     getCardSize() {
       return 6;
+    }
+
+    static getConfigElement() {
+      return document.createElement(EDITOR_TAG);
     }
 
     static getStubConfig(hass, entities) {
@@ -389,6 +434,67 @@
     }
   }
 
+  class TuxdTerminalCardEditor extends HTMLElement {
+    setConfig(config) {
+      this._config = Object.assign(
+        { max_lines: DEFAULT_MAX_LINES, height: DEFAULT_HEIGHT, auto_scroll: true },
+        config
+      );
+      this._buildForm();
+    }
+
+    set hass(hass) {
+      this._hass = hass;
+      if (this._form) this._form.hass = hass;
+      this._buildForm();
+    }
+
+    get hass() {
+      return this._hass;
+    }
+
+    connectedCallback() {
+      this._buildForm();
+    }
+
+    _lang() {
+      if (this._config && this._config.language) return resolveLang(this._config.language);
+      const hassLang = this._hass && (this._hass.language || (this._hass.locale && this._hass.locale.language));
+      return resolveLang(hassLang);
+    }
+
+    _buildForm() {
+      if (!this._config || !this.isConnected) return;
+
+      if (!this._form) {
+        this._form = document.createElement('ha-form');
+        this._form.computeLabel = (schema) => {
+          const dict = (I18N[this._lang()] || I18N.en).editor;
+          return dict[schema.name] || schema.name;
+        };
+        this._form.addEventListener('value-changed', (ev) => {
+          ev.stopPropagation();
+          const next = Object.assign({}, ev.detail.value);
+          Object.keys(next).forEach((k) => {
+            if (next[k] === '' || next[k] === undefined) delete next[k];
+          });
+          this._config = next;
+          this.dispatchEvent(new CustomEvent('config-changed', {
+            detail: { config: this._config },
+            bubbles: true,
+            composed: true,
+          }));
+        });
+        this.appendChild(this._form);
+      }
+
+      if (this._hass) this._form.hass = this._hass;
+      this._form.schema = EDITOR_SCHEMA;
+      this._form.data = this._config;
+    }
+  }
+
+  customElements.define(EDITOR_TAG, TuxdTerminalCardEditor);
   customElements.define(CARD_TAG, TuxdTerminalCard);
 
   window.customCards = window.customCards || [];
