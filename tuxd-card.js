@@ -730,17 +730,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(var(--rgb-warning-color, 255, 152, 0), 0.14);
-      color: var(--warning-color, #ff9800);
+      background: rgba(var(--rgb-warning-color, 255, 152, 0), 0.24);
+      color: var(--warning-color, #ffa726);
       animation: tuxd-pulse-ring 2s ease-in-out infinite;
     }
     .icon.uptodate {
-      background: rgba(var(--rgb-disabled-color, 148, 148, 148), 0.14);
-      color: var(--disabled-text-color, var(--secondary-text-color));
+      background: rgba(102, 187, 106, 0.24);
+      color: var(--success-color, #66bb6a);
       animation: none;
     }
     @keyframes tuxd-pulse-ring {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(var(--rgb-warning-color, 255, 152, 0), 0.35); }
+      0%, 100% { box-shadow: 0 0 0 0 rgba(var(--rgb-warning-color, 255, 152, 0), 0.45); }
       50% { box-shadow: 0 0 0 6px rgba(var(--rgb-warning-color, 255, 152, 0), 0); }
     }
     @media (prefers-reduced-motion: reduce) {
@@ -764,9 +764,21 @@
       white-space: nowrap;
     }
     .kernel {
+      display: flex;
+      align-items: center;
+      gap: 4px;
       font-size: 12px;
       color: var(--secondary-text-color);
       margin-top: 2px;
+      overflow: hidden;
+    }
+    .kernel svg {
+      flex: 0 0 auto;
+      width: 13px;
+      height: 13px;
+      fill: currentColor;
+    }
+    .kernel span {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -998,14 +1010,17 @@
       if (kernelVersion) {
         const kernel = document.createElement('div');
         kernel.className = 'kernel';
-        kernel.appendChild(document.createTextNode(`${this._t('kernel')} ${kernelVersion}`));
+        kernel.innerHTML = '<svg viewBox="0 0 24 24"><path d="M9 2h2v2H9V2zm4 0h2v2h-2V2zM9 20h2v2H9v-2zm4 0h2v2h-2v-2zM2 9h2v2H2V9zm0 4h2v2H2v-2zM20 9h2v2h-2V9zm0 4h2v2h-2v-2zM6 6h12v12H6V6z"/></svg>';
+        const kernelText = document.createElement('span');
+        kernelText.appendChild(document.createTextNode(`${this._t('kernel')} ${kernelVersion}`));
         if (latestKernelVersion && latestKernelVersion !== kernelVersion) {
-          kernel.appendChild(document.createTextNode(' → '));
+          kernelText.appendChild(document.createTextNode(' → '));
           const newKernel = document.createElement('span');
           newKernel.className = 'new-kernel';
           newKernel.textContent = latestKernelVersion;
-          kernel.appendChild(newKernel);
+          kernelText.appendChild(newKernel);
         }
+        kernel.appendChild(kernelText);
         info.appendChild(kernel);
       }
 
