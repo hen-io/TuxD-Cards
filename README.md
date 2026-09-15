@@ -1,4 +1,9 @@
-![TuXD-Terminal-Card](logo.png)
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="logo.png">
+    <img src="logo.png" alt="TuxD" height="250em">
+  </picture>
+</p>
 
 # TuxD *nix companion - Terminal lovelace card
 
