@@ -272,6 +272,7 @@
           hide_header: 'Hide header (terminal only)',
           hide_run_button: 'Hide "Run" button',
           show_stop_button: 'Show "Stop current command" button',
+          busy_entity: '"Current Job" sensor (shows Stop only while a command is running)',
         },
       },
       update: {
@@ -346,6 +347,7 @@
           hide_header: 'Skjul topptekst (kun terminal)',
           hide_run_button: 'Skjul "Kjør"-knapp',
           show_stop_button: 'Vis "Stopp gjeldende kommando"-knapp',
+          busy_entity: '"Current Job"-sensor (viser Stopp kun mens en kommando kjører)',
         },
       },
       update: {
@@ -573,6 +575,7 @@
         { name: 'hide_header', selector: { boolean: {} } },
         { name: 'hide_run_button', selector: { boolean: {} } },
         { name: 'show_stop_button', selector: { boolean: {} } },
+        { name: 'busy_entity', selector: { entity: { domain: ['sensor'] } } },
         { name: 'text_color', selector: { text: {} } },
         { name: 'text_size', selector: { text: {} } },
         { name: 'background_color', selector: { text: {} } },
@@ -618,6 +621,17 @@
       if (!this._unavailable) {
         this._syncOutput(isFirst);
       }
+      this._updateStopButtonVisibility();
+    }
+
+    _updateStopButtonVisibility() {
+      if (!this._stopBtnEl) return;
+      const busyEntity = this._config.busy_entity;
+      if (!busyEntity) return;
+      const state = this._hass.states[busyEntity];
+      const value = state ? String(state.state || '') : '';
+      const isRunning = value.toLowerCase().startsWith('terminal:');
+      this._stopBtnEl.hidden = !isRunning;
     }
 
     getCardSize() {
@@ -861,6 +875,7 @@
       clearHistoryBtn.addEventListener('click', () => this._clearCommandHistory());
       inputrow.appendChild(clearHistoryBtn);
 
+      this._stopBtnEl = null;
       if (this._config.show_stop_button) {
         const stopBtn = document.createElement('button');
         stopBtn.className = 'clear';
@@ -868,7 +883,9 @@
         stopBtn.title = this._t('stop');
         stopBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M18,18H6V6H18V18Z"/></svg>';
         stopBtn.addEventListener('click', () => this._stopCommand());
+        stopBtn.hidden = !!this._config.busy_entity;
         inputrow.appendChild(stopBtn);
+        this._stopBtnEl = stopBtn;
       }
 
       if (!this._config.hide_run_button) {
