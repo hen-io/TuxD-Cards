@@ -4,7 +4,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '0.1.12';
+  const CARD_VERSION = '0.1.13';
 
   function resolveLang(raw) {
     const l = String(raw || '').toLowerCase();
@@ -409,6 +409,10 @@
       return `tuxd-terminal-card-output:${this._config.output_entity}`;
     }
 
+    _outputStateKey() {
+      return `tuxd-terminal-card-laststate:${this._config.output_entity}`;
+    }
+
     _loadOutputHistory() {
       try {
         const raw = window.localStorage.getItem(this._outputHistoryKey());
@@ -418,12 +422,31 @@
         }
       } catch (e) {
       }
+
+      try {
+        const saved = window.localStorage.getItem(this._outputStateKey());
+        if (saved !== null) {
+          this._lastOutputState = saved;
+        }
+      } catch (e) {
+      }
     }
 
     _saveOutputHistory() {
       try {
         const lines = Array.from(this._outputEl.children).map((el) => el.textContent);
         window.localStorage.setItem(this._outputHistoryKey(), JSON.stringify(lines));
+      } catch (e) {
+      }
+    }
+
+    _saveLastOutputState() {
+      try {
+        if (this._lastOutputState === undefined) {
+          window.localStorage.removeItem(this._outputStateKey());
+        } else {
+          window.localStorage.setItem(this._outputStateKey(), this._lastOutputState);
+        }
       } catch (e) {
       }
     }
@@ -607,6 +630,7 @@
 
       const wasEmptyStart = firstRun && this._lastOutputState === undefined;
       this._lastOutputState = value;
+      this._saveLastOutputState();
 
       if (value === 'unavailable' || value === 'unknown') return;
       if (wasEmptyStart && value === '') return;
