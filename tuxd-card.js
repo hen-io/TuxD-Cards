@@ -144,7 +144,6 @@
     return (I18N[lang] && I18N[lang][mode]) || I18N.en[mode];
   }
 
-  // ======================== Terminal ========================
 
   const DEFAULT_MAX_LINES = 300;
   const DEFAULT_HEIGHT = '320px';
@@ -387,8 +386,6 @@
         const parsed = raw ? JSON.parse(raw) : null;
         if (Array.isArray(parsed)) this._history = parsed.filter((v) => typeof v === 'string');
       } catch (e) {
-        // localStorage can throw (private browsing, blocked storage) - a
-        // fresh, empty history is a fine fallback, never worth crashing over.
       }
       this._historyIndex = this._history.length;
     }
@@ -397,7 +394,6 @@
       try {
         window.localStorage.setItem(this._historyKey(), JSON.stringify(this._history));
       } catch (e) {
-        // best-effort only, see _loadHistory
       }
     }
 
@@ -405,10 +401,8 @@
       this._history = [];
       this._historyIndex = 0;
       this._saveHistory();
-      // Clearing the recall list has no other visible effect (the input and
-      // output don't change), so without this the button looked like it did
-      // nothing at all even though it worked.
-      this._appendLine('[command history cleared]');
+      if (this._outputEl) this._outputEl.innerHTML = '';
+      this._clearOutputHistory();
     }
 
     _outputHistoryKey() {
@@ -423,7 +417,6 @@
           parsed.forEach((line) => this._appendLine(line, false));
         }
       } catch (e) {
-        // best-effort only, see _loadHistory
       }
     }
 
@@ -432,7 +425,6 @@
         const lines = Array.from(this._outputEl.children).map((el) => el.textContent);
         window.localStorage.setItem(this._outputHistoryKey(), JSON.stringify(lines));
       } catch (e) {
-        // best-effort only, see _loadHistory
       }
     }
 
@@ -440,7 +432,6 @@
       try {
         window.localStorage.removeItem(this._outputHistoryKey());
       } catch (e) {
-        // best-effort only, see _loadHistory
       }
     }
 
@@ -553,6 +544,11 @@
           this._inputEl.focus();
         }
       });
+      this._pinnedToBottom = true;
+      output.addEventListener('scroll', () => {
+        const distanceFromBottom = output.scrollHeight - output.scrollTop - output.clientHeight;
+        this._pinnedToBottom = distanceFromBottom < 30;
+      });
       card.appendChild(output);
       this._outputEl = output;
 
@@ -592,19 +588,8 @@
       card.appendChild(inputrow);
       root.appendChild(card);
 
-      // Loaded only now that `output` is actually attached under a
-      // connected `root` - doing this earlier (while `output` only hung
-      // off an in-memory `card` not yet in the document) meant every
-      // scrollTop = scrollHeight during replay ran against an unlaid-out
-      // element (scrollHeight reads as 0 there), so the view was left
-      // scrolled to the top of history instead of the bottom.
       this._loadOutputHistory();
 
-      // Belt-and-suspenders: the host element itself may still not be
-      // connected to the document at this exact point, in which case
-      // scrollHeight is still unreliable even now. One corrective scroll
-      // after a real layout pass fixes that regardless of when the host
-      // got connected.
       if (this._config.auto_scroll !== false) {
         window.requestAnimationFrame(() => {
           if (this._outputEl) this._outputEl.scrollTop = this._outputEl.scrollHeight;
@@ -641,7 +626,7 @@
         this._outputEl.removeChild(this._outputEl.firstChild);
       }
 
-      if (this._config.auto_scroll !== false) {
+      if (this._config.auto_scroll !== false && this._pinnedToBottom) {
         this._outputEl.scrollTop = this._outputEl.scrollHeight;
       }
 
@@ -659,12 +644,6 @@
         ev.preventDefault();
         this._historyStep(1);
       } else if ((ev.ctrlKey || ev.metaKey) && (ev.key === 'c' || ev.key === 'C')) {
-        // Mirrors real terminals: Ctrl+C copies if something is selected,
-        // otherwise it sends the interrupt. window.getSelection() only
-        // covers a drag-selection over the output text (a plain <div>, not
-        // focusable, so it never steals keyboard focus from the input) -
-        // an in-progress selection *within* the input field itself lives in
-        // its own selectionStart/selectionEnd, not in window.getSelection().
         const input = ev.target;
         const inputHasSelection = typeof input.selectionStart === 'number' && input.selectionStart !== input.selectionEnd;
         const docSel = window.getSelection();
@@ -721,7 +700,6 @@
     }
   }
 
-  // ======================== Update ========================
 
   const UPDATE_STYLE = `
     :host { display: block; }
@@ -1109,7 +1087,6 @@
     }
   }
 
-  // ======================== Cache ========================
 
   const CACHE_STYLE = `
     :host { display: block; }
@@ -1213,8 +1190,6 @@
         info.usage = typeof est.usage === 'number' ? est.usage : null;
         info.quota = typeof est.quota === 'number' ? est.quota : null;
       } catch (e) {
-        // best-effort only - some browsers/contexts (private windows,
-        // insecure origins) refuse this; the rest of the card still works.
       }
     }
     if (info.supported) {
@@ -1227,12 +1202,10 @@
             const keys = await c.keys();
             count = keys.length;
           } catch (e) {
-            // leave count as null for this one cache, still list its name
           }
           info.caches.push({ name, count });
         }
       } catch (e) {
-        // leave info.caches empty
       }
     }
     return info;
@@ -1315,7 +1288,6 @@
         const names = await caches.keys();
         await Promise.all(names.map((n) => caches.delete(n)));
       } catch (e) {
-        // best-effort - fall through to refresh either way
       }
       await this._refresh();
       this._status = 'cleared';
@@ -1327,11 +1299,6 @@
     }
 
     _render() {
-      // hass/setConfig() ordering varies by host (a card-picker preview is
-      // one path that can render before setConfig ever runs), so this
-      // never assumes _config exists - falling back to {} keeps a stray
-      // early render harmless instead of throwing mid-render, which was
-      // silently getting this card dropped wherever it rendered too early.
       const config = this._config || {};
 
       const root = this.root;
@@ -1423,7 +1390,6 @@
     }
   }
 
-  // ======================== Wrapper elements ========================
 
   const RENDERERS = { terminal: TerminalRenderer, update: UpdateRenderer, cache: CacheRenderer };
   const DEFAULT_CARD_TYPE = 'terminal';
@@ -1517,7 +1483,6 @@
     }
   }
 
-  // ======================== Editors ========================
 
   function cardTypeOptionsFor(lang) {
     const labels = (I18N[lang] || I18N.en).cardTypeOptions;
@@ -1586,8 +1551,6 @@
       const cardType = this._cardType();
 
       if (!this._form) {
-        // First build ever: merge this mode's defaults *under* whatever was
-        // loaded, so saved values from an existing card are preserved.
         this._config = Object.assign({ card: cardType }, RENDERERS[cardType].defaultConfig(), this._config);
         this._lastSchemaType = cardType;
 
@@ -1615,12 +1578,6 @@
 
         this.appendChild(this._form);
       } else if (cardType !== this._lastSchemaType) {
-        // The user switched the "Card type" dropdown: start that mode's
-        // fields fresh rather than carrying over the previous mode's, but
-        // keep `type` - it's Lovelace's own top-level field (custom:
-        // tuxd-card), not part of any mode's schema, and dropping it here
-        // left the saved config as just "card: cache" with no type at all,
-        // breaking the card entirely.
         this._lastSchemaType = cardType;
         this._config = Object.assign({ type: this._config.type, card: cardType }, RENDERERS[cardType].defaultConfig());
         this.dispatchEvent(new CustomEvent('config-changed', {
