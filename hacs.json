@@ -1,6 +1,6 @@
 {
-  "name": "TuxD Card",
+  "name": "TuxD Cards",
   "content_in_root": true,
-  "filename": "tuxd-card.js",
+  "filename": "tuxd-cards.js",
   "render_readme": true
 }
