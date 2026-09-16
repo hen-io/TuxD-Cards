@@ -4,7 +4,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '0.1.13';
+  const CARD_VERSION = '0.1.14';
 
   function resolveLang(raw) {
     const l = String(raw || '').toLowerCase();
@@ -28,6 +28,7 @@
         notFound: 'Entity not found: ',
         run: 'Run',
         clearHistory: 'Clear command history',
+        stop: 'Stop current command',
         editor: {
           input_entity: 'Input entity (text)',
           output_entity: 'Output entity (sensor)',
@@ -42,6 +43,8 @@
           max_history: 'Max command history',
           background_color: 'Output background color',
           hide_header: 'Hide header (terminal only)',
+          hide_run_button: 'Hide "Run" button',
+          show_stop_button: 'Show "Stop current command" button',
         },
       },
       update: {
@@ -88,6 +91,7 @@
         notFound: 'Finner ikke enhet: ',
         run: 'Kjør',
         clearHistory: 'Tøm kommandohistorikk',
+        stop: 'Stopp gjeldende kommando',
         editor: {
           input_entity: 'Input-entitet (text)',
           output_entity: 'Output-entitet (sensor)',
@@ -102,6 +106,8 @@
           max_history: 'Maks kommandohistorikk',
           background_color: 'Bakgrunnsfarge (output)',
           hide_header: 'Skjul topptekst (kun terminal)',
+          hide_run_button: 'Skjul "Kjør"-knapp',
+          show_stop_button: 'Vis "Stopp gjeldende kommando"-knapp',
         },
       },
       update: {
@@ -149,6 +155,7 @@
   const DEFAULT_HEIGHT = '320px';
   const DEFAULT_MAX_HISTORY = 100;
   const STOP_SENTINEL = '__tuxd_stop__';
+  const CLEAR_SENTINEL = '__tuxd_clear__';
 
   const THEMES = {
     ha: {},
@@ -218,7 +225,7 @@
       border-radius: 6px;
       font-family: inherit;
     }
-    .clear svg { width: 16px; height: 16px; fill: currentColor; }
+    .clear svg { width: 19px; height: 19px; fill: currentColor; }
     .clear:hover {
       background: rgba(var(--rgb-primary-text-color, 0, 0, 0), 0.06);
       color: var(--primary-text-color);
@@ -299,6 +306,8 @@
         max_history: DEFAULT_MAX_HISTORY,
         theme: 'ha',
         hide_header: false,
+        hide_run_button: false,
+        show_stop_button: true,
       };
     }
 
@@ -313,6 +322,8 @@
         { name: 'max_history', selector: { number: { mode: 'box', min: 0, max: 1000 } } },
         { name: 'auto_scroll', selector: { boolean: {} } },
         { name: 'hide_header', selector: { boolean: {} } },
+        { name: 'hide_run_button', selector: { boolean: {} } },
+        { name: 'show_stop_button', selector: { boolean: {} } },
         { name: 'text_color', selector: { text: {} } },
         { name: 'text_size', selector: { text: {} } },
         { name: 'background_color', selector: { text: {} } },
@@ -548,7 +559,7 @@
         clearBtn.className = 'clear';
         clearBtn.type = 'button';
         clearBtn.title = this._t('clear');
-        clearBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"/></svg>';
+        clearBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M21.12 15.46L19 17.59L16.88 15.47L15.47 16.88L17.59 19L15.47 21.12L16.88 22.54L19 20.41L21.12 22.54L22.54 21.12L20.41 19L22.54 16.88L21.12 15.46M19.5 3.5L18 2L16.5 3.5L15 2L13.5 3.5L12 2L10.5 3.5L9 2L7.5 3.5L6 2L4.5 3.5L3 2V22L4.5 20.5L6 22L7.5 20.5L9 22L10.5 20.5L12 22L13.26 20.74C13.09 20.18 13 19.59 13 19C13 18.32 13.12 17.64 13.34 17H6V15H14.53C15.67 13.73 17.29 13 19 13C19.68 13 20.36 13.12 21 13.34V2L19.5 3.5M18 13H6V11H18V13M18 9H6V7H18V9Z"/></svg>';
         clearBtn.addEventListener('click', () => {
           this._outputEl.innerHTML = '';
           this._clearOutputHistory();
@@ -601,12 +612,24 @@
       clearHistoryBtn.addEventListener('click', () => this._clearCommandHistory());
       inputrow.appendChild(clearHistoryBtn);
 
-      const send = document.createElement('button');
-      send.className = 'send';
-      send.type = 'button';
-      send.textContent = this._t('run');
-      send.addEventListener('click', () => this._submit());
-      inputrow.appendChild(send);
+      if (this._config.show_stop_button) {
+        const stopBtn = document.createElement('button');
+        stopBtn.className = 'clear';
+        stopBtn.type = 'button';
+        stopBtn.title = this._t('stop');
+        stopBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M18,18H6V6H18V18Z"/></svg>';
+        stopBtn.addEventListener('click', () => this._stopCommand());
+        inputrow.appendChild(stopBtn);
+      }
+
+      if (!this._config.hide_run_button) {
+        const send = document.createElement('button');
+        send.className = 'send';
+        send.type = 'button';
+        send.textContent = this._t('run');
+        send.addEventListener('click', () => this._submit());
+        inputrow.appendChild(send);
+      }
 
       card.appendChild(inputrow);
       root.appendChild(card);
@@ -634,6 +657,12 @@
 
       if (value === 'unavailable' || value === 'unknown') return;
       if (wasEmptyStart && value === '') return;
+
+      if (value === CLEAR_SENTINEL) {
+        if (this._outputEl) this._outputEl.innerHTML = '';
+        this._clearOutputHistory();
+        return;
+      }
 
       this._appendLine(value);
     }
