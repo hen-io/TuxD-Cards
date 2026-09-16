@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-# TuxD *nix companion - Home assistant integration.
+# TuxD *nix companion - Lovelace cards
 
-Home Assistant companion integration for [TuxD](https://github.com/hen-io/tuxd) - a *nix monitoring
+Home Assistant companion Lovelace cards for [TuxD](https://github.com/hen-io/tuxd) - a *nix monitoring
 and management agent for Home Assistant.
