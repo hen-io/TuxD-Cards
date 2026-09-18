@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '0.3.1';
+  const CARD_VERSION = '0.3.2';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,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';
 
   function resolveLang(raw) {
@@ -247,7 +247,7 @@
   const I18N = {
     en: {
       cardType: 'Card type',
-      cardTypeOptions: { terminal: 'Terminal', update: 'Updates', cache: 'Site Cache', live_tty: 'Live Terminal', conf: 'Configuration' },
+      cardTypeOptions: { terminal: 'Terminal', update: 'Updates', cache: 'Site Cache', conf: 'Configuration' },
       terminal: {
         title: 'Terminal',
         placeholder: 'Type a command and press Enter...',
@@ -255,14 +255,16 @@
         notFound: 'Entity not found: ',
         run: 'Run',
         clearHistory: 'Clear command history',
-        stop: 'Stop current command',
+        stop: 'Send Ctrl+C',
+        noDevice: 'Could not determine the TuxD device for this entity',
+        failedOpen: 'failed to open shell',
+        sessionEnded: 'shell session ended',
         editor: {
           input_entity: 'Input entity (text)',
           output_entity: 'Output entity (sensor)',
           title: 'Title',
           height: 'Height (e.g. 320px)',
-          max_lines: 'Max lines',
-          auto_scroll: 'Auto-scroll',
+          max_lines: 'Scrollback lines',
           text_color: 'Text color (e.g. #7ce6ff)',
           text_size: 'Text size (e.g. 13px)',
           language: 'Language',
@@ -271,8 +273,7 @@
           background_color: 'Output background color',
           hide_header: 'Hide header (terminal only)',
           hide_run_button: 'Hide "Run" button',
-          show_stop_button: 'Show "Stop current command" button',
-          busy_entity: '"Current Job" sensor (shows Stop only while a command is running)',
+          show_stop_button: 'Show "Send Ctrl+C" button',
         },
       },
       update: {
@@ -308,17 +309,6 @@
           language: 'Language',
         },
       },
-      live_tty: {
-        missingDevice: 'Set "device_id" to a TuxD device name',
-        failedOpen: 'failed to open',
-        sessionEnded: 'session ended',
-        editor: {
-          device_id: 'TuxD device name',
-          title: 'Title',
-          height: 'Height (e.g. 320px)',
-          theme: 'Theme',
-        },
-      },
       conf: {
         defaultTitle: 'Configuration',
         missingDevice: 'Set "device_id" to a TuxD device name',
@@ -339,7 +329,7 @@
     },
     nb: {
       cardType: 'Korttype',
-      cardTypeOptions: { terminal: 'Terminal', update: 'Oppdateringer', cache: 'Nettsted-cache', live_tty: 'Live terminal', conf: 'Konfigurasjon' },
+      cardTypeOptions: { terminal: 'Terminal', update: 'Oppdateringer', cache: 'Nettsted-cache', conf: 'Konfigurasjon' },
       terminal: {
         title: 'Terminal',
         placeholder: 'Skriv en kommando og trykk Enter...',
@@ -347,14 +337,16 @@
         notFound: 'Finner ikke enhet: ',
         run: 'Kjør',
         clearHistory: 'Tøm kommandohistorikk',
-        stop: 'Stopp gjeldende kommando',
+        stop: 'Send Ctrl+C',
+        noDevice: 'Fant ikke TuxD-enheten for denne entiteten',
+        failedOpen: 'kunne ikke åpne terminal',
+        sessionEnded: 'terminaløkten er avsluttet',
         editor: {
           input_entity: 'Input-entitet (text)',
           output_entity: 'Output-entitet (sensor)',
           title: 'Tittel',
           height: 'Høyde (f.eks. 320px)',
-          max_lines: 'Maks antall linjer',
-          auto_scroll: 'Automatisk rulling',
+          max_lines: 'Antall linjer i rullebuffer',
           text_color: 'Tekstfarge (f.eks. #7ce6ff)',
           text_size: 'Tekststørrelse (f.eks. 13px)',
           language: 'Språk',
@@ -363,8 +355,7 @@
           background_color: 'Bakgrunnsfarge (output)',
           hide_header: 'Skjul topptekst (kun terminal)',
           hide_run_button: 'Skjul "Kjør"-knapp',
-          show_stop_button: 'Vis "Stopp gjeldende kommando"-knapp',
-          busy_entity: '"Current Job"-sensor (viser Stopp kun mens en kommando kjører)',
+          show_stop_button: 'Vis "Send Ctrl+C"-knapp',
         },
       },
       update: {
@@ -400,17 +391,6 @@
           language: 'Språk',
         },
       },
-      live_tty: {
-        missingDevice: 'Sett "device_id" til et TuxD-enhetsnavn',
-        failedOpen: 'kunne ikke åpne',
-        sessionEnded: 'økten er avsluttet',
-        editor: {
-          device_id: 'TuxD-enhetsnavn',
-          title: 'Tittel',
-          height: 'Høyde (f.eks. 320px)',
-          theme: 'Tema',
-        },
-      },
       conf: {
         defaultTitle: 'Konfigurasjon',
         missingDevice: 'Sett "device_id" til et TuxD-enhetsnavn',
@@ -439,8 +419,18 @@
   const DEFAULT_MAX_LINES = 300;
   const DEFAULT_HEIGHT = '320px';
   const DEFAULT_MAX_HISTORY = 100;
-  const STOP_SENTINEL = '__tuxd_stop__';
-  const CLEAR_SENTINEL = '__tuxd_clear__';
+
+  function _deviceIdForEntity(hass, entityId) {
+    if (!hass || !entityId) return null;
+    const entry = hass.entities && hass.entities[entityId];
+    const haDeviceId = entry && entry.device_id;
+    if (!haDeviceId) return null;
+    const dev = hass.devices && hass.devices[haDeviceId];
+    const identifiers = dev && dev.identifiers;
+    if (!identifiers) return null;
+    const pair = Array.from(identifiers).find((p) => Array.isArray(p) && p[0] === 'tuxd');
+    return pair ? pair[1] : null;
+  }
 
   const THEMES = {
     ha: {},
@@ -523,29 +513,14 @@
       background: rgba(var(--rgb-primary-text-color, 0, 0, 0), 0.06);
       color: var(--primary-text-color);
     }
-    .output {
+    .term-container {
       flex: 0 0 auto;
-      overflow-y: auto;
-      padding: 12px 16px;
-      font-size: var(--tuxd-text-size, 13px);
-      line-height: 1.5;
+      padding: 8px;
       box-sizing: border-box;
       background: var(--tuxd-output-bg, var(--secondary-background-color, transparent));
+      min-height: 0;
     }
-    .output::-webkit-scrollbar { width: 8px; }
-    .output::-webkit-scrollbar-thumb { background: var(--divider-color); border-radius: 8px; }
-    .line {
-      white-space: pre-wrap;
-      word-break: break-word;
-      opacity: 0;
-      animation: tuxd-fadein 0.15s ease forwards;
-      color: var(--tuxd-text-color, var(--primary-text-color));
-    }
-    .line.cmd { color: var(--tuxd-text-color, var(--primary-color)); }
-    @keyframes tuxd-fadein {
-      from { opacity: 0; transform: translateY(2px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+    .term-container .terminal.xterm { height: 100%; }
     .inputrow {
       display: flex;
       align-items: center;
@@ -587,15 +562,20 @@
       this.root = root;
       this._history = [];
       this._historyIndex = 0;
-      this._lastOutputState = undefined;
       this._unavailable = false;
+      this._term = null;
+      this._fitAddon = null;
+      this._resizeObserver = null;
+      this._unsub = null;
+      this._session = null;
+      this._deviceId = null;
+      this._opening = false;
     }
 
     static defaultConfig() {
       return {
         max_lines: DEFAULT_MAX_LINES,
         height: DEFAULT_HEIGHT,
-        auto_scroll: true,
         max_history: DEFAULT_MAX_HISTORY,
         theme: 'ha',
         hide_header: false,
@@ -613,11 +593,9 @@
         { name: 'height', selector: { text: {} } },
         { name: 'max_lines', selector: { number: { mode: 'box', min: 10, max: 5000 } } },
         { name: 'max_history', selector: { number: { mode: 'box', min: 0, max: 1000 } } },
-        { name: 'auto_scroll', selector: { boolean: {} } },
         { name: 'hide_header', selector: { boolean: {} } },
         { name: 'hide_run_button', selector: { boolean: {} } },
         { name: 'show_stop_button', selector: { boolean: {} } },
-        { name: 'busy_entity', selector: { entity: { domain: ['sensor'] } } },
         { name: 'text_color', selector: { text: {} } },
         { name: 'text_size', selector: { text: {} } },
         { name: 'background_color', selector: { text: {} } },
@@ -641,44 +619,44 @@
         throw new Error('tuxd-card (terminal): "input_entity" and "output_entity" are required');
       }
       this._config = Object.assign(TerminalRenderer.defaultConfig(), config);
-      this._lastOutputState = undefined;
       this._unavailable = false;
       if (this._historyLoadedFor !== this._config.input_entity) {
         this._historyLoadedFor = this._config.input_entity;
         this._loadHistory();
       }
-      if (this._hass) {
-        this._render();
-      }
+      if (this._hass) this._render();
     }
 
     setHass(hass) {
       const isFirst = !this._hass;
       this._hass = hass;
       if (!this._config) return;
-      if (isFirst) {
-        this._render();
-      }
-      this._updateAvailability();
-      if (!this._unavailable) {
-        this._syncOutput(isFirst);
-      }
-      this._updateStopButtonVisibility();
+      if (isFirst) this._render();
     }
 
-    _updateStopButtonVisibility() {
-      if (!this._stopBtnEl) return;
-      const busyEntity = this._config.busy_entity || this._derivedBusyEntity();
-      const state = this._hass.states[busyEntity];
-      const value = state ? String(state.state || '') : '';
-      const isRunning = value.toLowerCase().startsWith('terminal:');
-      this._stopBtnEl.hidden = !isRunning;
+    connectedCallback() {
+      if (this._config && this._hass && !this._term && !this._unavailable) this._render();
     }
 
-    _derivedBusyEntity() {
-      const inputEntity = this._config.input_entity || '';
-      const match = inputEntity.match(/^(?:text|input_text)\.(.+)_terminal_input$/);
-      return match ? `sensor.${match[1]}_system_busy_job` : '';
+    disconnectedCallback() {
+      this._teardown();
+    }
+
+    _teardown() {
+      if (this._unsub) {
+        try { this._unsub(); } catch (e) {  }
+        this._unsub = null;
+      }
+      if (this._resizeObserver) {
+        this._resizeObserver.disconnect();
+        this._resizeObserver = null;
+      }
+      if (this._term) {
+        try { this._term.dispose(); } catch (e) {  }
+        this._term = null;
+      }
+      this._fitAddon = null;
+      this._session = null;
     }
 
     getCardSize() {
@@ -722,61 +700,7 @@
       this._history = [];
       this._historyIndex = 0;
       this._saveHistory();
-      if (this._outputEl) this._outputEl.innerHTML = '';
-      this._clearOutputHistory();
-    }
-
-    _outputHistoryKey() {
-      return `tuxd-terminal-card-output:${this._config.output_entity}`;
-    }
-
-    _outputStateKey() {
-      return `tuxd-terminal-card-laststate:${this._config.output_entity}`;
-    }
-
-    _loadOutputHistory() {
-      try {
-        const raw = window.localStorage.getItem(this._outputHistoryKey());
-        const parsed = raw ? JSON.parse(raw) : null;
-        if (Array.isArray(parsed)) {
-          parsed.forEach((line) => this._appendLine(line, false));
-        }
-      } catch (e) {
-      }
-
-      try {
-        const saved = window.localStorage.getItem(this._outputStateKey());
-        if (saved !== null) {
-          this._lastOutputState = saved;
-        }
-      } catch (e) {
-      }
-    }
-
-    _saveOutputHistory() {
-      try {
-        const lines = Array.from(this._outputEl.children).map((el) => el.textContent);
-        window.localStorage.setItem(this._outputHistoryKey(), JSON.stringify(lines));
-      } catch (e) {
-      }
-    }
-
-    _saveLastOutputState() {
-      try {
-        if (this._lastOutputState === undefined) {
-          window.localStorage.removeItem(this._outputStateKey());
-        } else {
-          window.localStorage.setItem(this._outputStateKey(), this._lastOutputState);
-        }
-      } catch (e) {
-      }
-    }
-
-    _clearOutputHistory() {
-      try {
-        window.localStorage.removeItem(this._outputHistoryKey());
-      } catch (e) {
-      }
+      if (this._term) this._term.clear();
     }
 
     _applyTheme(card) {
@@ -804,19 +728,13 @@
       }
     }
 
-    _updateAvailability() {
-      const inState = this._hass.states[this._config.input_entity];
-      const outState = this._hass.states[this._config.output_entity];
-      const missing = !inState || !outState;
-
-      if (missing && !this._unavailable) {
-        this._unavailable = true;
-        this._renderUnavailable(!inState ? this._config.input_entity : this._config.output_entity);
-      } else if (!missing && this._unavailable) {
-        this._unavailable = false;
-        this._lastOutputState = undefined;
-        this._render();
-      }
+    _termColors() {
+      const theme = THEMES[this._config.theme] || THEMES.ha;
+      return {
+        background: this._config.background_color || theme.bg || 'var(--card-background-color, #1e1e1e)',
+        foreground: this._config.text_color || theme.text || 'var(--primary-text-color, #d4d4d4)',
+        cursor: theme.accent || theme.text || '#d4d4d4',
+      };
     }
 
     _renderUnavailable(missingEntity) {
@@ -836,8 +754,23 @@
     }
 
     _render() {
+      const inState = this._hass.states[this._config.input_entity];
+      const outState = this._hass.states[this._config.output_entity];
+      if (!inState || !outState) {
+        this._unavailable = true;
+        this._renderUnavailable(!inState ? this._config.input_entity : this._config.output_entity);
+        return;
+      }
+      this._unavailable = false;
+
+      this._teardown();
+
       const root = this.root;
       root.innerHTML = '';
+
+      const xtermStyle = document.createElement('style');
+      xtermStyle.textContent = XTERM_CSS;
+      root.appendChild(xtermStyle);
 
       const style = document.createElement('style');
       style.textContent = TERMINAL_STYLE;
@@ -845,9 +778,6 @@
 
       const card = document.createElement('ha-card');
       this._applyTheme(card);
-      if (this._config.text_color) {
-        card.style.setProperty('--tuxd-text-color', this._config.text_color);
-      }
       if (this._config.text_size) {
         const size = typeof this._config.text_size === 'number' ? `${this._config.text_size}px` : this._config.text_size;
         card.style.setProperty('--tuxd-text-size', size);
@@ -871,30 +801,17 @@
         clearBtn.title = this._t('clear');
         clearBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M21.12 15.46L19 17.59L16.88 15.47L15.47 16.88L17.59 19L15.47 21.12L16.88 22.54L19 20.41L21.12 22.54L22.54 21.12L20.41 19L22.54 16.88L21.12 15.46M19.5 3.5L18 2L16.5 3.5L15 2L13.5 3.5L12 2L10.5 3.5L9 2L7.5 3.5L6 2L4.5 3.5L3 2V22L4.5 20.5L6 22L7.5 20.5L9 22L10.5 20.5L12 22L13.26 20.74C13.09 20.18 13 19.59 13 19C13 18.32 13.12 17.64 13.34 17H6V15H14.53C15.67 13.73 17.29 13 19 13C19.68 13 20.36 13.12 21 13.34V2L19.5 3.5M18 13H6V11H18V13M18 9H6V7H18V9Z"/></svg>';
         clearBtn.addEventListener('click', () => {
-          this._outputEl.innerHTML = '';
-          this._clearOutputHistory();
+          if (this._term) this._term.clear();
         });
         header.appendChild(clearBtn);
 
         card.appendChild(header);
       }
 
-      const output = document.createElement('div');
-      output.className = 'output';
-      output.style.height = this._config.height || DEFAULT_HEIGHT;
-      output.addEventListener('mouseup', () => {
-        const sel = window.getSelection();
-        if (!sel || sel.toString() === '') {
-          this._inputEl.focus();
-        }
-      });
-      this._pinnedToBottom = true;
-      output.addEventListener('scroll', () => {
-        const distanceFromBottom = output.scrollHeight - output.scrollTop - output.clientHeight;
-        this._pinnedToBottom = distanceFromBottom < 30;
-      });
-      card.appendChild(output);
-      this._outputEl = output;
+      const container = document.createElement('div');
+      container.className = 'term-container';
+      container.style.height = this._config.height || DEFAULT_HEIGHT;
+      card.appendChild(container);
 
       const inputrow = document.createElement('div');
       inputrow.className = 'inputrow';
@@ -930,7 +847,6 @@
         stopBtn.title = this._t('stop');
         stopBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M18,18H6V6H18V18Z"/></svg>';
         stopBtn.addEventListener('click', () => this._stopCommand());
-        stopBtn.hidden = true;
         inputrow.appendChild(stopBtn);
         this._stopBtnEl = stopBtn;
       }
@@ -947,56 +863,92 @@
       card.appendChild(inputrow);
       root.appendChild(card);
 
-      this._loadOutputHistory();
+      const term = new window.Terminal({
+        convertEol: true,
+        termName: 'xterm-256color',
+        fontFamily: 'ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace',
+        fontSize: 13,
+        cursorBlink: true,
+        scrollback: this._config.max_lines || DEFAULT_MAX_LINES,
+        theme: this._termColors(),
+      });
+      const fitAddon = new window.FitAddon.FitAddon();
+      term.loadAddon(fitAddon);
+      term.open(container);
+      try { fitAddon.fit(); } catch (e) {  }
+      this._term = term;
+      this._fitAddon = fitAddon;
 
-      if (this._config.auto_scroll !== false) {
-        window.requestAnimationFrame(() => {
-          if (this._outputEl) this._outputEl.scrollTop = this._outputEl.scrollHeight;
-        });
-      }
-    }
+      this._resizeObserver = new ResizeObserver(() => {
+        if (!this._term) return;
+        try { fitAddon.fit(); } catch (e) { return; }
+        if (this._session) {
+          this._hass.connection.sendMessagePromise({
+            type: 'tuxd/live_tty/resize',
+            session: this._session,
+            cols: term.cols,
+            rows: term.rows,
+          }).catch(() => {});
+        }
+      });
+      this._resizeObserver.observe(container);
 
-    _syncOutput(firstRun) {
-      if (!this._outputEl) return;
-      const state = this._hass.states[this._config.output_entity];
-      if (!state) return;
+      this._deviceId = _deviceIdForEntity(this._hass, this._config.output_entity)
+        || _deviceIdForEntity(this._hass, this._config.input_entity);
 
-      const value = state.state;
-      if (value === this._lastOutputState) return;
-
-      const wasEmptyStart = firstRun && this._lastOutputState === undefined;
-      this._lastOutputState = value;
-      this._saveLastOutputState();
-
-      if (value === 'unavailable' || value === 'unknown') return;
-      if (wasEmptyStart && value === '') return;
-
-      if (value === CLEAR_SENTINEL) {
-        if (this._outputEl) this._outputEl.innerHTML = '';
-        this._clearOutputHistory();
+      if (!this._deviceId) {
+        term.write(`\r\n\x1b[31m[${this._t('noDevice')}]\x1b[0m\r\n`);
         return;
       }
 
-      this._appendLine(value);
+      this._openSession();
     }
 
-    _appendLine(text, persist) {
-      const isCmd = typeof text === 'string' && (/^\S+:~\$ /.test(text) || text.indexOf('$ ') === 0);
-      const line = document.createElement('div');
-      line.className = isCmd ? 'line cmd' : 'line';
-      line.textContent = text === '' ? ' ' : text;
-      this._outputEl.appendChild(line);
+    _openSession() {
+      if (!this._deviceId || !this._hass || !this._term || this._opening) return;
+      this._opening = true;
+      this._hass.connection.subscribeMessage(
+        (event) => this._handleEvent(event),
+        {
+          type: 'tuxd/live_tty/open',
+          device_id: this._deviceId,
+          cols: this._term.cols,
+          rows: this._term.rows,
+        }
+      ).then((unsub) => {
+        this._opening = false;
+        this._unsub = unsub;
+      }).catch((err) => {
+        this._opening = false;
+        if (this._term) {
+          this._term.write(`\r\n\x1b[31m[${this._t('failedOpen')}: ${(err && err.message) || err}]\x1b[0m\r\n`);
+        }
+      });
+    }
 
-      const max = this._config.max_lines || DEFAULT_MAX_LINES;
-      while (this._outputEl.children.length > max) {
-        this._outputEl.removeChild(this._outputEl.firstChild);
+    _handleEvent(event) {
+      if (!event || !this._term) return;
+      if (event.type === 'tty_session') {
+        this._session = event.session;
+      } else if (event.type === 'tty_data') {
+        this._term.write(_b64ToBytes(event.data));
+      } else if (event.type === 'tty_exit') {
+        this._session = null;
+        this._term.write(`\r\n\x1b[33m[${this._t('sessionEnded')}]\x1b[0m\r\n`);
       }
+    }
 
-      if (this._config.auto_scroll !== false && this._pinnedToBottom) {
-        this._outputEl.scrollTop = this._outputEl.scrollHeight;
+    _sendInput(str) {
+      if (!this._hass || !this._term) return;
+      if (!this._session) {
+        this._openSession();
+        return;
       }
-
-      if (persist !== false) this._saveOutputHistory();
+      this._hass.connection.sendMessagePromise({
+        type: 'tuxd/live_tty/input',
+        session: this._session,
+        data: _strToB64Utf8(str),
+      }).catch(() => {});
     }
 
     _onKeydown(ev) {
@@ -1022,12 +974,7 @@
     }
 
     _stopCommand() {
-      if (!this._hass || !this._config || !this._config.input_entity) return;
-      const domain = this._config.input_entity.split('.')[0];
-      this._hass.callService(domain, 'set_value', {
-        entity_id: this._config.input_entity,
-        value: STOP_SENTINEL,
-      });
+      this._sendInput('\x03');
     }
 
     _historyStep(direction) {
@@ -1047,21 +994,18 @@
     }
 
     _submit() {
+      if (!this._hass || !this._config || !this._inputEl) return;
       const value = (this._inputEl.value || '').trim();
-      if (!value || !this._hass || !this._config) return;
 
-      this._history.push(value);
-      const maxHistory = this._config.max_history === 0 ? 0 : (this._config.max_history || DEFAULT_MAX_HISTORY);
-      while (this._history.length > maxHistory) this._history.shift();
-      this._historyIndex = this._history.length;
-      this._saveHistory();
+      if (value) {
+        this._history.push(value);
+        const maxHistory = this._config.max_history === 0 ? 0 : (this._config.max_history || DEFAULT_MAX_HISTORY);
+        while (this._history.length > maxHistory) this._history.shift();
+        this._historyIndex = this._history.length;
+        this._saveHistory();
+      }
 
-      const domain = this._config.input_entity.split('.')[0];
-      this._hass.callService(domain, 'set_value', {
-        entity_id: this._config.input_entity,
-        value: value,
-      });
-
+      this._sendInput(value + '\r');
       this._inputEl.value = '';
     }
   }
@@ -1771,252 +1715,6 @@
     return btoa(bin);
   }
 
-  const LIVE_TTY_XTERM_CSS = `${XTERM_CSS}`;
-
-  const LIVE_TTY_STYLE = `
-    :host { display: block; }
-    ha-card {
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace;
-      color: var(--primary-text-color);
-    }
-    .header {
-      display: flex;
-      align-items: center;
-      padding: 12px 16px;
-      border-bottom: 1px solid var(--divider-color);
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      color: var(--secondary-text-color);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .tty-container {
-      flex: 1 1 auto;
-      padding: 8px;
-      box-sizing: border-box;
-      background: var(--tuxd-tty-bg, #000);
-      min-height: 0;
-    }
-    .tty-container .terminal.xterm { height: 100%; }
-    .unavailable { padding: 16px; color: var(--error-color, #db4437); font-size: 13px; }
-  `;
-
-  class LiveTtyRenderer {
-    constructor(root) {
-      this.root = root;
-      this._unsub = null;
-      this._session = null;
-      this._term = null;
-      this._resizeObserver = null;
-      this._unavailable = false;
-    }
-
-    static defaultConfig() {
-      return { title: '', theme: 'ha', height: DEFAULT_HEIGHT };
-    }
-
-    static schema() {
-      return [
-        { name: 'device_id', required: true, selector: { text: {} } },
-        { name: 'title', selector: { text: {} } },
-        { name: 'height', selector: { text: {} } },
-        { name: 'theme', selector: { select: { mode: 'dropdown', options: THEME_OPTIONS } } },
-      ];
-    }
-
-    static hasCandidate() {
-      return false;
-    }
-
-    static stubFields() {
-      return { device_id: '' };
-    }
-
-    setConfig(config) {
-      if (!config || !config.device_id) {
-        throw new Error('tuxd-card (live_tty): "device_id" is required');
-      }
-      this._config = Object.assign(LiveTtyRenderer.defaultConfig(), config);
-      if (this._hass) this._render();
-    }
-
-    setHass(hass) {
-      const isFirst = !this._hass;
-      this._hass = hass;
-      if (!this._config) return;
-      if (isFirst || !this._term) this._render();
-    }
-
-    getCardSize() {
-      return 8;
-    }
-
-    connectedCallback() {
-      if (this._config && this._hass && !this._term) this._render();
-    }
-
-    disconnectedCallback() {
-      this._teardown();
-    }
-
-    _teardown() {
-      if (this._unsub) {
-        try { this._unsub(); } catch (e) {  }
-        this._unsub = null;
-      }
-      if (this._resizeObserver) {
-        this._resizeObserver.disconnect();
-        this._resizeObserver = null;
-      }
-      if (this._term) {
-        try { this._term.dispose(); } catch (e) {  }
-        this._term = null;
-      }
-      this._fitAddon = null;
-      this._session = null;
-    }
-
-    _themeColors() {
-      const t = THEMES[this._config.theme] || THEMES.ha;
-      return {
-        background: t.bg || 'var(--card-background-color, #1e1e1e)',
-        foreground: t.text || 'var(--primary-text-color, #d4d4d4)',
-        cursor: t.accent || t.text || '#d4d4d4',
-      };
-    }
-
-    _renderUnavailable(message) {
-      const root = this.root;
-      root.innerHTML = '';
-      const style = document.createElement('style');
-      style.textContent = LIVE_TTY_STYLE;
-      root.appendChild(style);
-      const card = document.createElement('ha-card');
-      const msg = document.createElement('div');
-      msg.className = 'unavailable';
-      msg.textContent = message;
-      card.appendChild(msg);
-      root.appendChild(card);
-    }
-
-    _render() {
-      if (!this._config.device_id) {
-        this._renderUnavailable(this._t('missingDevice'));
-        return;
-      }
-
-      this._teardown();
-
-      const root = this.root;
-      root.innerHTML = '';
-
-      const cssStyle = document.createElement('style');
-      cssStyle.textContent = LIVE_TTY_XTERM_CSS;
-      root.appendChild(cssStyle);
-
-      const style = document.createElement('style');
-      style.textContent = LIVE_TTY_STYLE;
-      root.appendChild(style);
-
-      const card = document.createElement('ha-card');
-      if (this._config.height) {
-        card.style.height = this._config.height;
-      }
-
-      if (this._config.title) {
-        const header = document.createElement('div');
-        header.className = 'header';
-        header.textContent = this._config.title;
-        card.appendChild(header);
-      }
-
-      const container = document.createElement('div');
-      container.className = 'tty-container';
-      card.appendChild(container);
-      root.appendChild(card);
-
-      const term = new window.Terminal({
-        convertEol: true,
-        termName: 'xterm-256color',
-        fontFamily: 'ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace',
-        fontSize: 13,
-        cursorBlink: true,
-        theme: this._themeColors(),
-      });
-      const fitAddon = new window.FitAddon.FitAddon();
-      term.loadAddon(fitAddon);
-      term.open(container);
-      try { fitAddon.fit(); } catch (e) {  }
-      this._term = term;
-      this._fitAddon = fitAddon;
-
-      term.onData((data) => {
-        if (!this._session) return;
-        this._hass.connection.sendMessagePromise({
-          type: 'tuxd/live_tty/input',
-          session: this._session,
-          data: _strToB64Utf8(data),
-        }).catch(() => {});
-      });
-
-      this._resizeObserver = new ResizeObserver(() => {
-        if (!this._term) return;
-        try { fitAddon.fit(); } catch (e) { return; }
-        if (this._session) {
-          this._hass.connection.sendMessagePromise({
-            type: 'tuxd/live_tty/resize',
-            session: this._session,
-            cols: term.cols,
-            rows: term.rows,
-          }).catch(() => {});
-        }
-      });
-      this._resizeObserver.observe(container);
-
-      this._hass.connection.subscribeMessage(
-        (event) => this._handleEvent(event),
-        {
-          type: 'tuxd/live_tty/open',
-          device_id: this._config.device_id,
-          cols: term.cols,
-          rows: term.rows,
-        }
-      ).then((unsub) => {
-        this._unsub = unsub;
-      }).catch((err) => {
-        term.write(`\r\n\x1b[31m[${this._t('failedOpen')}: ${(err && err.message) || err}]\x1b[0m\r\n`);
-      });
-    }
-
-    _handleEvent(event) {
-      if (!event || !this._term) return;
-      if (event.type === 'tty_session') {
-        this._session = event.session;
-      } else if (event.type === 'tty_data') {
-        this._term.write(_b64ToBytes(event.data));
-      } else if (event.type === 'tty_exit') {
-        this._session = null;
-        this._term.write(`\r\n\x1b[33m[${this._t('sessionEnded')}]\x1b[0m\r\n`);
-      }
-    }
-
-    _lang() {
-      if (this._config && this._config.language) return resolveLang(this._config.language);
-      const hassLang = this._hass && (this._hass.language || (this._hass.locale && this._hass.locale.language));
-      return resolveLang(hassLang);
-    }
-
-    _t(key) {
-      const dict = modeDict(this._lang(), 'live_tty');
-      return dict[key] || I18N.en.live_tty[key] || key;
-    }
-  }
-
 
   const CONFIG_EDITOR_STYLE = `
     :host { display: block; }
@@ -2318,8 +2016,7 @@
 
 
   const RENDERERS = {
-    terminal: TerminalRenderer, update: UpdateRenderer, cache: CacheRenderer, live_tty: LiveTtyRenderer,
-    conf: ConfigEditorRenderer,
+    terminal: TerminalRenderer, update: UpdateRenderer, cache: CacheRenderer, conf: ConfigEditorRenderer,
   };
   const DEFAULT_CARD_TYPE = 'terminal';
 
@@ -2423,7 +2120,6 @@
       { value: 'terminal', label: labels.terminal },
       { value: 'update', label: labels.update },
       { value: 'cache', label: labels.cache },
-      { value: 'live_tty', label: labels.live_tty },
       { value: 'conf', label: labels.conf },
     ];
   }
@@ -2558,6 +2254,6 @@
   window.customCards.push({
     type: CARD_TAG,
     name: 'TuxD Card',
-    description: 'Terminal, Live Terminal, Updates, Configuration, or Site Cache - pick with the Card type field. Covers all TuxD companion cards from one resource.',
+    description: 'Terminal (with real interactive live-tty support), Updates, Configuration, or Site Cache - pick with the Card type field. Covers all TuxD companion cards from one resource.',
   });
 })();
