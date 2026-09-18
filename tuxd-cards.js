@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '0.3.4';
+  const CARD_VERSION = '0.4.0';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,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';
 
   function resolveLang(raw) {
@@ -247,7 +247,7 @@
   const I18N = {
     en: {
       cardType: 'Card type',
-      cardTypeOptions: { terminal: 'Terminal', update: 'Updates', cache: 'Site Cache', conf: 'Configuration' },
+      cardTypeOptions: { terminal: 'Terminal', update: 'Updates', cache: 'Site Cache', conf: 'Configuration', devices: 'Device Status' },
       terminal: {
         title: 'Terminal',
         clear: 'Clear screen',
@@ -255,6 +255,10 @@
         noDevice: 'Could not determine the TuxD device for this entity',
         failedOpen: 'failed to open shell',
         sessionEnded: 'shell session ended',
+        passwordRequired: 'This terminal requires a password',
+        passwordIncorrect: 'Incorrect password - try again',
+        passwordPlaceholder: 'Password',
+        unlock: 'Unlock',
         editor: {
           input_entity: 'Input entity (text)',
           output_entity: 'Output entity (sensor)',
@@ -319,10 +323,23 @@
           language: 'Language',
         },
       },
+      devices: {
+        noDevices: 'No TuxD devices found',
+        cpuLabel: 'CPU',
+        ramLabel: 'RAM',
+        editor: {
+          title: 'Title',
+          columns: 'Columns',
+          icon_size: 'Icon size (px)',
+          name_size: 'Name text size (px)',
+          stats_size: 'Stats text size (px)',
+          language: 'Language',
+        },
+      },
     },
     nb: {
       cardType: 'Korttype',
-      cardTypeOptions: { terminal: 'Terminal', update: 'Oppdateringer', cache: 'Nettsted-cache', conf: 'Konfigurasjon' },
+      cardTypeOptions: { terminal: 'Terminal', update: 'Oppdateringer', cache: 'Nettsted-cache', conf: 'Konfigurasjon', devices: 'Enhetsstatus' },
       terminal: {
         title: 'Terminal',
         clear: 'Tøm skjermen',
@@ -330,6 +347,10 @@
         noDevice: 'Fant ikke TuxD-enheten for denne entiteten',
         failedOpen: 'kunne ikke åpne terminal',
         sessionEnded: 'terminaløkten er avsluttet',
+        passwordRequired: 'Denne terminalen krever passord',
+        passwordIncorrect: 'Feil passord - prøv igjen',
+        passwordPlaceholder: 'Passord',
+        unlock: 'Lås opp',
         editor: {
           input_entity: 'Input-entitet (text)',
           output_entity: 'Output-entitet (sensor)',
@@ -394,6 +415,19 @@
           language: 'Språk',
         },
       },
+      devices: {
+        noDevices: 'Fant ingen TuxD-enheter',
+        cpuLabel: 'CPU',
+        ramLabel: 'RAM',
+        editor: {
+          title: 'Tittel',
+          columns: 'Kolonner',
+          icon_size: 'Ikonstørrelse (px)',
+          name_size: 'Tekststørrelse navn (px)',
+          stats_size: 'Tekststørrelse statistikk (px)',
+          language: 'Språk',
+        },
+      },
     },
   };
 
@@ -404,6 +438,7 @@
 
   const DEFAULT_MAX_LINES = 300;
   const DEFAULT_HEIGHT = '320px';
+  const TTY_EXIT_AUTH_REQUIRED = -2;
 
   function _deviceIdForEntity(hass, entityId) {
     if (!hass || !entityId) return null;
@@ -498,6 +533,48 @@
       min-height: 0;
     }
     .term-container .terminal.xterm { height: 100%; }
+    .auth-form {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+    .auth-message {
+      font-size: 13px;
+      color: var(--secondary-text-color);
+      text-align: center;
+    }
+    .auth-input {
+      width: 100%;
+      max-width: 220px;
+      background: var(--card-background-color, transparent);
+      border: 1px solid var(--divider-color);
+      border-radius: 8px;
+      padding: 8px 12px;
+      color: var(--primary-text-color);
+      font: inherit;
+      font-size: 13px;
+      text-align: center;
+      outline: none;
+      box-sizing: border-box;
+    }
+    .auth-input:focus { border-color: var(--primary-color); }
+    .auth-submit {
+      background: rgba(var(--rgb-primary-color, 3, 169, 244), 0.12);
+      border: 1px solid rgba(var(--rgb-primary-color, 3, 169, 244), 0.4);
+      color: var(--primary-color);
+      border-radius: 8px;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .auth-submit:hover { background: rgba(var(--rgb-primary-color, 3, 169, 244), 0.2); }
     .unavailable { padding: 16px; color: var(--error-color, #db4437); font-size: 13px; }
   `;
 
@@ -512,6 +589,7 @@
       this._session = null;
       this._deviceId = null;
       this._opening = false;
+      this._password = null;
     }
 
     static defaultConfig() {
@@ -773,14 +851,16 @@
     _openSession() {
       if (!this._deviceId || !this._hass || !this._term || this._opening) return;
       this._opening = true;
+      const openMsg = {
+        type: 'tuxd/live_tty/open',
+        device_id: this._deviceId,
+        cols: this._term.cols,
+        rows: this._term.rows,
+      };
+      if (this._password) openMsg.password = this._password;
       this._hass.connection.subscribeMessage(
         (event) => this._handleEvent(event),
-        {
-          type: 'tuxd/live_tty/open',
-          device_id: this._deviceId,
-          cols: this._term.cols,
-          rows: this._term.rows,
-        }
+        openMsg
       ).then((unsub) => {
         this._opening = false;
         this._unsub = unsub;
@@ -809,8 +889,49 @@
         this._term.write(_b64ToBytes(event.data));
       } else if (event.type === 'tty_exit') {
         this._session = null;
-        this._term.write(`\r\n\x1b[33m[${this._t('sessionEnded')}]\x1b[0m\r\n`);
+        if (event.code === TTY_EXIT_AUTH_REQUIRED) {
+          this._showPasswordPrompt(this._password ? this._t('passwordIncorrect') : this._t('passwordRequired'));
+        } else {
+          this._term.write(`\r\n\x1b[33m[${this._t('sessionEnded')}]\x1b[0m\r\n`);
+        }
       }
+    }
+
+    _showPasswordPrompt(message) {
+      this._teardown();
+      const container = this.root.querySelector('.term-container');
+      if (!container) return;
+      container.innerHTML = '';
+
+      const form = document.createElement('form');
+      form.className = 'auth-form';
+
+      const msg = document.createElement('div');
+      msg.className = 'auth-message';
+      msg.textContent = message;
+      form.appendChild(msg);
+
+      const input = document.createElement('input');
+      input.type = 'password';
+      input.className = 'auth-input';
+      input.placeholder = this._t('passwordPlaceholder');
+      input.autocomplete = 'off';
+      form.appendChild(input);
+
+      const submit = document.createElement('button');
+      submit.type = 'submit';
+      submit.className = 'auth-submit';
+      submit.textContent = this._t('unlock');
+      form.appendChild(submit);
+
+      form.addEventListener('submit', (ev) => {
+        ev.preventDefault();
+        this._password = input.value;
+        this._render();
+      });
+
+      container.appendChild(form);
+      window.requestAnimationFrame(() => input.focus());
     }
 
     _sendInput(str) {
@@ -1833,8 +1954,341 @@
   }
 
 
+  function _tuxdRealDevices(hass) {
+    const result = [];
+    if (!hass || !hass.devices) return result;
+    for (const haDeviceId in hass.devices) {
+      const dev = hass.devices[haDeviceId];
+      const identifiers = dev && dev.identifiers;
+      if (!identifiers) continue;
+      const pair = Array.from(identifiers).find((p) => Array.isArray(p) && p[0] === 'tuxd');
+      if (!pair || pair[1] === 'hub') continue;
+      result.push({
+        haDeviceId,
+        deviceId: pair[1],
+        name: dev.name_by_user || dev.name || pair[1],
+      });
+    }
+    return result;
+  }
+
+  function _findEntityByDeviceSuffix(hass, haDeviceId, suffix) {
+    if (!hass || !hass.entities) return null;
+    for (const entityId in hass.entities) {
+      const entry = hass.entities[entityId];
+      if (entry && entry.device_id === haDeviceId && typeof entry.unique_id === 'string' && entry.unique_id.endsWith(suffix)) {
+        return entityId;
+      }
+    }
+    return null;
+  }
+
+  function _findEntityByUniqueId(hass, uniqueId) {
+    if (!hass || !hass.entities) return null;
+    for (const entityId in hass.entities) {
+      const entry = hass.entities[entityId];
+      if (entry && entry.unique_id === uniqueId) return entityId;
+    }
+    return null;
+  }
+
+  const DEVICES_STYLE = `
+    :host { display: block; }
+    ha-card {
+      display: flex;
+      flex-direction: column;
+      padding: 12px 16px 16px;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .header {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--secondary-text-color);
+      padding-bottom: 8px;
+    }
+    .grid {
+      display: grid;
+      gap: 14px 20px;
+    }
+    .cell {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+    .icon {
+      width: var(--tuxd-icon-size, 28px);
+      height: var(--tuxd-icon-size, 28px);
+      --mdc-icon-size: var(--tuxd-icon-size, 28px);
+      color: var(--secondary-text-color);
+      flex: none;
+    }
+    .text {
+      min-width: 0;
+      flex: 1 1 auto;
+    }
+    .name-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex: none;
+      background: var(--disabled-text-color, #9e9e9e);
+    }
+    .dot.online { background: var(--success-color, #43a047); }
+    .dot.offline { background: var(--error-color, #db4437); }
+    .name {
+      font-size: var(--tuxd-name-size, 14px);
+      font-weight: 500;
+      color: var(--primary-text-color);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .stats {
+      font-size: var(--tuxd-stats-size, 12px);
+      color: var(--secondary-text-color);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .empty {
+      padding: 16px 0;
+      color: var(--secondary-text-color);
+      font-size: 13px;
+      text-align: center;
+    }
+  `;
+
+  class DeviceStatusGridRenderer {
+    constructor(root) {
+      this.root = root;
+      this._grid = null;
+      this._emptyEl = null;
+      this._cells = new Map();
+      this._lastDevicesRef = null;
+      this._lastEntitiesRef = null;
+    }
+
+    static defaultConfig() {
+      return { title: '', columns: 3, icon_size: 28, name_size: 14, stats_size: 12 };
+    }
+
+    static schema() {
+      return [
+        { name: 'title', selector: { text: {} } },
+        { name: 'columns', selector: { number: { mode: 'box', min: 1, max: 12 } } },
+        { name: 'icon_size', selector: { number: { mode: 'box', min: 12, max: 64 } } },
+        { name: 'name_size', selector: { number: { mode: 'box', min: 8, max: 32 } } },
+        { name: 'stats_size', selector: { number: { mode: 'box', min: 8, max: 32 } } },
+        { name: 'language', selector: { select: { mode: 'dropdown', options: LANGUAGE_OPTIONS } } },
+      ];
+    }
+
+    static hasCandidate() {
+      return true;
+    }
+
+    static stubFields() {
+      return {};
+    }
+
+    setConfig(config) {
+      this._config = Object.assign(DeviceStatusGridRenderer.defaultConfig(), config);
+      this._skeleton();
+      if (this._hass) this._rebuildDevices();
+    }
+
+    setHass(hass) {
+      this._hass = hass;
+      if (!this._config) return;
+      if (!this._grid) this._skeleton();
+      if (hass.devices !== this._lastDevicesRef || hass.entities !== this._lastEntitiesRef) {
+        this._lastDevicesRef = hass.devices;
+        this._lastEntitiesRef = hass.entities;
+        this._rebuildDevices();
+      }
+      this._updateCells();
+    }
+
+    connectedCallback() {
+      if (this._config && this._hass && !this._grid) this._skeleton();
+    }
+
+    getCardSize() {
+      return 4;
+    }
+
+    _lang() {
+      if (this._config && this._config.language) return resolveLang(this._config.language);
+      const hassLang = this._hass && (this._hass.language || (this._hass.locale && this._hass.locale.language));
+      return resolveLang(hassLang);
+    }
+
+    _t(key) {
+      const dict = modeDict(this._lang(), 'devices');
+      return dict[key] || I18N.en.devices[key] || key;
+    }
+
+    _skeleton() {
+      const root = this.root;
+      root.innerHTML = '';
+      const style = document.createElement('style');
+      style.textContent = DEVICES_STYLE;
+      root.appendChild(style);
+
+      const card = document.createElement('ha-card');
+      card.style.setProperty('--tuxd-icon-size', `${this._config.icon_size || 28}px`);
+      card.style.setProperty('--tuxd-name-size', `${this._config.name_size || 14}px`);
+      card.style.setProperty('--tuxd-stats-size', `${this._config.stats_size || 12}px`);
+
+      if (this._config.title) {
+        const header = document.createElement('div');
+        header.className = 'header';
+        header.textContent = this._config.title;
+        card.appendChild(header);
+      }
+
+      const grid = document.createElement('div');
+      grid.className = 'grid';
+      grid.style.gridTemplateColumns = `repeat(${this._config.columns || 3}, 1fr)`;
+      card.appendChild(grid);
+      this._grid = grid;
+
+      const empty = document.createElement('div');
+      empty.className = 'empty';
+      empty.textContent = this._t('noDevices');
+      empty.hidden = true;
+      card.appendChild(empty);
+      this._emptyEl = empty;
+
+      root.appendChild(card);
+      this._cells.clear();
+    }
+
+    _rebuildDevices() {
+      if (!this._grid) return;
+      const hass = this._hass;
+      const found = _tuxdRealDevices(hass);
+      const foundIds = new Set(found.map((d) => d.deviceId));
+
+      for (const [deviceId, cell] of Array.from(this._cells.entries())) {
+        if (!foundIds.has(deviceId)) {
+          cell.el.remove();
+          this._cells.delete(deviceId);
+        }
+      }
+
+      found.sort((a, b) => a.name.localeCompare(b.name));
+
+      found.forEach((dev) => {
+        if (this._cells.has(dev.deviceId)) return;
+        const cell = this._buildCell(hass, dev);
+        this._grid.appendChild(cell.el);
+        this._cells.set(dev.deviceId, cell);
+      });
+
+      this._emptyEl.hidden = this._cells.size > 0;
+    }
+
+    _buildCell(hass, dev) {
+      const iconEntity = _findEntityByDeviceSuffix(hass, dev.haDeviceId, '_agent_icon');
+      const cpuEntity = _findEntityByDeviceSuffix(hass, dev.haDeviceId, '_cpu_load');
+      const memEntity = _findEntityByDeviceSuffix(hass, dev.haDeviceId, '_memory_used_percent');
+      const netEntity = _findEntityByDeviceSuffix(hass, dev.haDeviceId, '_network_in_out');
+      const onlineEntity = _findEntityByUniqueId(hass, `tuxd_${dev.deviceId}_online`);
+
+      const el = document.createElement('div');
+      el.className = 'cell';
+
+      const icon = document.createElement('ha-icon');
+      icon.className = 'icon';
+      icon.icon = 'mdi:server';
+      el.appendChild(icon);
+
+      const text = document.createElement('div');
+      text.className = 'text';
+
+      const nameRow = document.createElement('div');
+      nameRow.className = 'name-row';
+      const dot = document.createElement('span');
+      dot.className = 'dot offline';
+      nameRow.appendChild(dot);
+      const name = document.createElement('span');
+      name.className = 'name';
+      name.textContent = dev.name;
+      nameRow.appendChild(name);
+      text.appendChild(nameRow);
+
+      const stats = document.createElement('div');
+      stats.className = 'stats';
+      stats.textContent = '—';
+      text.appendChild(stats);
+
+      el.appendChild(text);
+
+      return {
+        el, icon, dot, stats,
+        iconEntity, cpuEntity, memEntity, netEntity, onlineEntity,
+        lastIcon: null, lastOnline: null, lastCpu: null, lastMem: null, lastNet: null,
+      };
+    }
+
+    _updateCells() {
+      const hass = this._hass;
+      if (!hass) return;
+      this._cells.forEach((cell) => {
+        if (cell.iconEntity) {
+          const st = hass.states[cell.iconEntity];
+          const value = (st && st.state) || 'mdi:server';
+          if (value !== cell.lastIcon) {
+            cell.lastIcon = value;
+            cell.icon.icon = value;
+          }
+        }
+
+        const onlineState = cell.onlineEntity && hass.states[cell.onlineEntity];
+        const online = !!(onlineState && onlineState.state === 'on');
+        if (online !== cell.lastOnline) {
+          cell.lastOnline = online;
+          cell.dot.classList.toggle('online', online);
+          cell.dot.classList.toggle('offline', !online);
+        }
+
+        const cpuState = cell.cpuEntity && hass.states[cell.cpuEntity];
+        const memState = cell.memEntity && hass.states[cell.memEntity];
+        const netState = cell.netEntity && hass.states[cell.netEntity];
+        const cpuVal = cpuState ? cpuState.state : null;
+        const memVal = memState ? memState.state : null;
+        const netVal = netState ? netState.state : null;
+
+        if (cpuVal !== cell.lastCpu || memVal !== cell.lastMem || netVal !== cell.lastNet) {
+          cell.lastCpu = cpuVal;
+          cell.lastMem = memVal;
+          cell.lastNet = netVal;
+          cell.stats.textContent = this._formatStats(cpuVal, memVal, netVal);
+        }
+      });
+    }
+
+    _formatStats(cpu, mem, net) {
+      const fmtPct = (v) => (v == null || v === 'unavailable' || v === 'unknown') ? '—' : `${Math.round(parseFloat(v))}%`;
+      const fmtNet = (v) => (v == null || v === 'unavailable' || v === 'unknown') ? '—' : `${parseFloat(v).toFixed(1)} Mb/s`;
+      return `${this._t('cpuLabel')} ${fmtPct(cpu)} · ${this._t('ramLabel')} ${fmtPct(mem)} · ${fmtNet(net)}`;
+    }
+  }
+
+
   const RENDERERS = {
     terminal: TerminalRenderer, update: UpdateRenderer, cache: CacheRenderer, conf: ConfigEditorRenderer,
+    devices: DeviceStatusGridRenderer,
   };
   const DEFAULT_CARD_TYPE = 'terminal';
 
@@ -1939,6 +2393,7 @@
       { value: 'update', label: labels.update },
       { value: 'cache', label: labels.cache },
       { value: 'conf', label: labels.conf },
+      { value: 'devices', label: labels.devices },
     ];
   }
 
@@ -2072,6 +2527,6 @@
   window.customCards.push({
     type: CARD_TAG,
     name: 'TuxD Card',
-    description: 'Terminal (with real interactive live-tty support), Updates, Configuration, or Site Cache - pick with the Card type field. Covers all TuxD companion cards from one resource.',
+    description: 'Terminal (with real interactive live-tty support), Updates, Configuration, Device Status grid, or Site Cache - pick with the Card type field. Covers all TuxD companion cards from one resource.',
   });
 })();
