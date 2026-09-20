@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '0.4.6';
+  const CARD_VERSION = '1.0.0';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,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';
 
   function resolveLang(raw) {
@@ -247,7 +247,7 @@
   const I18N = {
     en: {
       cardType: 'Card type',
-      cardTypeOptions: { terminal: 'Terminal', update: 'Updates', cache: 'Site Cache', conf: 'Configuration', devices: 'Device Status' },
+      cardTypeOptions: { terminal: 'Terminal', update: 'Updates', cache: 'Site Cache', conf: 'Configuration', devices: 'Device Status', fleet: 'Fleet Summary' },
       terminal: {
         title: 'Terminal',
         clear: 'Clear screen',
@@ -325,11 +325,14 @@
       },
       devices: {
         noDevices: 'No TuxD devices found',
+        noMatches: 'No devices match your search',
+        searchPlaceholder: 'Search devices…',
         cpuLabel: 'CPU',
         ramLabel: 'RAM',
         netLabel: 'Network',
         editor: {
           title: 'Title',
+          show_search: 'Show search box',
           columns: 'Columns',
           icon_size: 'Icon size (px)',
           stat_icon_size: 'Status icon size (px)',
@@ -344,10 +347,30 @@
           language: 'Language',
         },
       },
+      fleet: {
+        none: 'None',
+        configuredLabel: 'Configured',
+        onlineLabel: 'Online',
+        offlineLabel: 'Offline',
+        errorsLabel: 'Errors',
+        dockerLabel: 'Docker Issues',
+        smartLabel: 'SMART Errors',
+        hostUpdatesLabel: 'Host Updates',
+        agentUpdatesLabel: 'Agent Updates',
+        versionsLabel: 'Versions',
+        overThresholdLabel: 'Over Threshold',
+        editor: {
+          title: 'Title',
+          columns: 'Columns',
+          show_versions: 'Show version breakdown tile',
+          show_thresholds: 'Show over-threshold tile',
+          language: 'Language',
+        },
+      },
     },
     nb: {
       cardType: 'Korttype',
-      cardTypeOptions: { terminal: 'Terminal', update: 'Oppdateringer', cache: 'Nettsted-cache', conf: 'Konfigurasjon', devices: 'Enhetsstatus' },
+      cardTypeOptions: { terminal: 'Terminal', update: 'Oppdateringer', cache: 'Nettsted-cache', conf: 'Konfigurasjon', devices: 'Enhetsstatus', fleet: 'Flåteoversikt' },
       terminal: {
         title: 'Terminal',
         clear: 'Tøm skjermen',
@@ -425,11 +448,14 @@
       },
       devices: {
         noDevices: 'Fant ingen TuxD-enheter',
+        noMatches: 'Ingen enheter samsvarer med søket',
+        searchPlaceholder: 'Søk etter enheter…',
         cpuLabel: 'CPU',
         ramLabel: 'RAM',
         netLabel: 'Nettverk',
         editor: {
           title: 'Tittel',
+          show_search: 'Vis søkefelt',
           columns: 'Kolonner',
           icon_size: 'Ikonstørrelse (px)',
           stat_icon_size: 'Statusikonstørrelse (px)',
@@ -441,6 +467,26 @@
           custom_order: 'Egendefinert rekkefølge (enhetsnavn adskilt med komma)',
           pinned_devices: 'Festede enheter (enhetsnavn adskilt med komma)',
           pinned_rest_sort: 'Sorter resten etter',
+          language: 'Språk',
+        },
+      },
+      fleet: {
+        none: 'Ingen',
+        configuredLabel: 'Konfigurert',
+        onlineLabel: 'Online',
+        offlineLabel: 'Offline',
+        errorsLabel: 'Feil',
+        dockerLabel: 'Docker-problemer',
+        smartLabel: 'SMART-feil',
+        hostUpdatesLabel: 'Systemoppdateringer',
+        agentUpdatesLabel: 'Agentoppdateringer',
+        versionsLabel: 'Versjoner',
+        overThresholdLabel: 'Over terskel',
+        editor: {
+          title: 'Tittel',
+          columns: 'Kolonner',
+          show_versions: 'Vis versjonsoversikt',
+          show_thresholds: 'Vis terskel-oversikt',
           language: 'Språk',
         },
       },
@@ -2049,6 +2095,22 @@
       color: var(--secondary-text-color);
       padding-bottom: 8px;
     }
+    .search {
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 6px 10px;
+      font-size: 13px;
+      font-family: inherit;
+      color: var(--primary-text-color);
+      background: var(--card-background-color, #fff);
+      border: 1px solid var(--divider-color, #e0e0e0);
+      border-radius: 8px;
+    }
+    .search:focus {
+      outline: none;
+      border-color: var(--primary-color, #03a9f4);
+    }
     .grid {
       display: grid;
       gap: 14px 20px;
@@ -2149,13 +2211,14 @@
       return {
         title: '', columns: 3, icon_size: 28, name_size: 14, stats_size: 12, stat_icon_size: 14,
         stats_decimals: 0, update_interval: 5, sort_mode: 'alphabetical', custom_order: '',
-        pinned_devices: '', pinned_rest_sort: 'load',
+        pinned_devices: '', pinned_rest_sort: 'load', show_search: true,
       };
     }
 
     static schema() {
       return [
         { name: 'title', selector: { text: {} } },
+        { name: 'show_search', selector: { boolean: {} } },
         { name: 'columns', selector: { number: { mode: 'box', min: 1, max: 12 } } },
         { name: 'icon_size', selector: { number: { mode: 'box', min: 12, max: 64 } } },
         { name: 'stat_icon_size', selector: { number: { mode: 'box', min: 8, max: 32 } } },
@@ -2236,6 +2299,22 @@
         card.appendChild(header);
       }
 
+      if (this._config.show_search !== false) {
+        const search = document.createElement('input');
+        search.type = 'search';
+        search.className = 'search';
+        search.placeholder = this._t('searchPlaceholder');
+        search.value = this._searchTerm || '';
+        search.addEventListener('input', () => {
+          this._searchTerm = search.value.trim().toLowerCase();
+          this._applyFilter();
+        });
+        card.appendChild(search);
+        this._searchEl = search;
+      } else {
+        this._searchEl = null;
+      }
+
       const grid = document.createElement('div');
       grid.className = 'grid';
       grid.style.gridTemplateColumns = `repeat(${this._config.columns || 3}, 1fr)`;
@@ -2244,13 +2323,29 @@
 
       const empty = document.createElement('div');
       empty.className = 'empty';
-      empty.textContent = this._t('noDevices');
       empty.hidden = true;
       card.appendChild(empty);
       this._emptyEl = empty;
 
       root.appendChild(card);
       this._cells.clear();
+    }
+
+    _applyFilter() {
+      if (!this._grid) return;
+      const term = this._searchTerm || '';
+      let visibleCount = 0;
+      this._cells.forEach((cell) => {
+        const match = !term || cell.nameLower.includes(term);
+        cell.el.style.display = match ? '' : 'none';
+        if (match) visibleCount += 1;
+      });
+      if (this._emptyEl) {
+        this._emptyEl.hidden = visibleCount > 0;
+        this._emptyEl.textContent = this._cells.size === 0
+          ? this._t('noDevices')
+          : this._t('noMatches');
+      }
     }
 
     _rebuildDevices() {
@@ -2269,23 +2364,32 @@
       found.forEach((dev) => {
         const existing = this._cells.get(dev.deviceId);
         if (existing) {
-          this._reresolveCellEntities(hass, dev, existing);
+          if (this._cellHasUnresolved(existing)) {
+            this._reresolveCellEntities(hass, existing);
+            if (this._cellHasUnresolved(existing)) this._hasUnresolvedCells = true;
+          }
           return;
         }
         const cell = this._buildCell(hass, dev);
         this._grid.appendChild(cell.el);
         this._cells.set(dev.deviceId, cell);
+        if (this._cellHasUnresolved(cell)) this._hasUnresolvedCells = true;
       });
 
-      this._emptyEl.hidden = this._cells.size > 0;
+      this._applyFilter();
       this._reorderCells();
     }
 
-    _reresolveCellEntities(hass, dev, cell) {
-      if (!cell.iconEntity) cell.iconEntity = _findEntityByDeviceSuffix(hass, dev.haDeviceId, '_agent_icon');
-      if (!cell.cpuEntity) cell.cpuEntity = _findEntityByDeviceSuffix(hass, dev.haDeviceId, '_cpu_load', '_host_cpu_load');
-      if (!cell.memEntity) cell.memEntity = _findEntityByDeviceSuffix(hass, dev.haDeviceId, '_memory_used');
-      if (!cell.netEntity) cell.netEntity = _findEntityByDeviceSuffix(hass, dev.haDeviceId, '_network_in_out');
+    _cellHasUnresolved(cell) {
+      return !cell.iconEntity || !cell.cpuEntity || !cell.memEntity || !cell.netEntity;
+    }
+
+    _reresolveCellEntities(hass, cell) {
+      const haDeviceId = cell.haDeviceId;
+      if (!cell.iconEntity) cell.iconEntity = _findEntityByDeviceSuffix(hass, haDeviceId, '_agent_icon');
+      if (!cell.cpuEntity) cell.cpuEntity = _findEntityByDeviceSuffix(hass, haDeviceId, '_cpu_load', '_host_cpu_load');
+      if (!cell.memEntity) cell.memEntity = _findEntityByDeviceSuffix(hass, haDeviceId, '_memory_used');
+      if (!cell.netEntity) cell.netEntity = _findEntityByDeviceSuffix(hass, haDeviceId, '_network_in_out');
     }
 
     _alphaCompare(a, b) {
@@ -2304,6 +2408,18 @@
       return netB - netA;
     }
 
+    _matchDeviceToken(token) {
+      const t = String(token || '').trim().toLowerCase();
+      if (!t) return null;
+      for (const id of this._cells.keys()) {
+        if (id.toLowerCase() === t) return id;
+      }
+      for (const [id, cell] of this._cells) {
+        if (cell.nameLower === t) return id;
+      }
+      return null;
+    }
+
     _computeOrder() {
       const ids = Array.from(this._cells.keys());
       const mode = this._config.sort_mode || 'alphabetical';
@@ -2311,7 +2427,11 @@
       if (mode === 'custom') {
         const customList = (this._config.custom_order || '')
           .split(',').map((s) => s.trim()).filter(Boolean);
-        const rank = new Map(customList.map((id, i) => [id, i]));
+        const rank = new Map();
+        customList.forEach((token) => {
+          const id = this._matchDeviceToken(token);
+          if (id && !rank.has(id)) rank.set(id, rank.size);
+        });
         return ids.sort((a, b) => {
           const ra = rank.has(a) ? rank.get(a) : Infinity;
           const rb = rank.has(b) ? rank.get(b) : Infinity;
@@ -2327,8 +2447,12 @@
       if (mode === 'pinned') {
         const pinnedList = (this._config.pinned_devices || '')
           .split(',').map((s) => s.trim()).filter(Boolean);
-        const pinnedSet = new Set(pinnedList);
-        const pinnedRank = new Map(pinnedList.map((id, i) => [id, i]));
+        const pinnedRank = new Map();
+        pinnedList.forEach((token) => {
+          const id = this._matchDeviceToken(token);
+          if (id && !pinnedRank.has(id)) pinnedRank.set(id, pinnedRank.size);
+        });
+        const pinnedSet = new Set(pinnedRank.keys());
         const pinned = ids.filter((id) => pinnedSet.has(id))
           .sort((a, b) => pinnedRank.get(a) - pinnedRank.get(b));
         const restCompare = this._config.pinned_rest_sort === 'load'
@@ -2407,6 +2531,7 @@
       return {
         el, icon, dot, cpuValueEl, memValueEl, netValueEl,
         nameLower: dev.name.toLowerCase(),
+        haDeviceId: dev.haDeviceId,
         iconEntity, cpuEntity, memEntity, netEntity, onlineEntity,
         lastIcon: null, lastOnline: null, lastCpu: null, lastMem: null, lastNet: null,
         pendingCpu: null, pendingMem: null, pendingNet: null, lastStatsWriteAt: 0,
@@ -2418,6 +2543,19 @@
       if (!hass) return;
       const now = Date.now();
       const intervalMs = (this._config.update_interval || 5) * 1000;
+
+      if (this._hasUnresolvedCells && now - (this._lastResolveRetryAt || 0) >= intervalMs) {
+        this._lastResolveRetryAt = now;
+        let stillUnresolved = false;
+        this._cells.forEach((cell) => {
+          if (this._cellHasUnresolved(cell)) {
+            this._reresolveCellEntities(hass, cell);
+            if (this._cellHasUnresolved(cell)) stillUnresolved = true;
+          }
+        });
+        this._hasUnresolvedCells = stillUnresolved;
+      }
+
       this._cells.forEach((cell) => {
         if (cell.iconEntity) {
           const st = hass.states[cell.iconEntity];
@@ -2481,9 +2619,458 @@
   }
 
 
+  function _tuxdHubDeviceId(hass) {
+    if (!hass || !hass.devices) return null;
+    for (const haDeviceId in hass.devices) {
+      const dev = hass.devices[haDeviceId];
+      const identifiers = dev && dev.identifiers;
+      if (!identifiers) continue;
+      const pair = Array.from(identifiers).find((p) => Array.isArray(p) && p[0] === 'tuxd' && p[1] === 'hub');
+      if (pair) return haDeviceId;
+    }
+    return null;
+  }
+
+  function _findHubEntityByName(hass, hubDeviceId, friendlyName) {
+    if (!hass || !hass.entities || !hubDeviceId) return null;
+    for (const entityId in hass.entities) {
+      const entry = hass.entities[entityId];
+      if (!entry || entry.device_id !== hubDeviceId) continue;
+      const st = hass.states[entityId];
+      if (st && st.attributes && st.attributes.friendly_name === friendlyName) return entityId;
+    }
+    return null;
+  }
+
+  const FLEET_TILE_SPECS = [
+    { key: 'configured', name: 'TuxD Configured Devices', icon: 'mdi:server-network', severity: 'neutral', labelKey: 'configuredLabel' },
+    { key: 'online', name: 'TuxD Online Devices', icon: 'mdi:server-network-outline', severity: 'neutral', labelKey: 'onlineLabel' },
+    { key: 'offline', name: 'TuxD Offline Devices', icon: 'mdi:server-network-off', severity: 'bad', labelKey: 'offlineLabel' },
+    { key: 'errors', name: 'TuxD Devices With Errors', icon: 'mdi:alert-circle-outline', severity: 'bad', labelKey: 'errorsLabel' },
+    { key: 'docker', name: 'TuxD Devices With Docker Errors', icon: 'mdi:docker', severity: 'bad', labelKey: 'dockerLabel' },
+    { key: 'smart', name: 'TuxD Devices With SMART Errors', icon: 'mdi:harddisk', severity: 'bad', labelKey: 'smartLabel' },
+    { key: 'hostUpdates', name: 'TuxD Devices With Host Updates', icon: 'mdi:package-up', severity: 'warn', labelKey: 'hostUpdatesLabel' },
+    { key: 'agentUpdates', name: 'TuxD Devices With TuxD Agent Updates', icon: 'mdi:script-text-outline', severity: 'warn', labelKey: 'agentUpdatesLabel' },
+    { key: 'versions', name: 'TuxD Devices By Version', icon: 'mdi:tag-multiple-outline', severity: 'neutral', labelKey: 'versionsLabel' },
+  ];
+
+  const FLEET_THRESHOLD_NAMES = [
+    'TuxD VMs Over CPU Load Threshold',
+    'TuxD VMs Over RAM Use Threshold',
+    'TuxD VMs Over Network RX+TX Threshold',
+    'TuxD VMs Over IO Wait Threshold',
+    'TuxD VMs Over Root Storage Used Threshold',
+    'TuxD VMs Over Load Average 1m Threshold',
+    'TuxD VMs Over Load Average 5m Threshold',
+    'TuxD VMs Over Load Average 15m Threshold',
+  ];
+
+  const FLEET_STYLE = `
+    :host { display: block; }
+    ha-card {
+      display: flex;
+      flex-direction: column;
+      padding: 12px 16px 16px;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .header {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--secondary-text-color);
+      padding-bottom: 8px;
+    }
+    .grid {
+      display: grid;
+      gap: 10px;
+    }
+    .tile {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: var(--card-background-color, #fff);
+      border: 1px solid var(--divider-color, #e0e0e0);
+      cursor: pointer;
+      min-width: 0;
+    }
+    .tile.severity-bad { border-color: var(--error-color, #db4437); }
+    .tile.severity-warn { border-color: var(--warning-color, #ff9800); }
+    .tile-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .tile-icon {
+      width: 18px;
+      height: 18px;
+      --mdc-icon-size: 18px;
+      flex: none;
+      color: var(--secondary-text-color);
+    }
+    .tile.severity-bad .tile-icon { color: var(--error-color, #db4437); }
+    .tile.severity-warn .tile-icon { color: var(--warning-color, #ff9800); }
+    .tile-value {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1;
+      color: var(--primary-text-color);
+    }
+    .tile.severity-bad .tile-value { color: var(--error-color, #db4437); }
+    .tile.severity-warn .tile-value { color: var(--warning-color, #ff9800); }
+    .tile-label {
+      font-size: 12px;
+      color: var(--secondary-text-color);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .tile-detail {
+      display: none;
+      margin-top: 4px;
+      padding-top: 6px;
+      border-top: 1px solid var(--divider-color, #e0e0e0);
+      font-size: 12px;
+      color: var(--secondary-text-color);
+    }
+    .tile-detail.expanded { display: block; }
+    .tile-detail-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 2px 0;
+    }
+    .tile-detail-row .device-name {
+      color: var(--primary-text-color);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .empty {
+      padding: 16px 0;
+      text-align: center;
+      color: var(--secondary-text-color);
+      font-size: 13px;
+    }
+  `;
+
+  class FleetSummaryRenderer {
+    constructor(root) {
+      this.root = root;
+      this._grid = null;
+      this._tiles = new Map();
+      this._hubDeviceId = null;
+      this._lastDevicesRef = null;
+      this._lastEntitiesRef = null;
+      this._expanded = new Set();
+    }
+
+    static defaultConfig() {
+      return { title: '', columns: 3, show_versions: true, show_thresholds: true };
+    }
+
+    static schema() {
+      return [
+        { name: 'title', selector: { text: {} } },
+        { name: 'columns', selector: { number: { mode: 'box', min: 1, max: 8 } } },
+        { name: 'show_versions', selector: { boolean: {} } },
+        { name: 'show_thresholds', selector: { boolean: {} } },
+        { name: 'language', selector: { select: { mode: 'dropdown', options: LANGUAGE_OPTIONS } } },
+      ];
+    }
+
+    static hasCandidate() {
+      return true;
+    }
+
+    static stubFields() {
+      return {};
+    }
+
+    setConfig(config) {
+      this._config = Object.assign(FleetSummaryRenderer.defaultConfig(), config);
+      this._skeleton();
+      if (this._hass) this._resolveEntities(this._hass);
+    }
+
+    setHass(hass) {
+      this._hass = hass;
+      if (!this._config) return;
+      if (!this._grid) this._skeleton();
+      if (hass.devices !== this._lastDevicesRef || hass.entities !== this._lastEntitiesRef) {
+        this._lastDevicesRef = hass.devices;
+        this._lastEntitiesRef = hass.entities;
+        this._resolveEntities(hass);
+      }
+      this._updateTiles();
+    }
+
+    connectedCallback() {
+      if (this._config && this._hass && !this._grid) this._skeleton();
+    }
+
+    getCardSize() {
+      return 3;
+    }
+
+    _lang() {
+      if (this._config && this._config.language) return resolveLang(this._config.language);
+      const hassLang = this._hass && (this._hass.language || (this._hass.locale && this._hass.locale.language));
+      return resolveLang(hassLang);
+    }
+
+    _t(key) {
+      const dict = modeDict(this._lang(), 'fleet');
+      return dict[key] || I18N.en.fleet[key] || key;
+    }
+
+    _skeleton() {
+      const root = this.root;
+      root.innerHTML = '';
+      const style = document.createElement('style');
+      style.textContent = FLEET_STYLE;
+      root.appendChild(style);
+
+      const card = document.createElement('ha-card');
+
+      if (this._config.title) {
+        const header = document.createElement('div');
+        header.className = 'header';
+        header.textContent = this._config.title;
+        card.appendChild(header);
+      }
+
+      const grid = document.createElement('div');
+      grid.className = 'grid';
+      grid.style.gridTemplateColumns = `repeat(${this._config.columns || 3}, 1fr)`;
+      card.appendChild(grid);
+      this._grid = grid;
+
+      root.appendChild(card);
+      this._tiles.clear();
+      this._buildTiles();
+    }
+
+    _specs() {
+      return FLEET_TILE_SPECS.filter((spec) => {
+        if (spec.key === 'versions' && this._config.show_versions === false) return false;
+        return true;
+      });
+    }
+
+    _buildTiles() {
+      this._specs().forEach((spec) => this._buildTile(spec.key, spec.icon, this._t(spec.labelKey)));
+      if (this._config.show_thresholds !== false) {
+        this._buildTile('overThreshold', 'mdi:gauge-full', this._t('overThresholdLabel'));
+      }
+    }
+
+    _buildTile(key, icon, label) {
+      const tile = document.createElement('div');
+      tile.className = 'tile';
+
+      const top = document.createElement('div');
+      top.className = 'tile-top';
+      const iconEl = document.createElement('ha-icon');
+      iconEl.className = 'tile-icon';
+      iconEl.icon = icon;
+      top.appendChild(iconEl);
+      const value = document.createElement('div');
+      value.className = 'tile-value';
+      value.textContent = '—';
+      top.appendChild(value);
+      tile.appendChild(top);
+
+      const labelEl = document.createElement('div');
+      labelEl.className = 'tile-label';
+      labelEl.textContent = label;
+      tile.appendChild(labelEl);
+
+      const detail = document.createElement('div');
+      detail.className = 'tile-detail';
+      tile.appendChild(detail);
+
+      tile.addEventListener('click', () => {
+        if (this._expanded.has(key)) this._expanded.delete(key);
+        else this._expanded.add(key);
+        detail.classList.toggle('expanded', this._expanded.has(key));
+      });
+
+      this._grid.appendChild(tile);
+      this._tiles.set(key, { tile, value, detail, lastValue: null, lastDetailKey: null });
+    }
+
+    _resolveEntities(hass) {
+      this._hubDeviceId = _tuxdHubDeviceId(hass);
+      this._specs().forEach((spec) => {
+        const tileState = this._tiles.get(spec.key);
+        if (tileState) tileState.entityId = _findHubEntityByName(hass, this._hubDeviceId, spec.name);
+      });
+      if (this._config.show_thresholds !== false) {
+        this._thresholdEntityIds = FLEET_THRESHOLD_NAMES
+          .map((name) => _findHubEntityByName(hass, this._hubDeviceId, name))
+          .filter(Boolean);
+      }
+    }
+
+    _severityFor(spec, count) {
+      if (spec.severity === 'bad' && count > 0) return 'severity-bad';
+      if (spec.severity === 'warn' && count > 0) return 'severity-warn';
+      return '';
+    }
+
+    _renderDeviceList(container, deviceIds) {
+      container.innerHTML = '';
+      if (!deviceIds.length) {
+        const row = document.createElement('div');
+        row.className = 'tile-detail-row';
+        row.textContent = this._t('none');
+        container.appendChild(row);
+        return;
+      }
+      deviceIds.forEach((deviceId) => {
+        const row = document.createElement('div');
+        row.className = 'tile-detail-row';
+        const name = document.createElement('span');
+        name.className = 'device-name';
+        name.textContent = deviceId;
+        row.appendChild(name);
+        row.addEventListener('click', (ev) => {
+          ev.stopPropagation();
+          const entityId = _onlineEntityId(deviceId);
+          this.root.dispatchEvent(new CustomEvent('hass-more-info', {
+            detail: { entityId }, bubbles: true, composed: true,
+          }));
+        });
+        container.appendChild(row);
+      });
+    }
+
+    _updateTiles() {
+      const hass = this._hass;
+      if (!hass || !this._grid) return;
+
+      this._specs().forEach((spec) => {
+        const tileState = this._tiles.get(spec.key);
+        if (!tileState) return;
+        const st = tileState.entityId && hass.states[tileState.entityId];
+        const raw = st ? st.state : null;
+        const count = raw == null || Number.isNaN(parseFloat(raw)) ? null : parseFloat(raw);
+        const displayValue = count === null ? '—' : String(count);
+        if (displayValue !== tileState.lastValue) {
+          tileState.lastValue = displayValue;
+          tileState.value.textContent = displayValue;
+          tileState.tile.className = `tile ${this._severityFor(spec, count || 0)}`.trim();
+        }
+
+        if (spec.key === 'versions') {
+          const versions = (st && st.attributes && st.attributes.versions) || {};
+          const detailKey = JSON.stringify(versions);
+          if (detailKey !== tileState.lastDetailKey) {
+            tileState.lastDetailKey = detailKey;
+            tileState.detail.innerHTML = '';
+            const entries = Object.keys(versions);
+            if (!entries.length) {
+              const row = document.createElement('div');
+              row.className = 'tile-detail-row';
+              row.textContent = this._t('none');
+              tileState.detail.appendChild(row);
+            } else {
+              entries.sort().forEach((version) => {
+                const row = document.createElement('div');
+                row.className = 'tile-detail-row';
+                row.innerHTML = '';
+                const name = document.createElement('span');
+                name.className = 'device-name';
+                name.textContent = version;
+                const count2 = document.createElement('span');
+                count2.textContent = String(versions[version]);
+                row.appendChild(name);
+                row.appendChild(count2);
+                tileState.detail.appendChild(row);
+              });
+            }
+          }
+        } else {
+          const devices = (st && st.attributes && st.attributes.devices) || [];
+          const detailKey = devices.join(',');
+          if (detailKey !== tileState.lastDetailKey) {
+            tileState.lastDetailKey = detailKey;
+            this._renderDeviceList(tileState.detail, devices);
+          }
+        }
+      });
+
+      if (this._config.show_thresholds !== false) {
+        this._updateThresholdTile();
+      }
+    }
+
+    _updateThresholdTile() {
+      const hass = this._hass;
+      const tileState = this._tiles.get('overThreshold');
+      if (!tileState) return;
+      const perDevice = new Map();
+      (this._thresholdEntityIds || []).forEach((entityId) => {
+        const st = hass.states[entityId];
+        if (!st || !st.attributes) return;
+        const values = st.attributes.values || {};
+        const metricLabel = (st.attributes.friendly_name || '').replace(/^TuxD VMs Over /, '').replace(/ Threshold$/, '');
+        Object.keys(values).forEach((deviceId) => {
+          if (!perDevice.has(deviceId)) perDevice.set(deviceId, []);
+          perDevice.get(deviceId).push({ metric: metricLabel, value: values[deviceId] });
+        });
+      });
+
+      const count = perDevice.size;
+      const displayValue = String(count);
+      if (displayValue !== tileState.lastValue) {
+        tileState.lastValue = displayValue;
+        tileState.value.textContent = displayValue;
+        tileState.tile.className = `tile ${count > 0 ? 'severity-bad' : ''}`.trim();
+      }
+
+      const detailKey = Array.from(perDevice.keys()).sort().join(',');
+      if (detailKey !== tileState.lastDetailKey) {
+        tileState.lastDetailKey = detailKey;
+        tileState.detail.innerHTML = '';
+        const deviceIds = Array.from(perDevice.keys()).sort();
+        if (!deviceIds.length) {
+          const row = document.createElement('div');
+          row.className = 'tile-detail-row';
+          row.textContent = this._t('none');
+          tileState.detail.appendChild(row);
+        } else {
+          deviceIds.forEach((deviceId) => {
+            const row = document.createElement('div');
+            row.className = 'tile-detail-row';
+            const name = document.createElement('span');
+            name.className = 'device-name';
+            const reasons = perDevice.get(deviceId)
+              .map((r) => `${r.metric} ${Number(r.value).toFixed(1)}`)
+              .join(', ');
+            name.textContent = `${deviceId} (${reasons})`;
+            row.appendChild(name);
+            row.addEventListener('click', (ev) => {
+              ev.stopPropagation();
+              const entityId = _onlineEntityId(deviceId);
+              this.root.dispatchEvent(new CustomEvent('hass-more-info', {
+                detail: { entityId }, bubbles: true, composed: true,
+              }));
+            });
+            tileState.detail.appendChild(row);
+          });
+        }
+      }
+    }
+  }
+
+
   const RENDERERS = {
     terminal: TerminalRenderer, update: UpdateRenderer, cache: CacheRenderer, conf: ConfigEditorRenderer,
-    devices: DeviceStatusGridRenderer,
+    devices: DeviceStatusGridRenderer, fleet: FleetSummaryRenderer,
   };
   const DEFAULT_CARD_TYPE = 'terminal';
 
@@ -2589,6 +3176,7 @@
       { value: 'cache', label: labels.cache },
       { value: 'conf', label: labels.conf },
       { value: 'devices', label: labels.devices },
+      { value: 'fleet', label: labels.fleet },
     ];
   }
 
