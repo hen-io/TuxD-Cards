@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '1.0.4';
+  const CARD_VERSION = '1.0.5';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,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';
 
   function resolveLang(raw) {
@@ -326,17 +326,48 @@
       devices: {
         noDevices: 'No TuxD devices found',
         noMatches: 'No devices match your search',
+        noFilterMatches: 'No devices match this filter',
         searchPlaceholder: 'Search devices…',
         cpuLabel: 'CPU',
         ramLabel: 'RAM',
         netLabel: 'Network',
+        allFilter: 'All',
+        onlineFilter: 'Online',
+        offlineFilter: 'Offline',
+        problemsFilter: 'Problems',
+        updatesFilter: 'Updates',
+        noArea: 'No area',
+        unknownVersion: 'Unknown version',
+        groupNames: { offline: 'Offline', attention: 'Needs attention', healthy: 'Healthy' },
+        badge: {
+          errors: 'System error',
+          docker: 'Docker containers have errors',
+          smart: 'SMART disk errors',
+          threshold: 'Over threshold',
+          hostUpdates: 'Host updates pending',
+          agentUpdates: 'TuxD agent update available',
+        },
+        groups: { layout: 'Layout', stats: 'Statistics', sorting: 'Sorting', devices: 'Which devices to show', click: 'Clicking a device' },
         editor: {
           title: 'Title',
           show_search: 'Show search box',
-          columns: 'Columns',
+          show_filters: 'Show status filter chips (all / online / offline / problems / updates)',
+          default_filter: 'Start with this filter',
+          group_by: 'Group devices by',
+          columns: 'Columns (0 = fit as many as the width allows)',
+          min_cell_width: 'Minimum width per device when fitting automatically (px)',
+          compact: 'Compact spacing',
+          max_height: 'Maximum height (px, 0 = as tall as needed, scrolls when set)',
+          show_icon: 'Show device icon',
           icon_size: 'Icon size (px)',
-          stat_icon_size: 'Status icon size (px)',
           name_size: 'Name text size (px)',
+          show_status_dot: 'Show online/offline dot',
+          show_badges: 'Show problem badges (errors, docker, SMART, thresholds, updates)',
+          show_cpu: 'Show CPU',
+          show_ram: 'Show RAM',
+          show_network: 'Show network',
+          color_thresholds: 'Turn a value red when it is over its TuxD threshold',
+          stat_icon_size: 'Status icon size (px)',
           stats_size: 'Stats text size (px)',
           stats_decimals: 'Stats decimal places',
           update_interval: 'Stats update interval (s)',
@@ -344,6 +375,9 @@
           custom_order: 'Custom order (comma-separated device names)',
           pinned_devices: 'Pinned devices (comma-separated device names)',
           pinned_rest_sort: 'Sort remaining devices by',
+          include_devices: 'Only show these devices (comma-separated names, * works as a wildcard; empty = all)',
+          exclude_devices: 'Hide these devices (comma-separated names, * works as a wildcard)',
+          tap_action: 'When a device is clicked',
           navigation_path: 'Click path for all devices (optional; variables {device} {device_id} {device_slug} {device_url} {ha_device_id})',
           navigation_variables: 'Custom variables for the path (YAML: name: value)',
           navigation_hosts: 'Per-device click path (YAML: devicename: {navigation_path, navigation_variables})',
@@ -362,11 +396,54 @@
         agentUpdatesLabel: 'Agent Updates',
         versionsLabel: 'Versions',
         overThresholdLabel: 'Over Threshold',
+        bannerHealthy: 'All systems healthy',
+        bannerAttention: '{n} need attention',
+        bannerUpdates: '{n} with updates pending',
+        bannerSub: '{online} of {total} online',
+        bannerNoHub: 'TuxD integration not found',
+        attentionTitle: 'Needs attention',
+        attentionMore: '+{n} more',
+        actionSent: 'Sent',
+        confirmUpdateAgents: 'Update all TuxD agents now?',
+        confirmRestartAgents: 'Restart all TuxD agents now?',
+        actionLabels: {
+          check_host_updates: 'Check host updates',
+          refresh: 'Refresh sensors',
+          update_agents: 'Update agents',
+          restart_agents: 'Restart agents',
+        },
+        badge: {
+          offline: 'Offline',
+          errors: 'System error',
+          docker: 'Docker containers have errors',
+          smart: 'SMART disk errors',
+          threshold: 'Over threshold',
+          hostUpdates: 'Host updates pending',
+          agentUpdates: 'TuxD agent update available',
+        },
+        groups: { sections: 'Sections to show', behaviour: 'Behaviour', actionsGroup: 'Fleet action buttons' },
         editor: {
           title: 'Title',
-          columns: 'Columns',
+          show_banner: 'Show status banner',
+          show_configured: 'Show configured-devices tile',
+          show_online: 'Show online-devices tile',
+          show_offline: 'Show offline-devices tile',
+          show_errors: 'Show errors tile',
+          show_docker: 'Show docker-issues tile',
+          show_smart: 'Show SMART-errors tile',
+          show_host_updates: 'Show host-updates tile',
+          show_agent_updates: 'Show agent-updates tile',
           show_versions: 'Show version breakdown tile',
           show_thresholds: 'Show over-threshold tile',
+          show_attention: 'Show the needs-attention list',
+          columns: 'Columns (0 = fit as many as the width allows)',
+          min_tile_width: 'Minimum tile width when fitting automatically (px)',
+          hide_zero_problems: 'Hide problem tiles while they are at zero',
+          expand_problems: 'Expand problem tiles that list devices',
+          attention_limit: 'Devices to list under needs attention',
+          device_click: 'When a device is clicked',
+          actions: 'Buttons to show',
+          confirm_actions: 'Ask for confirmation before update/restart all',
           language: 'Language',
         },
       },
@@ -452,17 +529,48 @@
       devices: {
         noDevices: 'Fant ingen TuxD-enheter',
         noMatches: 'Ingen enheter samsvarer med søket',
+        noFilterMatches: 'Ingen enheter samsvarer med filteret',
         searchPlaceholder: 'Søk etter enheter…',
         cpuLabel: 'CPU',
         ramLabel: 'RAM',
         netLabel: 'Nettverk',
+        allFilter: 'Alle',
+        onlineFilter: 'Online',
+        offlineFilter: 'Offline',
+        problemsFilter: 'Problemer',
+        updatesFilter: 'Oppdateringer',
+        noArea: 'Uten område',
+        unknownVersion: 'Ukjent versjon',
+        groupNames: { offline: 'Offline', attention: 'Trenger oppmerksomhet', healthy: 'Friske' },
+        badge: {
+          errors: 'Systemfeil',
+          docker: 'Docker-containere har feil',
+          smart: 'SMART-diskfeil',
+          threshold: 'Over terskel',
+          hostUpdates: 'Systemoppdateringer venter',
+          agentUpdates: 'TuxD-agentoppdatering tilgjengelig',
+        },
+        groups: { layout: 'Oppsett', stats: 'Statistikk', sorting: 'Sortering', devices: 'Hvilke enheter som vises', click: 'Klikk på en enhet' },
         editor: {
           title: 'Tittel',
           show_search: 'Vis søkefelt',
-          columns: 'Kolonner',
+          show_filters: 'Vis statusfilter (alle / online / offline / problemer / oppdateringer)',
+          default_filter: 'Start med dette filteret',
+          group_by: 'Grupper enheter etter',
+          columns: 'Kolonner (0 = så mange som bredden tillater)',
+          min_cell_width: 'Minste bredde per enhet ved automatisk tilpasning (px)',
+          compact: 'Kompakt avstand',
+          max_height: 'Maks høyde (px, 0 = så høyt som nødvendig, ruller når satt)',
+          show_icon: 'Vis enhetsikon',
           icon_size: 'Ikonstørrelse (px)',
-          stat_icon_size: 'Statusikonstørrelse (px)',
           name_size: 'Tekststørrelse navn (px)',
+          show_status_dot: 'Vis online/offline-prikk',
+          show_badges: 'Vis problemmerker (feil, docker, SMART, terskler, oppdateringer)',
+          show_cpu: 'Vis CPU',
+          show_ram: 'Vis RAM',
+          show_network: 'Vis nettverk',
+          color_thresholds: 'Gjør verdien rød når den er over TuxD-terskelen',
+          stat_icon_size: 'Statusikonstørrelse (px)',
           stats_size: 'Tekststørrelse statistikk (px)',
           stats_decimals: 'Antall desimaler (statistikk)',
           update_interval: 'Oppdateringsintervall statistikk (s)',
@@ -470,6 +578,9 @@
           custom_order: 'Egendefinert rekkefølge (enhetsnavn adskilt med komma)',
           pinned_devices: 'Festede enheter (enhetsnavn adskilt med komma)',
           pinned_rest_sort: 'Sorter resten etter',
+          include_devices: 'Vis bare disse enhetene (navn adskilt med komma, * fungerer som jokertegn; tomt = alle)',
+          exclude_devices: 'Skjul disse enhetene (navn adskilt med komma, * fungerer som jokertegn)',
+          tap_action: 'Når en enhet klikkes',
           navigation_path: 'Klikk-sti for alle enheter (valgfri; variabler {device} {device_id} {device_slug} {device_url} {ha_device_id})',
           navigation_variables: 'Egne variabler for stien (YAML: navn: verdi)',
           navigation_hosts: 'Klikk-sti per enhet (YAML: enhetsnavn: {navigation_path, navigation_variables})',
@@ -488,11 +599,54 @@
         agentUpdatesLabel: 'Agentoppdateringer',
         versionsLabel: 'Versjoner',
         overThresholdLabel: 'Over terskel',
+        bannerHealthy: 'Alle systemer er friske',
+        bannerAttention: '{n} trenger oppmerksomhet',
+        bannerUpdates: '{n} med oppdateringer som venter',
+        bannerSub: '{online} av {total} online',
+        bannerNoHub: 'Fant ikke TuxD-integrasjonen',
+        attentionTitle: 'Trenger oppmerksomhet',
+        attentionMore: '+{n} til',
+        actionSent: 'Sendt',
+        confirmUpdateAgents: 'Oppdatere alle TuxD-agenter nå?',
+        confirmRestartAgents: 'Starte alle TuxD-agenter på nytt nå?',
+        actionLabels: {
+          check_host_updates: 'Sjekk systemoppdateringer',
+          refresh: 'Oppdater sensorer',
+          update_agents: 'Oppdater agenter',
+          restart_agents: 'Start agenter på nytt',
+        },
+        badge: {
+          offline: 'Offline',
+          errors: 'Systemfeil',
+          docker: 'Docker-containere har feil',
+          smart: 'SMART-diskfeil',
+          threshold: 'Over terskel',
+          hostUpdates: 'Systemoppdateringer venter',
+          agentUpdates: 'TuxD-agentoppdatering tilgjengelig',
+        },
+        groups: { sections: 'Seksjoner som vises', behaviour: 'Oppførsel', actionsGroup: 'Flåtehandlinger' },
         editor: {
           title: 'Tittel',
-          columns: 'Kolonner',
+          show_banner: 'Vis statusbanner',
+          show_configured: 'Vis konfigurerte enheter',
+          show_online: 'Vis enheter online',
+          show_offline: 'Vis enheter offline',
+          show_errors: 'Vis feil',
+          show_docker: 'Vis docker-problemer',
+          show_smart: 'Vis SMART-feil',
+          show_host_updates: 'Vis systemoppdateringer',
+          show_agent_updates: 'Vis agentoppdateringer',
           show_versions: 'Vis versjonsoversikt',
           show_thresholds: 'Vis terskel-oversikt',
+          show_attention: 'Vis listen over enheter som trenger oppmerksomhet',
+          columns: 'Kolonner (0 = så mange som bredden tillater)',
+          min_tile_width: 'Minste flisbredde ved automatisk tilpasning (px)',
+          hide_zero_problems: 'Skjul problemfliser som står på null',
+          expand_problems: 'Utvid problemfliser som har enheter',
+          attention_limit: 'Antall enheter i listen over enheter som trenger oppmerksomhet',
+          device_click: 'Når en enhet klikkes',
+          actions: 'Knapper som vises',
+          confirm_actions: 'Spør før oppdater/start på nytt for alle',
           language: 'Språk',
         },
       },
@@ -2048,7 +2202,8 @@
   function _navigateToPath(path) {
     const target = String(path == null ? '' : path).trim();
     if (!target) return;
-    if (/^https?:\/\
+    const lowerTarget = target.toLowerCase();
+    if (lowerTarget.startsWith('http://') || lowerTarget.startsWith('https://')) {
       window.open(target, '_blank', 'noopener');
       return;
     }
@@ -2104,7 +2259,11 @@
 
   const SORT_MODE_OPTIONS = [
     { value: 'alphabetical', label: 'Alphabetical' },
+    { value: 'problems', label: 'Needs attention first' },
     { value: 'load', label: 'Offline first, then by load' },
+    { value: 'cpu', label: 'CPU load (highest first)' },
+    { value: 'memory', label: 'RAM use (highest first)' },
+    { value: 'network', label: 'Network (highest first)' },
     { value: 'pinned', label: 'Pinned devices first' },
     { value: 'custom', label: 'Custom order' },
   ];
@@ -2113,6 +2272,261 @@
     { value: 'alphabetical', label: 'Alphabetical' },
     { value: 'load', label: 'By load' },
   ];
+
+  const GROUP_BY_OPTIONS = [
+    { value: 'none', label: 'No grouping' },
+    { value: 'status', label: 'Status (offline / needs attention / healthy)' },
+    { value: 'area', label: 'Area' },
+    { value: 'version', label: 'Agent version' },
+  ];
+
+  const FILTER_OPTIONS = [
+    { value: 'all', label: 'All devices' },
+    { value: 'online', label: 'Online' },
+    { value: 'offline', label: 'Offline' },
+    { value: 'problems', label: 'Offline or with problems' },
+    { value: 'updates', label: 'With updates pending' },
+  ];
+
+  const TAP_ACTION_OPTIONS = [
+    { value: 'device', label: 'Open the device page (or the custom click path)' },
+    { value: 'more_info', label: 'Open the online/offline entity dialog' },
+    { value: 'none', label: 'Do nothing' },
+  ];
+
+  const HUB_SENSOR_NAMES = {
+    configured: 'TuxD Configured Devices',
+    online: 'TuxD Online Devices',
+    offline: 'TuxD Offline Devices',
+    errors: 'TuxD Devices With Errors',
+    docker: 'TuxD Devices With Docker Errors',
+    smart: 'TuxD Devices With SMART Errors',
+    hostUpdates: 'TuxD Devices With Host Updates',
+    agentUpdates: 'TuxD Devices With TuxD Agent Updates',
+    versions: 'TuxD Devices By Version',
+  };
+
+  const FLEET_THRESHOLD_NAMES = [
+    'TuxD VMs Over CPU Load Threshold',
+    'TuxD VMs Over RAM Use Threshold',
+    'TuxD VMs Over Network RX+TX Threshold',
+    'TuxD VMs Over IO Wait Threshold',
+    'TuxD VMs Over Root Storage Used Threshold',
+    'TuxD VMs Over Load Average 1m Threshold',
+    'TuxD VMs Over Load Average 5m Threshold',
+    'TuxD VMs Over Load Average 15m Threshold',
+  ];
+
+  const HUB_BUTTON_NAMES = {
+    check_host_updates: 'TuxD Check Host Updates On All Devices',
+    refresh: 'TuxD Refresh Sensor Data On All Device Agents',
+    update_agents: 'TuxD Update All Device Agents',
+    restart_agents: 'TuxD Restart All Device Agents',
+  };
+
+  const HUB_THRESHOLD_NUMBER_NAMES = {
+    cpu: 'TuxD CPU Load Threshold',
+    ram: 'TuxD RAM Use Threshold',
+    net: 'TuxD Network RX+TX Threshold',
+  };
+
+  const PROBLEM_KINDS = [
+    { key: 'errors', icon: 'mdi:alert-circle-outline', severity: 'bad' },
+    { key: 'docker', icon: 'mdi:docker', severity: 'bad' },
+    { key: 'smart', icon: 'mdi:harddisk', severity: 'bad' },
+    { key: 'threshold', icon: 'mdi:gauge-full', severity: 'bad' },
+    { key: 'hostUpdates', icon: 'mdi:package-up', severity: 'warn' },
+    { key: 'agentUpdates', icon: 'mdi:script-text-outline', severity: 'warn' },
+  ];
+
+  function _tuxdHubDeviceId(hass) {
+    if (!hass || !hass.devices) return null;
+    for (const haDeviceId in hass.devices) {
+      const dev = hass.devices[haDeviceId];
+      const identifiers = dev && dev.identifiers;
+      if (!identifiers) continue;
+      const pair = Array.from(identifiers).find((p) => Array.isArray(p) && p[0] === 'tuxd' && p[1] === 'hub');
+      if (pair) return haDeviceId;
+    }
+    return null;
+  }
+
+  const _hubMemo = { devicesRef: null, entitiesRef: null, at: 0, value: null };
+
+  function _resolveHub(hass) {
+    const wanted = new Map();
+    Object.keys(HUB_SENSOR_NAMES).forEach((k) => wanted.set(HUB_SENSOR_NAMES[k], ['sensors', k]));
+    FLEET_THRESHOLD_NAMES.forEach((n) => wanted.set(n, ['thresholdSensors', n]));
+    Object.keys(HUB_BUTTON_NAMES).forEach((k) => wanted.set(HUB_BUTTON_NAMES[k], ['buttons', k]));
+    Object.keys(HUB_THRESHOLD_NUMBER_NAMES).forEach((k) => wanted.set(HUB_THRESHOLD_NUMBER_NAMES[k], ['thresholdNumbers', k]));
+
+    const hubDeviceId = _tuxdHubDeviceId(hass);
+    const out = { hubDeviceId, sensors: {}, thresholdSensors: [], buttons: {}, thresholdNumbers: {}, complete: false };
+    if (hubDeviceId && hass.entities && hass.states) {
+      for (const entityId in hass.entities) {
+        const entry = hass.entities[entityId];
+        if (!entry || entry.device_id !== hubDeviceId) continue;
+        const st = hass.states[entityId];
+        const hit = st && st.attributes && wanted.get(st.attributes.friendly_name);
+        if (!hit) continue;
+        if (hit[0] === 'thresholdSensors') out.thresholdSensors.push(entityId);
+        else out[hit[0]][hit[1]] = entityId;
+      }
+    }
+    out.complete = Object.keys(HUB_SENSOR_NAMES).every((k) => !!out.sensors[k]);
+    return out;
+  }
+
+  function _hubEntities(hass) {
+    if (!hass) return _resolveHub({});
+    const memo = _hubMemo;
+    const registryChanged = memo.devicesRef !== hass.devices || memo.entitiesRef !== hass.entities;
+    const retry = memo.value && !memo.value.complete && Date.now() - memo.at > 2000;
+    if (!memo.value || registryChanged || retry) {
+      memo.value = _resolveHub(hass);
+      memo.devicesRef = hass.devices;
+      memo.entitiesRef = hass.entities;
+      memo.at = Date.now();
+    }
+    return memo.value;
+  }
+
+  function _problemsIndex(hass, hub, cache) {
+    const ids = [];
+    ['offline', 'errors', 'docker', 'smart', 'hostUpdates', 'agentUpdates'].forEach((k) => ids.push(hub.sensors[k]));
+    hub.thresholdSensors.forEach((id) => ids.push(id));
+    const deps = ids.map((id) => (id ? hass.states[id] : undefined));
+    if (cache.result && cache.hub === hub && cache.deps && deps.length === cache.deps.length
+        && deps.every((d, i) => d === cache.deps[i])) {
+      return cache.result;
+    }
+
+    const listOf = (key) => {
+      const st = hub.sensors[key] && hass.states[hub.sensors[key]];
+      const list = st && st.attributes && st.attributes.devices;
+      return Array.isArray(list) ? list : [];
+    };
+    const byDevice = new Map();
+    const add = (deviceId, kind) => {
+      if (!byDevice.has(deviceId)) byDevice.set(deviceId, new Set());
+      byDevice.get(deviceId).add(kind);
+    };
+    listOf('errors').forEach((d) => add(d, 'errors'));
+    listOf('docker').forEach((d) => add(d, 'docker'));
+    listOf('smart').forEach((d) => add(d, 'smart'));
+    listOf('hostUpdates').forEach((d) => add(d, 'hostUpdates'));
+    listOf('agentUpdates').forEach((d) => add(d, 'agentUpdates'));
+
+    const thresholdDetail = new Map();
+    hub.thresholdSensors.forEach((entityId) => {
+      const st = hass.states[entityId];
+      if (!st || !st.attributes) return;
+      const values = st.attributes.values || {};
+      const metric = String(st.attributes.friendly_name || '').replace('TuxD VMs Over ', '').replace(' Threshold', '');
+      Object.keys(values).forEach((deviceId) => {
+        add(deviceId, 'threshold');
+        if (!thresholdDetail.has(deviceId)) thresholdDetail.set(deviceId, []);
+        thresholdDetail.get(deviceId).push({ metric, value: values[deviceId] });
+      });
+    });
+
+    const keyByDevice = new Map();
+    byDevice.forEach((set, deviceId) => {
+      keyByDevice.set(deviceId, PROBLEM_KINDS.filter((k) => set.has(k.key)).map((k) => k.key).join(','));
+    });
+    const result = { offline: new Set(listOf('offline')), byDevice, keyByDevice, thresholdDetail };
+    cache.hub = hub;
+    cache.deps = deps;
+    cache.result = result;
+    return result;
+  }
+
+  function _hasBadProblem(set) {
+    if (!set) return false;
+    return PROBLEM_KINDS.some((k) => k.severity === 'bad' && set.has(k.key));
+  }
+
+  function _hasWarnProblem(set) {
+    if (!set) return false;
+    return PROBLEM_KINDS.some((k) => k.severity === 'warn' && set.has(k.key));
+  }
+
+  const _REGEX_SPECIAL = '.+?^$' + '{}()|[]\\';
+
+  function _tokenMatchers(text) {
+    return String(text || '').split(',').map((s) => s.trim().toLowerCase()).filter(Boolean).map((token) => {
+      if (token.indexOf('*') === -1) return (cell) => cell.nameLower === token || cell.idLower === token;
+      const escaped = token.split('*').map((part) => {
+        let out = '';
+        for (const ch of part) out += _REGEX_SPECIAL.indexOf(ch) === -1 ? ch : '\\' + ch;
+        return out;
+      }).join('.*');
+      const re = new RegExp('^' + escaped + '$');
+      return (cell) => re.test(cell.nameLower) || re.test(cell.idLower);
+    });
+  }
+
+  function _cmpVersion(a, b) {
+    const pa = String(a).split('.');
+    const pb = String(b).split('.');
+    for (let i = 0; i < Math.max(pa.length, pb.length); i += 1) {
+      const na = parseInt(pa[i], 10);
+      const nb = parseInt(pb[i], 10);
+      if (Number.isNaN(na) || Number.isNaN(nb)) {
+        const c = String(pa[i] || '').localeCompare(String(pb[i] || ''));
+        if (c !== 0) return c;
+      } else if (na !== nb) {
+        return na - nb;
+      }
+    }
+    return 0;
+  }
+
+  class _Scheduler {
+    constructor(onFlush) {
+      this._onFlush = onFlush;
+      this._raf = 0;
+      this._visible = true;
+      this._dirty = false;
+      this._observer = null;
+    }
+
+    request() {
+      if (this._raf) return;
+      this._raf = requestAnimationFrame(() => {
+        this._raf = 0;
+        this.flush();
+      });
+    }
+
+    flush() {
+      if (!this._visible) {
+        this._dirty = true;
+        return;
+      }
+      this._dirty = false;
+      this._onFlush();
+    }
+
+    attach(hostEl) {
+      if (this._observer || !hostEl || typeof IntersectionObserver === 'undefined') return;
+      this._observer = new IntersectionObserver((entries) => {
+        const visible = entries.some((e) => e.isIntersecting);
+        if (visible === this._visible) return;
+        this._visible = visible;
+        if (visible && this._dirty) this.request();
+      }, { rootMargin: '200px' });
+      this._observer.observe(hostEl);
+    }
+
+    detach() {
+      if (this._observer) this._observer.disconnect();
+      this._observer = null;
+      this._visible = true;
+      if (this._raf) cancelAnimationFrame(this._raf);
+      this._raf = 0;
+    }
+  }
 
   const DEVICES_STYLE = `
     :host { display: block; }
@@ -2123,6 +2537,7 @@
       box-sizing: border-box;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
+    ha-card.compact { padding: 8px 10px 10px; }
     .header {
       font-size: 13px;
       font-weight: 500;
@@ -2146,17 +2561,74 @@
       outline: none;
       border-color: var(--primary-color, #03a9f4);
     }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .chip {
+      font: inherit;
+      font-size: 12px;
+      line-height: 1;
+      padding: 6px 10px;
+      border-radius: 14px;
+      cursor: pointer;
+      color: var(--primary-text-color);
+      background: transparent;
+      border: 1px solid var(--divider-color, #e0e0e0);
+    }
+    .chip:focus-visible { outline: 2px solid var(--primary-color, #03a9f4); outline-offset: 1px; }
+    .chip .count { margin-left: 4px; color: var(--secondary-text-color); }
+    .chip[aria-pressed="true"] {
+      color: var(--text-primary-color, #fff);
+      background: var(--primary-color, #03a9f4);
+      border-color: var(--primary-color, #03a9f4);
+    }
+    .chip[aria-pressed="true"] .count { color: inherit; opacity: 0.85; }
+    .groups.scroll { overflow-y: auto; }
+    .section + .section { margin-top: 12px; }
+    .group-header {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin: 0 0 8px;
+      padding: 2px 0;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--secondary-text-color);
+      cursor: pointer;
+      user-select: none;
+    }
+    .group-header[hidden] { display: none; }
+    .group-header .chevron {
+      width: 18px;
+      height: 18px;
+      --mdc-icon-size: 18px;
+      flex: none;
+      transition: transform 0.15s;
+    }
+    .section.collapsed .chevron { transform: rotate(-90deg); }
+    .group-header .group-count { font-weight: 400; opacity: 0.8; }
+    .section.collapsed .grid { display: none; }
     .grid {
       display: grid;
       gap: 14px 20px;
     }
+    ha-card.compact .grid { gap: 8px 14px; }
     .cell {
       display: flex;
       align-items: center;
       gap: 10px;
       min-width: 0;
       cursor: pointer;
+      border-radius: 8px;
     }
+    .cell.static { cursor: default; }
+    .cell:focus-visible { outline: 2px solid var(--primary-color, #03a9f4); outline-offset: 2px; }
+    .cell.offline .icon, .cell.offline .name { opacity: 0.55; }
     .icon {
       width: var(--tuxd-icon-size, 28px);
       height: var(--tuxd-icon-size, 28px);
@@ -2170,8 +2642,9 @@
     }
     .name-row {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      gap: 6px;
+      gap: 2px 6px;
       min-width: 0;
     }
     .dot {
@@ -2183,6 +2656,13 @@
     }
     .dot.online { background: var(--success-color, #43a047); }
     .dot.offline { background: var(--error-color, #db4437); }
+    .name-main {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+      max-width: 100%;
+    }
     .name {
       font-size: var(--tuxd-name-size, 14px);
       font-weight: 500;
@@ -2190,7 +2670,29 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      min-width: 0;
     }
+    /* Badges sit after the name on the same line when there is room; in a
+       narrow cell they wrap onto their own line instead of squeezing the
+       name down to a few letters. */
+    .badges {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      margin-left: auto;
+      flex: none;
+    }
+    .badges:empty { display: none; }
+    .badge {
+      width: 14px;
+      height: 14px;
+      --mdc-icon-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--error-color, #db4437);
+    }
+    .badge.warn { color: var(--warning-color, #ff9800); }
     .stats {
       display: flex;
       align-items: center;
@@ -2225,6 +2727,10 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
+    .stat-value.over {
+      color: var(--error-color, #db4437);
+      font-weight: 600;
+    }
     .empty {
       padding: 16px 0;
       color: var(--secondary-text-color);
@@ -2236,39 +2742,91 @@
   class DeviceStatusGridRenderer {
     constructor(root) {
       this.root = root;
-      this._grid = null;
+      this._cardEl = null;
+      this._groupsEl = null;
+      this._chipsEl = null;
       this._emptyEl = null;
+      this._searchEl = null;
       this._cells = new Map();
+      this._sections = new Map();
+      this._collapsed = new Set();
       this._lastDevicesRef = null;
       this._lastEntitiesRef = null;
+      this._searchTerm = '';
+      this._filter = 'all';
+      this._problemCache = {};
+      this._problems = { offline: new Set(), byDevice: new Map(), keyByDevice: new Map(), thresholdDetail: new Map() };
+      this._hub = null;
+      this._includeMatchers = [];
+      this._excludeMatchers = [];
+      this._layoutDirty = false;
+      this._lastReorderAt = 0;
+      this._chipKey = '';
+      this._visibleCount = 0;
+      this._hasRendered = false;
+      this._scheduler = new _Scheduler(() => this._flush());
     }
 
     static defaultConfig() {
       return {
-        title: '', columns: 3, icon_size: 28, name_size: 14, stats_size: 12, stat_icon_size: 14,
+        title: '', columns: 3, min_cell_width: 190, icon_size: 28, name_size: 14, stats_size: 12, stat_icon_size: 14,
         stats_decimals: 0, update_interval: 5, sort_mode: 'alphabetical', custom_order: '',
         pinned_devices: '', pinned_rest_sort: 'load', show_search: true,
+        show_filters: false, default_filter: 'all', group_by: 'none',
+        show_icon: true, show_status_dot: true, show_badges: true, color_thresholds: true,
+        show_cpu: true, show_ram: true, show_network: true, compact: false, max_height: 0,
+        include_devices: '', exclude_devices: '', tap_action: 'device',
       };
     }
 
-    static schema() {
+    static schema(lang) {
+      const dict = modeDict(lang, 'devices');
+      const group = (key, schema) => ({ type: 'expandable', name: '', title: (dict.groups || {})[key] || key, schema });
+      const sel = (options) => ({ select: { mode: 'dropdown', options } });
+      const num = (min, max) => ({ number: { mode: 'box', min, max } });
       return [
         { name: 'title', selector: { text: {} } },
         { name: 'show_search', selector: { boolean: {} } },
-        { name: 'columns', selector: { number: { mode: 'box', min: 1, max: 12 } } },
-        { name: 'icon_size', selector: { number: { mode: 'box', min: 12, max: 64 } } },
-        { name: 'stat_icon_size', selector: { number: { mode: 'box', min: 8, max: 32 } } },
-        { name: 'name_size', selector: { number: { mode: 'box', min: 8, max: 32 } } },
-        { name: 'stats_size', selector: { number: { mode: 'box', min: 8, max: 32 } } },
-        { name: 'stats_decimals', selector: { number: { mode: 'box', min: 0, max: 3 } } },
-        { name: 'update_interval', selector: { number: { mode: 'box', min: 1, max: 3600 } } },
-        { name: 'sort_mode', selector: { select: { mode: 'dropdown', options: SORT_MODE_OPTIONS } } },
-        { name: 'custom_order', selector: { text: {} } },
-        { name: 'pinned_devices', selector: { text: {} } },
-        { name: 'pinned_rest_sort', selector: { select: { mode: 'dropdown', options: PINNED_REST_SORT_OPTIONS } } },
-        { name: 'navigation_path', selector: { text: {} } },
-        { name: 'navigation_variables', selector: { object: {} } },
-        { name: 'navigation_hosts', selector: { object: {} } },
+        { name: 'show_filters', selector: { boolean: {} } },
+        { name: 'default_filter', selector: sel(FILTER_OPTIONS) },
+        { name: 'group_by', selector: sel(GROUP_BY_OPTIONS) },
+        group('layout', [
+          { name: 'columns', selector: num(0, 12) },
+          { name: 'min_cell_width', selector: num(80, 600) },
+          { name: 'compact', selector: { boolean: {} } },
+          { name: 'max_height', selector: num(0, 3000) },
+          { name: 'show_icon', selector: { boolean: {} } },
+          { name: 'icon_size', selector: num(12, 64) },
+          { name: 'name_size', selector: num(8, 32) },
+          { name: 'show_status_dot', selector: { boolean: {} } },
+          { name: 'show_badges', selector: { boolean: {} } },
+        ]),
+        group('stats', [
+          { name: 'show_cpu', selector: { boolean: {} } },
+          { name: 'show_ram', selector: { boolean: {} } },
+          { name: 'show_network', selector: { boolean: {} } },
+          { name: 'color_thresholds', selector: { boolean: {} } },
+          { name: 'stat_icon_size', selector: num(8, 32) },
+          { name: 'stats_size', selector: num(8, 32) },
+          { name: 'stats_decimals', selector: num(0, 3) },
+          { name: 'update_interval', selector: num(1, 3600) },
+        ]),
+        group('sorting', [
+          { name: 'sort_mode', selector: sel(SORT_MODE_OPTIONS) },
+          { name: 'custom_order', selector: { text: {} } },
+          { name: 'pinned_devices', selector: { text: {} } },
+          { name: 'pinned_rest_sort', selector: sel(PINNED_REST_SORT_OPTIONS) },
+        ]),
+        group('devices', [
+          { name: 'include_devices', selector: { text: {} } },
+          { name: 'exclude_devices', selector: { text: {} } },
+        ]),
+        group('click', [
+          { name: 'tap_action', selector: sel(TAP_ACTION_OPTIONS) },
+          { name: 'navigation_path', selector: { text: {} } },
+          { name: 'navigation_variables', selector: { object: {} } },
+          { name: 'navigation_hosts', selector: { object: {} } },
+        ]),
         { name: 'language', selector: { select: { mode: 'dropdown', options: LANGUAGE_OPTIONS } } },
       ];
     }
@@ -2283,28 +2841,41 @@
 
     setConfig(config) {
       this._config = Object.assign(DeviceStatusGridRenderer.defaultConfig(), config);
+      this._includeMatchers = _tokenMatchers(this._config.include_devices);
+      this._excludeMatchers = _tokenMatchers(this._config.exclude_devices);
+      this._filter = FILTER_OPTIONS.some((o) => o.value === this._config.default_filter) ? this._config.default_filter : 'all';
       this._skeleton();
-      if (this._hass) this._rebuildDevices();
+      if (this._hass) {
+        this._rebuildDevices();
+        this._flush();
+      }
     }
 
     setHass(hass) {
       this._hass = hass;
       if (!this._config) return;
-      if (!this._grid) this._skeleton();
-      if (hass.devices !== this._lastDevicesRef || hass.entities !== this._lastEntitiesRef) {
-        this._lastDevicesRef = hass.devices;
-        this._lastEntitiesRef = hass.entities;
-        this._rebuildDevices();
-      }
-      this._updateCells();
+      if (!this._cardEl) this._skeleton();
+      if (!this._hasRendered) this._flush();
+      else this._scheduler.request();
     }
 
     connectedCallback() {
-      if (this._config && this._hass && !this._grid) this._skeleton();
+      if (this._config && this._hass && !this._cardEl) this._skeleton();
+      const host = this.root && this.root.host;
+      if (host && host.isConnected) this._scheduler.attach(host);
+    }
+
+    disconnectedCallback() {
+      this._scheduler.detach();
     }
 
     getCardSize() {
-      return 4;
+      const cols = Number(this._config && this._config.columns) || 3;
+      return Math.max(2, Math.ceil(this._visibleCount / cols) + 1);
+    }
+
+    getGridOptions() {
+      return { columns: 'full', min_columns: 3 };
     }
 
     _lang() {
@@ -2318,6 +2889,22 @@
       return dict[key] || I18N.en.devices[key] || key;
     }
 
+    _tk(group, key) {
+      const dict = modeDict(this._lang(), 'devices');
+      const en = I18N.en.devices;
+      return ((dict[group] || {})[key]) || ((en[group] || {})[key]) || key;
+    }
+
+    _gridStyle(el) {
+      const cols = Number(this._config.columns);
+      if (cols > 0) {
+        el.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+      } else {
+        const min = Math.max(80, Number(this._config.min_cell_width) || 190);
+        el.style.gridTemplateColumns = `repeat(auto-fill, minmax(${min}px, 1fr))`;
+      }
+    }
+
     _skeleton() {
       const root = this.root;
       root.innerHTML = '';
@@ -2326,6 +2913,7 @@
       root.appendChild(style);
 
       const card = document.createElement('ha-card');
+      if (this._config.compact) card.classList.add('compact');
       card.style.setProperty('--tuxd-icon-size', `${this._config.icon_size || 28}px`);
       card.style.setProperty('--tuxd-name-size', `${this._config.name_size || 14}px`);
       card.style.setProperty('--tuxd-stats-size', `${this._config.stats_size || 12}px`);
@@ -2343,10 +2931,11 @@
         search.type = 'search';
         search.className = 'search';
         search.placeholder = this._t('searchPlaceholder');
+        search.setAttribute('aria-label', this._t('searchPlaceholder'));
         search.value = this._searchTerm || '';
         search.addEventListener('input', () => {
           this._searchTerm = search.value.trim().toLowerCase();
-          this._applyFilter();
+          this._layout();
         });
         card.appendChild(search);
         this._searchEl = search;
@@ -2354,11 +2943,36 @@
         this._searchEl = null;
       }
 
-      const grid = document.createElement('div');
-      grid.className = 'grid';
-      grid.style.gridTemplateColumns = `repeat(${this._config.columns || 3}, 1fr)`;
-      card.appendChild(grid);
-      this._grid = grid;
+      this._chipsEl = null;
+      if (this._config.show_filters) {
+        const chips = document.createElement('div');
+        chips.className = 'filters';
+        chips.setAttribute('role', 'group');
+        FILTER_OPTIONS.forEach((opt) => {
+          const chip = document.createElement('button');
+          chip.type = 'button';
+          chip.className = 'chip';
+          chip.dataset.filter = opt.value;
+          chip.addEventListener('click', () => {
+            this._filter = opt.value;
+            this._syncChips();
+            this._layout();
+          });
+          chips.appendChild(chip);
+        });
+        card.appendChild(chips);
+        this._chipsEl = chips;
+      }
+
+      const groups = document.createElement('div');
+      groups.className = 'groups';
+      const maxHeight = Number(this._config.max_height) || 0;
+      if (maxHeight > 0) {
+        groups.classList.add('scroll');
+        groups.style.maxHeight = `${maxHeight}px`;
+      }
+      card.appendChild(groups);
+      this._groupsEl = groups;
 
       const empty = document.createElement('div');
       empty.className = 'empty';
@@ -2367,28 +2981,16 @@
       this._emptyEl = empty;
 
       root.appendChild(card);
+      this._cardEl = card;
       this._cells.clear();
+      this._sections.clear();
+      this._chipKey = '';
+      this._hasRendered = false;
     }
 
-    _applyFilter() {
-      if (!this._grid) return;
-      const term = this._searchTerm || '';
-      let visibleCount = 0;
-      this._cells.forEach((cell) => {
-        const match = !term || cell.nameLower.includes(term);
-        cell.el.style.display = match ? '' : 'none';
-        if (match) visibleCount += 1;
-      });
-      if (this._emptyEl) {
-        this._emptyEl.hidden = visibleCount > 0;
-        this._emptyEl.textContent = this._cells.size === 0
-          ? this._t('noDevices')
-          : this._t('noMatches');
-      }
-    }
 
     _rebuildDevices() {
-      if (!this._grid) return;
+      if (!this._groupsEl) return;
       const hass = this._hass;
       const found = _tuxdRealDevices(hass);
       const foundIds = new Set(found.map((d) => d.deviceId));
@@ -2401,94 +3003,23 @@
       }
 
       found.forEach((dev) => {
-        if (this._cells.has(dev.deviceId)) return;
-        const cell = this._buildCell(dev);
-        this._grid.appendChild(cell.el);
-        this._cells.set(dev.deviceId, cell);
+        let cell = this._cells.get(dev.deviceId);
+        if (!cell) {
+          cell = this._buildCell(dev);
+          this._cells.set(dev.deviceId, cell);
+        } else if (cell.name !== dev.name) {
+          cell.name = dev.name;
+          cell.nameLower = dev.name.toLowerCase();
+          cell.nameEl.textContent = dev.name;
+        }
+        cell.haDeviceId = dev.haDeviceId;
+        const haDev = hass.devices[dev.haDeviceId] || {};
+        const area = haDev.area_id && hass.areas && hass.areas[haDev.area_id];
+        cell.areaId = haDev.area_id || '';
+        cell.area = (area && area.name) || '';
+        cell.version = haDev.sw_version || '';
       });
-
-      this._applyFilter();
-      this._reorderCells();
-    }
-
-    _alphaCompare(a, b) {
-      return this._cells.get(a).nameLower.localeCompare(this._cells.get(b).nameLower);
-    }
-
-    _loadCompare(a, b) {
-      const ca = this._cells.get(a);
-      const cb = this._cells.get(b);
-      if (ca.lastOnline !== cb.lastOnline) return ca.lastOnline ? 1 : -1;
-      const cpuA = parseFloat(ca.lastCpu) || 0;
-      const cpuB = parseFloat(cb.lastCpu) || 0;
-      if (cpuA !== cpuB) return cpuB - cpuA;
-      const netA = parseFloat(ca.lastNet) || 0;
-      const netB = parseFloat(cb.lastNet) || 0;
-      return netB - netA;
-    }
-
-    _matchDeviceToken(token) {
-      const t = String(token || '').trim().toLowerCase();
-      if (!t) return null;
-      for (const id of this._cells.keys()) {
-        if (id.toLowerCase() === t) return id;
-      }
-      for (const [id, cell] of this._cells) {
-        if (cell.nameLower === t) return id;
-      }
-      return null;
-    }
-
-    _computeOrder() {
-      const ids = Array.from(this._cells.keys());
-      const mode = this._config.sort_mode || 'alphabetical';
-
-      if (mode === 'custom') {
-        const customList = (this._config.custom_order || '')
-          .split(',').map((s) => s.trim()).filter(Boolean);
-        const rank = new Map();
-        customList.forEach((token) => {
-          const id = this._matchDeviceToken(token);
-          if (id && !rank.has(id)) rank.set(id, rank.size);
-        });
-        return ids.sort((a, b) => {
-          const ra = rank.has(a) ? rank.get(a) : Infinity;
-          const rb = rank.has(b) ? rank.get(b) : Infinity;
-          if (ra !== rb) return ra - rb;
-          return this._alphaCompare(a, b);
-        });
-      }
-
-      if (mode === 'load') {
-        return ids.sort((a, b) => this._loadCompare(a, b));
-      }
-
-      if (mode === 'pinned') {
-        const pinnedList = (this._config.pinned_devices || '')
-          .split(',').map((s) => s.trim()).filter(Boolean);
-        const pinnedRank = new Map();
-        pinnedList.forEach((token) => {
-          const id = this._matchDeviceToken(token);
-          if (id && !pinnedRank.has(id)) pinnedRank.set(id, pinnedRank.size);
-        });
-        const pinnedSet = new Set(pinnedRank.keys());
-        const pinned = ids.filter((id) => pinnedSet.has(id))
-          .sort((a, b) => pinnedRank.get(a) - pinnedRank.get(b));
-        const restCompare = this._config.pinned_rest_sort === 'load'
-          ? (a, b) => this._loadCompare(a, b)
-          : (a, b) => this._alphaCompare(a, b);
-        const rest = ids.filter((id) => !pinnedSet.has(id)).sort(restCompare);
-        return pinned.concat(rest);
-      }
-
-      return ids.sort((a, b) => this._alphaCompare(a, b));
-    }
-
-    _reorderCells() {
-      this._computeOrder().forEach((deviceId) => {
-        const cell = this._cells.get(deviceId);
-        if (cell) this._grid.appendChild(cell.el);
-      });
+      this._layoutDirty = true;
     }
 
     _navigationTarget(dev) {
@@ -2524,44 +3055,68 @@
       return _expandTemplate(template, vars);
     }
 
+    _onCellClick(cell) {
+      const action = this._config.tap_action || 'device';
+      if (action === 'none') return;
+      if (action === 'more_info') {
+        this.root.dispatchEvent(new CustomEvent('hass-more-info', {
+          detail: { entityId: cell.onlineEntity }, bubbles: true, composed: true,
+        }));
+        return;
+      }
+      const dev = { name: cell.name, deviceId: cell.deviceId, haDeviceId: cell.haDeviceId };
+      const custom = this._navigationTarget(dev);
+      if (custom) _navigateToPath(custom);
+      else _navigateToDevice(cell.haDeviceId);
+    }
+
     _buildCell(dev) {
       const iconEntity = _statEntityId(dev.deviceId, 'agent_icon');
       const cpuEntity = _statEntityId(dev.deviceId, 'cpu_load');
       const memEntity = _statEntityId(dev.deviceId, 'memory_used');
       const netEntity = _statEntityId(dev.deviceId, 'network_in_out');
       const onlineEntity = _onlineEntityId(dev.deviceId);
+      const cfg = this._config;
 
       const el = document.createElement('div');
       el.className = 'cell';
-      el.addEventListener('click', () => {
-        const custom = this._navigationTarget(dev);
-        if (custom) _navigateToPath(custom);
-        else _navigateToDevice(dev.haDeviceId);
-      });
+      const clickable = (cfg.tap_action || 'device') !== 'none';
+      if (clickable) {
+        el.tabIndex = 0;
+        el.setAttribute('role', 'button');
+      } else {
+        el.classList.add('static');
+      }
 
       const icon = document.createElement('ha-icon');
       icon.className = 'icon';
       icon.icon = 'mdi:server';
-      el.appendChild(icon);
+      if (cfg.show_icon !== false) el.appendChild(icon);
 
       const text = document.createElement('div');
       text.className = 'text';
 
       const nameRow = document.createElement('div');
       nameRow.className = 'name-row';
+      const nameMain = document.createElement('span');
+      nameMain.className = 'name-main';
       const dot = document.createElement('span');
       dot.className = 'dot offline';
-      nameRow.appendChild(dot);
-      const name = document.createElement('span');
-      name.className = 'name';
-      name.textContent = dev.name;
-      nameRow.appendChild(name);
+      if (cfg.show_status_dot !== false) nameMain.appendChild(dot);
+      const nameEl = document.createElement('span');
+      nameEl.className = 'name';
+      nameEl.textContent = dev.name;
+      nameMain.appendChild(nameEl);
+      nameRow.appendChild(nameMain);
+      const badgesEl = document.createElement('span');
+      badgesEl.className = 'badges';
+      nameRow.appendChild(badgesEl);
       text.appendChild(nameRow);
 
       const stats = document.createElement('div');
       stats.className = 'stats';
-
-      const makeStat = (mdiIcon, label) => {
+      const makeStat = (enabled, mdiIcon, label) => {
+        if (!enabled) return null;
         const stat = document.createElement('span');
         stat.className = 'stat';
         stat.title = label;
@@ -2576,35 +3131,390 @@
         stats.appendChild(stat);
         return value;
       };
-
-      const cpuValueEl = makeStat('mdi:cpu-64-bit', this._t('cpuLabel'));
-      const memValueEl = makeStat('mdi:memory', this._t('ramLabel'));
-      const netValueEl = makeStat('mdi:swap-vertical', this._t('netLabel'));
-
-      text.appendChild(stats);
+      const cpuValueEl = makeStat(cfg.show_cpu !== false, 'mdi:cpu-64-bit', this._t('cpuLabel'));
+      const memValueEl = makeStat(cfg.show_ram !== false, 'mdi:memory', this._t('ramLabel'));
+      const netValueEl = makeStat(cfg.show_network !== false, 'mdi:swap-vertical', this._t('netLabel'));
+      if (cpuValueEl || memValueEl || netValueEl) text.appendChild(stats);
 
       el.appendChild(text);
 
-      return {
-        el, icon, dot, cpuValueEl, memValueEl, netValueEl,
+      const cell = {
+        el, icon, dot, nameEl, badgesEl, cpuValueEl, memValueEl, netValueEl,
+        name: dev.name,
         nameLower: dev.name.toLowerCase(),
+        deviceId: dev.deviceId,
+        idLower: String(dev.deviceId).toLowerCase(),
         haDeviceId: dev.haDeviceId,
+        areaId: '', area: '', version: '',
         iconEntity, cpuEntity, memEntity, netEntity, onlineEntity,
         lastIcon: null, lastOnline: null, lastCpu: null, lastMem: null, lastNet: null,
         pendingCpu: null, pendingMem: null, pendingNet: null, lastStatsWriteAt: 0,
+        problemKey: null, problemBad: false, problemWarn: false, problemCount: 0,
       };
+      if (clickable) {
+        el.addEventListener('click', () => this._onCellClick(cell));
+        el.addEventListener('keydown', (ev) => {
+          if (ev.key === 'Enter' || ev.key === ' ') {
+            ev.preventDefault();
+            this._onCellClick(cell);
+          }
+        });
+      }
+      return cell;
+    }
+
+
+    _alphaCompare(a, b) {
+      return this._cells.get(a).nameLower.localeCompare(this._cells.get(b).nameLower);
+    }
+
+    _loadCompare(a, b) {
+      const ca = this._cells.get(a);
+      const cb = this._cells.get(b);
+      if (ca.lastOnline !== cb.lastOnline) return ca.lastOnline ? 1 : -1;
+      const cpuA = parseFloat(ca.lastCpu) || 0;
+      const cpuB = parseFloat(cb.lastCpu) || 0;
+      if (cpuA !== cpuB) return cpuB - cpuA;
+      const netA = parseFloat(ca.lastNet) || 0;
+      const netB = parseFloat(cb.lastNet) || 0;
+      return netB - netA;
+    }
+
+    _problemsCompare(a, b) {
+      const ca = this._cells.get(a);
+      const cb = this._cells.get(b);
+      const rank = (c) => {
+        if (!c.lastOnline) return 0;
+        if (c.problemBad) return 1;
+        if (c.problemWarn) return 2;
+        return 3;
+      };
+      const ra = rank(ca);
+      const rb = rank(cb);
+      if (ra !== rb) return ra - rb;
+      if (ca.problemCount !== cb.problemCount) return cb.problemCount - ca.problemCount;
+      return this._alphaCompare(a, b);
+    }
+
+    _metricCompare(field) {
+      return (a, b) => {
+        const va = parseFloat(this._cells.get(a)[field]);
+        const vb = parseFloat(this._cells.get(b)[field]);
+        const na = Number.isNaN(va);
+        const nb = Number.isNaN(vb);
+        if (na !== nb) return na ? 1 : -1;
+        if (!na && va !== vb) return vb - va;
+        return this._alphaCompare(a, b);
+      };
+    }
+
+    _matchDeviceToken(token) {
+      const t = String(token || '').trim().toLowerCase();
+      if (!t) return null;
+      for (const id of this._cells.keys()) {
+        if (id.toLowerCase() === t) return id;
+      }
+      for (const [id, cell] of this._cells) {
+        if (cell.nameLower === t) return id;
+      }
+      return null;
+    }
+
+    _sortIsLoadBased() {
+      const mode = this._config.sort_mode || 'alphabetical';
+      return mode === 'load' || mode === 'cpu' || mode === 'memory' || mode === 'network'
+        || (mode === 'pinned' && this._config.pinned_rest_sort === 'load');
+    }
+
+    _computeOrder() {
+      const ids = Array.from(this._cells.keys());
+      const mode = this._config.sort_mode || 'alphabetical';
+
+      if (mode === 'custom') {
+        const customList = (this._config.custom_order || '')
+          .split(',').map((s) => s.trim()).filter(Boolean);
+        const rank = new Map();
+        customList.forEach((token) => {
+          const id = this._matchDeviceToken(token);
+          if (id && !rank.has(id)) rank.set(id, rank.size);
+        });
+        return ids.sort((a, b) => {
+          const ra = rank.has(a) ? rank.get(a) : Infinity;
+          const rb = rank.has(b) ? rank.get(b) : Infinity;
+          if (ra !== rb) return ra - rb;
+          return this._alphaCompare(a, b);
+        });
+      }
+
+      if (mode === 'load') return ids.sort((a, b) => this._loadCompare(a, b));
+      if (mode === 'problems') return ids.sort((a, b) => this._problemsCompare(a, b));
+      if (mode === 'cpu') return ids.sort(this._metricCompare('lastCpu'));
+      if (mode === 'memory') return ids.sort(this._metricCompare('lastMem'));
+      if (mode === 'network') return ids.sort(this._metricCompare('lastNet'));
+
+      if (mode === 'pinned') {
+        const pinnedList = (this._config.pinned_devices || '')
+          .split(',').map((s) => s.trim()).filter(Boolean);
+        const pinnedRank = new Map();
+        pinnedList.forEach((token) => {
+          const id = this._matchDeviceToken(token);
+          if (id && !pinnedRank.has(id)) pinnedRank.set(id, pinnedRank.size);
+        });
+        const pinnedSet = new Set(pinnedRank.keys());
+        const pinned = ids.filter((id) => pinnedSet.has(id))
+          .sort((a, b) => pinnedRank.get(a) - pinnedRank.get(b));
+        const restCompare = this._config.pinned_rest_sort === 'load'
+          ? (a, b) => this._loadCompare(a, b)
+          : (a, b) => this._alphaCompare(a, b);
+        const rest = ids.filter((id) => !pinnedSet.has(id)).sort(restCompare);
+        return pinned.concat(rest);
+      }
+
+      return ids.sort((a, b) => this._alphaCompare(a, b));
+    }
+
+    _matchesFilter(cell) {
+      switch (this._filter) {
+        case 'online': return !!cell.lastOnline;
+        case 'offline': return !cell.lastOnline;
+        case 'problems': return !cell.lastOnline || cell.problemBad;
+        case 'updates': return cell.problemWarn;
+        default: return true;
+      }
+    }
+
+    _isIncluded(cell) {
+      if (this._includeMatchers.length && !this._includeMatchers.some((m) => m(cell))) return false;
+      if (this._excludeMatchers.some((m) => m(cell))) return false;
+      return true;
+    }
+
+    _isVisible(cell) {
+      if (!this._isIncluded(cell) || !this._matchesFilter(cell)) return false;
+      const term = this._searchTerm;
+      return !term || cell.nameLower.includes(term) || cell.idLower.includes(term);
+    }
+
+    _buildGroups(ids) {
+      const by = this._config.group_by || 'none';
+      if (by === 'none') return [{ key: '', title: '', ids }];
+
+      const buckets = new Map();
+      const put = (key, title, rank, id) => {
+        if (!buckets.has(key)) buckets.set(key, { key, title, rank, ids: [] });
+        buckets.get(key).ids.push(id);
+      };
+      ids.forEach((id) => {
+        const cell = this._cells.get(id);
+        if (by === 'status') {
+          if (!cell.lastOnline) put('offline', this._tk('groupNames', 'offline'), 0, id);
+          else if (cell.problemBad) put('attention', this._tk('groupNames', 'attention'), 1, id);
+          else put('healthy', this._tk('groupNames', 'healthy'), 2, id);
+        } else if (by === 'area') {
+          put(`area:${cell.areaId}`, cell.area || this._t('noArea'), cell.area ? 0 : 1, id);
+        } else if (by === 'version') {
+          put(`ver:${cell.version}`, cell.version || this._t('unknownVersion'), cell.version ? 0 : 1, id);
+        }
+      });
+
+      const list = Array.from(buckets.values());
+      list.sort((a, b) => {
+        if (a.rank !== b.rank) return a.rank - b.rank;
+        if (by === 'version') return _cmpVersion(b.title, a.title);
+        if (by === 'area') return a.title.localeCompare(b.title);
+        return 0;
+      });
+      return list;
+    }
+
+    _makeSection(key) {
+      const el = document.createElement('div');
+      el.className = 'section';
+
+      const header = document.createElement('div');
+      header.className = 'group-header';
+      header.setAttribute('role', 'button');
+      header.tabIndex = 0;
+      const chevron = document.createElement('ha-icon');
+      chevron.className = 'chevron';
+      chevron.icon = 'mdi:chevron-down';
+      header.appendChild(chevron);
+      const title = document.createElement('span');
+      header.appendChild(title);
+      const count = document.createElement('span');
+      count.className = 'group-count';
+      header.appendChild(count);
+      const toggle = () => {
+        if (this._collapsed.has(key)) this._collapsed.delete(key);
+        else this._collapsed.add(key);
+        el.classList.toggle('collapsed', this._collapsed.has(key));
+        header.setAttribute('aria-expanded', String(!this._collapsed.has(key)));
+      };
+      header.addEventListener('click', toggle);
+      header.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Enter' || ev.key === ' ') {
+          ev.preventDefault();
+          toggle();
+        }
+      });
+      el.appendChild(header);
+
+      const grid = document.createElement('div');
+      grid.className = 'grid';
+      this._gridStyle(grid);
+      el.appendChild(grid);
+      return { el, header, title, count, grid };
+    }
+
+    _layout() {
+      this._layoutDirty = false;
+      if (!this._groupsEl) return;
+
+      const order = this._computeOrder();
+      let includedTotal = 0;
+      const visible = [];
+      order.forEach((id) => {
+        const cell = this._cells.get(id);
+        if (this._isIncluded(cell)) includedTotal += 1;
+        if (this._isVisible(cell)) visible.push(id);
+      });
+      this._visibleCount = visible.length;
+
+      const groups = this._buildGroups(visible);
+      const grouped = (this._config.group_by || 'none') !== 'none';
+      const keep = new Set();
+      groups.forEach((g, gi) => {
+        let sec = this._sections.get(g.key);
+        if (!sec) {
+          sec = this._makeSection(g.key);
+          this._sections.set(g.key, sec);
+        }
+        keep.add(g.key);
+        sec.header.hidden = !grouped;
+        if (grouped) {
+          sec.title.textContent = g.title;
+          sec.count.textContent = String(g.ids.length);
+        }
+        const collapsed = grouped && this._collapsed.has(g.key);
+        sec.el.classList.toggle('collapsed', collapsed);
+        sec.header.setAttribute('aria-expanded', String(!collapsed));
+        if (this._groupsEl.children[gi] !== sec.el) {
+          this._groupsEl.insertBefore(sec.el, this._groupsEl.children[gi] || null);
+        }
+        g.ids.forEach((id, ci) => {
+          const el = this._cells.get(id).el;
+          if (sec.grid.children[ci] !== el) sec.grid.insertBefore(el, sec.grid.children[ci] || null);
+        });
+        while (sec.grid.children.length > g.ids.length) sec.grid.lastElementChild.remove();
+      });
+      for (const [key, sec] of Array.from(this._sections.entries())) {
+        if (!keep.has(key)) {
+          sec.el.remove();
+          this._sections.delete(key);
+        }
+      }
+
+      if (this._emptyEl) {
+        this._emptyEl.hidden = visible.length > 0;
+        if (visible.length === 0) {
+          if (includedTotal === 0) this._emptyEl.textContent = this._t('noDevices');
+          else if (this._searchTerm) this._emptyEl.textContent = this._t('noMatches');
+          else this._emptyEl.textContent = this._t('noFilterMatches');
+        }
+      }
+      this._syncChips();
+    }
+
+    _syncChips() {
+      if (!this._chipsEl) return;
+      const counts = { all: 0, online: 0, offline: 0, problems: 0, updates: 0 };
+      this._cells.forEach((cell) => {
+        if (!this._isIncluded(cell)) return;
+        counts.all += 1;
+        if (cell.lastOnline) counts.online += 1;
+        else counts.offline += 1;
+        if (!cell.lastOnline || cell.problemBad) counts.problems += 1;
+        if (cell.problemWarn) counts.updates += 1;
+      });
+      const key = `${this._filter}|${counts.all},${counts.online},${counts.offline},${counts.problems},${counts.updates}`;
+      if (key === this._chipKey) return;
+      this._chipKey = key;
+      const labels = { all: 'allFilter', online: 'onlineFilter', offline: 'offlineFilter', problems: 'problemsFilter', updates: 'updatesFilter' };
+      Array.from(this._chipsEl.children).forEach((chip) => {
+        const f = chip.dataset.filter;
+        chip.textContent = '';
+        chip.appendChild(document.createTextNode(this._t(labels[f])));
+        const count = document.createElement('span');
+        count.className = 'count';
+        count.textContent = String(counts[f]);
+        chip.appendChild(count);
+        chip.setAttribute('aria-pressed', String(f === this._filter));
+      });
+    }
+
+
+    _renderBadges(cell, key) {
+      cell.badgesEl.textContent = '';
+      if (!key || this._config.show_badges === false) return;
+      key.split(',').forEach((kind) => {
+        const spec = PROBLEM_KINDS.find((k) => k.key === kind);
+        if (!spec) return;
+        const badge = document.createElement('ha-icon');
+        badge.className = spec.severity === 'warn' ? 'badge warn' : 'badge';
+        badge.icon = spec.icon;
+        let title = this._tk('badge', kind);
+        if (kind === 'threshold') {
+          const detail = this._problems.thresholdDetail.get(cell.deviceId) || [];
+          if (detail.length) title += `: ${detail.map((d) => `${d.metric} ${Number(d.value).toFixed(1)}`).join(', ')}`;
+        }
+        badge.title = title;
+        cell.badgesEl.appendChild(badge);
+      });
+    }
+
+    _thresholds(hass, hub) {
+      const read = (id) => {
+        const st = id && hass.states[id];
+        const n = st ? parseFloat(st.state) : NaN;
+        return Number.isNaN(n) ? null : n;
+      };
+      return {
+        cpu: read(hub.thresholdNumbers.cpu),
+        ram: read(hub.thresholdNumbers.ram),
+        net: read(hub.thresholdNumbers.net),
+      };
+    }
+
+    _flush() {
+      const hass = this._hass;
+      if (!hass || !this._groupsEl) return;
+      this._hasRendered = true;
+      if (hass.devices !== this._lastDevicesRef || hass.entities !== this._lastEntitiesRef) {
+        this._lastDevicesRef = hass.devices;
+        this._lastEntitiesRef = hass.entities;
+        this._rebuildDevices();
+      }
+      this._updateCells();
     }
 
     _updateCells() {
       const hass = this._hass;
-      if (!hass) return;
+      const cfg = this._config;
       const now = Date.now();
-      const intervalMs = (this._config.update_interval || 5) * 1000;
+      const intervalMs = (cfg.update_interval || 5) * 1000;
+      const decimals = cfg.stats_decimals || 0;
+
+      const hub = _hubEntities(hass);
+      this._hub = hub;
+      const problems = _problemsIndex(hass, hub, this._problemCache);
+      this._problems = problems;
+      const th = cfg.color_thresholds === false ? { cpu: null, ram: null, net: null } : this._thresholds(hass, hub);
+      let statusChanged = false;
 
       this._cells.forEach((cell) => {
-        if (cell.iconEntity) {
+        if (cell.iconEntity && cfg.show_icon !== false) {
           const st = hass.states[cell.iconEntity];
-          const value = (st && st.state) || 'mdi:server';
+          const value = (st && st.state && st.state !== 'unavailable' && st.state !== 'unknown') ? st.state : 'mdi:server';
           if (value !== cell.lastIcon) {
             cell.lastIcon = value;
             cell.icon.icon = value;
@@ -2612,11 +3522,24 @@
         }
 
         const onlineState = cell.onlineEntity && hass.states[cell.onlineEntity];
-        const online = !!(onlineState && onlineState.state === 'on');
+        const online = !!(onlineState && onlineState.state === 'on') && !problems.offline.has(cell.deviceId);
         if (online !== cell.lastOnline) {
           cell.lastOnline = online;
           cell.dot.classList.toggle('online', online);
           cell.dot.classList.toggle('offline', !online);
+          cell.el.classList.toggle('offline', !online);
+          statusChanged = true;
+        }
+
+        const problemKey = problems.keyByDevice.get(cell.deviceId) || '';
+        if (problemKey !== cell.problemKey) {
+          cell.problemKey = problemKey;
+          const set = problems.byDevice.get(cell.deviceId);
+          cell.problemBad = _hasBadProblem(set);
+          cell.problemWarn = _hasWarnProblem(set);
+          cell.problemCount = set ? set.size : 0;
+          this._renderBadges(cell, problemKey);
+          statusChanged = true;
         }
 
         const cpuState = cell.cpuEntity && hass.states[cell.cpuEntity];
@@ -2628,86 +3551,65 @@
 
         if (cpuVal !== cell.lastCpu) {
           cell.lastCpu = cpuVal;
-          cell.pendingCpu = _fmtPct(cpuVal, this._config.stats_decimals || 0);
+          cell.pendingCpu = true;
         }
         if (memVal !== cell.lastMem) {
           cell.lastMem = memVal;
-          cell.pendingMem = _fmtPct(memVal, this._config.stats_decimals || 0);
+          cell.pendingMem = true;
         }
         if (netVal !== cell.lastNet) {
           cell.lastNet = netVal;
-          cell.pendingNet = _fmtNet(netVal, this._config.stats_decimals || 0);
+          cell.pendingNet = true;
         }
 
         if (now - cell.lastStatsWriteAt >= intervalMs) {
-          if (cell.pendingCpu !== null) {
-            cell.cpuValueEl.textContent = cell.pendingCpu;
-            cell.pendingCpu = null;
-          }
-          if (cell.pendingMem !== null) {
-            cell.memValueEl.textContent = cell.pendingMem;
-            cell.pendingMem = null;
-          }
-          if (cell.pendingNet !== null) {
-            cell.netValueEl.textContent = cell.pendingNet;
-            cell.pendingNet = null;
-          }
+          const write = (el, pending, raw, formatter, limit) => {
+            if (!el || !pending) return;
+            el.textContent = formatter(raw, decimals);
+            const n = parseFloat(raw);
+            el.classList.toggle('over', limit != null && !Number.isNaN(n) && n > limit);
+          };
+          write(cell.cpuValueEl, cell.pendingCpu, cell.lastCpu, _fmtPct, th.cpu);
+          write(cell.memValueEl, cell.pendingMem, cell.lastMem, _fmtPct, th.ram);
+          write(cell.netValueEl, cell.pendingNet, cell.lastNet, _fmtNet, th.net);
+          cell.pendingCpu = cell.pendingMem = cell.pendingNet = false;
           cell.lastStatsWriteAt = now;
         }
       });
 
-      if (now - (this._lastReorderAt || 0) >= intervalMs) {
+      if (this._sortIsLoadBased() && now - this._lastReorderAt >= intervalMs) {
         this._lastReorderAt = now;
-        this._reorderCells();
+        this._layoutDirty = true;
       }
+      if (statusChanged) this._layoutDirty = true;
+      if (this._layoutDirty) this._layout();
     }
   }
 
-
-  function _tuxdHubDeviceId(hass) {
-    if (!hass || !hass.devices) return null;
-    for (const haDeviceId in hass.devices) {
-      const dev = hass.devices[haDeviceId];
-      const identifiers = dev && dev.identifiers;
-      if (!identifiers) continue;
-      const pair = Array.from(identifiers).find((p) => Array.isArray(p) && p[0] === 'tuxd' && p[1] === 'hub');
-      if (pair) return haDeviceId;
-    }
-    return null;
-  }
-
-  function _findHubEntityByName(hass, hubDeviceId, friendlyName) {
-    if (!hass || !hass.entities || !hubDeviceId) return null;
-    for (const entityId in hass.entities) {
-      const entry = hass.entities[entityId];
-      if (!entry || entry.device_id !== hubDeviceId) continue;
-      const st = hass.states[entityId];
-      if (st && st.attributes && st.attributes.friendly_name === friendlyName) return entityId;
-    }
-    return null;
-  }
 
   const FLEET_TILE_SPECS = [
-    { key: 'configured', name: 'TuxD Configured Devices', icon: 'mdi:server-network', severity: 'neutral', labelKey: 'configuredLabel' },
-    { key: 'online', name: 'TuxD Online Devices', icon: 'mdi:server-network-outline', severity: 'neutral', labelKey: 'onlineLabel' },
-    { key: 'offline', name: 'TuxD Offline Devices', icon: 'mdi:server-network-off', severity: 'bad', labelKey: 'offlineLabel' },
-    { key: 'errors', name: 'TuxD Devices With Errors', icon: 'mdi:alert-circle-outline', severity: 'bad', labelKey: 'errorsLabel' },
-    { key: 'docker', name: 'TuxD Devices With Docker Errors', icon: 'mdi:docker', severity: 'bad', labelKey: 'dockerLabel' },
-    { key: 'smart', name: 'TuxD Devices With SMART Errors', icon: 'mdi:harddisk', severity: 'bad', labelKey: 'smartLabel' },
-    { key: 'hostUpdates', name: 'TuxD Devices With Host Updates', icon: 'mdi:package-up', severity: 'warn', labelKey: 'hostUpdatesLabel' },
-    { key: 'agentUpdates', name: 'TuxD Devices With TuxD Agent Updates', icon: 'mdi:script-text-outline', severity: 'warn', labelKey: 'agentUpdatesLabel' },
-    { key: 'versions', name: 'TuxD Devices By Version', icon: 'mdi:tag-multiple-outline', severity: 'neutral', labelKey: 'versionsLabel' },
+    { key: 'configured', icon: 'mdi:server-network', severity: 'neutral', labelKey: 'configuredLabel', showKey: 'show_configured' },
+    { key: 'online', icon: 'mdi:server-network-outline', severity: 'neutral', labelKey: 'onlineLabel', showKey: 'show_online' },
+    { key: 'offline', icon: 'mdi:server-network-off', severity: 'bad', labelKey: 'offlineLabel', showKey: 'show_offline' },
+    { key: 'errors', icon: 'mdi:alert-circle-outline', severity: 'bad', labelKey: 'errorsLabel', showKey: 'show_errors' },
+    { key: 'docker', icon: 'mdi:docker', severity: 'bad', labelKey: 'dockerLabel', showKey: 'show_docker' },
+    { key: 'smart', icon: 'mdi:harddisk', severity: 'bad', labelKey: 'smartLabel', showKey: 'show_smart' },
+    { key: 'hostUpdates', icon: 'mdi:package-up', severity: 'warn', labelKey: 'hostUpdatesLabel', showKey: 'show_host_updates' },
+    { key: 'agentUpdates', icon: 'mdi:script-text-outline', severity: 'warn', labelKey: 'agentUpdatesLabel', showKey: 'show_agent_updates' },
+    { key: 'versions', icon: 'mdi:tag-multiple-outline', severity: 'neutral', labelKey: 'versionsLabel', showKey: 'show_versions' },
   ];
 
-  const FLEET_THRESHOLD_NAMES = [
-    'TuxD VMs Over CPU Load Threshold',
-    'TuxD VMs Over RAM Use Threshold',
-    'TuxD VMs Over Network RX+TX Threshold',
-    'TuxD VMs Over IO Wait Threshold',
-    'TuxD VMs Over Root Storage Used Threshold',
-    'TuxD VMs Over Load Average 1m Threshold',
-    'TuxD VMs Over Load Average 5m Threshold',
-    'TuxD VMs Over Load Average 15m Threshold',
+  const FLEET_ACTION_OPTIONS = [
+    { value: 'check_host_updates', label: 'Check host updates on all devices' },
+    { value: 'refresh', label: 'Refresh sensor data on all devices' },
+    { value: 'update_agents', label: 'Update all agents (asks first)' },
+    { value: 'restart_agents', label: 'Restart all agents (asks first)' },
+  ];
+
+  const DEVICE_CLICK_OPTIONS = [
+    { value: 'more_info', label: 'Open the online/offline entity dialog' },
+    { value: 'device', label: 'Open the device page' },
+    { value: 'none', label: 'Do nothing' },
   ];
 
   const FLEET_STYLE = `
@@ -2715,6 +3617,7 @@
     ha-card {
       display: flex;
       flex-direction: column;
+      gap: 10px;
       padding: 12px 16px 16px;
       box-sizing: border-box;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -2724,8 +3627,40 @@
       font-weight: 500;
       letter-spacing: 0.02em;
       color: var(--secondary-text-color);
-      padding-bottom: 8px;
     }
+    .banner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--divider-color, #e0e0e0);
+      background: transparent;
+    }
+    .banner[hidden] { display: none; }
+    .banner-icon {
+      width: 24px;
+      height: 24px;
+      --mdc-icon-size: 24px;
+      flex: none;
+      color: var(--secondary-text-color);
+    }
+    .banner-text { min-width: 0; }
+    .banner-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary-text-color);
+    }
+    .banner-sub {
+      font-size: 12px;
+      color: var(--secondary-text-color);
+    }
+    .banner.ok { border-color: var(--success-color, #43a047); background: color-mix(in srgb, var(--success-color, #43a047) 10%, transparent); }
+    .banner.ok .banner-icon { color: var(--success-color, #43a047); }
+    .banner.warn { border-color: var(--warning-color, #ff9800); background: color-mix(in srgb, var(--warning-color, #ff9800) 10%, transparent); }
+    .banner.warn .banner-icon { color: var(--warning-color, #ff9800); }
+    .banner.bad { border-color: var(--error-color, #db4437); background: color-mix(in srgb, var(--error-color, #db4437) 10%, transparent); }
+    .banner.bad .banner-icon { color: var(--error-color, #db4437); }
     .grid {
       display: grid;
       gap: 10px;
@@ -2741,6 +3676,8 @@
       cursor: pointer;
       min-width: 0;
     }
+    .tile[hidden] { display: none; }
+    .tile:focus-visible { outline: 2px solid var(--primary-color, #03a9f4); outline-offset: 1px; }
     .tile.severity-bad { border-color: var(--error-color, #db4437); }
     .tile.severity-warn { border-color: var(--warning-color, #ff9800); }
     .tile-top {
@@ -2787,12 +3724,88 @@
       gap: 8px;
       padding: 2px 0;
     }
+    .tile-detail-row.clickable { cursor: pointer; }
     .tile-detail-row .device-name {
       color: var(--primary-text-color);
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
     }
+    .attention[hidden], .actions[hidden] { display: none; }
+    .section-title {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--secondary-text-color);
+      padding-bottom: 4px;
+    }
+    .att-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 0;
+      border-top: 1px solid var(--divider-color, #e0e0e0);
+      font-size: 13px;
+    }
+    .att-row.clickable { cursor: pointer; }
+    .att-name {
+      color: var(--primary-text-color);
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      min-width: 0;
+    }
+    .att-detail {
+      color: var(--secondary-text-color);
+      font-size: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      min-width: 0;
+      flex: 1 1 auto;
+    }
+    .att-icons {
+      display: flex;
+      gap: 2px;
+      margin-left: auto;
+      flex: none;
+    }
+    .att-icon {
+      width: 16px;
+      height: 16px;
+      --mdc-icon-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--error-color, #db4437);
+    }
+    .att-icon.warn { color: var(--warning-color, #ff9800); }
+    .att-more {
+      padding-top: 4px;
+      font-size: 12px;
+      color: var(--secondary-text-color);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .action-btn {
+      font: inherit;
+      font-size: 13px;
+      padding: 7px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      color: var(--primary-color, #03a9f4);
+      background: transparent;
+      border: 1px solid var(--primary-color, #03a9f4);
+    }
+    .action-btn:hover { background: color-mix(in srgb, var(--primary-color, #03a9f4) 12%, transparent); }
+    .action-btn:focus-visible { outline: 2px solid var(--primary-color, #03a9f4); outline-offset: 1px; }
+    .action-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+    .action-btn.sent { color: var(--success-color, #43a047); border-color: var(--success-color, #43a047); }
     .empty {
       padding: 16px 0;
       text-align: center;
@@ -2804,24 +3817,72 @@
   class FleetSummaryRenderer {
     constructor(root) {
       this.root = root;
+      this._cardEl = null;
       this._grid = null;
+      this._bannerEl = null;
+      this._attentionEl = null;
+      this._actionsEl = null;
       this._tiles = new Map();
-      this._hubDeviceId = null;
+      this._expanded = new Set();
+      this._userToggled = new Set();
       this._lastDevicesRef = null;
       this._lastEntitiesRef = null;
-      this._expanded = new Set();
+      this._hub = null;
+      this._problemCache = {};
+      this._problems = null;
+      this._devMap = new Map();
+      this._actionsDirty = true;
+      this._bannerKey = '';
+      this._attentionKey = '';
+      this._timers = [];
+      this._hasRendered = false;
+      this._scheduler = new _Scheduler(() => this._flush());
     }
 
     static defaultConfig() {
-      return { title: '', columns: 3, show_versions: true, show_thresholds: true };
+      return {
+        title: '', columns: 3, min_tile_width: 150,
+        show_banner: true, show_attention: true,
+        show_configured: true, show_online: true, show_offline: true, show_errors: true,
+        show_docker: true, show_smart: true, show_host_updates: true, show_agent_updates: true,
+        show_versions: true, show_thresholds: true,
+        hide_zero_problems: false, expand_problems: false, attention_limit: 8,
+        device_click: 'more_info', actions: [], confirm_actions: true,
+      };
     }
 
-    static schema() {
+    static schema(lang) {
+      const dict = modeDict(lang, 'fleet');
+      const group = (key, schema) => ({ type: 'expandable', name: '', title: (dict.groups || {})[key] || key, schema });
+      const bool = (name) => ({ name, selector: { boolean: {} } });
       return [
         { name: 'title', selector: { text: {} } },
-        { name: 'columns', selector: { number: { mode: 'box', min: 1, max: 8 } } },
-        { name: 'show_versions', selector: { boolean: {} } },
-        { name: 'show_thresholds', selector: { boolean: {} } },
+        group('sections', [
+          bool('show_banner'),
+          bool('show_configured'),
+          bool('show_online'),
+          bool('show_offline'),
+          bool('show_errors'),
+          bool('show_docker'),
+          bool('show_smart'),
+          bool('show_host_updates'),
+          bool('show_agent_updates'),
+          bool('show_versions'),
+          bool('show_thresholds'),
+          bool('show_attention'),
+        ]),
+        group('behaviour', [
+          { name: 'columns', selector: { number: { mode: 'box', min: 0, max: 8 } } },
+          { name: 'min_tile_width', selector: { number: { mode: 'box', min: 80, max: 500 } } },
+          bool('hide_zero_problems'),
+          bool('expand_problems'),
+          { name: 'attention_limit', selector: { number: { mode: 'box', min: 1, max: 100 } } },
+          { name: 'device_click', selector: { select: { mode: 'dropdown', options: DEVICE_CLICK_OPTIONS } } },
+        ]),
+        group('actionsGroup', [
+          { name: 'actions', selector: { select: { multiple: true, mode: 'list', options: FLEET_ACTION_OPTIONS } } },
+          bool('confirm_actions'),
+        ]),
         { name: 'language', selector: { select: { mode: 'dropdown', options: LANGUAGE_OPTIONS } } },
       ];
     }
@@ -2837,27 +3898,35 @@
     setConfig(config) {
       this._config = Object.assign(FleetSummaryRenderer.defaultConfig(), config);
       this._skeleton();
-      if (this._hass) this._resolveEntities(this._hass);
+      if (this._hass) this._flush();
     }
 
     setHass(hass) {
       this._hass = hass;
       if (!this._config) return;
-      if (!this._grid) this._skeleton();
-      if (hass.devices !== this._lastDevicesRef || hass.entities !== this._lastEntitiesRef) {
-        this._lastDevicesRef = hass.devices;
-        this._lastEntitiesRef = hass.entities;
-        this._resolveEntities(hass);
-      }
-      this._updateTiles();
+      if (!this._cardEl) this._skeleton();
+      if (!this._hasRendered) this._flush();
+      else this._scheduler.request();
     }
 
     connectedCallback() {
-      if (this._config && this._hass && !this._grid) this._skeleton();
+      if (this._config && this._hass && !this._cardEl) this._skeleton();
+      const host = this.root && this.root.host;
+      if (host && host.isConnected) this._scheduler.attach(host);
+    }
+
+    disconnectedCallback() {
+      this._scheduler.detach();
+      this._timers.forEach((t) => clearTimeout(t));
+      this._timers = [];
     }
 
     getCardSize() {
       return 3;
+    }
+
+    getGridOptions() {
+      return { columns: 'full', min_columns: 3 };
     }
 
     _lang() {
@@ -2869,6 +3938,11 @@
     _t(key) {
       const dict = modeDict(this._lang(), 'fleet');
       return dict[key] || I18N.en.fleet[key] || key;
+    }
+
+    _tk(group, key) {
+      const dict = modeDict(this._lang(), 'fleet');
+      return ((dict[group] || {})[key]) || ((I18N.en.fleet[group] || {})[key]) || key;
     }
 
     _skeleton() {
@@ -2887,22 +3961,71 @@
         card.appendChild(header);
       }
 
+      this._bannerEl = null;
+      if (this._config.show_banner !== false) {
+        const banner = document.createElement('div');
+        banner.className = 'banner';
+        banner.hidden = true;
+        const icon = document.createElement('ha-icon');
+        icon.className = 'banner-icon';
+        banner.appendChild(icon);
+        const text = document.createElement('div');
+        text.className = 'banner-text';
+        const title = document.createElement('div');
+        title.className = 'banner-title';
+        const sub = document.createElement('div');
+        sub.className = 'banner-sub';
+        text.appendChild(title);
+        text.appendChild(sub);
+        banner.appendChild(text);
+        card.appendChild(banner);
+        this._bannerEl = { el: banner, icon, title, sub };
+      }
+
       const grid = document.createElement('div');
       grid.className = 'grid';
-      grid.style.gridTemplateColumns = `repeat(${this._config.columns || 3}, 1fr)`;
+      const cols = Number(this._config.columns);
+      if (cols > 0) {
+        grid.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+      } else {
+        const min = Math.max(80, Number(this._config.min_tile_width) || 150);
+        grid.style.gridTemplateColumns = `repeat(auto-fill, minmax(${min}px, 1fr))`;
+      }
       card.appendChild(grid);
       this._grid = grid;
 
+      this._attentionEl = null;
+      if (this._config.show_attention !== false) {
+        const el = document.createElement('div');
+        el.className = 'attention';
+        el.hidden = true;
+        card.appendChild(el);
+        this._attentionEl = el;
+      }
+
+      this._actionsEl = null;
+      const actions = Array.isArray(this._config.actions) ? this._config.actions : [];
+      if (actions.length) {
+        const el = document.createElement('div');
+        el.className = 'actions';
+        card.appendChild(el);
+        this._actionsEl = el;
+      }
+
       root.appendChild(card);
+      this._cardEl = card;
       this._tiles.clear();
+      this._bannerKey = '';
+      this._attentionKey = '';
+      this._actionsDirty = true;
+      this._hasRendered = false;
+      this._timers.forEach((t) => clearTimeout(t));
+      this._timers = [];
       this._buildTiles();
     }
 
     _specs() {
-      return FLEET_TILE_SPECS.filter((spec) => {
-        if (spec.key === 'versions' && this._config.show_versions === false) return false;
-        return true;
-      });
+      return FLEET_TILE_SPECS.filter((spec) => this._config[spec.showKey] !== false);
     }
 
     _buildTiles() {
@@ -2912,9 +4035,18 @@
       }
     }
 
+    _setExpanded(key, expanded) {
+      const tileState = this._tiles.get(key);
+      if (expanded) this._expanded.add(key);
+      else this._expanded.delete(key);
+      if (tileState) tileState.detail.classList.toggle('expanded', expanded);
+    }
+
     _buildTile(key, icon, label) {
       const tile = document.createElement('div');
       tile.className = 'tile';
+      tile.tabIndex = 0;
+      tile.setAttribute('role', 'button');
 
       const top = document.createElement('div');
       top.className = 'tile-top';
@@ -2937,27 +4069,24 @@
       detail.className = 'tile-detail';
       tile.appendChild(detail);
 
-      tile.addEventListener('click', () => {
-        if (this._expanded.has(key)) this._expanded.delete(key);
-        else this._expanded.add(key);
-        detail.classList.toggle('expanded', this._expanded.has(key));
+      const toggle = () => {
+        this._userToggled.add(key);
+        this._setExpanded(key, !this._expanded.has(key));
+        tile.setAttribute('aria-expanded', String(this._expanded.has(key)));
+      };
+      tile.addEventListener('click', toggle);
+      tile.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Enter' || ev.key === ' ') {
+          ev.preventDefault();
+          toggle();
+        }
       });
 
       this._grid.appendChild(tile);
-      this._tiles.set(key, { tile, value, detail, lastValue: null, lastDetailKey: null });
-    }
-
-    _resolveEntities(hass) {
-      this._hubDeviceId = _tuxdHubDeviceId(hass);
-      this._specs().forEach((spec) => {
-        const tileState = this._tiles.get(spec.key);
-        if (tileState) tileState.entityId = _findHubEntityByName(hass, this._hubDeviceId, spec.name);
+      this._tiles.set(key, {
+        tile, value, detail, lastValue: null, lastDetailKey: null, lastStateObj: undefined, lastEntityId: null, lastProblems: null,
       });
-      if (this._config.show_thresholds !== false) {
-        this._thresholdEntityIds = FLEET_THRESHOLD_NAMES
-          .map((name) => _findHubEntityByName(hass, this._hubDeviceId, name))
-          .filter(Boolean);
-      }
+      if (this._expanded.has(key)) detail.classList.add('expanded');
     }
 
     _severityFor(spec, count) {
@@ -2966,8 +4095,37 @@
       return '';
     }
 
+
+    _openDevice(deviceId) {
+      const mode = this._config.device_click || 'more_info';
+      if (mode === 'none') return;
+      if (mode === 'device') {
+        const haDeviceId = this._devMap.get(deviceId);
+        if (haDeviceId) {
+          _navigateToDevice(haDeviceId);
+          return;
+        }
+      }
+      this.root.dispatchEvent(new CustomEvent('hass-more-info', {
+        detail: { entityId: _onlineEntityId(deviceId) }, bubbles: true, composed: true,
+      }));
+    }
+
+    _makeRow(className, deviceId) {
+      const row = document.createElement('div');
+      row.className = className;
+      if ((this._config.device_click || 'more_info') !== 'none') {
+        row.classList.add('clickable');
+        row.addEventListener('click', (ev) => {
+          ev.stopPropagation();
+          this._openDevice(deviceId);
+        });
+      }
+      return row;
+    }
+
     _renderDeviceList(container, deviceIds) {
-      container.innerHTML = '';
+      container.textContent = '';
       if (!deviceIds.length) {
         const row = document.createElement('div');
         row.className = 'tile-detail-row';
@@ -2976,57 +4134,96 @@
         return;
       }
       deviceIds.forEach((deviceId) => {
-        const row = document.createElement('div');
-        row.className = 'tile-detail-row';
+        const row = this._makeRow('tile-detail-row', deviceId);
         const name = document.createElement('span');
         name.className = 'device-name';
         name.textContent = deviceId;
         row.appendChild(name);
-        row.addEventListener('click', (ev) => {
-          ev.stopPropagation();
-          const entityId = _onlineEntityId(deviceId);
-          this.root.dispatchEvent(new CustomEvent('hass-more-info', {
-            detail: { entityId }, bubbles: true, composed: true,
-          }));
-        });
         container.appendChild(row);
       });
     }
 
+
+    _flush() {
+      const hass = this._hass;
+      if (!hass || !this._cardEl) return;
+      this._hasRendered = true;
+
+      if (hass.devices !== this._lastDevicesRef || hass.entities !== this._lastEntitiesRef) {
+        this._lastDevicesRef = hass.devices;
+        this._lastEntitiesRef = hass.entities;
+        this._devMap = new Map(_tuxdRealDevices(hass).map((d) => [d.deviceId, d.haDeviceId]));
+      }
+      const hub = _hubEntities(hass);
+      if (hub !== this._hub) {
+        this._hub = hub;
+        this._actionsDirty = true;
+        this._tiles.forEach((tileState) => { tileState.lastStateObj = undefined; });
+      }
+      this._problems = _problemsIndex(hass, hub, this._problemCache);
+
+      this._updateTiles();
+      this._updateBanner();
+      this._updateAttention();
+      if (this._actionsDirty) this._updateActions();
+    }
+
+    _numberOf(key) {
+      const id = this._hub && this._hub.sensors[key];
+      const st = id && this._hass.states[id];
+      const n = st ? parseFloat(st.state) : NaN;
+      return Number.isNaN(n) ? null : n;
+    }
+
+    _setTileCount(spec, tileState, count) {
+      const displayValue = count === null ? '—' : String(count);
+      if (displayValue !== tileState.lastValue) {
+        tileState.lastValue = displayValue;
+        tileState.value.textContent = displayValue;
+        tileState.tile.classList.remove('severity-bad', 'severity-warn');
+        const cls = this._severityFor(spec, count || 0);
+        if (cls) tileState.tile.classList.add(cls);
+      }
+      const problem = spec.severity !== 'neutral';
+      tileState.tile.hidden = !!(this._config.hide_zero_problems && problem && !count);
+      if (this._config.expand_problems && problem && !this._userToggled.has(spec.key)) {
+        this._setExpanded(spec.key, !!count);
+      }
+    }
+
     _updateTiles() {
       const hass = this._hass;
-      if (!hass || !this._grid) return;
+      const hub = this._hub;
 
       this._specs().forEach((spec) => {
         const tileState = this._tiles.get(spec.key);
         if (!tileState) return;
-        const st = tileState.entityId && hass.states[tileState.entityId];
+        const entityId = hub.sensors[spec.key];
+        const st = entityId ? hass.states[entityId] : undefined;
+        if (st === tileState.lastStateObj && entityId === tileState.lastEntityId) return;
+        tileState.lastStateObj = st;
+        tileState.lastEntityId = entityId;
+
         const raw = st ? st.state : null;
         const count = raw == null || Number.isNaN(parseFloat(raw)) ? null : parseFloat(raw);
-        const displayValue = count === null ? '—' : String(count);
-        if (displayValue !== tileState.lastValue) {
-          tileState.lastValue = displayValue;
-          tileState.value.textContent = displayValue;
-          tileState.tile.className = `tile ${this._severityFor(spec, count || 0)}`.trim();
-        }
+        this._setTileCount(spec, tileState, count);
 
         if (spec.key === 'versions') {
           const versions = (st && st.attributes && st.attributes.versions) || {};
           const detailKey = JSON.stringify(versions);
           if (detailKey !== tileState.lastDetailKey) {
             tileState.lastDetailKey = detailKey;
-            tileState.detail.innerHTML = '';
-            const entries = Object.keys(versions);
+            tileState.detail.textContent = '';
+            const entries = Object.keys(versions).sort(_cmpVersion).reverse();
             if (!entries.length) {
               const row = document.createElement('div');
               row.className = 'tile-detail-row';
               row.textContent = this._t('none');
               tileState.detail.appendChild(row);
             } else {
-              entries.sort().forEach((version) => {
+              entries.forEach((version) => {
                 const row = document.createElement('div');
                 row.className = 'tile-detail-row';
-                row.innerHTML = '';
                 const name = document.createElement('span');
                 name.className = 'device-name';
                 name.textContent = version;
@@ -3048,67 +4245,197 @@
         }
       });
 
-      if (this._config.show_thresholds !== false) {
-        this._updateThresholdTile();
-      }
+      if (this._config.show_thresholds !== false) this._updateThresholdTile();
     }
 
     _updateThresholdTile() {
-      const hass = this._hass;
       const tileState = this._tiles.get('overThreshold');
       if (!tileState) return;
-      const perDevice = new Map();
-      (this._thresholdEntityIds || []).forEach((entityId) => {
-        const st = hass.states[entityId];
-        if (!st || !st.attributes) return;
-        const values = st.attributes.values || {};
-        const metricLabel = (st.attributes.friendly_name || '').replace(/^TuxD VMs Over /, '').replace(/ Threshold$/, '');
-        Object.keys(values).forEach((deviceId) => {
-          if (!perDevice.has(deviceId)) perDevice.set(deviceId, []);
-          perDevice.get(deviceId).push({ metric: metricLabel, value: values[deviceId] });
-        });
-      });
+      const problems = this._problems;
+      if (tileState.lastProblems === problems) return;
+      tileState.lastProblems = problems;
 
-      const count = perDevice.size;
-      const displayValue = String(count);
-      if (displayValue !== tileState.lastValue) {
-        tileState.lastValue = displayValue;
-        tileState.value.textContent = displayValue;
-        tileState.tile.className = `tile ${count > 0 ? 'severity-bad' : ''}`.trim();
+      const perDevice = problems.thresholdDetail;
+      const spec = { key: 'overThreshold', severity: 'bad' };
+      this._setTileCount(spec, tileState, perDevice.size);
+
+      const deviceIds = Array.from(perDevice.keys()).sort();
+      const detailKey = deviceIds.map((id) => `${id}:${perDevice.get(id).map((r) => `${r.metric}=${r.value}`).join(';')}`).join(',');
+      if (detailKey === tileState.lastDetailKey) return;
+      tileState.lastDetailKey = detailKey;
+      tileState.detail.textContent = '';
+      if (!deviceIds.length) {
+        const row = document.createElement('div');
+        row.className = 'tile-detail-row';
+        row.textContent = this._t('none');
+        tileState.detail.appendChild(row);
+        return;
       }
+      deviceIds.forEach((deviceId) => {
+        const row = this._makeRow('tile-detail-row', deviceId);
+        const name = document.createElement('span');
+        name.className = 'device-name';
+        const reasons = perDevice.get(deviceId)
+          .map((r) => `${r.metric} ${Number(r.value).toFixed(1)}`)
+          .join(', ');
+        name.textContent = `${deviceId} (${reasons})`;
+        row.appendChild(name);
+        tileState.detail.appendChild(row);
+      });
+    }
 
-      const detailKey = Array.from(perDevice.keys()).sort().join(',');
-      if (detailKey !== tileState.lastDetailKey) {
-        tileState.lastDetailKey = detailKey;
-        tileState.detail.innerHTML = '';
-        const deviceIds = Array.from(perDevice.keys()).sort();
-        if (!deviceIds.length) {
-          const row = document.createElement('div');
-          row.className = 'tile-detail-row';
-          row.textContent = this._t('none');
-          tileState.detail.appendChild(row);
+    _classify() {
+      const problems = this._problems;
+      const attention = new Set(problems.offline);
+      const updatesOnly = new Set();
+      problems.byDevice.forEach((set, deviceId) => {
+        if (_hasBadProblem(set)) attention.add(deviceId);
+        else if (_hasWarnProblem(set)) updatesOnly.add(deviceId);
+      });
+      attention.forEach((id) => updatesOnly.delete(id));
+      return { attention, updatesOnly };
+    }
+
+    _updateBanner() {
+      if (!this._bannerEl) return;
+      const hub = this._hub;
+      let level;
+      let title;
+      let sub = '';
+      if (!hub.hubDeviceId || !hub.complete) {
+        level = 'unknown';
+        title = this._t('bannerNoHub');
+      } else {
+        const { attention, updatesOnly } = this._classify();
+        const online = this._numberOf('online');
+        const configured = this._numberOf('configured');
+        if (attention.size > 0) {
+          level = 'bad';
+          title = _expandTemplate(this._t('bannerAttention'), { n: attention.size });
+        } else if (updatesOnly.size > 0) {
+          level = 'warn';
+          title = _expandTemplate(this._t('bannerUpdates'), { n: updatesOnly.size });
         } else {
-          deviceIds.forEach((deviceId) => {
-            const row = document.createElement('div');
-            row.className = 'tile-detail-row';
-            const name = document.createElement('span');
-            name.className = 'device-name';
-            const reasons = perDevice.get(deviceId)
-              .map((r) => `${r.metric} ${Number(r.value).toFixed(1)}`)
-              .join(', ');
-            name.textContent = `${deviceId} (${reasons})`;
-            row.appendChild(name);
-            row.addEventListener('click', (ev) => {
-              ev.stopPropagation();
-              const entityId = _onlineEntityId(deviceId);
-              this.root.dispatchEvent(new CustomEvent('hass-more-info', {
-                detail: { entityId }, bubbles: true, composed: true,
-              }));
-            });
-            tileState.detail.appendChild(row);
-          });
+          level = 'ok';
+          title = this._t('bannerHealthy');
+        }
+        if (online !== null && configured !== null) {
+          sub = _expandTemplate(this._t('bannerSub'), { online, total: configured });
         }
       }
+      const key = `${level}|${title}|${sub}`;
+      if (key === this._bannerKey) return;
+      this._bannerKey = key;
+      const b = this._bannerEl;
+      b.el.hidden = false;
+      b.el.className = `banner ${level === 'unknown' ? '' : level}`.trim();
+      b.icon.icon = level === 'ok' ? 'mdi:check-circle-outline' : (level === 'bad' ? 'mdi:alert-circle-outline' : (level === 'warn' ? 'mdi:package-up' : 'mdi:help-circle-outline'));
+      b.title.textContent = title;
+      b.sub.textContent = sub;
+      b.sub.hidden = !sub;
+    }
+
+    _updateAttention() {
+      const el = this._attentionEl;
+      if (!el) return;
+      const problems = this._problems;
+      const { attention, updatesOnly } = this._classify();
+
+      const rows = [];
+      attention.forEach((id) => rows.push({ id, offline: problems.offline.has(id), kinds: problems.keyByDevice.get(id) || '', rank: problems.offline.has(id) ? 0 : 1 }));
+      updatesOnly.forEach((id) => rows.push({ id, offline: false, kinds: problems.keyByDevice.get(id) || '', rank: 2 }));
+      rows.sort((a, b) => {
+        if (a.rank !== b.rank) return a.rank - b.rank;
+        const ca = a.kinds ? a.kinds.split(',').length : 0;
+        const cb = b.kinds ? b.kinds.split(',').length : 0;
+        if (ca !== cb) return cb - ca;
+        return a.id.localeCompare(b.id);
+      });
+
+      const limit = Math.max(1, Number(this._config.attention_limit) || 8);
+      const shown = rows.slice(0, limit);
+      const key = `${rows.length}|${shown.map((r) => `${r.id}:${r.offline ? 'x' : ''}${r.kinds}:${(problems.thresholdDetail.get(r.id) || []).map((d) => d.value).join('/')}`).join(',')}`;
+      if (key === this._attentionKey) return;
+      this._attentionKey = key;
+
+      el.textContent = '';
+      el.hidden = rows.length === 0;
+      if (!rows.length) return;
+
+      const title = document.createElement('div');
+      title.className = 'section-title';
+      title.textContent = this._t('attentionTitle');
+      el.appendChild(title);
+
+      shown.forEach((r) => {
+        const row = this._makeRow('att-row', r.id);
+        const name = document.createElement('span');
+        name.className = 'att-name';
+        name.textContent = r.id;
+        row.appendChild(name);
+
+        const detail = document.createElement('span');
+        detail.className = 'att-detail';
+        const th = problems.thresholdDetail.get(r.id) || [];
+        detail.textContent = th.map((d) => `${d.metric} ${Number(d.value).toFixed(1)}`).join(', ');
+        row.appendChild(detail);
+
+        const icons = document.createElement('span');
+        icons.className = 'att-icons';
+        const addIcon = (icon, warn, label) => {
+          const ic = document.createElement('ha-icon');
+          ic.className = warn ? 'att-icon warn' : 'att-icon';
+          ic.icon = icon;
+          ic.title = label;
+          icons.appendChild(ic);
+        };
+        if (r.offline) addIcon('mdi:server-network-off', false, this._tk('badge', 'offline'));
+        (r.kinds ? r.kinds.split(',') : []).forEach((kind) => {
+          const spec = PROBLEM_KINDS.find((k) => k.key === kind);
+          if (spec) addIcon(spec.icon, spec.severity === 'warn', this._tk('badge', kind));
+        });
+        row.appendChild(icons);
+        el.appendChild(row);
+      });
+
+      if (rows.length > shown.length) {
+        const more = document.createElement('div');
+        more.className = 'att-more';
+        more.textContent = _expandTemplate(this._t('attentionMore'), { n: rows.length - shown.length });
+        el.appendChild(more);
+      }
+    }
+
+    _updateActions() {
+      const el = this._actionsEl;
+      this._actionsDirty = false;
+      if (!el) return;
+      el.textContent = '';
+      const wanted = Array.isArray(this._config.actions) ? this._config.actions : [];
+      wanted.forEach((key) => {
+        if (!HUB_BUTTON_NAMES[key]) return;
+        const entityId = this._hub && this._hub.buttons[key];
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'action-btn';
+        const label = this._tk('actionLabels', key);
+        btn.textContent = label;
+        btn.disabled = !entityId;
+        btn.addEventListener('click', () => {
+          const dangerous = key === 'update_agents' || key === 'restart_agents';
+          if (dangerous && this._config.confirm_actions !== false) {
+            if (!window.confirm(this._t(key === 'update_agents' ? 'confirmUpdateAgents' : 'confirmRestartAgents'))) return;
+          }
+          this._hass.callService('button', 'press', { entity_id: entityId });
+          btn.classList.add('sent');
+          btn.textContent = `${this._t('actionSent')} - ${label}`;
+          this._timers.push(setTimeout(() => {
+            btn.classList.remove('sent');
+            btn.textContent = label;
+          }, 2500));
+        });
+        el.appendChild(btn);
+      });
     }
   }
 
@@ -3169,6 +4496,10 @@
 
     getCardSize() {
       return this._renderer ? this._renderer.getCardSize() : 1;
+    }
+
+    getGridOptions() {
+      return this._renderer && this._renderer.getGridOptions ? this._renderer.getGridOptions() : {};
     }
   }
 
@@ -3260,7 +4591,7 @@
     }
 
     _schema() {
-      const modeSchema = RENDERERS[this._cardType()].schema();
+      const modeSchema = RENDERERS[this._cardType()].schema(this._lang());
       if (this._forcedType) return modeSchema;
       const cardField = {
         name: 'card',
