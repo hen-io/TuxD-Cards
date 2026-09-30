@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '1.0.6';
+  const CARD_VERSION = '1.0.7';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,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';
 
   function resolveLang(raw) {
@@ -247,7 +247,7 @@
   const I18N = {
     en: {
       cardType: 'Card type',
-      cardTypeOptions: { terminal: 'Terminal', update: 'Updates', cache: 'Site Cache', conf: 'Configuration', devices: 'Device Status', fleet: 'Fleet Summary' },
+      cardTypeOptions: { terminal: 'Terminal', 'terminal-integrated': 'Terminal (integrated)', update: 'Updates', cache: 'Site Cache', conf: 'Configuration', devices: 'Device Status', fleet: 'Fleet Summary' },
       terminal: {
         title: 'Terminal',
         clear: 'Clear screen',
@@ -270,6 +270,29 @@
           language: 'Language',
           theme: 'Theme',
           background_color: 'Terminal background color',
+          hide_header: 'Hide header',
+        },
+      },
+      'terminal-integrated': {
+        title: 'Terminal (integrated)',
+        placeholder: 'Type a command and press Enter...',
+        clear: 'Clear screen',
+        stop: 'Stop running command',
+        run: 'Run',
+        notFound: 'Entity not found: ',
+        editor: {
+          input_entity: 'Input entity (text)',
+          output_entity: 'Output entity (sensor)',
+          title: 'Title',
+          height: 'Height (e.g. 320px)',
+          max_lines: 'Max lines',
+          max_history: 'Max command history',
+          auto_scroll: 'Auto-scroll',
+          text_color: 'Text color (e.g. #7ce6ff)',
+          text_size: 'Text size (e.g. 13px)',
+          language: 'Language',
+          theme: 'Theme',
+          background_color: 'Output background color',
           hide_header: 'Hide header',
         },
       },
@@ -343,6 +366,7 @@
           errors: 'System error',
           docker: 'Docker containers have errors',
           smart: 'SMART disk errors',
+          tugboat: 'TugBoat stacks not healthy',
           threshold: 'Over threshold',
           hostUpdates: 'Host updates pending',
           agentUpdates: 'TuxD agent update available',
@@ -392,6 +416,7 @@
         errorsLabel: 'Errors',
         dockerLabel: 'Docker Issues',
         smartLabel: 'SMART Errors',
+        tugboatLabel: 'Stack Issues',
         hostUpdatesLabel: 'Host Updates',
         agentUpdatesLabel: 'Agent Updates',
         versionsLabel: 'Versions',
@@ -417,6 +442,7 @@
           errors: 'System error',
           docker: 'Docker containers have errors',
           smart: 'SMART disk errors',
+          tugboat: 'TugBoat stacks not healthy',
           threshold: 'Over threshold',
           hostUpdates: 'Host updates pending',
           agentUpdates: 'TuxD agent update available',
@@ -431,6 +457,7 @@
           show_errors: 'Show errors tile',
           show_docker: 'Show docker-issues tile',
           show_smart: 'Show SMART-errors tile',
+          show_tugboat: 'Show TugBoat stack-issues tile',
           show_host_updates: 'Show host-updates tile',
           show_agent_updates: 'Show agent-updates tile',
           show_versions: 'Show version breakdown tile',
@@ -450,7 +477,7 @@
     },
     nb: {
       cardType: 'Korttype',
-      cardTypeOptions: { terminal: 'Terminal', update: 'Oppdateringer', cache: 'Nettsted-cache', conf: 'Konfigurasjon', devices: 'Enhetsstatus', fleet: 'Flåteoversikt' },
+      cardTypeOptions: { terminal: 'Terminal', 'terminal-integrated': 'Terminal (integrert)', update: 'Oppdateringer', cache: 'Nettsted-cache', conf: 'Konfigurasjon', devices: 'Enhetsstatus', fleet: 'Flåteoversikt' },
       terminal: {
         title: 'Terminal',
         clear: 'Tøm skjermen',
@@ -473,6 +500,29 @@
           language: 'Språk',
           theme: 'Tema',
           background_color: 'Bakgrunnsfarge (terminal)',
+          hide_header: 'Skjul topptekst',
+        },
+      },
+      'terminal-integrated': {
+        title: 'Terminal (integrert)',
+        placeholder: 'Skriv en kommando og trykk Enter...',
+        clear: 'Tøm skjermen',
+        stop: 'Stopp kjørende kommando',
+        run: 'Kjør',
+        notFound: 'Finner ikke enhet: ',
+        editor: {
+          input_entity: 'Input-entitet (text)',
+          output_entity: 'Output-entitet (sensor)',
+          title: 'Tittel',
+          height: 'Høyde (f.eks. 320px)',
+          max_lines: 'Maks antall linjer',
+          max_history: 'Maks kommandohistorikk',
+          auto_scroll: 'Automatisk rulling',
+          text_color: 'Tekstfarge (f.eks. #7ce6ff)',
+          text_size: 'Tekststørrelse (f.eks. 13px)',
+          language: 'Språk',
+          theme: 'Tema',
+          background_color: 'Bakgrunnsfarge (output)',
           hide_header: 'Skjul topptekst',
         },
       },
@@ -546,6 +596,7 @@
           errors: 'Systemfeil',
           docker: 'Docker-containere har feil',
           smart: 'SMART-diskfeil',
+          tugboat: 'TugBoat-stacks er ikke friske',
           threshold: 'Over terskel',
           hostUpdates: 'Systemoppdateringer venter',
           agentUpdates: 'TuxD-agentoppdatering tilgjengelig',
@@ -595,6 +646,7 @@
         errorsLabel: 'Feil',
         dockerLabel: 'Docker-problemer',
         smartLabel: 'SMART-feil',
+        tugboatLabel: 'Stack-problemer',
         hostUpdatesLabel: 'Systemoppdateringer',
         agentUpdatesLabel: 'Agentoppdateringer',
         versionsLabel: 'Versjoner',
@@ -620,6 +672,7 @@
           errors: 'Systemfeil',
           docker: 'Docker-containere har feil',
           smart: 'SMART-diskfeil',
+          tugboat: 'TugBoat-stacks er ikke friske',
           threshold: 'Over terskel',
           hostUpdates: 'Systemoppdateringer venter',
           agentUpdates: 'TuxD-agentoppdatering tilgjengelig',
@@ -634,6 +687,7 @@
           show_errors: 'Vis feil',
           show_docker: 'Vis docker-problemer',
           show_smart: 'Vis SMART-feil',
+          show_tugboat: 'Vis TugBoat stack-problemer',
           show_host_updates: 'Vis systemoppdateringer',
           show_agent_updates: 'Vis agentoppdateringer',
           show_versions: 'Vis versjonsoversikt',
@@ -2301,6 +2355,7 @@
     errors: 'TuxD Devices With Errors',
     docker: 'TuxD Devices With Docker Errors',
     smart: 'TuxD Devices With SMART Errors',
+    tugboat: 'TuxD Devices With Unhealthy Stacks',
     hostUpdates: 'TuxD Devices With Host Updates',
     agentUpdates: 'TuxD Devices With TuxD Agent Updates',
     versions: 'TuxD Devices By Version',
@@ -2334,6 +2389,7 @@
     { key: 'errors', icon: 'mdi:alert-circle-outline', severity: 'bad' },
     { key: 'docker', icon: 'mdi:docker', severity: 'bad' },
     { key: 'smart', icon: 'mdi:harddisk', severity: 'bad' },
+    { key: 'tugboat', icon: 'mdi:ferry', severity: 'bad' },
     { key: 'threshold', icon: 'mdi:gauge-full', severity: 'bad' },
     { key: 'hostUpdates', icon: 'mdi:package-up', severity: 'warn' },
     { key: 'agentUpdates', icon: 'mdi:script-text-outline', severity: 'warn' },
@@ -2373,7 +2429,7 @@
         else out[hit[0]][hit[1]] = entityId;
       }
     }
-    out.complete = Object.keys(HUB_SENSOR_NAMES).every((k) => !!out.sensors[k]);
+    out.complete = Object.keys(HUB_SENSOR_NAMES).every((k) => k === 'tugboat' || !!out.sensors[k]);
     return out;
   }
 
@@ -2393,7 +2449,7 @@
 
   function _problemsIndex(hass, hub, cache) {
     const ids = [];
-    ['offline', 'errors', 'docker', 'smart', 'hostUpdates', 'agentUpdates'].forEach((k) => ids.push(hub.sensors[k]));
+    ['offline', 'errors', 'docker', 'smart', 'tugboat', 'hostUpdates', 'agentUpdates'].forEach((k) => ids.push(hub.sensors[k]));
     hub.thresholdSensors.forEach((id) => ids.push(id));
     const deps = ids.map((id) => (id ? hass.states[id] : undefined));
     if (cache.result && cache.hub === hub && cache.deps && deps.length === cache.deps.length
@@ -2414,8 +2470,17 @@
     listOf('errors').forEach((d) => add(d, 'errors'));
     listOf('docker').forEach((d) => add(d, 'docker'));
     listOf('smart').forEach((d) => add(d, 'smart'));
+    listOf('tugboat').forEach((d) => add(d, 'tugboat'));
     listOf('hostUpdates').forEach((d) => add(d, 'hostUpdates'));
     listOf('agentUpdates').forEach((d) => add(d, 'agentUpdates'));
+
+    const stackDetail = new Map();
+    const tugSt = hub.sensors.tugboat && hass.states[hub.sensors.tugboat];
+    const tugStacks = (tugSt && tugSt.attributes && tugSt.attributes.stacks) || {};
+    Object.keys(tugStacks).forEach((deviceId) => {
+      const byStack = tugStacks[deviceId] || {};
+      stackDetail.set(deviceId, Object.keys(byStack).sort().map((s) => `${s} (${byStack[s]})`).join(', '));
+    });
 
     const thresholdDetail = new Map();
     hub.thresholdSensors.forEach((entityId) => {
@@ -2434,7 +2499,7 @@
     byDevice.forEach((set, deviceId) => {
       keyByDevice.set(deviceId, PROBLEM_KINDS.filter((k) => set.has(k.key)).map((k) => k.key).join(','));
     });
-    const result = { offline: new Set(listOf('offline')), byDevice, keyByDevice, thresholdDetail };
+    const result = { offline: new Set(listOf('offline')), byDevice, keyByDevice, thresholdDetail, stackDetail };
     cache.hub = hub;
     cache.deps = deps;
     cache.result = result;
@@ -2755,7 +2820,7 @@
       this._searchTerm = '';
       this._filter = 'all';
       this._problemCache = {};
-      this._problems = { offline: new Set(), byDevice: new Map(), keyByDevice: new Map(), thresholdDetail: new Map() };
+      this._problems = { offline: new Set(), byDevice: new Map(), keyByDevice: new Map(), thresholdDetail: new Map(), stackDetail: new Map() };
       this._hub = null;
       this._includeMatchers = [];
       this._excludeMatchers = [];
@@ -3467,6 +3532,10 @@
           const detail = this._problems.thresholdDetail.get(cell.deviceId) || [];
           if (detail.length) title += `: ${detail.map((d) => `${d.metric} ${Number(d.value).toFixed(1)}`).join(', ')}`;
         }
+        if (kind === 'tugboat') {
+          const stacks = this._problems.stackDetail.get(cell.deviceId);
+          if (stacks) title += `: ${stacks}`;
+        }
         badge.title = title;
         cell.badgesEl.appendChild(badge);
       });
@@ -3594,6 +3663,7 @@
     { key: 'errors', icon: 'mdi:alert-circle-outline', severity: 'bad', labelKey: 'errorsLabel', showKey: 'show_errors' },
     { key: 'docker', icon: 'mdi:docker', severity: 'bad', labelKey: 'dockerLabel', showKey: 'show_docker' },
     { key: 'smart', icon: 'mdi:harddisk', severity: 'bad', labelKey: 'smartLabel', showKey: 'show_smart' },
+    { key: 'tugboat', icon: 'mdi:ferry', severity: 'bad', labelKey: 'tugboatLabel', showKey: 'show_tugboat' },
     { key: 'hostUpdates', icon: 'mdi:package-up', severity: 'warn', labelKey: 'hostUpdatesLabel', showKey: 'show_host_updates' },
     { key: 'agentUpdates', icon: 'mdi:script-text-outline', severity: 'warn', labelKey: 'agentUpdatesLabel', showKey: 'show_agent_updates' },
     { key: 'versions', icon: 'mdi:tag-multiple-outline', severity: 'neutral', labelKey: 'versionsLabel', showKey: 'show_versions' },
@@ -3844,7 +3914,7 @@
         title: '', columns: 3, min_tile_width: 150,
         show_banner: true, show_attention: true,
         show_configured: true, show_online: true, show_offline: true, show_errors: true,
-        show_docker: true, show_smart: true, show_host_updates: true, show_agent_updates: true,
+        show_docker: true, show_smart: true, show_tugboat: true, show_host_updates: true, show_agent_updates: true,
         show_versions: true, show_thresholds: true,
         hide_zero_problems: false, expand_problems: false, attention_limit: 8,
         device_click: 'more_info', actions: [], confirm_actions: true,
@@ -3865,6 +3935,7 @@
           bool('show_errors'),
           bool('show_docker'),
           bool('show_smart'),
+          bool('show_tugboat'),
           bool('show_host_updates'),
           bool('show_agent_updates'),
           bool('show_versions'),
@@ -4124,7 +4195,7 @@
       return row;
     }
 
-    _renderDeviceList(container, deviceIds) {
+    _renderDeviceList(container, deviceIds, extras) {
       container.textContent = '';
       if (!deviceIds.length) {
         const row = document.createElement('div');
@@ -4137,7 +4208,8 @@
         const row = this._makeRow('tile-detail-row', deviceId);
         const name = document.createElement('span');
         name.className = 'device-name';
-        name.textContent = deviceId;
+        const extra = extras && extras.get(deviceId);
+        name.textContent = extra ? `${deviceId} (${extra})` : deviceId;
         row.appendChild(name);
         container.appendChild(row);
       });
@@ -4237,10 +4309,15 @@
           }
         } else {
           const devices = (st && st.attributes && st.attributes.devices) || [];
-          const detailKey = devices.join(',');
+          const extras = spec.key === 'tugboat' ? this._problems.stackDetail : null;
+          const detailKey = devices.map((d) => (extras && extras.get(d) ? `${d}:${extras.get(d)}` : d)).join(',');
           if (detailKey !== tileState.lastDetailKey) {
             tileState.lastDetailKey = detailKey;
-            this._renderDeviceList(tileState.detail, devices);
+            this._renderDeviceList(tileState.detail, devices, extras);
+          }
+          if (spec.key === 'tugboat') {
+            const total = st && st.attributes ? st.attributes.stacks_total : 0;
+            if (!total) tileState.tile.hidden = true;
           }
         }
       });
@@ -4354,7 +4431,7 @@
 
       const limit = Math.max(1, Number(this._config.attention_limit) || 8);
       const shown = rows.slice(0, limit);
-      const key = `${rows.length}|${shown.map((r) => `${r.id}:${r.offline ? 'x' : ''}${r.kinds}:${(problems.thresholdDetail.get(r.id) || []).map((d) => d.value).join('/')}`).join(',')}`;
+      const key = `${rows.length}|${shown.map((r) => `${r.id}:${r.offline ? 'x' : ''}${r.kinds}:${(problems.thresholdDetail.get(r.id) || []).map((d) => d.value).join('/')}:${problems.stackDetail.get(r.id) || ''}`).join(',')}`;
       if (key === this._attentionKey) return;
       this._attentionKey = key;
 
@@ -4377,7 +4454,9 @@
         const detail = document.createElement('span');
         detail.className = 'att-detail';
         const th = problems.thresholdDetail.get(r.id) || [];
-        detail.textContent = th.map((d) => `${d.metric} ${Number(d.value).toFixed(1)}`).join(', ');
+        const parts = th.map((d) => `${d.metric} ${Number(d.value).toFixed(1)}`);
+        if (problems.stackDetail.get(r.id)) parts.push(problems.stackDetail.get(r.id));
+        detail.textContent = parts.join(', ');
         row.appendChild(detail);
 
         const icons = document.createElement('span');
@@ -4440,8 +4519,482 @@
   }
 
 
+  const INTEGRATED_CLEAR_SENTINEL = '__tuxd_clear__';
+  const INTEGRATED_STOP_SENTINEL = '__tuxd_stop__';
+  const INTEGRATED_DEFAULT_MAX_HISTORY = 100;
+
+  const INTEGRATED_STYLE = `
+    :host { display: block; }
+    ha-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace;
+      color: var(--primary-text-color);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--divider-color);
+    }
+    .title {
+      flex: 1 1 auto;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--secondary-text-color);
+      user-select: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .hbtn {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: none;
+      color: var(--secondary-text-color);
+      cursor: pointer;
+      padding: 4px 6px;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+    .hbtn svg { width: 16px; height: 16px; fill: currentColor; }
+    .hbtn:hover {
+      background: rgba(var(--rgb-primary-text-color, 0, 0, 0), 0.06);
+      color: var(--primary-text-color);
+    }
+    .output {
+      flex: 0 0 auto;
+      overflow-y: auto;
+      padding: 12px 16px;
+      font-size: var(--tuxd-text-size, 13px);
+      line-height: 1.5;
+      box-sizing: border-box;
+      background: var(--tuxd-output-bg, var(--secondary-background-color, transparent));
+    }
+    .output::-webkit-scrollbar { width: 8px; }
+    .output::-webkit-scrollbar-thumb { background: var(--divider-color); border-radius: 8px; }
+    .line {
+      white-space: pre-wrap;
+      word-break: break-word;
+      color: var(--tuxd-text-color, var(--primary-text-color));
+    }
+    .line.cmd { color: var(--tuxd-text-color, var(--primary-color)); }
+    .inputrow {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      background: var(--tuxd-output-bg, var(--secondary-background-color, transparent));
+    }
+    .prompt { color: var(--primary-color); font-weight: 600; }
+    input {
+      flex: 1;
+      min-width: 0;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--primary-text-color);
+      font: inherit;
+      font-size: var(--tuxd-text-size, 13px);
+      caret-color: var(--primary-color);
+    }
+    input::placeholder { color: var(--secondary-text-color); opacity: 0.7; }
+    button.send {
+      flex: 0 0 auto;
+      background: rgba(var(--rgb-primary-color, 3, 169, 244), 0.1);
+      border: 1px solid rgba(var(--rgb-primary-color, 3, 169, 244), 0.35);
+      color: var(--primary-color);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 12px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    button.send:hover { background: rgba(var(--rgb-primary-color, 3, 169, 244), 0.18); }
+    button.send:focus-visible, .hbtn:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 1px; }
+    .unavailable { padding: 16px; color: var(--error-color, #db4437); font-size: 13px; }
+  `;
+
+  class TerminalIntegratedRenderer {
+    constructor(root) {
+      this.root = root;
+      this._history = [];
+      this._historyIndex = 0;
+      this._historyLoadedFor = null;
+      this._lastOutputState = undefined;
+      this._unavailable = false;
+      this._outputEl = null;
+      this._inputEl = null;
+    }
+
+    static defaultConfig() {
+      return {
+        max_lines: DEFAULT_MAX_LINES,
+        height: DEFAULT_HEIGHT,
+        auto_scroll: true,
+        max_history: INTEGRATED_DEFAULT_MAX_HISTORY,
+        theme: 'ha',
+        hide_header: false,
+      };
+    }
+
+    static schema() {
+      return [
+        { name: 'input_entity', required: true, selector: { entity: { domain: ['text', 'input_text'] } } },
+        { name: 'output_entity', required: true, selector: { entity: { domain: ['sensor'] } } },
+        { name: 'title', selector: { text: {} } },
+        { name: 'theme', selector: { select: { mode: 'dropdown', options: THEME_OPTIONS } } },
+        { name: 'height', selector: { text: {} } },
+        { name: 'max_lines', selector: { number: { mode: 'box', min: 10, max: 5000 } } },
+        { name: 'max_history', selector: { number: { mode: 'box', min: 0, max: 1000 } } },
+        { name: 'auto_scroll', selector: { boolean: {} } },
+        { name: 'hide_header', selector: { boolean: {} } },
+        { name: 'text_color', selector: { text: {} } },
+        { name: 'text_size', selector: { text: {} } },
+        { name: 'background_color', selector: { text: {} } },
+        { name: 'language', selector: { select: { mode: 'dropdown', options: LANGUAGE_OPTIONS } } },
+      ];
+    }
+
+    static hasCandidate(entities) {
+      return (entities || []).some((e) => e.indexOf('text.') === 0 && e.indexOf('terminal_input') !== -1);
+    }
+
+    static stubFields(entities) {
+      const list = entities || [];
+      const input = list.find((e) => e.indexOf('text.') === 0 && e.indexOf('terminal_input') !== -1);
+      const output = list.find((e) => e.indexOf('sensor.') === 0 && e.indexOf('terminal_output') !== -1);
+      return { input_entity: input || '', output_entity: output || '' };
+    }
+
+    setConfig(config) {
+      if (!config || !config.input_entity || !config.output_entity) {
+        throw new Error('tuxd-card (terminal-integrated): "input_entity" and "output_entity" are required');
+      }
+      this._config = Object.assign(TerminalIntegratedRenderer.defaultConfig(), config);
+      this._lastOutputState = undefined;
+      this._unavailable = false;
+      if (this._historyLoadedFor !== this._config.input_entity) {
+        this._historyLoadedFor = this._config.input_entity;
+        this._loadHistory();
+      }
+      if (this._hass) this._render();
+    }
+
+    setHass(hass) {
+      const isFirst = !this._hass;
+      this._hass = hass;
+      if (!this._config) return;
+      if (isFirst) this._render();
+      this._updateAvailability();
+      if (!this._unavailable) this._syncOutput(isFirst);
+    }
+
+    getCardSize() {
+      return 6;
+    }
+
+    _lang() {
+      if (this._config && this._config.language) return resolveLang(this._config.language);
+      const hassLang = this._hass && (this._hass.language || (this._hass.locale && this._hass.locale.language));
+      return resolveLang(hassLang);
+    }
+
+    _t(key) {
+      const dict = modeDict(this._lang(), 'terminal-integrated');
+      return dict[key] || I18N.en['terminal-integrated'][key] || key;
+    }
+
+    _historyKey() {
+      return `tuxd-terminal-card-history:${this._config.input_entity}`;
+    }
+
+    _loadHistory() {
+      this._history = [];
+      try {
+        const raw = window.localStorage.getItem(this._historyKey());
+        const parsed = raw ? JSON.parse(raw) : null;
+        if (Array.isArray(parsed)) this._history = parsed.filter((v) => typeof v === 'string');
+      } catch (e) {
+        this._history = [];
+      }
+      this._historyIndex = this._history.length;
+    }
+
+    _saveHistory() {
+      try {
+        window.localStorage.setItem(this._historyKey(), JSON.stringify(this._history));
+      } catch (e) {
+      }
+    }
+
+    _outputKey() {
+      return `tuxd-terminal-card-output:${this._config.output_entity}`;
+    }
+
+    _loadOutput() {
+      try {
+        const raw = window.localStorage.getItem(this._outputKey());
+        const parsed = raw ? JSON.parse(raw) : null;
+        if (Array.isArray(parsed)) parsed.forEach((line) => this._appendLine(line, false));
+      } catch (e) {
+      }
+    }
+
+    _saveOutput() {
+      try {
+        const lines = Array.from(this._outputEl.children).map((el) => el.textContent);
+        window.localStorage.setItem(this._outputKey(), JSON.stringify(lines));
+      } catch (e) {
+      }
+    }
+
+    _clearScreen() {
+      if (this._outputEl) this._outputEl.textContent = '';
+      try {
+        window.localStorage.removeItem(this._outputKey());
+      } catch (e) {
+      }
+    }
+
+    _applyTheme(card) {
+      const theme = THEMES[this._config.theme] || THEMES.ha;
+      if (theme.bg) {
+        card.style.setProperty('--ha-card-background', theme.bg);
+        card.style.setProperty('--card-background-color', theme.bg);
+        card.style.setProperty('--secondary-background-color', 'transparent');
+      }
+      if (theme.text) {
+        card.style.setProperty('--primary-text-color', theme.text);
+        card.style.setProperty('--secondary-text-color', theme.text);
+      }
+      if (theme.textRgb) card.style.setProperty('--rgb-primary-text-color', theme.textRgb);
+      if (theme.accent) card.style.setProperty('--primary-color', theme.accent);
+      if (theme.accentRgb) card.style.setProperty('--rgb-primary-color', theme.accentRgb);
+      if (theme.border) card.style.setProperty('--divider-color', theme.border);
+    }
+
+    _updateAvailability() {
+      const inState = this._hass.states[this._config.input_entity];
+      const outState = this._hass.states[this._config.output_entity];
+      const missing = !inState || !outState;
+      if (missing && !this._unavailable) {
+        this._unavailable = true;
+        this._renderUnavailable(!inState ? this._config.input_entity : this._config.output_entity);
+      } else if (!missing && this._unavailable) {
+        this._unavailable = false;
+        this._lastOutputState = undefined;
+        this._render();
+      }
+    }
+
+    _renderUnavailable(missingEntity) {
+      const root = this.root;
+      root.innerHTML = '';
+      const style = document.createElement('style');
+      style.textContent = INTEGRATED_STYLE;
+      root.appendChild(style);
+      const card = document.createElement('ha-card');
+      this._applyTheme(card);
+      const msg = document.createElement('div');
+      msg.className = 'unavailable';
+      msg.textContent = this._t('notFound') + missingEntity;
+      card.appendChild(msg);
+      root.appendChild(card);
+      this._outputEl = null;
+      this._inputEl = null;
+    }
+
+    _headerButton(title, svgPath, onClick) {
+      const btn = document.createElement('button');
+      btn.className = 'hbtn';
+      btn.type = 'button';
+      btn.title = title;
+      btn.setAttribute('aria-label', title);
+      btn.innerHTML = `<svg viewBox="0 0 24 24"><path d="${svgPath}"/></svg>`;
+      btn.addEventListener('click', onClick);
+      return btn;
+    }
+
+    _render() {
+      const root = this.root;
+      root.innerHTML = '';
+      const style = document.createElement('style');
+      style.textContent = INTEGRATED_STYLE;
+      root.appendChild(style);
+
+      const card = document.createElement('ha-card');
+      this._applyTheme(card);
+      if (this._config.text_color) card.style.setProperty('--tuxd-text-color', this._config.text_color);
+      if (this._config.text_size) {
+        const size = typeof this._config.text_size === 'number' ? `${this._config.text_size}px` : this._config.text_size;
+        card.style.setProperty('--tuxd-text-size', size);
+      }
+      if (this._config.background_color) card.style.setProperty('--tuxd-output-bg', this._config.background_color);
+
+      if (!this._config.hide_header) {
+        const header = document.createElement('div');
+        header.className = 'header';
+        const title = document.createElement('span');
+        title.className = 'title';
+        title.textContent = this._config.title || this._t('title');
+        header.appendChild(title);
+        header.appendChild(this._headerButton(
+          this._t('stop'),
+          'M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm4 14H8V8h8v8z',
+          () => this._sendValue(INTEGRATED_STOP_SENTINEL),
+        ));
+        header.appendChild(this._headerButton(
+          this._t('clear'),
+          'M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z',
+          () => this._clearScreen(),
+        ));
+        card.appendChild(header);
+      }
+
+      const output = document.createElement('div');
+      output.className = 'output';
+      output.style.height = this._config.height || DEFAULT_HEIGHT;
+      output.addEventListener('mouseup', () => {
+        const sel = window.getSelection();
+        if (!sel || sel.toString() === '') this._inputEl.focus();
+      });
+      card.appendChild(output);
+      this._outputEl = output;
+      this._loadOutput();
+
+      const inputrow = document.createElement('div');
+      inputrow.className = 'inputrow';
+      const prompt = document.createElement('span');
+      prompt.className = 'prompt';
+      prompt.textContent = '❯';
+      inputrow.appendChild(prompt);
+
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.id = 'cmd';
+      input.placeholder = this._t('placeholder');
+      input.setAttribute('aria-label', this._t('placeholder'));
+      input.autocomplete = 'off';
+      input.autocapitalize = 'off';
+      input.spellcheck = false;
+      input.addEventListener('keydown', (ev) => this._onKeydown(ev));
+      inputrow.appendChild(input);
+      this._inputEl = input;
+
+      const send = document.createElement('button');
+      send.className = 'send';
+      send.type = 'button';
+      send.textContent = this._t('run');
+      send.addEventListener('click', () => this._submit());
+      inputrow.appendChild(send);
+
+      card.appendChild(inputrow);
+      root.appendChild(card);
+    }
+
+    _syncOutput(firstRun) {
+      if (!this._outputEl) return;
+      const state = this._hass.states[this._config.output_entity];
+      if (!state) return;
+      const value = state.state;
+      if (value === this._lastOutputState) return;
+      const wasEmptyStart = firstRun && this._lastOutputState === undefined;
+      this._lastOutputState = value;
+      if (value === 'unavailable' || value === 'unknown') return;
+      if (wasEmptyStart && value === '') return;
+      if (firstRun && this._lastLineText() === value) return;
+      if (value === INTEGRATED_CLEAR_SENTINEL) {
+        this._clearScreen();
+        return;
+      }
+      this._appendLine(value);
+    }
+
+    _lastLineText() {
+      const last = this._outputEl && this._outputEl.lastElementChild;
+      return last ? last.textContent : null;
+    }
+
+    _appendLine(text, persist) {
+      const p = typeof text === 'string' ? text.indexOf(':~$ ') : -1;
+      const isCmd = p > 0 && text.slice(0, p).indexOf(' ') === -1;
+      const line = document.createElement('div');
+      line.className = isCmd ? 'line cmd' : 'line';
+      line.textContent = text === '' ? ' ' : text;
+      this._outputEl.appendChild(line);
+
+      const max = this._config.max_lines || DEFAULT_MAX_LINES;
+      while (this._outputEl.children.length > max) {
+        this._outputEl.removeChild(this._outputEl.firstChild);
+      }
+      if (this._config.auto_scroll !== false) {
+        this._outputEl.scrollTop = this._outputEl.scrollHeight;
+      }
+      if (persist !== false) this._saveOutput();
+    }
+
+    _onKeydown(ev) {
+      if (ev.key === 'Enter') {
+        ev.preventDefault();
+        this._submit();
+      } else if (ev.key === 'ArrowUp') {
+        ev.preventDefault();
+        this._historyStep(-1);
+      } else if (ev.key === 'ArrowDown') {
+        ev.preventDefault();
+        this._historyStep(1);
+      } else if (ev.ctrlKey && (ev.key === 'c' || ev.key === 'C')) {
+        const sel = this._inputEl.selectionStart !== this._inputEl.selectionEnd;
+        if (!sel) {
+          ev.preventDefault();
+          this._sendValue(INTEGRATED_STOP_SENTINEL);
+        }
+      }
+    }
+
+    _historyStep(direction) {
+      if (!this._history.length) return;
+      this._historyIndex += direction;
+      if (this._historyIndex < 0) this._historyIndex = 0;
+      if (this._historyIndex >= this._history.length) {
+        this._historyIndex = this._history.length;
+        this._inputEl.value = '';
+        return;
+      }
+      this._inputEl.value = this._history[this._historyIndex];
+      const pos = this._inputEl.value.length;
+      window.requestAnimationFrame(() => this._inputEl.setSelectionRange(pos, pos));
+    }
+
+    _sendValue(value) {
+      if (!this._hass || !this._config) return;
+      const domain = this._config.input_entity.split('.')[0];
+      this._hass.callService(domain, 'set_value', { entity_id: this._config.input_entity, value });
+    }
+
+    _submit() {
+      const value = (this._inputEl.value || '').trim();
+      if (!value) return;
+      this._history.push(value);
+      const maxHistory = this._config.max_history === 0 ? 0 : (this._config.max_history || INTEGRATED_DEFAULT_MAX_HISTORY);
+      while (this._history.length > maxHistory) this._history.shift();
+      this._historyIndex = this._history.length;
+      this._saveHistory();
+      this._sendValue(value);
+      this._inputEl.value = '';
+    }
+  }
+
+
   const RENDERERS = {
-    terminal: TerminalRenderer, update: UpdateRenderer, cache: CacheRenderer, conf: ConfigEditorRenderer,
+    terminal: TerminalRenderer, 'terminal-integrated': TerminalIntegratedRenderer, update: UpdateRenderer, cache: CacheRenderer, conf: ConfigEditorRenderer,
     devices: DeviceStatusGridRenderer, fleet: FleetSummaryRenderer,
   };
   const DEFAULT_CARD_TYPE = 'terminal';
@@ -4548,6 +5101,7 @@
     const labels = (I18N[lang] || I18N.en).cardTypeOptions;
     return [
       { value: 'terminal', label: labels.terminal },
+      { value: 'terminal-integrated', label: labels['terminal-integrated'] },
       { value: 'update', label: labels.update },
       { value: 'cache', label: labels.cache },
       { value: 'conf', label: labels.conf },
@@ -4690,6 +5244,6 @@
   window.customCards.push({
     type: CARD_TAG,
     name: 'TuxD Card',
-    description: 'Terminal (with real interactive live-tty support), Updates, Configuration, Device Status grid, Fleet Summary, or Site Cache - pick with the Card type field. Covers all TuxD companion cards from one resource.',
+    description: 'Terminal (real interactive live-tty shell), Terminal (integrated: entity-based, shows everything the agent runs), Updates, Configuration, Device Status grid, Fleet Summary, or Site Cache - pick with the Card type field. Covers all TuxD companion cards from one resource.',
   });
 })();
