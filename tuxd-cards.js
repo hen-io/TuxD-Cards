@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '1.3.12';
+  const CARD_VERSION = '1.3.13';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,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';
 
   function resolveLang(raw) {
@@ -5911,21 +5911,6 @@
     }
   }
 
-  function _fillChipValue(el, text, digits) {
-    const parts = /^([0-9.,-]+)(.*)$/.exec(text);
-    el.textContent = '';
-    if (!parts) {
-      el.textContent = text;
-      return;
-    }
-    const num = document.createElement('span');
-    num.className = 'host-chip-num';
-    num.style.minWidth = `${digits}ch`;
-    num.textContent = parts[1];
-    el.appendChild(num);
-    el.appendChild(document.createTextNode(parts[2]));
-  }
-
   function _reconnectDots() {
     const dots = document.createElement('span');
     dots.className = 'tuxd-dots';
@@ -6267,7 +6252,7 @@
       .host-flag ha-icon.host-reconnect { animation-duration: 6s; }
       .tuxd-dots i { animation: none; opacity: 0.6; }
     }
-    .host-flag { display: inline-flex; align-items: center; flex: 0 1 auto; min-width: 16px; overflow: hidden; font-size: 12px; color: var(--hc-sub); }
+    .host-flag { display: inline-flex; align-items: center; flex: 0 0 auto; min-width: 16px; overflow: hidden; font-size: 12px; color: var(--hc-sub); }
     .host-flag.error { color: var(--error-color, #db4437); }
     .host-flag.warning { color: var(--warning-color, #ff9800); }
     .host-flag ha-icon { --mdc-icon-size: 16px; flex: 0 0 auto; }
@@ -6295,6 +6280,30 @@
     button.host-power:hover { color: var(--hc-accent); }
     button.host-power ha-icon { --mdc-icon-size: 16px; flex: 0 0 auto; }
     .host-flag, button.host-power { overflow: visible; }
+    /* A status mark or an update button opens on hover to show its text
+       (.host-hint), growing to the right inside the name row. _hintOpen
+       sets how wide it may get and holds the name column at its width
+       meanwhile (host-held), so nothing outside the row moves; what the
+       text pushes out of the column is cut off there. hint-over: the text
+       needs more room than the column has and lies over the stat chips,
+       which fade back for as long as it does so it stays readable. */
+    .host-hint {
+      display: inline-block;
+      flex: 0 1 auto;
+      min-width: 0;
+      max-width: 0;
+      margin-left: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      opacity: 0;
+      transition: max-width 0.2s ease, margin-left 0.2s ease, opacity 0.2s ease;
+    }
+    .host-open > .host-hint { max-width: var(--hc-hint-room, 0px); margin-left: 4px; opacity: 1; }
+    .host-main.host-held { position: relative; z-index: 2; }
+    .host-main.host-held .host-name-row { justify-content: flex-start; }
+    .host-chips { transition: opacity 0.2s ease; }
+    ha-card.hint-over .host-chips { opacity: 0.12; }
     /* Too long for its space: a ticker (set up by _subScroll) - the text
        moves steadily one way, followed by a second copy of itself, and the
        loop restarts exactly when that copy is where the first one began,
@@ -6383,7 +6392,6 @@
     button.host-update {
       display: inline-flex;
       align-items: center;
-      max-width: 220px;
       font-family: inherit;
       font-size: 12px;
       font-weight: 600;
@@ -6396,7 +6404,11 @@
     }
     button.host-update ha-icon { --mdc-icon-size: 16px; flex: 0 0 auto; }
     button.host-update img { width: 16px; height: 16px; flex: 0 0 auto; object-fit: contain; }
-    .host-chips { display: grid; grid-template-columns: auto auto; gap: 6px; flex: 0 0 auto; }
+    /* Each chip is as wide as its own content, not stretched to the width
+       of the one above or below it: the two columns meet in the middle,
+       the left one ending there and the right one starting there. */
+    .host-chips { display: grid; grid-template-columns: auto auto; justify-items: start; gap: 6px; flex: 0 0 auto; }
+    .host-chip:nth-child(odd) { justify-self: end; }
     .host-chip {
       display: inline-flex;
       align-items: center;
@@ -6421,10 +6433,10 @@
     ha-card.layout-box .host-name-row { justify-content: center; }
     ha-card.layout-box .host-updates { justify-content: center; }
     .host-chip-label { white-space: pre; }
-    /* Digits all one width and right-aligned, in a field sized for the
-       widest expected value (set per chip in _render): the number changes,
-       the chip does not. */
-    .host-chip-num { display: inline-block; text-align: right; font-variant-numeric: tabular-nums; }
+    /* Digits all one width, so a chip only changes size when its value
+       gains or loses a character - never between two readings of the same
+       length. No reserved room beyond that: a chip is as wide as its text. */
+    .host-chip-value { font-variant-numeric: tabular-nums; }
     .host-chip ha-icon { flex: 0 0 auto; }
     /* The classes below are set by _fit() from the card's own width and
        the "stat chips" options - not by a media query, so a narrow card on
@@ -6434,7 +6446,7 @@
     ha-card.chips-below { flex-wrap: wrap; }
     ha-card.chips-below .host-chips { flex: 1 1 100%; display: flex; gap: 4px; min-width: 0; }
     ha-card.chips-below .host-chip {
-      flex: 1 1 auto;
+      flex: 0 1 auto;
       min-width: 0;
       justify-content: center;
       gap: 4px;
@@ -6653,7 +6665,7 @@
           const text = spec.format(s.state);
           const value = chip.querySelector('.host-chip-value');
           if (value.textContent === text) return;
-          _fillChipValue(value, text, spec.digits);
+          value.textContent = text;
           chip.title = `${spec.label} · ${text}`;
         });
         return;
@@ -6679,10 +6691,78 @@
       this.root.host.dispatchEvent(ev);
     }
 
+    _hintWire(el, text) {
+      const hint = document.createElement('span');
+      hint.className = 'host-hint';
+      hint.textContent = text;
+      el.appendChild(hint);
+      if (text) el.setAttribute('aria-label', text);
+      el.addEventListener('pointerenter', () => this._hintOpen(el));
+      el.addEventListener('pointerleave', () => this._hintClose(el));
+    }
+
+    _hintOpen(el) {
+      const card = this._cardEl;
+      const main = card && card.querySelector('.host-main');
+      const hint = el.querySelector('.host-hint');
+      if (!main || !hint || !hint.textContent) return;
+      clearTimeout(this._hintTimer);
+      const rect = (x) => x.getBoundingClientRect();
+      card.querySelectorAll('.host-hint').forEach((h) => { h.style.transition = h === hint ? '' : 'none'; });
+      card.querySelectorAll('.host-open').forEach((o) => { if (o !== el) o.classList.remove('host-open'); });
+      if (!this._hintHeld) {
+        this._hintHeld = true;
+        main.style.width = `${rect(main).width}px`;
+        main.style.flex = '0 0 auto';
+        main.style.minWidth = '0';
+        main.classList.add('host-held');
+      }
+      const edge = rect(card).right - (parseFloat(getComputedStyle(card).paddingRight) || 0);
+      const box = rect(hint);
+      const left = box.left - (parseFloat(getComputedStyle(hint).marginLeft) || 0) + 4;
+      const tail = rect(el).right - box.right;
+      const want = Math.max(0, Math.min(hint.scrollWidth + 1, Math.floor(edge - left - tail)));
+      if (hint.scrollWidth > want) el.title = hint.textContent;
+      else el.removeAttribute('title');
+      if (want < 28 && want < hint.scrollWidth) {
+        this._hintClose(el);
+        return;
+      }
+      const right = left + want + tail;
+      const past = Math.max(0, right - rect(main).right);
+      main.style.clipPath = `inset(-12px ${-(past + 3)}px -12px -12px)`;
+      el.style.setProperty('--hc-hint-room', `${want}px`);
+      const grid = card.querySelector('.host-chips');
+      const chips = grid ? rect(grid) : null;
+      const own = rect(el);
+      card.classList.toggle('hint-over', !!chips && chips.width > 0 && right > chips.left - 2 && chips.top < own.bottom && chips.bottom > own.top);
+      el.classList.add('host-open');
+    }
+
+    _hintClose(el) {
+      el.classList.remove('host-open');
+      if (this._cardEl) this._cardEl.classList.remove('hint-over');
+      clearTimeout(this._hintTimer);
+      this._hintTimer = setTimeout(() => this._hintRelease(), 260);
+    }
+
+    _hintRelease() {
+      if (!this._hintHeld) return;
+      this._hintHeld = false;
+      const main = this._cardEl && this._cardEl.querySelector('.host-main');
+      if (main) {
+        ['width', 'flex', 'min-width', 'clip-path'].forEach((p) => main.style.removeProperty(p));
+        main.classList.remove('host-held');
+      }
+      this._scheduleFit();
+    }
+
     _render(st, pending, overThreshold) {
       const config = this._config || {};
       const states = (this._hass && this._hass.states) || {};
       const root = this.root;
+      clearTimeout(this._hintTimer);
+      this._hintHeld = false;
       root.innerHTML = '';
       const style = document.createElement('style');
       style.textContent = HOST_STYLE;
@@ -6750,8 +6830,8 @@
       const flag = (cls, mark, text) => {
         const el = document.createElement('div');
         el.className = `host-flag ${cls}`;
-        el.title = text;
         el.appendChild(mark);
+        this._hintWire(el, text);
         nameRow.appendChild(el);
       };
       const applyGlow = (prefix, defaultColor) => {
@@ -6851,7 +6931,6 @@
             const p = String(prefix || '');
             if (p && text.length > p.length + 1 && text.toLowerCase().startsWith(`${p.toLowerCase()} `)) text = text.slice(p.length + 1);
           });
-          btn.title = text;
           if (entityId.endsWith('_self_update')) {
             const img = document.createElement('img');
             img.src = attrs.entity_picture || CARD_LOGO_DATA_URI;
@@ -6866,6 +6945,7 @@
             icon.setAttribute('icon', kind);
             btn.appendChild(icon);
           }
+          this._hintWire(btn, text);
           btn.addEventListener('click', (ev) => {
             ev.stopPropagation();
             this._moreInfo(entityId);
@@ -6877,6 +6957,7 @@
         more.className = 'host-update host-update-more';
         more.hidden = true;
         more.appendChild(document.createTextNode(''));
+        this._hintWire(more, '');
         more.addEventListener('click', (ev) => {
           ev.stopPropagation();
           const index = Array.from(box.querySelectorAll('.host-update:not(.host-update-more)')).findIndex((b) => b.hidden);
@@ -6893,15 +6974,14 @@
           ? fallback : Math.max(0, Math.min(3, Math.round(n)));
       };
       const chips = [
-        ['cpu', 'mdi:cpu-64-bit', 'cpuLabel', (v) => _fmtPct(v, decimals('cpu', 1)), '99'],
-        ['root', 'mdi:harddisk', 'rootLabel', (v) => _fmtPct(v, decimals('root', 1)), '99'],
-        ['ram', 'mdi:memory', 'ramLabel', (v) => _fmtPct(v, decimals('ram', 1)), '99'],
-        ['net', 'mdi:lan', 'netLabel', (v) => _fmtNet(v, decimals('net', 2)), '999'],
+        ['cpu', 'mdi:cpu-64-bit', 'cpuLabel', (v) => _fmtPct(v, decimals('cpu', 1))],
+        ['root', 'mdi:harddisk', 'rootLabel', (v) => _fmtPct(v, decimals('root', 1))],
+        ['ram', 'mdi:memory', 'ramLabel', (v) => _fmtPct(v, decimals('ram', 1))],
+        ['net', 'mdi:lan', 'netLabel', (v) => _fmtNet(v, decimals('net', 2))],
       ].filter((c) => st[c[0]] && config[`show_${c[0]}`] !== false);
       this._chipSpecs = {};
       chips.forEach((c) => {
-        const widest = /^[0-9.,-]*/.exec(c[3](c[4]))[0];
-        this._chipSpecs[c[0]] = { format: c[3], label: this._t(c[2]), digits: widest.length };
+        this._chipSpecs[c[0]] = { format: c[3], label: this._t(c[2]) };
       });
       if (chips.length && !offline) {
         const grid = document.createElement('div');
@@ -6921,7 +7001,7 @@
           chip.appendChild(label);
           const val = document.createElement('span');
           val.className = 'host-chip-value';
-          _fillChipValue(val, text, this._chipSpecs[c[0]].digits);
+          val.textContent = text;
           chip.appendChild(val);
           grid.appendChild(chip);
         });
@@ -6990,6 +7070,7 @@
       const card = this._cardEl;
       const config = this._config || {};
       if (!card) return;
+      if (this._hintHeld) return;
       const box = config.layout === 'box';
       const width = this.root.host ? this.root.host.clientWidth : 0;
       const rowWidth = Number(config.chips_row_width) > 0 ? Number(config.chips_row_width) : 520;
@@ -7022,7 +7103,9 @@
         const folded = updateBtns.slice(count);
         more.hidden = !folded.length;
         more.firstChild.textContent = `+${folded.length}`;
-        more.title = folded.map((b) => b.title).join('\n');
+        const names = folded.map((b) => b.querySelector('.host-hint').textContent).join(', ');
+        more.querySelector('.host-hint').textContent = names;
+        more.setAttribute('aria-label', names);
       };
       let spare = 0;
       const inner = () => rect(card).right - (parseFloat(getComputedStyle(card).paddingRight) || 0) - spare;
@@ -7111,6 +7194,7 @@
       this._fitPending = false;
       cancelAnimationFrame(this._fitFrame);
       clearTimeout(this._fitTimer);
+      clearTimeout(this._hintTimer);
     }
   }
 
