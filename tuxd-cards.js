@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '1.3.10';
+  const CARD_VERSION = '1.3.11';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,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';
 
   function resolveLang(raw) {
@@ -6280,19 +6280,23 @@
     button.host-power:hover { color: var(--hc-accent); }
     button.host-power ha-icon { --mdc-icon-size: 16px; flex: 0 0 auto; }
     .host-flag, button.host-power { overflow: visible; }
-    /* Too long for its space: the text slides to its end and back, with a
-       pause at each end (set up by _subScroll). With reduced motion it
-       stays still and ends in "..." as before. */
+    /* Too long for its space: a ticker (set up by _subScroll) - the text
+       moves steadily one way, followed by a second copy of itself, and the
+       loop restarts exactly when that copy is where the first one began,
+       so it never stops and never jumps. With reduced motion it stays
+       still, without the copy, and ends in "..." as before. */
     .host-sub-text { display: inline-block; }
+    .host-sub-gap { display: inline-block; }
     .host-sub.scroll { text-overflow: clip; }
-    .host-sub.scroll .host-sub-text { animation: host-sub-slide var(--hc-sub-time, 6s) ease-in-out var(--hc-sub-delay, 0s) infinite alternate; }
+    .host-sub.scroll .host-sub-text { animation: host-sub-slide var(--hc-sub-time, 6s) linear var(--hc-sub-delay, 0s) infinite; }
     @keyframes host-sub-slide {
-      0%, 20% { transform: translateX(0); }
-      80%, 100% { transform: translateX(var(--hc-sub-shift, 0px)); }
+      from { transform: translateX(0); }
+      to { transform: translateX(var(--hc-sub-shift, 0px)); }
     }
     @media (prefers-reduced-motion: reduce) {
       .host-sub.scroll { text-overflow: ellipsis; }
       .host-sub.scroll .host-sub-text { animation: none; display: inline; }
+      .host-sub.scroll .host-sub-gap, .host-sub.scroll .host-sub-gap + span { display: none; }
     }
     /* The update buttons sit in the name row, right after the name and its
        status marks: small pills, icon only. */
@@ -6381,6 +6385,10 @@
     ha-card.layout-box .host-name-row { justify-content: center; }
     ha-card.layout-box .host-updates { justify-content: center; }
     .host-chip-label { white-space: pre; }
+    /* Digits all one width and right-aligned, in a field sized for the
+       widest expected value (set per chip in _render): the number changes,
+       the chip does not. */
+    .host-chip-value { display: inline-block; text-align: right; font-variant-numeric: tabular-nums; }
     .host-chip ha-icon { flex: 0 0 auto; }
     /* The classes below are set by _fit() from the card's own width and
        the "stat chips" options - not by a media query, so a narrow card on
@@ -6592,6 +6600,29 @@
       });
       if (this._deps && deps.length === this._deps.length && deps.every((d, i) => d === this._deps[i])) return;
       this._deps = deps;
+
+      const stats = ['cpu', 'root', 'ram', 'net'];
+      const structure = JSON.stringify([
+        Object.keys(ids).map((k) => (stats.includes(k) ? !!st[k] : (st[k] ? st[k].state : null))),
+        pending.map((id) => [id, (states[id].attributes || {}).friendly_name, (states[id].attributes || {}).entity_picture]),
+        overThreshold,
+        this._hass && this._hass.devices ? Object.keys(this._hass.devices).length : 0,
+      ]);
+      const card = this._cardEl;
+      if (card && card.isConnected && structure === this._structure) {
+        card.querySelectorAll('.host-chip').forEach((chip) => {
+          const spec = (this._chipSpecs || {})[chip.dataset.key];
+          const s = st[chip.dataset.key];
+          if (!spec || !s) return;
+          const text = spec.format(s.state);
+          const value = chip.querySelector('.host-chip-value');
+          if (value.textContent === text) return;
+          value.textContent = text;
+          chip.title = `${spec.label} · ${text}`;
+        });
+        return;
+      }
+      this._structure = structure;
       this._render(st, pending, overThreshold);
     }
 
@@ -6826,17 +6857,20 @@
           ? fallback : Math.max(0, Math.min(3, Math.round(n)));
       };
       const chips = [
-        ['cpu', 'mdi:cpu-64-bit', 'cpuLabel', (v) => _fmtPct(v, decimals('cpu', 1))],
-        ['root', 'mdi:harddisk', 'rootLabel', (v) => _fmtPct(v, decimals('root', 1))],
-        ['ram', 'mdi:memory', 'ramLabel', (v) => _fmtPct(v, decimals('ram', 1))],
-        ['net', 'mdi:lan', 'netLabel', (v) => _fmtNet(v, decimals('net', 2))],
+        ['cpu', 'mdi:cpu-64-bit', 'cpuLabel', (v) => _fmtPct(v, decimals('cpu', 1)), '99'],
+        ['root', 'mdi:harddisk', 'rootLabel', (v) => _fmtPct(v, decimals('root', 1)), '99'],
+        ['ram', 'mdi:memory', 'ramLabel', (v) => _fmtPct(v, decimals('ram', 1)), '99'],
+        ['net', 'mdi:lan', 'netLabel', (v) => _fmtNet(v, decimals('net', 2)), '999'],
       ].filter((c) => st[c[0]] && config[`show_${c[0]}`] !== false);
+      this._chipSpecs = {};
+      chips.forEach((c) => { this._chipSpecs[c[0]] = { format: c[3], label: this._t(c[2]) }; });
       if (chips.length && !offline) {
         const grid = document.createElement('div');
         grid.className = 'host-chips';
         chips.forEach((c) => {
           const chip = document.createElement('div');
           chip.className = 'host-chip';
+          chip.dataset.key = c[0];
           const icon = document.createElement('ha-icon');
           icon.setAttribute('icon', config[`${c[0]}_icon`] || c[1]);
           chip.appendChild(icon);
@@ -6849,6 +6883,7 @@
           const val = document.createElement('span');
           val.className = 'host-chip-value';
           val.textContent = text;
+          val.style.minWidth = `${c[3](c[4]).length}ch`;
           chip.appendChild(val);
           grid.appendChild(chip);
         });
@@ -6864,21 +6899,38 @@
       const box = card && card.querySelector('.host-sub');
       const text = box && box.querySelector('.host-sub-text');
       if (!text) return;
-      const extra = Math.ceil(text.offsetWidth - box.clientWidth);
-      if (extra <= 1) {
+      if (!text._copy) text._ownWidth = text.offsetWidth;
+      const own = text._ownWidth;
+      if (own - box.clientWidth <= 1) {
+        if (text._copy) {
+          text._copy.forEach((node) => node.remove());
+          text._copy = null;
+        }
         box.classList.remove('scroll');
         this._subSlide = null;
         return;
       }
-      const shift = `-${extra}px`;
+      const gap = 36;
+      const shift = `-${own + gap}px`;
       if (box.classList.contains('scroll') && box.style.getPropertyValue('--hc-sub-shift') === shift) return;
-      const seconds = Math.max(4, Math.round(extra / 12));
-      const key = `${text.textContent}|${shift}`;
+      if (!text._copy) {
+        const spacer = document.createElement('span');
+        spacer.className = 'host-sub-gap';
+        spacer.style.width = `${gap}px`;
+        const copy = document.createElement('span');
+        copy.setAttribute('aria-hidden', 'true');
+        Array.from(text.childNodes).forEach((node) => copy.appendChild(node.cloneNode(true)));
+        text._copy = [spacer, copy];
+        text.appendChild(spacer);
+        text.appendChild(copy);
+      }
+      const seconds = Math.max(3, (own + gap) / 28);
+      const key = `${own}|${text.textContent}`;
       const now = performance.now();
       if (!this._subSlide || this._subSlide.key !== key) this._subSlide = { key, start: now };
-      const elapsed = ((now - this._subSlide.start) / 1000) % (seconds * 2);
+      const elapsed = ((now - this._subSlide.start) / 1000) % seconds;
       box.style.setProperty('--hc-sub-shift', shift);
-      box.style.setProperty('--hc-sub-time', `${seconds}s`);
+      box.style.setProperty('--hc-sub-time', `${seconds.toFixed(2)}s`);
       box.style.setProperty('--hc-sub-delay', `-${elapsed.toFixed(3)}s`);
       box.classList.add('scroll');
     }
@@ -6934,7 +6986,8 @@
         more.firstChild.textContent = `+${folded.length}`;
         more.title = folded.map((b) => b.title).join('\n');
       };
-      const inner = () => rect(card).right - (parseFloat(getComputedStyle(card).paddingRight) || 0);
+      let spare = 0;
+      const inner = () => rect(card).right - (parseFloat(getComputedStyle(card).paddingRight) || 0) - spare;
       const iconBox = card.querySelector('.host-icon');
       const visible = (el) => !!el && rect(el).width > 0;
       const rowBad = () => {
@@ -6952,7 +7005,9 @@
         card.classList.remove('power-folded');
         set(stage);
         showUpdates(shown);
+        const last = this._fitMemo;
         for (let guard = 0; guard < 16; guard += 1) {
+          spare = last && pinned === undefined && last.below === below && stage < last.stage ? 14 : 0;
           const row = rowBad();
           const sharesRow = !below && !box;
           if ((chipsBad() || (row && sharesRow)) && stage < smallest) {
@@ -6967,22 +7022,27 @@
             break;
           }
         }
+        spare = 0;
         return { stage, folded: updateBtns.length - shown, bad: rowBad() || chipsBad() };
       };
 
-      const beside = settle();
+      let result = settle();
+      const beside = result;
       if (autoRow && !below && grid && (beside.bad || beside.stage >= 2 || beside.folded > 0)) {
         below = true;
         card.classList.add('chips-below');
         const under = settle();
         const better = (beside.bad && !under.bad) || (under.bad === beside.bad
           && (under.stage < beside.stage || (under.stage === beside.stage && under.folded < beside.folded)));
-        if (!better) {
+        if (better) {
+          result = under;
+        } else {
           below = false;
           card.classList.remove('chips-below');
-          settle();
+          result = settle();
         }
       }
+      this._fitMemo = { stage: result.stage, below };
       this._subScroll();
     }
 
