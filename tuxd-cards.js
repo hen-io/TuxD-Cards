@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '1.3.4';
+  const CARD_VERSION = '1.3.6';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,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';
 
   function resolveLang(raw) {
@@ -288,6 +288,7 @@
       host: {
         missingDevice: 'Set "device_id" to a TuxD device name',
         offline: 'Offline',
+        reconnecting: 'reconnecting',
         busy: 'Busy',
         error: 'Error',
         warning: 'Warning',
@@ -317,6 +318,7 @@
           navigation_path: 'Custom path (used by "Open the custom path")',
           show_updates: 'Show a button for each available update',
           show_power: 'Show restart and shutdown buttons',
+          offline_animation: 'Animate while the host is offline (looks like reconnecting)',
           error_glow: 'Glow when the host reports an error',
           error_glow_color: 'Glow color (e.g. rgba(219, 68, 55, 0.6))',
           error_glow_type: 'Glow type',
@@ -377,6 +379,7 @@
           device_id: 'TuxD device name',
           title: 'Title',
           show_error: 'Show the agent error state',
+          offline_animation: 'Animate while the agent is offline (looks like reconnecting)',
           hide_header: 'Hide header',
           color_by_status: 'Color the card by status',
           show_version: 'Show agent version',
@@ -649,6 +652,7 @@
       host: {
         missingDevice: 'Sett "device_id" til et TuxD-enhetsnavn',
         offline: 'Offline',
+        reconnecting: 'kobler til på nytt',
         busy: 'Opptatt',
         error: 'Feil',
         warning: 'Advarsel',
@@ -678,6 +682,7 @@
           navigation_path: 'Egendefinert sti (brukes av "Open the custom path")',
           show_updates: 'Vis en knapp for hver tilgjengelige oppdatering',
           show_power: 'Vis knapper for omstart og avslutning',
+          offline_animation: 'Animer mens verten er offline (ser ut som den kobler til på nytt)',
           error_glow: 'Glød når verten melder en feil',
           error_glow_color: 'Glødfarge (f.eks. rgba(219, 68, 55, 0.6))',
           error_glow_type: 'Type glød',
@@ -738,6 +743,7 @@
           device_id: 'TuxD-enhetsnavn',
           title: 'Tittel',
           show_error: 'Vis agentens feilstatus',
+          offline_animation: 'Animer mens agenten er offline (ser ut som den kobler til på nytt)',
           hide_header: 'Skjul overskrift',
           color_by_status: 'Fargelegg kortet etter status',
           show_version: 'Vis agentversjon',
@@ -5429,6 +5435,16 @@
       animation: tug-spin 0.9s linear infinite;
     }
     @keyframes tug-spin { to { transform: rotate(360deg); } }
+    /* Offline agent: turning sync icon, dots lighting up one after another. */
+    .agent-state.offline ha-icon { animation: tug-spin 1.6s linear infinite; }
+    .tuxd-dots i { font-style: normal; opacity: 0.2; animation: tuxd-dot 1.4s ease-in-out infinite; }
+    .tuxd-dots i:nth-child(2) { animation-delay: 0.2s; }
+    .tuxd-dots i:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes tuxd-dot { 0%, 60%, 100% { opacity: 0.2; } 30% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .agent-state.offline ha-icon { animation-duration: 6s; }
+      .tuxd-dots i { animation: none; opacity: 0.6; }
+    }
     .agent-state { display: flex; align-items: center; gap: 14px; }
     .agent-state ha-icon { flex: 0 0 auto; --mdc-icon-size: 48px; color: var(--disabled-text-color, #9e9e9e); }
     .agent-state.idle ha-icon { color: var(--success-color, #43a047); }
@@ -5895,6 +5911,17 @@
     }
   }
 
+  function _reconnectDots() {
+    const dots = document.createElement('span');
+    dots.className = 'tuxd-dots';
+    for (let i = 0; i < 3; i += 1) {
+      const dot = document.createElement('i');
+      dot.textContent = '.';
+      dots.appendChild(dot);
+    }
+    return dots;
+  }
+
 
   const STATUS_DEFAULT_ICON = 'mdi:linux';
 
@@ -5905,7 +5932,7 @@
     }
 
     static defaultConfig() {
-      return { title: '', icon: STATUS_DEFAULT_ICON, show_error: true, hide_header: false, color_by_status: false, show_version: false, show_startup_time: false, show_update_status: false, card_style: 'default' };
+      return { title: '', icon: STATUS_DEFAULT_ICON, show_error: true, offline_animation: true, hide_header: false, color_by_status: false, show_version: false, show_startup_time: false, show_update_status: false, card_style: 'default' };
     }
 
     static schema() {
@@ -5913,6 +5940,7 @@
         { name: 'device_id', required: true, selector: { text: {} } },
         { name: 'title', selector: { text: {} } },
         { name: 'show_error', selector: { boolean: {} } },
+        { name: 'offline_animation', selector: { boolean: {} } },
         { name: 'hide_header', selector: { boolean: {} } },
         { name: 'icon', selector: { icon: {} } },
         { name: 'color', selector: { text: {} } },
@@ -6044,7 +6072,12 @@
       const offline = busySt.state === 'unavailable' || (onlineSt && onlineSt.state === 'off');
       if (offline) {
         if (config.color_by_status) card.classList.add('agent-offline');
-        row('none', this._t('offline'), '', 'mdi:lan-disconnect');
+        const reconnecting = config.offline_animation !== false;
+        row(reconnecting ? 'offline' : 'none', this._t('offline'), '', reconnecting ? 'mdi:sync' : 'mdi:lan-disconnect');
+        if (reconnecting) {
+          const label = body.querySelector('.agent-state.offline .agent-label');
+          if (label) label.appendChild(_reconnectDots());
+        }
         info();
         return;
       }
@@ -6120,8 +6153,18 @@
   const HOST_COLOR_VARS = ['--hc-bg', '--hc-text', '--hc-sub', '--hc-chip', '--hc-chip-text', '--hc-accent'];
 
   const HOST_STYLE = `
-    :host { display: block; }
+    /* The card takes the width its column gives it and never asks for
+       more. Without this, its content (a name row that will not shrink plus
+       fixed-size chips) made the whole card WIDER than the column - it
+       stuck out to the right and was cut off by the dashboard, while from
+       the inside everything seemed to fit, so _fit never shrank anything.
+       "contain: inline-size" stops the content from setting the width;
+       the max-width / min-width pair is the fallback for browsers without it. */
+    :host { display: block; contain: inline-size; min-width: 0; max-width: 100%; }
     ha-card {
+      box-sizing: border-box;
+      min-width: 0;
+      max-width: 100%;
       --hc-text: var(--primary-text-color);
       --hc-sub: var(--secondary-text-color);
       --hc-chip: var(--primary-color);
@@ -6198,6 +6241,17 @@
     }
     @keyframes host-spin { to { transform: rotate(360deg); } }
     @media (prefers-reduced-motion: reduce) { .host-spinner { animation-duration: 3s; } }
+    /* Offline: the sync icon turns, and three dots after "Offline" light up
+       one after the other. */
+    .host-flag ha-icon.host-reconnect { animation: host-spin 1.6s linear infinite; }
+    .tuxd-dots i { font-style: normal; opacity: 0.2; animation: tuxd-dot 1.4s ease-in-out infinite; }
+    .tuxd-dots i:nth-child(2) { animation-delay: 0.2s; }
+    .tuxd-dots i:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes tuxd-dot { 0%, 60%, 100% { opacity: 0.2; } 30% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .host-flag ha-icon.host-reconnect { animation-duration: 6s; }
+      .tuxd-dots i { animation: none; opacity: 0.6; }
+    }
     .host-flag { display: inline-flex; align-items: center; flex: 0 1 auto; min-width: 16px; overflow: hidden; font-size: 12px; color: var(--hc-sub); }
     .host-flag.error { color: var(--error-color, #db4437); }
     .host-flag.warning { color: var(--warning-color, #ff9800); }
@@ -6225,19 +6279,47 @@
     }
     button.host-power:hover { color: var(--hc-accent); }
     button.host-power ha-icon { --mdc-icon-size: 16px; flex: 0 0 auto; }
-    .host-flag span, button.host-power span, button.host-update span {
-      max-width: 0;
-      margin-left: 0;
-      opacity: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      transition: max-width 0.2s ease, margin-left 0.2s ease, opacity 0.2s ease;
+    /* What a status mark, update button or power button is, is shown on
+       the line under the name while it is hovered (see hint() in _render) -
+       so nothing here floats or grows. That line in its hint state reads
+       in the main text colour, to tell it from its normal content. */
+    .host-flag, button.host-power { overflow: visible; }
+    .host-sub.hint { color: var(--hc-text); }
+    /* The update buttons sit in the name row, right after the name and its
+       status marks: small pills, icon only. */
+    .host-updates { display: flex; flex-wrap: nowrap; align-items: center; gap: 4px; flex: 0 0 auto; }
+    .host-name-row button.host-update { padding: 1px 5px; }
+    /* Folded away by _fit. (The display rule above would otherwise beat
+       the browser's own handling of the hidden attribute.) */
+    button.host-update[hidden] { display: none; }
+    button.host-update-more { min-height: 20px; }
+    /* Restart / shut down: a slim column at the far end of the card, set
+       off by a hairline, icons only. In the box layout it is a centred row
+       at the bottom instead. */
+    .host-chips { order: 1; }
+    .host-power-box {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: stretch;
+      gap: 6px;
+      flex: 0 0 auto;
+      padding-left: 10px;
+      border-left: 1px solid color-mix(in srgb, var(--hc-sub) 35%, transparent);
     }
-    .host-flag:hover span, button.host-power:hover span, button.host-update:hover span { max-width: 190px; margin-left: 5px; opacity: 1; }
-    /* May wrap its buttons onto more rows, but never narrower than one
-       button: squeezed to nothing, its button hung out over the name row. */
-    .host-updates { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; flex: 0 1 auto; min-width: min-content; }
+    .host-power-box button.host-power { flex: 0 0 auto; justify-content: center; }
+    .host-power-box button.host-power ha-icon { --mdc-icon-size: 18px; }
+    ha-card.chips-below .host-chips { order: 3; }
+    /* Set by _fit as the last thing it gives up on a very narrow card. */
+    ha-card.power-folded .host-power-box { display: none; }
+    ha-card.layout-box .host-power-box {
+      flex-direction: row;
+      align-self: center;
+      gap: 14px;
+      padding-left: 0;
+      border-left: 0;
+    }
     /* Icons take their space from the start. ha-icon draws itself a moment
        after it is created; without a size of its own it measured as zero
        width in _fit, so a card that was really too narrow looked like it fit. */
@@ -6329,7 +6411,7 @@
     }
 
     static defaultConfig() {
-      return { friendly_name: '', layout: 'bar', size: 'normal', theme: 'ha', show_updates: true, show_power: true, error_glow: true, error_glow_color: 'rgba(219, 68, 55, 0.6)', error_glow_strength: 50, error_glow_type: 'inner', error_glow_speed: 2, warning_glow: true, warning_glow_color: 'rgba(255, 152, 0, 0.6)', warning_glow_strength: 50, warning_glow_type: 'inner', warning_glow_speed: 2, busy_glow: true, busy_glow_color: 'rgba(255, 193, 7, 0.6)', busy_glow_strength: 50, busy_glow_type: 'inner', busy_glow_speed: 2, show_cpu: true, show_root: true, show_ram: true, show_net: true, chips_fit: 'auto', chips_smallest: 'icons', chips_hover: true, chips_row: 'auto', chips_row_width: 520, cpu_decimals: 1, root_decimals: 1, ram_decimals: 1, net_decimals: 2, chips_show_label: true, icon_size: 40, icon_shape: 'none', tap_action: 'navigate' };
+      return { friendly_name: '', layout: 'bar', size: 'normal', theme: 'ha', show_updates: true, show_power: true, offline_animation: true, error_glow: true, error_glow_color: 'rgba(219, 68, 55, 0.6)', error_glow_strength: 50, error_glow_type: 'inner', error_glow_speed: 2, warning_glow: true, warning_glow_color: 'rgba(255, 152, 0, 0.6)', warning_glow_strength: 50, warning_glow_type: 'inner', warning_glow_speed: 2, busy_glow: true, busy_glow_color: 'rgba(255, 193, 7, 0.6)', busy_glow_strength: 50, busy_glow_type: 'inner', busy_glow_speed: 2, show_cpu: true, show_root: true, show_ram: true, show_net: true, chips_fit: 'auto', chips_smallest: 'icons', chips_hover: true, chips_row: 'auto', chips_row_width: 520, cpu_decimals: 1, root_decimals: 1, ram_decimals: 1, net_decimals: 2, chips_show_label: true, icon_size: 40, icon_shape: 'none', tap_action: 'navigate' };
     }
 
     static schema(lang) {
@@ -6379,6 +6461,7 @@
         },
         { name: 'show_updates', selector: { boolean: {} } },
         { name: 'show_power', selector: { boolean: {} } },
+        { name: 'offline_animation', selector: { boolean: {} } },
         { name: 'show_cpu', selector: { boolean: {} } },
         { name: 'show_root', selector: { boolean: {} } },
         { name: 'show_ram', selector: { boolean: {} } },
@@ -6590,14 +6673,26 @@
       name.className = 'host-name';
       name.textContent = config.friendly_name || config.device_id || 'TuxD';
       nameRow.appendChild(name);
+      const hint = (el) => {
+        el.addEventListener('mouseenter', () => {
+          if (!sub.isConnected || !el.title) return;
+          if (!sub._own) sub._own = Array.from(sub.childNodes);
+          sub.replaceChildren(document.createTextNode(el.title.replace(/\n/g, ', ')));
+          sub.classList.add('hint');
+        });
+        el.addEventListener('mouseleave', () => {
+          if (!sub._own) return;
+          sub.replaceChildren(...sub._own);
+          sub._own = null;
+          sub.classList.remove('hint');
+        });
+      };
       const flag = (cls, mark, text) => {
         const el = document.createElement('div');
         el.className = `host-flag ${cls}`;
         el.title = text;
         el.appendChild(mark);
-        const label = document.createElement('span');
-        label.textContent = text;
-        el.appendChild(label);
+        hint(el);
         nameRow.appendChild(el);
       };
       const applyGlow = (prefix, defaultColor) => {
@@ -6625,8 +6720,12 @@
       const hasError = offline || (st.error && st.error.state === 'on');
       if (hasError) {
         const alert = document.createElement('ha-icon');
-        alert.setAttribute('icon', 'mdi:alert-circle');
-        flag('error', alert, offline ? this._t('offline') : (value(st.errorReason) || this._t('error')));
+        const reconnecting = offline && config.offline_animation !== false;
+        alert.setAttribute('icon', reconnecting ? 'mdi:sync' : 'mdi:alert-circle');
+        if (reconnecting) alert.classList.add('host-reconnect');
+        flag('error', alert, offline
+          ? (reconnecting ? `${this._t('offline')} - ${this._t('reconnecting')}` : this._t('offline'))
+          : (value(st.errorReason) || this._t('error')));
       }
       const warnings = [];
       if (!offline) {
@@ -6641,6 +6740,8 @@
       if (hasError && config.error_glow !== false) applyGlow('error', 'rgba(219, 68, 55, 0.6)');
       else if (warnings.length && config.warning_glow !== false) applyGlow('warning', 'rgba(255, 152, 0, 0.6)');
       else if (busy && config.busy_glow !== false) applyGlow('busy', 'rgba(255, 193, 7, 0.6)');
+      const powerBox = document.createElement('div');
+      powerBox.className = 'host-power-box';
       if (!offline && config.show_power !== false) {
         [['reboot', 'mdi:restart', 'confirmReboot'], ['shutdown', 'mdi:power', 'confirmShutdown']].forEach(([key, mdi, confirmKey]) => {
           if (!st[key] || st[key].state === 'unavailable') return;
@@ -6652,23 +6753,23 @@
           const icon = document.createElement('ha-icon');
           icon.setAttribute('icon', mdi);
           btn.appendChild(icon);
-          const label = document.createElement('span');
-          label.textContent = btn.title;
-          btn.appendChild(label);
+          hint(btn);
           btn.addEventListener('click', (ev) => {
             ev.stopPropagation();
             if (!window.confirm(`${name.textContent}: ${this._t(confirmKey)}`)) return;
             this._hass.callService('button', 'press', { entity_id: entityId });
           });
-          nameRow.appendChild(btn);
+          powerBox.appendChild(btn);
         });
       }
       main.appendChild(nameRow);
       const sub = document.createElement('div');
       sub.className = 'host-sub';
       if (!config.device_id) sub.textContent = this._t('missingDevice');
-      else if (offline) sub.textContent = this._t('offline');
-      else sub.textContent = value(st.updates);
+      else if (offline) {
+        sub.textContent = this._t('offline');
+        if (config.offline_animation !== false) sub.appendChild(_reconnectDots());
+      } else sub.textContent = value(st.updates);
       if (sub.textContent) main.appendChild(sub);
       card.appendChild(main);
 
@@ -6702,17 +6803,28 @@
             icon.setAttribute('icon', kind);
             btn.appendChild(icon);
           }
-          const label = document.createElement('span');
-          label.textContent = btn.title;
-          btn.appendChild(label);
+          hint(btn);
           btn.addEventListener('click', (ev) => {
             ev.stopPropagation();
             this._moreInfo(entityId);
           });
           box.appendChild(btn);
         });
-        card.appendChild(box);
+        const more = document.createElement('button');
+        more.type = 'button';
+        more.className = 'host-update host-update-more';
+        more.hidden = true;
+        more.appendChild(document.createTextNode(''));
+        hint(more);
+        more.addEventListener('click', (ev) => {
+          ev.stopPropagation();
+          const index = Array.from(box.querySelectorAll('.host-update:not(.host-update-more)')).findIndex((b) => b.hidden);
+          if (index >= 0) this._moreInfo(pending[index]);
+        });
+        box.appendChild(more);
+        nameRow.appendChild(box);
       }
+      if (powerBox.childElementCount) card.appendChild(powerBox);
 
       const decimals = (key, fallback) => {
         const n = Number(config[`${key}_decimals`]);
@@ -6738,7 +6850,7 @@
           chip.title = `${this._t(c[2])} · ${text}`;
           const label = document.createElement('span');
           label.className = 'host-chip-label';
-          label.textContent = `${this._t(c[2])} · `;
+          label.textContent = `${this._t(c[2])} ·`;
           chip.appendChild(label);
           const val = document.createElement('span');
           val.className = 'host-chip-value';
@@ -6773,8 +6885,8 @@
       const box = config.layout === 'box';
       const width = this.root.host ? this.root.host.clientWidth : 0;
       const rowWidth = Number(config.chips_row_width) > 0 ? Number(config.chips_row_width) : 520;
-      const below = !box && (config.chips_row === 'below'
-        || (config.chips_row !== 'inline' && width > 0 && width <= rowWidth));
+      const autoRow = !box && config.chips_row !== 'below' && config.chips_row !== 'inline';
+      let below = !box && (config.chips_row === 'below' || (autoRow && width > 0 && width <= rowWidth));
       card.classList.toggle('chips-below', below);
       card.classList.toggle('chips-hover', config.chips_hover !== false);
       card.classList.toggle('chips-nolabel', config.chips_show_label === false);
@@ -6784,50 +6896,104 @@
         card.classList.toggle('chips-icons', stage === 2);
       };
       const pinned = { full: 0, compact: 1, icons: 2 }[config.chips_fit];
-      if (pinned !== undefined) {
-        set(pinned);
-        return;
-      }
-      const smallest = config.chips_smallest === 'compact' ? 1 : (config.chips_smallest === 'full' ? 0 : 2);
+      const smallest = pinned !== undefined
+        ? pinned
+        : (config.chips_smallest === 'compact' ? 1 : (config.chips_smallest === 'full' ? 0 : 2));
+
+      const rect = (el) => el.getBoundingClientRect();
       const chips = Array.from(card.querySelectorAll('.host-chip'));
       const grid = card.querySelector('.host-chips');
+      const main = card.querySelector('.host-main');
       const nameRow = card.querySelector('.host-name-row');
-      const updates = card.querySelector('.host-updates');
-      const overflowing = () => {
-        if (card.scrollWidth > card.clientWidth + 1) return true;
-        if (grid) {
-          const inner = card.getBoundingClientRect().right - (parseFloat(getComputedStyle(card).paddingRight) || 0);
-          if (grid.getBoundingClientRect().right > inner + 1) return true;
-        }
-        if (chips.some((c) => c.scrollWidth > c.clientWidth + 1)) return true;
-        if (nameRow && nameRow.scrollWidth > nameRow.clientWidth + 1) return true;
-        return !!updates && updates.scrollWidth > updates.clientWidth + 1;
+      const powerBox = card.querySelector('.host-power-box');
+      const updateBtns = Array.from(card.querySelectorAll('.host-updates > .host-update:not(.host-update-more)'));
+      const more = card.querySelector('.host-update-more');
+      const showUpdates = (count) => {
+        updateBtns.forEach((b, i) => { b.hidden = i >= count; });
+        if (!more) return;
+        const folded = updateBtns.slice(count);
+        more.hidden = !folded.length;
+        more.firstChild.textContent = `+${folded.length}`;
+        more.title = folded.map((b) => b.title).join('\n');
       };
-      let stage = 0;
-      set(stage);
-      while (stage < smallest && overflowing()) {
-        stage += 1;
+      const inner = () => rect(card).right - (parseFloat(getComputedStyle(card).paddingRight) || 0);
+      const iconBox = card.querySelector('.host-icon');
+      const visible = (el) => !!el && rect(el).width > 0;
+      const rowBad = () => {
+        const edge = inner();
+        if ([main, powerBox].some((el) => visible(el) && rect(el).right > edge + 1)) return true;
+        if (!box && main && visible(powerBox) && rect(powerBox).top >= rect(main).bottom - 1) return true;
+        if (!box && main && visible(iconBox) && rect(main).top >= rect(iconBox).bottom - 1) return true;
+        return !!nameRow && Array.from(nameRow.children).some((el) => rect(el).right > rect(nameRow).right + 1);
+      };
+      const chipsBad = () => !!grid && (rect(grid).right > inner() + 1 || chips.some((c) => c.scrollWidth > c.clientWidth + 1));
+
+      const settle = () => {
+        let stage = pinned !== undefined ? pinned : 0;
+        let shown = updateBtns.length;
+        card.classList.remove('power-folded');
         set(stage);
+        showUpdates(shown);
+        for (let guard = 0; guard < 16; guard += 1) {
+          const row = rowBad();
+          const sharesRow = !below && !box;
+          if ((chipsBad() || (row && sharesRow)) && stage < smallest) {
+            stage += 1;
+            set(stage);
+          } else if (row && shown > 0 && updateBtns.length > 1) {
+            shown = Math.max(0, shown - (shown === updateBtns.length && shown > 1 ? 2 : 1));
+            showUpdates(shown);
+          } else if (row && powerBox && !card.classList.contains('power-folded')) {
+            card.classList.add('power-folded');
+          } else {
+            break;
+          }
+        }
+        return { stage, folded: updateBtns.length - shown, bad: rowBad() || chipsBad() };
+      };
+
+      const beside = settle();
+      if (autoRow && !below && grid && (beside.bad || beside.stage >= 2 || beside.folded > 0)) {
+        below = true;
+        card.classList.add('chips-below');
+        const under = settle();
+        const better = (beside.bad && !under.bad) || (under.bad === beside.bad
+          && (under.stage < beside.stage || (under.stage === beside.stage && under.folded < beside.folded)));
+        if (!better) {
+          below = false;
+          card.classList.remove('chips-below');
+          settle();
+        }
       }
     }
 
     connectedCallback() {
       if (this._resizeObserver || typeof ResizeObserver === 'undefined' || !this.root.host) return;
-      this._resizeObserver = new ResizeObserver(() => {
-        if (this._fitFrame) return;
-        this._fitFrame = requestAnimationFrame(() => {
-          this._fitFrame = 0;
-          this._fit();
-        });
-      });
+      this._resizeObserver = new ResizeObserver(() => this._scheduleFit());
       this._watch();
+      this._scheduleFit();
+    }
+
+    _scheduleFit() {
+      if (this._fitPending) return;
+      this._fitPending = true;
+      const run = () => {
+        if (!this._fitPending) return;
+        this._fitPending = false;
+        cancelAnimationFrame(this._fitFrame);
+        clearTimeout(this._fitTimer);
+        this._fit();
+      };
+      this._fitFrame = requestAnimationFrame(run);
+      this._fitTimer = setTimeout(run, 60);
     }
 
     disconnectedCallback() {
       if (this._resizeObserver) this._resizeObserver.disconnect();
       this._resizeObserver = null;
-      if (this._fitFrame) cancelAnimationFrame(this._fitFrame);
-      this._fitFrame = 0;
+      this._fitPending = false;
+      cancelAnimationFrame(this._fitFrame);
+      clearTimeout(this._fitTimer);
     }
   }
 
