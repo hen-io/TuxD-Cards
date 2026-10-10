@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '1.4.1';
+  const CARD_VERSION = '1.4.3';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,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';
 
   function resolveLang(raw) {
@@ -284,7 +284,7 @@
     en: {
       cardType: 'Card type',
       common: { layout: 'Layout', card_style: 'Card style', icon: 'Icon', color: 'Accent color (e.g. #03a9f4)' },
-      cardTypeOptions: { terminal: 'Terminal', 'terminal-integrated': 'Terminal (integrated)', update: 'Updates', cache: 'Site Cache', conf: 'Configuration', devices: 'Device Status', fleet: 'Fleet Summary', tugboat: 'TugBoat Actions', 'tugboat-health': 'TugBoat Stack Health', status: 'Agent Status', host: 'Host Overview' },
+      cardTypeOptions: { terminal: 'Terminal', 'terminal-integrated': 'Terminal (integrated)', 'multi-terminal': 'Multi-agent Command', update: 'Updates', cache: 'Site Cache', conf: 'Configuration', devices: 'Device Status', fleet: 'Fleet Summary', tugboat: 'TugBoat Actions', 'tugboat-health': 'TugBoat Stack Health', status: 'Agent Status', host: 'Host Overview' },
       host: {
         missingDevice: 'Set "device_id" to a TuxD device name',
         offline: 'Offline',
@@ -297,6 +297,13 @@
         shutdown: 'Shut down',
         confirmReboot: 'Restart this host now?',
         confirmShutdown: 'Shut down this host now?',
+        agentUpdate: 'Check for and install agent update',
+        agentUpdate_checking: 'Checking for a new agent version...',
+        agentUpdate_installing: 'Installing the agent update...',
+        agentUpdate_none: 'The agent is up to date',
+        agentRestart: 'Restart agent',
+        confirmAgentUpdate: 'Check for a new agent version and install it if there is one?',
+        confirmAgentRestart: 'Restart the TuxD agent now?',
         cpuLabel: 'CPU',
         ramLabel: 'RAM',
         rootLabel: '/ root',
@@ -318,6 +325,7 @@
           navigation_path: 'Custom path (used by "Open the custom path")',
           show_updates: 'Show a button for each available update',
           show_power: 'Show restart and shutdown buttons',
+          show_agent_buttons: 'Show agent update and restart-agent buttons',
           offline_animation: 'Animate while the host is offline (looks like reconnecting)',
           error_glow: 'Glow when the host reports an error',
           error_glow_color: 'Glow color (e.g. rgba(219, 68, 55, 0.6))',
@@ -441,6 +449,33 @@
           language: 'Language',
           theme: 'Theme',
           background_color: 'Terminal background color',
+          hide_header: 'Hide header',
+        },
+      },
+      'multi-terminal': {
+        title: 'Run on multiple agents',
+        placeholder: 'Type a command for the selected agents and press Enter...',
+        clear: 'Clear screen',
+        stop: 'Stop running command',
+        run: 'Run',
+        all: 'All',
+        none: 'None',
+        offline: 'offline',
+        selected: '{n} of {total} selected',
+        noAgents: 'No TuxD agents with terminal input found',
+        nothingSelected: 'Select at least one online agent first',
+        sendFailed: 'could not send',
+        editor: {
+          title: 'Title',
+          devices: 'Agents to offer (comma separated device names, empty = all)',
+          height: 'Height (e.g. 320px)',
+          max_lines: 'Max lines',
+          max_history: 'Max command history',
+          auto_scroll: 'Auto-scroll',
+          text_size: 'Text size (e.g. 13px)',
+          language: 'Language',
+          theme: 'Theme',
+          background_color: 'Output background color',
           hide_header: 'Hide header',
         },
       },
@@ -649,7 +684,7 @@
     nb: {
       cardType: 'Korttype',
       common: { layout: 'Oppsett', card_style: 'Kortstil', icon: 'Ikon', color: 'Aksentfarge (f.eks. #03a9f4)' },
-      cardTypeOptions: { terminal: 'Terminal', 'terminal-integrated': 'Terminal (integrert)', update: 'Oppdateringer', cache: 'Nettsted-cache', conf: 'Konfigurasjon', devices: 'Enhetsstatus', fleet: 'Flåteoversikt', tugboat: 'TugBoat-handlinger', 'tugboat-health': 'TugBoat stack-helse', status: 'Agentstatus', host: 'Vertsoversikt' },
+      cardTypeOptions: { terminal: 'Terminal', 'terminal-integrated': 'Terminal (integrert)', 'multi-terminal': 'Kommando til flere agenter', update: 'Oppdateringer', cache: 'Nettsted-cache', conf: 'Konfigurasjon', devices: 'Enhetsstatus', fleet: 'Flåteoversikt', tugboat: 'TugBoat-handlinger', 'tugboat-health': 'TugBoat stack-helse', status: 'Agentstatus', host: 'Vertsoversikt' },
       host: {
         missingDevice: 'Sett "device_id" til et TuxD-enhetsnavn',
         offline: 'Offline',
@@ -662,6 +697,13 @@
         shutdown: 'Slå av',
         confirmReboot: 'Starte denne verten på nytt nå?',
         confirmShutdown: 'Slå av denne verten nå?',
+        agentUpdate: 'Se etter og installer agentoppdatering',
+        agentUpdate_checking: 'Ser etter ny agentversjon...',
+        agentUpdate_installing: 'Installerer agentoppdateringen...',
+        agentUpdate_none: 'Agenten er oppdatert',
+        agentRestart: 'Start agenten på nytt',
+        confirmAgentUpdate: 'Se etter ny agentversjon og installere den hvis det finnes en?',
+        confirmAgentRestart: 'Starte TuxD-agenten på nytt nå?',
         cpuLabel: 'CPU',
         ramLabel: 'RAM',
         rootLabel: '/ root',
@@ -683,6 +725,7 @@
           navigation_path: 'Egendefinert sti (brukes av "Open the custom path")',
           show_updates: 'Vis en knapp for hver tilgjengelige oppdatering',
           show_power: 'Vis knapper for omstart og avslutning',
+          show_agent_buttons: 'Vis knapper for agentoppdatering og omstart av agenten',
           offline_animation: 'Animer mens verten er offline (ser ut som den kobler til på nytt)',
           error_glow: 'Glød når verten melder en feil',
           error_glow_color: 'Glødfarge (f.eks. rgba(219, 68, 55, 0.6))',
@@ -806,6 +849,33 @@
           language: 'Språk',
           theme: 'Tema',
           background_color: 'Bakgrunnsfarge (terminal)',
+          hide_header: 'Skjul topptekst',
+        },
+      },
+      'multi-terminal': {
+        title: 'Kjør på flere agenter',
+        placeholder: 'Skriv en kommando til de valgte agentene og trykk Enter...',
+        clear: 'Tøm skjermen',
+        stop: 'Stopp kjørende kommando',
+        run: 'Kjør',
+        all: 'Alle',
+        none: 'Ingen',
+        offline: 'offline',
+        selected: '{n} av {total} valgt',
+        noAgents: 'Fant ingen TuxD-agenter med terminal-input',
+        nothingSelected: 'Velg minst én agent som er online først',
+        sendFailed: 'kunne ikke sende',
+        editor: {
+          title: 'Tittel',
+          devices: 'Agenter som tilbys (enhetsnavn adskilt med komma, tom = alle)',
+          height: 'Høyde (f.eks. 320px)',
+          max_lines: 'Maks antall linjer',
+          max_history: 'Maks kommandohistorikk',
+          auto_scroll: 'Automatisk rulling',
+          text_size: 'Tekststørrelse (f.eks. 13px)',
+          language: 'Språk',
+          theme: 'Tema',
+          background_color: 'Bakgrunnsfarge (output)',
           hide_header: 'Skjul topptekst',
         },
       },
@@ -5312,6 +5382,361 @@
   }
 
 
+  const MULTI_STYLE = `
+    .hosts {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--divider-color);
+    }
+    button.host, button.pick {
+      font: inherit;
+      font-size: 12px;
+      border-radius: 12px;
+      padding: 3px 10px;
+      cursor: pointer;
+      background: transparent;
+      color: var(--secondary-text-color);
+      border: 1px solid var(--divider-color);
+    }
+    button.host { display: inline-flex; align-items: center; gap: 6px; }
+    button.host i { width: 8px; height: 8px; border-radius: 50%; background: var(--tuxd-host-color); opacity: 0.45; }
+    button.host.on { color: var(--primary-text-color); border-color: var(--tuxd-host-color); background: color-mix(in srgb, var(--tuxd-host-color) 18%, transparent); }
+    button.host.on i { opacity: 1; }
+    button.host.offline { opacity: 0.45; text-decoration: line-through; }
+    button.pick { border-color: transparent; color: var(--primary-color); padding: 3px 6px; }
+    button.host:focus-visible, button.pick:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 1px; }
+    .hosts .count { margin-left: auto; font-size: 12px; color: var(--secondary-text-color); }
+    .line .tag { font-weight: 600; margin-right: 8px; color: var(--tuxd-host-color, var(--primary-color)); }
+    .line.note { color: var(--secondary-text-color); font-style: italic; }
+  `;
+
+  const MULTI_COLORS = ['#4fc3f7', '#81c784', '#ffb74d', '#ba68c8', '#e57373', '#4db6ac', '#dce775', '#a1887f', '#90a4ae', '#f06292'];
+
+  class MultiCommandRenderer extends TerminalIntegratedRenderer {
+    constructor(root) {
+      super(root);
+      this._hosts = [];
+      this._hostsKey = null;
+      this._selected = new Set();
+      this._lastOut = {};
+      this._hostsEl = null;
+    }
+
+    static defaultConfig() {
+      return {
+        devices: '',
+        max_lines: DEFAULT_MAX_LINES,
+        height: DEFAULT_HEIGHT,
+        auto_scroll: true,
+        max_history: INTEGRATED_DEFAULT_MAX_HISTORY,
+        theme: 'ha',
+        hide_header: false,
+      };
+    }
+
+    static schema() {
+      return [
+        { name: 'title', selector: { text: {} } },
+        { name: 'devices', selector: { text: {} } },
+        { name: 'theme', selector: { select: { mode: 'dropdown', options: THEME_OPTIONS } } },
+        { name: 'height', selector: { text: {} } },
+        { name: 'max_lines', selector: { number: { mode: 'box', min: 10, max: 5000 } } },
+        { name: 'max_history', selector: { number: { mode: 'box', min: 0, max: 1000 } } },
+        { name: 'auto_scroll', selector: { boolean: {} } },
+        { name: 'hide_header', selector: { boolean: {} } },
+        { name: 'text_size', selector: { text: {} } },
+        { name: 'background_color', selector: { text: {} } },
+        { name: 'language', selector: { select: { mode: 'dropdown', options: LANGUAGE_OPTIONS } } },
+      ];
+    }
+
+    static stubFields() {
+      return {};
+    }
+
+    setConfig(config) {
+      this._config = Object.assign(MultiCommandRenderer.defaultConfig(), config || {});
+      this._hostsKey = null;
+      this._loadHistory();
+      this._loadSelection();
+      if (this._hass) {
+        this._render();
+        this._syncHosts();
+      }
+    }
+
+    setHass(hass) {
+      const isFirst = !this._hass;
+      this._hass = hass;
+      if (!this._config) return;
+      if (isFirst) this._render();
+      this._syncHosts();
+      this._syncOutputs();
+    }
+
+    _t(key) {
+      const dict = modeDict(this._lang(), 'multi-terminal');
+      return dict[key] || I18N.en['multi-terminal'][key] || key;
+    }
+
+    _historyKey() {
+      return `tuxd-multi-card-history:${this._config.devices || ''}`;
+    }
+
+    _selectionKey() {
+      return `tuxd-multi-card-selected:${this._config.devices || ''}`;
+    }
+
+    _loadSelection() {
+      this._selected = new Set();
+      try {
+        const parsed = JSON.parse(window.localStorage.getItem(this._selectionKey()) || '[]');
+        if (Array.isArray(parsed)) parsed.forEach((id) => this._selected.add(String(id)));
+      } catch (e) {
+        this._selected = new Set();
+      }
+    }
+
+    _saveSelection() {
+      try {
+        window.localStorage.setItem(this._selectionKey(), JSON.stringify(Array.from(this._selected)));
+      } catch (e) {
+      }
+    }
+
+    _loadOutput() {}
+
+    _saveOutput() {}
+
+    _clearScreen() {
+      if (this._outputEl) this._outputEl.textContent = '';
+    }
+
+    _findHosts() {
+      const states = (this._hass && this._hass.states) || {};
+      const wanted = String(this._config.devices || '')
+        .split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
+      return _tuxdRealDevices(this._hass)
+        .map((d) => {
+          const slug = _jsSlug(d.deviceId);
+          const online = states[_onlineEntityId(d.deviceId)];
+          return {
+            id: d.deviceId,
+            name: d.name,
+            input: `text.${slug}_terminal_input`,
+            output: `sensor.${slug}_terminal_output`,
+            offline: !!online && online.state === 'off',
+          };
+        })
+        .filter((h) => states[h.input] && (!wanted.length || wanted.includes(h.id.toLowerCase()) || wanted.includes(h.name.toLowerCase())))
+        .sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    _syncHosts() {
+      const hosts = this._findHosts();
+      const key = JSON.stringify(hosts.map((h) => [h.id, h.name, h.offline]));
+      if (key === this._hostsKey) return;
+      this._hostsKey = key;
+      this._hosts = hosts;
+      hosts.forEach((h, i) => { h.color = MULTI_COLORS[i % MULTI_COLORS.length]; });
+      this._renderHosts();
+    }
+
+    _targets() {
+      return this._hosts.filter((h) => this._selected.has(h.id) && !h.offline);
+    }
+
+    _renderHosts() {
+      const el = this._hostsEl;
+      if (!el) return;
+      el.textContent = '';
+      if (!this._hosts.length) {
+        const none = document.createElement('span');
+        none.className = 'count';
+        none.style.marginLeft = '0';
+        none.textContent = this._t('noAgents');
+        el.appendChild(none);
+        return;
+      }
+      this._hosts.forEach((h) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = `host${this._selected.has(h.id) ? ' on' : ''}${h.offline ? ' offline' : ''}`;
+        btn.style.setProperty('--tuxd-host-color', h.color);
+        btn.setAttribute('aria-pressed', this._selected.has(h.id) ? 'true' : 'false');
+        btn.title = h.offline ? `${h.name} - ${this._t('offline')}` : h.name;
+        btn.appendChild(document.createElement('i'));
+        btn.appendChild(document.createTextNode(h.name));
+        btn.addEventListener('click', () => {
+          if (this._selected.has(h.id)) this._selected.delete(h.id);
+          else this._selected.add(h.id);
+          this._saveSelection();
+          this._renderHosts();
+        });
+        el.appendChild(btn);
+      });
+      [['all', true], ['none', false]].forEach(([label, on]) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'pick';
+        btn.textContent = this._t(label);
+        btn.addEventListener('click', () => {
+          this._hosts.forEach((h) => { if (on) this._selected.add(h.id); else this._selected.delete(h.id); });
+          this._saveSelection();
+          this._renderHosts();
+        });
+        el.appendChild(btn);
+      });
+      const count = document.createElement('span');
+      count.className = 'count';
+      count.textContent = this._t('selected').replace('{n}', this._targets().length).replace('{total}', this._hosts.length);
+      el.appendChild(count);
+    }
+
+    _render() {
+      const root = this.root;
+      root.innerHTML = '';
+      const style = document.createElement('style');
+      style.textContent = INTEGRATED_STYLE + MULTI_STYLE;
+      root.appendChild(style);
+
+      const card = document.createElement('ha-card');
+      this._applyTheme(card);
+      if (this._config.text_size) {
+        const size = typeof this._config.text_size === 'number' ? `${this._config.text_size}px` : this._config.text_size;
+        card.style.setProperty('--tuxd-text-size', size);
+      }
+      if (this._config.background_color) card.style.setProperty('--tuxd-output-bg', this._config.background_color);
+
+      if (!this._config.hide_header) {
+        const header = document.createElement('div');
+        header.className = 'header';
+        const title = document.createElement('span');
+        title.className = 'title';
+        title.textContent = this._config.title || this._t('title');
+        header.appendChild(title);
+        header.appendChild(this._headerButton(
+          this._t('stop'),
+          'M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm4 14H8V8h8v8z',
+          () => this._sendValue(INTEGRATED_STOP_SENTINEL),
+        ));
+        header.appendChild(this._headerButton(
+          this._t('clear'),
+          'M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z',
+          () => this._clearScreen(),
+        ));
+        card.appendChild(header);
+      }
+
+      const hosts = document.createElement('div');
+      hosts.className = 'hosts';
+      card.appendChild(hosts);
+      this._hostsEl = hosts;
+
+      const output = document.createElement('div');
+      output.className = 'output';
+      output.style.height = this._config.height || DEFAULT_HEIGHT;
+      card.appendChild(output);
+      this._outputEl = output;
+
+      const inputrow = document.createElement('div');
+      inputrow.className = 'inputrow';
+      const prompt = document.createElement('span');
+      prompt.className = 'prompt';
+      prompt.textContent = '❯';
+      inputrow.appendChild(prompt);
+
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.placeholder = this._t('placeholder');
+      input.setAttribute('aria-label', this._t('placeholder'));
+      input.autocomplete = 'off';
+      input.autocapitalize = 'off';
+      input.spellcheck = false;
+      input.addEventListener('keydown', (ev) => this._onKeydown(ev));
+      inputrow.appendChild(input);
+      this._inputEl = input;
+
+      const send = document.createElement('button');
+      send.className = 'send';
+      send.type = 'button';
+      send.textContent = this._t('run');
+      send.addEventListener('click', () => this._submit());
+      inputrow.appendChild(send);
+
+      card.appendChild(inputrow);
+      root.appendChild(card);
+      this._renderHosts();
+    }
+
+    _syncOutputs() {
+      if (!this._outputEl) return;
+      const states = this._hass.states;
+      this._hosts.forEach((h) => {
+        const s = states[h.output];
+        if (!s) return;
+        const value = s.state;
+        const known = Object.prototype.hasOwnProperty.call(this._lastOut, h.id);
+        if (known && this._lastOut[h.id] === value) return;
+        this._lastOut[h.id] = value;
+        if (!known || !this._selected.has(h.id)) return;
+        if (value === 'unavailable' || value === 'unknown' || value === INTEGRATED_CLEAR_SENTINEL) return;
+        this._appendHostLine(h, value);
+      });
+    }
+
+    _appendHostLine(host, text) {
+      const p = text.indexOf(':~$ ');
+      const isCmd = p > 0 && text.slice(0, p).indexOf(' ') === -1;
+      const line = document.createElement('div');
+      line.className = isCmd ? 'line cmd' : 'line';
+      const tag = document.createElement('span');
+      tag.className = 'tag';
+      tag.style.setProperty('--tuxd-host-color', host.color);
+      tag.textContent = host.name;
+      line.appendChild(tag);
+      line.appendChild(document.createTextNode(text === '' ? ' ' : text));
+      this._pushLine(line);
+    }
+
+    _note(text) {
+      const line = document.createElement('div');
+      line.className = 'line note';
+      line.textContent = text;
+      this._pushLine(line);
+    }
+
+    _pushLine(line) {
+      this._outputEl.appendChild(line);
+      const max = this._config.max_lines || DEFAULT_MAX_LINES;
+      while (this._outputEl.children.length > max) {
+        this._outputEl.removeChild(this._outputEl.firstChild);
+      }
+      if (this._config.auto_scroll !== false) {
+        this._outputEl.scrollTop = this._outputEl.scrollHeight;
+      }
+    }
+
+    _sendValue(value) {
+      if (!this._hass || !this._config || !this._outputEl) return;
+      const targets = this._targets();
+      if (!targets.length) {
+        this._note(this._t('nothingSelected'));
+        return;
+      }
+      const shown = value === INTEGRATED_STOP_SENTINEL ? this._t('stop') : value;
+      this._note(`❯ ${shown}  →  ${targets.map((h) => h.name).join(', ')}`);
+      targets.forEach((h) => {
+        Promise.resolve(this._hass.callService('text', 'set_value', { entity_id: h.input, value }))
+          .catch((e) => this._appendHostLine(h, `${this._t('sendFailed')}: ${(e && e.message) || e}`));
+      });
+    }
+  }
+
+
   function _tugboatEntityIds(deviceId) {
     const slug = _jsSlug(deviceId);
     return {
@@ -6350,6 +6775,20 @@
       padding-right: 10px;
       border-right: 1px solid color-mix(in srgb, var(--hc-sub) 35%, transparent);
     }
+    /* With the agent buttons: two columns, host (restart, shut down) on the
+       left and agent (update, restart agent) on the right. */
+    .host-power-box.two-columns {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: auto auto;
+      align-content: center;
+      column-gap: 10px;
+    }
+    .host-power-box button.host-agent.working { color: var(--hc-accent); cursor: default; }
+    .host-power-box button.host-agent.working ha-icon { animation: host-agent-pulse 1.1s ease-in-out infinite; }
+    .host-power-box button.host-agent-agentRestart:hover ha-icon { animation: host-power-turn 0.9s cubic-bezier(0.45, 0, 0.25, 1) infinite; }
+    @keyframes host-agent-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+    ha-card.layout-box .host-power-box.two-columns { display: flex; }
     .host-power-box button.host-power { flex: 0 0 auto; justify-content: center; }
     .host-power-box button.host-power ha-icon {
       --mdc-icon-size: 22px;
@@ -6481,7 +6920,7 @@
     }
 
     static defaultConfig() {
-      return { friendly_name: '', layout: 'bar', size: 'normal', theme: 'ha', show_updates: true, show_power: true, offline_animation: true, error_glow: true, error_glow_color: 'rgba(219, 68, 55, 0.6)', error_glow_strength: 50, error_glow_type: 'inner', error_glow_speed: 2, warning_glow: true, warning_glow_color: 'rgba(255, 152, 0, 0.6)', warning_glow_strength: 50, warning_glow_type: 'inner', warning_glow_speed: 2, busy_glow: true, busy_glow_color: 'rgba(255, 193, 7, 0.6)', busy_glow_strength: 50, busy_glow_type: 'inner', busy_glow_speed: 2, show_cpu: true, show_root: true, show_ram: true, show_net: true, chips_fit: 'auto', chips_smallest: 'icons', chips_hover: true, chips_row: 'auto', chips_row_width: 520, chips_size: 100, cpu_decimals: 1, root_decimals: 1, ram_decimals: 1, net_decimals: 2, chips_show_label: true, icon_size: 40, icon_shape: 'none', tap_action: 'navigate' };
+      return { friendly_name: '', layout: 'bar', size: 'normal', theme: 'ha', show_updates: true, show_power: true, show_agent_buttons: true, offline_animation: true, error_glow: true, error_glow_color: 'rgba(219, 68, 55, 0.6)', error_glow_strength: 50, error_glow_type: 'inner', error_glow_speed: 2, warning_glow: true, warning_glow_color: 'rgba(255, 152, 0, 0.6)', warning_glow_strength: 50, warning_glow_type: 'inner', warning_glow_speed: 2, busy_glow: true, busy_glow_color: 'rgba(255, 193, 7, 0.6)', busy_glow_strength: 50, busy_glow_type: 'inner', busy_glow_speed: 2, show_cpu: true, show_root: true, show_ram: true, show_net: true, chips_fit: 'auto', chips_smallest: 'icons', chips_hover: true, chips_row: 'auto', chips_row_width: 520, chips_size: 100, cpu_decimals: 1, root_decimals: 1, ram_decimals: 1, net_decimals: 2, chips_show_label: true, icon_size: 40, icon_shape: 'none', tap_action: 'navigate' };
     }
 
     static schema(lang) {
@@ -6531,6 +6970,7 @@
         },
         { name: 'show_updates', selector: { boolean: {} } },
         { name: 'show_power', selector: { boolean: {} } },
+        { name: 'show_agent_buttons', selector: { boolean: {} } },
         { name: 'offline_animation', selector: { boolean: {} } },
         { name: 'show_cpu', selector: { boolean: {} } },
         { name: 'show_root', selector: { boolean: {} } },
@@ -6631,6 +7071,8 @@
         warningReason: `sensor.${slug}_warning_reason`,
         reboot: `button.${slug}_reboot`,
         shutdown: `button.${slug}_shutdown`,
+        agentCheck: `button.${slug}_check`,
+        agentRestart: `button.${slug}_restart_agent`,
         updates: `sensor.${slug}_updates_available`,
         icon: `sensor.${slug}_agent_icon`,
         cpu: `sensor.${slug}_cpu_load`,
@@ -6763,6 +7205,43 @@
         main.classList.remove('host-held');
       }
       this._scheduleFit();
+    }
+
+    _agentUpdate(checkId, updateId) {
+      const press = () => Promise.resolve(this._hass.callService('button', 'press', { entity_id: checkId }));
+      const finish = (work) => {
+        clearInterval(this._agentPoll);
+        this._agentWork = work;
+        this._agentMark();
+        clearTimeout(this._agentDone);
+        this._agentDone = setTimeout(() => { this._agentWork = ''; this._agentMark(); }, work === 'installing' ? 8000 : 3000);
+      };
+      clearInterval(this._agentPoll);
+      this._agentWork = 'checking';
+      this._agentMark();
+      const started = Date.now();
+      press().then(() => {
+        this._agentPoll = setInterval(() => {
+          const update = this._hass && this._hass.states[updateId];
+          if (update && update.state === 'on') {
+            this._hass.callService('update', 'install', { entity_id: updateId });
+            finish('installing');
+          } else if (Date.now() - started > 20000) {
+            finish('none');
+          }
+        }, 1000);
+      }).catch(() => finish('none'));
+    }
+
+    _agentMark(box) {
+      const scope = box || this._cardEl;
+      const btn = scope && scope.querySelector('.host-agent-agentUpdate');
+      if (!btn) return;
+      const work = this._agentWork || '';
+      btn.classList.toggle('working', work === 'checking' || work === 'installing');
+      const icons = { checking: 'mdi:cloud-sync-outline', installing: 'mdi:cloud-download', none: 'mdi:cloud-check-outline' };
+      btn.querySelector('ha-icon').setAttribute('icon', icons[work] || 'mdi:cloud-download-outline');
+      btn.title = work ? this._t(`agentUpdate_${work}`) : this._t('agentUpdate');
     }
 
     _render(st, pending, overThreshold) {
@@ -6907,6 +7386,31 @@
           });
           powerBox.appendChild(btn);
         });
+      }
+      if (!offline && config.show_agent_buttons !== false) {
+        const agentButton = (key, mdi, confirmKey, entity, run) => {
+          if (!entity || entity.state === 'unavailable') return;
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = `host-power host-agent host-agent-${key}`;
+          btn.title = this._t(key);
+          const icon = document.createElement('ha-icon');
+          icon.setAttribute('icon', mdi);
+          btn.appendChild(icon);
+          btn.addEventListener('click', (ev) => {
+            ev.stopPropagation();
+            if (btn.classList.contains('working')) return;
+            if (!window.confirm(`${name.textContent}: ${this._t(confirmKey)}`)) return;
+            run();
+          });
+          powerBox.appendChild(btn);
+          powerBox.classList.add('two-columns');
+        };
+        agentButton('agentUpdate', 'mdi:cloud-download-outline', 'confirmAgentUpdate', st.agentCheck,
+          () => this._agentUpdate(st.agentCheck.entity_id, `update.${_jsSlug(config.device_id || '')}_self_update`));
+        agentButton('agentRestart', 'mdi:restart-alert', 'confirmAgentRestart', st.agentRestart,
+          () => this._hass.callService('button', 'press', { entity_id: st.agentRestart.entity_id }));
+        this._agentMark(powerBox);
       }
       main.appendChild(nameRow);
       const subBox = document.createElement('div');
@@ -7216,7 +7720,7 @@
 
 
   const RENDERERS = {
-    terminal: TerminalRenderer, 'terminal-integrated': TerminalIntegratedRenderer, update: UpdateRenderer, cache: CacheRenderer, conf: ConfigEditorRenderer,
+    terminal: TerminalRenderer, 'terminal-integrated': TerminalIntegratedRenderer, 'multi-terminal': MultiCommandRenderer, update: UpdateRenderer, cache: CacheRenderer, conf: ConfigEditorRenderer,
     devices: DeviceStatusGridRenderer, fleet: FleetSummaryRenderer,
     tugboat: TugboatActionRenderer, 'tugboat-health': TugboatHealthRenderer,
     status: AgentStatusRenderer, host: HostOverviewRenderer,
@@ -7341,6 +7845,7 @@
     return [
       { value: 'terminal', label: labels.terminal },
       { value: 'terminal-integrated', label: labels['terminal-integrated'] },
+      { value: 'multi-terminal', label: labels['multi-terminal'] },
       { value: 'update', label: labels.update },
       { value: 'cache', label: labels.cache },
       { value: 'conf', label: labels.conf },
