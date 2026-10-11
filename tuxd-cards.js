@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '1.5.8';
+  const CARD_VERSION = '1.5.9';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,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';
 
   function resolveLang(raw) {
@@ -643,15 +643,32 @@
         bannerNoHub: 'TuxD integration not found',
         attentionTitle: 'Needs attention',
         attentionMore: '+{n} more',
-        actionSent: 'Sent',
+        actionStarted: '{action}: sent to {n} online agents',
+        actionFailed: '{action}: failed - {error}',
         confirmUpdateAgents: 'Update all TuxD agents now?',
         confirmRestartAgents: 'Restart all TuxD agents now?',
+        confirmInstallHostUpdates: 'Install host updates on every device that allows it?',
         actionLabels: {
           check_host_updates: 'Check host updates',
           refresh: 'Refresh sensors',
           update_agents: 'Update agents',
           restart_agents: 'Restart agents',
+          install_host_updates: 'Install host updates',
+          check_agent_updates: 'Check agent updates',
+          refresh_entities: 'Refresh entities',
         },
+        busyLabel: 'Busy',
+        warningsLabel: 'Warnings',
+        healthOk: 'healthy',
+        healthWarn: 'updates',
+        healthBad: 'problems',
+        healthOff: 'offline',
+        loadTitle: 'Fleet load',
+        loadCpu: 'CPU',
+        loadRam: 'RAM',
+        loadDisk: 'Disk',
+        loadAvg: 'avg',
+        loadPeak: 'peak',
         badge: {
           offline: 'Offline',
           errors: 'System error',
@@ -677,6 +694,10 @@
           show_agent_updates: 'Show agent-updates tile',
           show_versions: 'Show version breakdown tile',
           show_thresholds: 'Show over-threshold tile',
+          show_health_bar: 'Show the fleet health bar',
+          show_busy: 'Show busy-agents tile (with the running job)',
+          show_warnings: 'Show warnings tile (with the reason)',
+          show_load: 'Show fleet load (average and peak CPU, RAM, disk)',
           show_attention: 'Show the needs-attention list',
           columns: 'Columns (0 = fit as many as the width allows)',
           min_tile_width: 'Minimum tile width when fitting automatically (px)',
@@ -685,6 +706,7 @@
           attention_limit: 'Devices to list under needs attention',
           device_click: 'When a device is clicked',
           actions: 'Buttons to show',
+          actions_per_row: 'Buttons per row (0 = as many as fit)',
           confirm_actions: 'Ask for confirmation before update/restart all',
           language: 'Language',
         },
@@ -1052,15 +1074,32 @@
         bannerNoHub: 'Fant ikke TuxD-integrasjonen',
         attentionTitle: 'Trenger oppmerksomhet',
         attentionMore: '+{n} til',
-        actionSent: 'Sendt',
+        actionStarted: '{action}: sendt til {n} agenter som er online',
+        actionFailed: '{action}: feilet - {error}',
         confirmUpdateAgents: 'Oppdatere alle TuxD-agenter nå?',
         confirmRestartAgents: 'Starte alle TuxD-agenter på nytt nå?',
+        confirmInstallHostUpdates: 'Installere systemoppdateringer på alle enheter som tillater det?',
         actionLabels: {
           check_host_updates: 'Sjekk systemoppdateringer',
           refresh: 'Oppdater sensorer',
           update_agents: 'Oppdater agenter',
           restart_agents: 'Start agenter på nytt',
+          install_host_updates: 'Installer systemoppdateringer',
+          check_agent_updates: 'Sjekk agentoppdateringer',
+          refresh_entities: 'Oppdater entiteter',
         },
+        busyLabel: 'Opptatt',
+        warningsLabel: 'Advarsler',
+        healthOk: 'friske',
+        healthWarn: 'oppdateringer',
+        healthBad: 'problemer',
+        healthOff: 'offline',
+        loadTitle: 'Flåtebelastning',
+        loadCpu: 'CPU',
+        loadRam: 'RAM',
+        loadDisk: 'Disk',
+        loadAvg: 'snitt',
+        loadPeak: 'topp',
         badge: {
           offline: 'Offline',
           errors: 'Systemfeil',
@@ -1086,6 +1125,10 @@
           show_agent_updates: 'Vis agentoppdateringer',
           show_versions: 'Vis versjonsoversikt',
           show_thresholds: 'Vis terskel-oversikt',
+          show_health_bar: 'Vis helselinjen for flåten',
+          show_busy: 'Vis opptatte agenter (med jobben som kjører)',
+          show_warnings: 'Vis advarsler (med årsak)',
+          show_load: 'Vis flåtebelastning (snitt og topp for CPU, RAM, disk)',
           show_attention: 'Vis listen over enheter som trenger oppmerksomhet',
           columns: 'Kolonner (0 = så mange som bredden tillater)',
           min_tile_width: 'Minste flisbredde ved automatisk tilpasning (px)',
@@ -1094,6 +1137,7 @@
           attention_limit: 'Antall enheter i listen over enheter som trenger oppmerksomhet',
           device_click: 'Når en enhet klikkes',
           actions: 'Knapper som vises',
+          actions_per_row: 'Knapper per rad (0 = så mange som får plass)',
           confirm_actions: 'Spør før oppdater/start på nytt for alle',
           language: 'Språk',
         },
@@ -2780,6 +2824,9 @@
     refresh: 'TuxD Refresh Sensor Data On All Device Agents',
     update_agents: 'TuxD Update All Device Agents',
     restart_agents: 'TuxD Restart All Device Agents',
+    install_host_updates: 'TuxD Install Host Updates On All Devices',
+    check_agent_updates: 'TuxD Check Agent Updates On All Devices',
+    refresh_entities: 'TuxD Refresh Entities On All Device Agents',
   };
 
   const HUB_THRESHOLD_NUMBER_NAMES = {
@@ -2816,7 +2863,10 @@
     const wanted = new Map();
     Object.keys(HUB_SENSOR_NAMES).forEach((k) => wanted.set(HUB_SENSOR_NAMES[k], ['sensors', k]));
     FLEET_THRESHOLD_NAMES.forEach((n) => wanted.set(n, ['thresholdSensors', n]));
-    Object.keys(HUB_BUTTON_NAMES).forEach((k) => wanted.set(HUB_BUTTON_NAMES[k], ['buttons', k]));
+    Object.keys(HUB_BUTTON_NAMES).forEach((k) => {
+      wanted.set(HUB_BUTTON_NAMES[k], ['buttons', k]);
+      wanted.set(HUB_BUTTON_NAMES[k].replace(/^TuxD /, ''), ['buttons', k]);
+    });
     Object.keys(HUB_THRESHOLD_NUMBER_NAMES).forEach((k) => wanted.set(HUB_THRESHOLD_NUMBER_NAMES[k], ['thresholdNumbers', k]));
 
     const hubDeviceId = _tuxdHubDeviceId(hass);
@@ -4079,7 +4129,29 @@
     { value: 'refresh', label: 'Refresh sensor data on all devices' },
     { value: 'update_agents', label: 'Update all agents (asks first)' },
     { value: 'restart_agents', label: 'Restart all agents (asks first)' },
+    { value: 'install_host_updates', label: 'Install host updates on all devices (asks first)' },
+    { value: 'check_agent_updates', label: 'Check agent updates on all devices' },
+    { value: 'refresh_entities', label: 'Refresh entities on all devices' },
   ];
+
+  const FLEET_ACTION_CONFIRM = {
+    update_agents: 'confirmUpdateAgents',
+    restart_agents: 'confirmRestartAgents',
+    install_host_updates: 'confirmInstallHostUpdates',
+  };
+
+  const FLEET_LOAD_SPECS = [
+    { key: 'cpu', labelKey: 'loadCpu', ids: ['cpu_load'] },
+    { key: 'ram', labelKey: 'loadRam', ids: ['memory_used'] },
+    { key: 'disk', labelKey: 'loadDisk', ids: ['root_storage_used', 'storage_used'] },
+  ];
+  const FLEET_LOAD_WARN = 75;
+  const FLEET_LOAD_BAD = 90;
+
+  const FLEET_RUN_MIN_MS = 4000;
+  const FLEET_QUIET_MS = 3000;
+  const FLEET_RUN_MAX_MS = 15 * 60 * 1000;
+  const FLEET_DONE_MS = 3000;
 
   const DEVICE_CLICK_OPTIONS = [
     { value: 'more_info', label: 'Open the online/offline entity dialog' },
@@ -4206,7 +4278,33 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-    .attention[hidden], .actions[hidden] { display: none; }
+    .attention[hidden], .actions[hidden], .health[hidden], .load[hidden] { display: none; }
+    /* The whole fleet as one bar: healthy / updates / problems / offline. */
+    .health-bar { display: flex; gap: 2px; height: 8px; border-radius: 4px; overflow: hidden; }
+    .health-seg { min-width: 4px; flex: 0 0 0; transition: flex-grow 0.4s ease; }
+    .health-seg[hidden] { display: none; }
+    .health-seg.ok, .health-legend .ok i { background: var(--success-color, #43a047); }
+    .health-seg.warn, .health-legend .warn i { background: var(--warning-color, #ff9800); }
+    .health-seg.bad, .health-legend .bad i { background: var(--error-color, #db4437); }
+    .health-seg.off, .health-legend .off i { background: var(--disabled-text-color, #9e9e9e); }
+    .health-legend { display: flex; flex-wrap: wrap; gap: 2px 14px; margin-top: 6px; font-size: 12px; color: var(--secondary-text-color); }
+    .health-legend span[hidden] { display: none; }
+    .health-legend i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; }
+    .health-legend b { color: var(--primary-text-color); font-weight: 600; }
+    /* Fleet load: label, Material 3 linear progress, average, peak host. */
+    .load-rows { display: grid; grid-template-columns: auto minmax(40px, 1fr) auto minmax(0, auto); gap: 6px 10px; align-items: center; font-size: 12px; }
+    .load-name { color: var(--primary-text-color); font-weight: 500; }
+    .load-track { height: 4px; border-radius: 2px; overflow: hidden; background: color-mix(in srgb, var(--primary-color, #03a9f4) 24%, transparent); }
+    .load-fill { height: 100%; border-radius: 2px; background: var(--primary-color, #03a9f4); transition: width 0.4s ease; }
+    .load-fill.warn { background: var(--warning-color, #ff9800); }
+    .load-fill.bad { background: var(--error-color, #db4437); }
+    .load-avg { color: var(--primary-text-color); font-variant-numeric: tabular-nums; text-align: right; }
+    .load-peak { color: var(--secondary-text-color); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+    .load-peak.clickable { cursor: pointer; }
+    .load-peak.warn { color: var(--warning-color, #ff9800); }
+    .load-peak.bad { color: var(--error-color, #db4437); }
+    .tile.severity-info { border-color: var(--primary-color, #03a9f4); }
+    .tile.severity-info .tile-icon, .tile.severity-info .tile-value { color: var(--primary-color, #03a9f4); }
     .section-title {
       font-size: 12px;
       font-weight: 600;
@@ -4267,20 +4365,73 @@
       flex-wrap: wrap;
       gap: 8px;
     }
+    /* actions_per_row: that many equally wide buttons to a row. */
+    .actions.per-row { display: grid; grid-template-columns: repeat(var(--fa-cols, 2), minmax(0, 1fr)); }
+    .actions.per-row .action-btn, .actions.per-row .action-btn.running, .actions.per-row .action-btn.done { padding: 0 12px; }
+    /* Material 3 outlined button. */
     .action-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-sizing: border-box;
+      min-width: 0;
+      max-width: 100%;
+      height: 40px;
+      padding: 0 24px;
       font: inherit;
-      font-size: 13px;
-      padding: 7px 12px;
-      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+      border-radius: 20px;
       cursor: pointer;
       color: var(--primary-color, #03a9f4);
       background: transparent;
-      border: 1px solid var(--primary-color, #03a9f4);
+      border: 1px solid var(--outline-color, var(--divider-color, #79747e));
+      transition: background-color 0.2s ease, border-color 0.2s ease, padding 0.2s ease;
     }
-    .action-btn:hover { background: color-mix(in srgb, var(--primary-color, #03a9f4) 12%, transparent); }
-    .action-btn:focus-visible { outline: 2px solid var(--primary-color, #03a9f4); outline-offset: 1px; }
-    .action-btn:disabled { opacity: 0.45; cursor: not-allowed; }
-    .action-btn.sent { color: var(--success-color, #43a047); border-color: var(--success-color, #43a047); }
+    .action-btn:hover { background: color-mix(in srgb, var(--primary-color, #03a9f4) 8%, transparent); }
+    .action-btn:active { background: color-mix(in srgb, var(--primary-color, #03a9f4) 12%, transparent); }
+    .action-btn:focus-visible { outline: 2px solid var(--primary-color, #03a9f4); outline-offset: 2px; }
+    .action-btn:disabled { color: color-mix(in srgb, var(--primary-text-color, #1c1b1f) 38%, transparent); cursor: not-allowed; }
+    /* Working / finished: the label stays as it is, a mark in front of it
+       says how the job stands (see _syncRunning). */
+    .action-btn.running, .action-btn.done { padding-left: 16px; cursor: default; }
+    .action-btn.running:disabled, .action-btn.done:disabled { color: var(--primary-color, #03a9f4); }
+    .action-btn.running { border-color: var(--primary-color, #03a9f4); background: color-mix(in srgb, var(--primary-color, #03a9f4) 12%, transparent); }
+    .action-btn.done, .action-btn.done:disabled { color: var(--success-color, #43a047); border-color: var(--success-color, #43a047); }
+    .action-state { display: none; flex: none; width: 18px; height: 18px; --mdc-icon-size: 18px; }
+    .action-btn.running .action-state, .action-btn.done .action-state { display: inline-flex; }
+    .action-state ha-icon { display: none; }
+    .action-btn.done .action-state ha-icon { display: flex; }
+    .action-btn.done .action-spin { display: none; }
+    .action-spin {
+      box-sizing: border-box;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid color-mix(in srgb, currentColor 24%, transparent);
+      border-top-color: currentColor;
+      animation: fleet-spin 0.9s linear infinite;
+    }
+    @keyframes fleet-spin { to { transform: rotate(360deg); } }
+    /* A label too long for its button: a ticker (set up by _fitLabels) -
+       the text moves steadily one way, followed by a copy of itself, and
+       the loop restarts when that copy is where the first one began. */
+    .action-label { flex: 0 1 auto; min-width: 0; overflow: hidden; white-space: nowrap; }
+    .action-track { display: inline-block; }
+    .action-gap { display: inline-block; width: 32px; }
+    .action-label.scroll .action-track { animation: fleet-ticker var(--fa-time, 6s) linear infinite; }
+    @keyframes fleet-ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(var(--fa-shift, 0px)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .action-spin { animation-duration: 3s; }
+      .action-label.scroll { text-overflow: ellipsis; }
+      .action-label.scroll .action-track { animation: none; display: inline; }
+      .action-label.scroll .action-gap, .action-label.scroll .action-gap + span { display: none; }
+    }
     .empty {
       padding: 16px 0;
       text-align: center;
@@ -4311,6 +4462,10 @@
       this._attentionKey = '';
       this._timers = [];
       this._hasRendered = false;
+      this._running = new Map();
+      this._actionBtns = new Map();
+      this._runTimer = null;
+      this._labelWatch = null;
       this._scheduler = new _Scheduler(() => this._flush());
     }
 
@@ -4321,8 +4476,9 @@
         show_configured: true, show_online: true, show_offline: true, show_errors: true,
         show_docker: true, show_smart: true, show_tugboat: true, show_host_updates: true, show_agent_updates: true,
         show_versions: true, show_thresholds: true,
+        show_health_bar: true, show_busy: true, show_warnings: true, show_load: true,
         hide_zero_problems: false, expand_problems: false, attention_limit: 8,
-        device_click: 'more_info', actions: [], confirm_actions: true,
+        device_click: 'more_info', actions: [], actions_per_row: 0, confirm_actions: true,
       };
     }
 
@@ -4345,6 +4501,10 @@
           bool('show_agent_updates'),
           bool('show_versions'),
           bool('show_thresholds'),
+          bool('show_health_bar'),
+          bool('show_busy'),
+          bool('show_warnings'),
+          bool('show_load'),
           bool('show_attention'),
         ]),
         group('behaviour', [
@@ -4358,6 +4518,7 @@
         ]),
         group('actionsGroup', [
           { name: 'actions', selector: { select: { multiple: true, mode: 'list', options: FLEET_ACTION_OPTIONS } } },
+          { name: 'actions_per_row', selector: { number: { mode: 'box', min: 0, max: 6 } } },
           bool('confirm_actions'),
         ]),
         { name: 'language', selector: { select: { mode: 'dropdown', options: LANGUAGE_OPTIONS } } },
@@ -4390,12 +4551,15 @@
       if (this._config && this._hass && !this._cardEl) this._skeleton();
       const host = this.root && this.root.host;
       if (host && host.isConnected) this._scheduler.attach(host);
+      this._syncRunning();
     }
 
     disconnectedCallback() {
       this._scheduler.detach();
       this._timers.forEach((t) => clearTimeout(t));
       this._timers = [];
+      clearInterval(this._runTimer);
+      this._runTimer = null;
     }
 
     getCardSize() {
@@ -4460,6 +4624,36 @@
         this._bannerEl = { el: banner, icon, title, sub };
       }
 
+      this._healthEl = null;
+      this._healthKey = '';
+      if (this._config.show_health_bar !== false) {
+        const el = document.createElement('div');
+        el.className = 'health';
+        el.hidden = true;
+        const bar = document.createElement('div');
+        bar.className = 'health-bar';
+        const legend = document.createElement('div');
+        legend.className = 'health-legend';
+        const parts = {};
+        [['ok', 'healthOk'], ['warn', 'healthWarn'], ['bad', 'healthBad'], ['off', 'healthOff']].forEach(([cls, labelKey]) => {
+          const seg = document.createElement('div');
+          seg.className = `health-seg ${cls}`;
+          bar.appendChild(seg);
+          const item = document.createElement('span');
+          item.className = cls;
+          const count = document.createElement('b');
+          item.appendChild(document.createElement('i'));
+          item.appendChild(count);
+          item.appendChild(document.createTextNode(` ${this._t(labelKey)}`));
+          legend.appendChild(item);
+          parts[cls] = { seg, item, count };
+        });
+        el.appendChild(bar);
+        el.appendChild(legend);
+        card.appendChild(el);
+        this._healthEl = { el, parts };
+      }
+
       const grid = document.createElement('div');
       grid.className = 'grid';
       const cols = Number(this._config.columns);
@@ -4471,6 +4665,33 @@
       }
       card.appendChild(grid);
       this._grid = grid;
+
+      this._loadEl = null;
+      if (this._config.show_load !== false) {
+        const el = document.createElement('div');
+        el.className = 'load';
+        el.hidden = true;
+        const title = document.createElement('div');
+        title.className = 'section-title';
+        title.textContent = this._t('loadTitle');
+        el.appendChild(title);
+        const rows = document.createElement('div');
+        rows.className = 'load-rows';
+        el.appendChild(rows);
+        const refs = {};
+        FLEET_LOAD_SPECS.forEach((spec) => {
+          const make = (cls) => rows.appendChild(Object.assign(document.createElement('div'), { className: cls }));
+          const name = make('load-name');
+          name.textContent = this._t(spec.labelKey);
+          const fill = make('load-track').appendChild(Object.assign(document.createElement('div'), { className: 'load-fill' }));
+          const avg = make('load-avg');
+          const peak = make('load-peak');
+          peak.addEventListener('click', () => { if (refs[spec.key].peakId) this._openDevice(refs[spec.key].peakId); });
+          refs[spec.key] = { name, fill, avg, peak, peakId: '' };
+        });
+        card.appendChild(el);
+        this._loadEl = { el, refs };
+      }
 
       this._attentionEl = null;
       if (this._config.show_attention !== false) {
@@ -4486,6 +4707,11 @@
       if (actions.length) {
         const el = document.createElement('div');
         el.className = 'actions';
+        const perRow = Math.max(0, Math.min(6, Math.round(Number(this._config.actions_per_row) || 0)));
+        if (perRow) {
+          el.classList.add('per-row');
+          el.style.setProperty('--fa-cols', String(perRow));
+        }
         card.appendChild(el);
         this._actionsEl = el;
       }
@@ -4511,6 +4737,8 @@
       if (this._config.show_thresholds !== false) {
         this._buildTile('overThreshold', 'mdi:gauge-full', this._t('overThresholdLabel'));
       }
+      if (this._config.show_warnings !== false) this._buildTile('warnings', 'mdi:alert-outline', this._t('warningsLabel'));
+      if (this._config.show_busy !== false) this._buildTile('busy', 'mdi:progress-wrench', this._t('busyLabel'));
     }
 
     _setExpanded(key, expanded) {
@@ -4570,6 +4798,7 @@
     _severityFor(spec, count) {
       if (spec.severity === 'bad' && count > 0) return 'severity-bad';
       if (spec.severity === 'warn' && count > 0) return 'severity-warn';
+      if (spec.severity === 'info' && count > 0) return 'severity-info';
       return '';
     }
 
@@ -4644,7 +4873,91 @@
       this._updateTiles();
       this._updateBanner();
       this._updateAttention();
+      this._updateHealth();
+      this._updateLive();
       if (this._actionsDirty) this._updateActions();
+      this._syncRunning();
+    }
+
+    _updateHealth() {
+      const h = this._healthEl;
+      if (!h) return;
+      const { attention, updatesOnly } = this._classify();
+      const total = this._devMap.size;
+      const off = Array.from(this._problems.offline).filter((id) => this._devMap.has(id)).length;
+      const counts = { off, bad: Math.max(0, attention.size - off), warn: updatesOnly.size };
+      counts.ok = Math.max(0, total - counts.off - counts.bad - counts.warn);
+      const key = `${counts.ok}|${counts.warn}|${counts.bad}|${counts.off}`;
+      if (key === this._healthKey) return;
+      this._healthKey = key;
+      h.el.hidden = !total;
+      Object.keys(h.parts).forEach((cls) => {
+        const part = h.parts[cls];
+        part.seg.hidden = !counts[cls];
+        part.seg.style.flexGrow = String(counts[cls]);
+        part.item.hidden = cls !== 'ok' && !counts[cls];
+        part.count.textContent = String(counts[cls]);
+      });
+    }
+
+    _updateLive() {
+      const busyTile = this._tiles.get('busy');
+      const warnTile = this._tiles.get('warnings');
+      if (!busyTile && !warnTile && !this._loadEl) return;
+      const states = this._hass.states;
+      const text = (id) => {
+        const s = (states[id] || {}).state;
+        return s && s !== 'unknown' && s !== 'unavailable' && s !== 'None' ? s : '';
+      };
+      const busy = new Map();
+      const warnings = new Map();
+      const load = {};
+      FLEET_LOAD_SPECS.forEach((spec) => { load[spec.key] = { sum: 0, n: 0, peak: -1, peakId: '' }; });
+      Array.from(this._devMap.keys()).sort().forEach((id) => {
+        if ((states[_onlineEntityId(id)] || {}).state !== 'on') return;
+        const slug = _jsSlug(id);
+        if ((states[`binary_sensor.${slug}_busy`] || {}).state === 'on') busy.set(id, text(`sensor.${slug}_busy_job`));
+        if ((states[`binary_sensor.${slug}_warning`] || {}).state === 'on') warnings.set(id, text(`sensor.${slug}_warning_reason`));
+        FLEET_LOAD_SPECS.forEach((spec) => {
+          const value = spec.ids.map((o) => parseFloat((states[`sensor.${slug}_${o}`] || {}).state)).find((n) => Number.isFinite(n));
+          if (value === undefined) return;
+          const l = load[spec.key];
+          l.sum += value;
+          l.n += 1;
+          if (value > l.peak) { l.peak = value; l.peakId = id; }
+        });
+      });
+
+      const list = (tileState, spec, map) => {
+        if (!tileState) return;
+        this._setTileCount(spec, tileState, map.size);
+        const detailKey = Array.from(map, ([id, extra]) => `${id}:${extra}`).join(',');
+        if (detailKey === tileState.lastDetailKey) return;
+        tileState.lastDetailKey = detailKey;
+        this._renderDeviceList(tileState.detail, Array.from(map.keys()), map);
+      };
+      list(busyTile, { key: 'busy', severity: 'info' }, busy);
+      list(warnTile, { key: 'warnings', severity: 'warn' }, warnings);
+
+      if (!this._loadEl) return;
+      const level = (v) => (v >= FLEET_LOAD_BAD ? 'bad' : (v >= FLEET_LOAD_WARN ? 'warn' : ''));
+      let any = false;
+      FLEET_LOAD_SPECS.forEach((spec) => {
+        const l = load[spec.key];
+        const ref = this._loadEl.refs[spec.key];
+        const has = l.n > 0;
+        any = any || has;
+        [ref.name, ref.fill.parentNode, ref.avg, ref.peak].forEach((el) => { el.style.display = has ? '' : 'none'; });
+        if (!has) return;
+        const avg = l.sum / l.n;
+        ref.fill.style.width = `${Math.max(0, Math.min(100, avg))}%`;
+        ref.fill.className = `load-fill ${level(avg)}`.trim();
+        ref.avg.textContent = `${this._t('loadAvg')} ${avg.toFixed(0)}%`;
+        ref.peak.textContent = `${this._t('loadPeak')} ${l.peakId} ${l.peak.toFixed(0)}%`;
+        ref.peak.className = `load-peak ${level(l.peak)}${(this._config.device_click || 'more_info') !== 'none' ? ' clickable' : ''}`.replace('  ', ' ');
+        ref.peakId = l.peakId;
+      });
+      this._loadEl.el.hidden = !any;
     }
 
     _numberOf(key) {
@@ -4659,7 +4972,7 @@
       if (displayValue !== tileState.lastValue) {
         tileState.lastValue = displayValue;
         tileState.value.textContent = displayValue;
-        tileState.tile.classList.remove('severity-bad', 'severity-warn');
+        tileState.tile.classList.remove('severity-bad', 'severity-warn', 'severity-info');
         const cls = this._severityFor(spec, count || 0);
         if (cls) tileState.tile.classList.add(cls);
       }
@@ -4897,6 +5210,9 @@
       this._actionsDirty = false;
       if (!el) return;
       el.textContent = '';
+      this._actionBtns.clear();
+      if (this._labelWatch) this._labelWatch.disconnect();
+      this._labelWatch = typeof ResizeObserver === 'function' ? new ResizeObserver(() => this._fitLabels()) : null;
       const wanted = Array.isArray(this._config.actions) ? this._config.actions : [];
       wanted.forEach((key) => {
         if (!HUB_BUTTON_NAMES[key]) return;
@@ -4904,24 +5220,110 @@
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'action-btn';
-        const label = this._tk('actionLabels', key);
-        btn.textContent = label;
-        btn.disabled = !entityId;
+        const text = this._tk('actionLabels', key);
+        btn.setAttribute('aria-label', text);
+        const state = document.createElement('span');
+        state.className = 'action-state';
+        state.appendChild(Object.assign(document.createElement('span'), { className: 'action-spin' }));
+        const check = document.createElement('ha-icon');
+        check.icon = 'mdi:check';
+        state.appendChild(check);
+        btn.appendChild(state);
+        const label = document.createElement('span');
+        label.className = 'action-label';
+        const track = document.createElement('span');
+        track.className = 'action-track';
+        track.appendChild(Object.assign(document.createElement('span'), { textContent: text }));
+        label.appendChild(track);
+        btn.appendChild(label);
         btn.addEventListener('click', () => {
-          const dangerous = key === 'update_agents' || key === 'restart_agents';
-          if (dangerous && this._config.confirm_actions !== false) {
-            if (!window.confirm(this._t(key === 'update_agents' ? 'confirmUpdateAgents' : 'confirmRestartAgents'))) return;
-          }
-          this._hass.callService('button', 'press', { entity_id: entityId });
-          btn.classList.add('sent');
-          btn.textContent = `${this._t('actionSent')} - ${label}`;
-          this._timers.push(setTimeout(() => {
-            btn.classList.remove('sent');
-            btn.textContent = label;
-          }, 2500));
+          if (this._running.has(key)) return;
+          const ask = FLEET_ACTION_CONFIRM[key];
+          if (ask && this._config.confirm_actions !== false && !window.confirm(this._t(ask))) return;
+          this._runAction(key, entityId, text);
         });
         el.appendChild(btn);
+        this._actionBtns.set(key, { btn, label, entityId });
+        if (this._labelWatch) this._labelWatch.observe(label);
       });
+      this._fitLabels();
+    }
+
+    _fitLabels() {
+      this._actionBtns.forEach(({ label }) => {
+        const track = label.firstChild;
+        const width = track.firstChild.offsetWidth;
+        const scroll = width > label.clientWidth + 0.5;
+        if (scroll === label.classList.contains('scroll')) return;
+        label.classList.toggle('scroll', scroll);
+        while (track.childNodes.length > 1) track.removeChild(track.lastChild);
+        if (!scroll) return;
+        const gap = Object.assign(document.createElement('span'), { className: 'action-gap' });
+        const copy = Object.assign(document.createElement('span'), { textContent: track.firstChild.textContent });
+        copy.setAttribute('aria-hidden', 'true');
+        track.appendChild(gap);
+        track.appendChild(copy);
+        const shift = width + gap.offsetWidth;
+        label.style.setProperty('--fa-shift', `${-shift}px`);
+        label.style.setProperty('--fa-time', `${Math.max(4, shift / 30)}s`);
+      });
+    }
+
+    _onlineDevices() {
+      const states = this._hass.states;
+      return _tuxdRealDevices(this._hass).map((d) => d.deviceId)
+        .filter((id) => (states[_onlineEntityId(id)] || {}).state === 'on');
+    }
+
+    _toast(message) {
+      this.root.dispatchEvent(new CustomEvent('hass-notification', { detail: { message }, bubbles: true, composed: true }));
+    }
+
+    _runAction(key, entityId, text) {
+      const online = this._onlineDevices();
+      Promise.resolve(this._hass.callService('button', 'press', { entity_id: entityId })).then(() => {
+        this._toast(_expandTemplate(this._t('actionStarted'), { action: text, n: online.length }));
+      }, (err) => {
+        this._running.delete(key);
+        this._syncRunning();
+        this._toast(_expandTemplate(this._t('actionFailed'), { action: text, error: (err && err.message) || err }));
+      });
+      this._running.set(key, { at: Date.now(), online, quietAt: 0, doneAt: 0 });
+      this._syncRunning();
+    }
+
+    _syncRunning() {
+      const hass = this._hass;
+      const now = Date.now();
+      if (hass) {
+        this._running.forEach((run, key) => {
+          if (run.doneAt) {
+            if (now - run.doneAt >= FLEET_DONE_MS) this._running.delete(key);
+            return;
+          }
+          const atWork = run.online.some((id) => (hass.states[_onlineEntityId(id)] || {}).state !== 'on'
+            || (hass.states[`binary_sensor.${_jsSlug(id)}_busy`] || {}).state === 'on');
+          if (atWork) run.quietAt = 0;
+          else if (!run.quietAt) run.quietAt = now;
+          const age = now - run.at;
+          if (age >= FLEET_RUN_MAX_MS || (age >= FLEET_RUN_MIN_MS && run.quietAt && now - run.quietAt >= FLEET_QUIET_MS)) run.doneAt = now;
+        });
+      }
+      this._actionBtns.forEach(({ btn, entityId }, key) => {
+        const run = this._running.get(key);
+        btn.classList.toggle('running', !!run && !run.doneAt);
+        btn.classList.toggle('done', !!run && !!run.doneAt);
+        btn.disabled = !entityId || !!run;
+        if (run && !run.doneAt) btn.setAttribute('aria-busy', 'true');
+        else btn.removeAttribute('aria-busy');
+      });
+      const host = this.root && this.root.host;
+      if (this._running.size && host && host.isConnected) {
+        if (!this._runTimer) this._runTimer = setInterval(() => this._syncRunning(), 500);
+      } else if (this._runTimer) {
+        clearInterval(this._runTimer);
+        this._runTimer = null;
+      }
     }
   }
 
