@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '1.5.5';
+  const CARD_VERSION = '1.5.6';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,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';
 
   function resolveLang(raw) {
@@ -324,6 +324,7 @@
           tap_action: 'When the card is clicked',
           navigation_path: 'Custom path (used by "Open the custom path")',
           show_updates: 'Show a button for each available update',
+          update_pictures: 'Use the update entities\' own pictures (stack icons, distro logo)',
           show_power: 'Show restart and shutdown buttons',
           show_agent_buttons: 'Show agent update and restart-agent buttons',
           offline_animation: 'Animate while the host is offline (looks like reconnecting)',
@@ -428,6 +429,7 @@
           title: 'Title',
           show_details: 'Show summary and problems per stack',
           only_problems: 'Only show stacks that are not healthy',
+          show_icons: 'Show stack icons',
           language: 'Language',
         },
       },
@@ -469,6 +471,7 @@
         noAgents: 'No TuxD agents with terminal input found',
         nothingSelected: 'Select at least one online agent first',
         sendFailed: 'could not send',
+        confirmMulti: 'Run "{cmd}" on {n} agents?\n\n{hosts}',
         editor: {
           title: 'Title',
           devices: 'Agents to offer (comma separated device names, empty = all)',
@@ -481,6 +484,7 @@
           theme: 'Theme',
           background_color: 'Output background color',
           hide_header: 'Hide header',
+          hide_selector: 'Hide the agent selector (runs on every offered agent)',
         },
       },
       'terminal-integrated': {
@@ -728,6 +732,7 @@
           tap_action: 'Når kortet klikkes',
           navigation_path: 'Egendefinert sti (brukes av "Open the custom path")',
           show_updates: 'Vis en knapp for hver tilgjengelige oppdatering',
+          update_pictures: 'Bruk oppdateringsentitetenes egne bilder (stack-ikoner, distro-logo)',
           show_power: 'Vis knapper for omstart og avslutning',
           show_agent_buttons: 'Vis knapper for agentoppdatering og omstart av agenten',
           offline_animation: 'Animer mens verten er offline (ser ut som den kobler til på nytt)',
@@ -832,6 +837,7 @@
           title: 'Tittel',
           show_details: 'Vis oppsummering og problemer per stack',
           only_problems: 'Vis bare stacks som ikke er friske',
+          show_icons: 'Vis stack-ikoner',
           language: 'Språk',
         },
       },
@@ -873,6 +879,7 @@
         noAgents: 'Fant ingen TuxD-agenter med terminal-input',
         nothingSelected: 'Velg minst én agent som er online først',
         sendFailed: 'kunne ikke sende',
+        confirmMulti: 'Kjøre "{cmd}" på {n} agenter?\n\n{hosts}',
         editor: {
           title: 'Tittel',
           devices: 'Agenter som tilbys (enhetsnavn adskilt med komma, tom = alle)',
@@ -885,6 +892,7 @@
           theme: 'Tema',
           background_color: 'Bakgrunnsfarge (output)',
           hide_header: 'Skjul topptekst',
+          hide_selector: 'Skjul agentvelgeren (kjører på alle tilbudte agenter)',
         },
       },
       'terminal-integrated': {
@@ -5384,7 +5392,7 @@
       while (this._history.length > maxHistory) this._history.shift();
       this._historyIndex = this._history.length;
       this._saveHistory();
-      this._sendValue(value);
+      if (this._sendValue(value) === false) return;
       this._inputEl.value = '';
     }
   }
@@ -5431,6 +5439,12 @@
       this._selected = new Set();
       this._lastOut = {};
       this._hostsEl = null;
+      this._queue = [];
+      this._held = {};
+      this._sawBusy = {};
+      this._lastLineAt = {};
+      this._sentAt = 0;
+      this._queueTimer = null;
     }
 
     static defaultConfig() {
@@ -5442,6 +5456,7 @@
         max_history: INTEGRATED_DEFAULT_MAX_HISTORY,
         theme: 'ha',
         hide_header: false,
+        hide_selector: false,
       };
     }
 
@@ -5455,6 +5470,7 @@
         { name: 'max_history', selector: { number: { mode: 'box', min: 0, max: 1000 } } },
         { name: 'auto_scroll', selector: { boolean: {} } },
         { name: 'hide_header', selector: { boolean: {} } },
+        { name: 'hide_selector', selector: { boolean: {} } },
         { name: 'text_size', selector: { text: {} } },
         { name: 'background_color', selector: { text: {} } },
         { name: 'language', selector: { select: { mode: 'dropdown', options: LANGUAGE_OPTIONS } } },
@@ -5536,6 +5552,7 @@
             name: d.name,
             input: `text.${slug}_terminal_input`,
             output: `sensor.${slug}_terminal_output`,
+            busy: `binary_sensor.${slug}_busy`,
             offline: !!online && online.state === 'off',
           };
         })
@@ -5553,8 +5570,12 @@
       this._renderHosts();
     }
 
+    _isSelected(h) {
+      return !!this._config.hide_selector || this._selected.has(h.id);
+    }
+
     _targets() {
-      return this._hosts.filter((h) => this._selected.has(h.id) && !h.offline);
+      return this._hosts.filter((h) => this._isSelected(h) && !h.offline);
     }
 
     _renderHosts() {
@@ -5641,6 +5662,7 @@
 
       const hosts = document.createElement('div');
       hosts.className = 'hosts';
+      if (this._config.hide_selector) hosts.style.display = 'none';
       card.appendChild(hosts);
       this._hostsEl = hosts;
 
@@ -5690,10 +5712,57 @@
         const known = Object.prototype.hasOwnProperty.call(this._lastOut, h.id);
         if (known && this._lastOut[h.id] === value) return;
         this._lastOut[h.id] = value;
-        if (!known || !this._selected.has(h.id)) return;
+        if (!known || !this._isSelected(h)) return;
         if (value === 'unavailable' || value === 'unknown' || value === INTEGRATED_CLEAR_SENTINEL) return;
-        this._appendHostLine(h, value);
+        this._lastLineAt[h.id] = Date.now();
+        if (this._queue.length && this._queue[0] !== h.id && this._queue.includes(h.id)) {
+          (this._held[h.id] = this._held[h.id] || []).push(value);
+        } else {
+          this._appendHostLine(h, value);
+        }
       });
+      this._advance();
+    }
+
+    _advance() {
+      const states = (this._hass && this._hass.states) || {};
+      const now = Date.now();
+      this._queue.forEach((id) => {
+        const h = this._hosts.find((x) => x.id === id);
+        const b = h && states[h.busy];
+        if (b && b.state === 'on') this._sawBusy[id] = true;
+      });
+      while (this._queue.length) {
+        const id = this._queue[0];
+        const h = this._hosts.find((x) => x.id === id);
+        const b = h && states[h.busy];
+        const busy = !!b && b.state === 'on';
+        const quiet = now - (this._lastLineAt[id] || 0) > 500;
+        const done = !h || h.offline || (!busy && quiet && (this._sawBusy[id] || now - this._sentAt > 4000));
+        if (!done) break;
+        this._queue.shift();
+        const next = this._queue[0] && this._hosts.find((x) => x.id === this._queue[0]);
+        if (next) (this._held[next.id] || []).forEach((line) => this._appendHostLine(next, line));
+        if (next) delete this._held[next.id];
+      }
+      if (this._queue.length && !this._queueTimer) {
+        this._queueTimer = setInterval(() => this._advance(), 500);
+      } else if (!this._queue.length && this._queueTimer) {
+        clearInterval(this._queueTimer);
+        this._queueTimer = null;
+      }
+    }
+
+    _startQueue(targets) {
+      this._queue.slice(1).forEach((id) => {
+        const h = this._hosts.find((x) => x.id === id);
+        (this._held[id] || []).forEach((line) => h && this._appendHostLine(h, line));
+      });
+      this._queue = targets.map((h) => h.id);
+      this._held = {};
+      this._sawBusy = {};
+      this._sentAt = Date.now();
+      this._advance();
     }
 
     _appendHostLine(host, text) {
@@ -5736,7 +5805,10 @@
         return;
       }
       const shown = value === INTEGRATED_STOP_SENTINEL ? this._t('stop') : value;
+      if (value !== INTEGRATED_STOP_SENTINEL && targets.length > 1
+          && !window.confirm(this._t('confirmMulti').replace('{cmd}', value).replace('{n}', targets.length).replace('{hosts}', targets.map((h) => h.name).join(', ')))) return false;
       this._note(`❯ ${shown}  →  ${targets.map((h) => h.name).join(', ')}`);
+      if (value !== INTEGRATED_STOP_SENTINEL) this._startQueue(targets);
       targets.forEach((h) => {
         Promise.resolve(this._hass.callService('text', 'set_value', { entity_id: h.input, value }))
           .catch((e) => this._appendHostLine(h, `${this._t('sendFailed')}: ${(e && e.message) || e}`));
@@ -5928,6 +6000,7 @@
     .stack.ok .dot { background: var(--success-color, #43a047); }
     .stack.bad .dot { background: var(--error-color, #db4437); }
     .stack-info { flex: 1 1 auto; min-width: 0; }
+    .stack-icon { flex: 0 0 auto; width: 24px; height: 24px; object-fit: contain; }
     .stack-name {
       font-size: 14px;
       font-weight: 500;
@@ -6173,7 +6246,7 @@
     }
 
     static defaultConfig() {
-      return { title: '', show_details: true, only_problems: false, icon: TUGBOAT_DEFAULT_ICON, layout: 'default', card_style: 'default' };
+      return { title: '', show_details: true, only_problems: false, show_icons: true, icon: TUGBOAT_DEFAULT_ICON, layout: 'default', card_style: 'default' };
     }
 
     static schema() {
@@ -6182,6 +6255,7 @@
         { name: 'title', selector: { text: {} } },
         { name: 'show_details', selector: { boolean: {} } },
         { name: 'only_problems', selector: { boolean: {} } },
+        { name: 'show_icons', selector: { boolean: {} } },
       ].concat(TUGBOAT_LOOK_FIELDS, [
         { name: 'language', selector: { select: { mode: 'dropdown', options: LANGUAGE_OPTIONS } } },
       ]);
@@ -6280,6 +6354,17 @@
       const dot = document.createElement('div');
       dot.className = 'dot';
       row.appendChild(dot);
+
+      const iconUrl = String(attrs.icon_url || '');
+      if (config.show_icons !== false && /^https?:/i.test(iconUrl)) {
+        const img = document.createElement('img');
+        img.className = 'stack-icon';
+        img.alt = '';
+        img.loading = 'lazy';
+        img.src = iconUrl;
+        img.addEventListener('error', () => img.remove());
+        row.appendChild(img);
+      }
 
       const info = document.createElement('div');
       info.className = 'stack-info';
@@ -6943,7 +7028,7 @@
     }
 
     static defaultConfig() {
-      return { friendly_name: '', layout: 'bar', size: 'normal', theme: 'ha', show_updates: true, show_power: true, show_agent_buttons: true, offline_animation: true, error_glow: true, error_glow_color: 'rgba(219, 68, 55, 0.6)', error_glow_strength: 50, error_glow_type: 'inner', error_glow_speed: 2, warning_glow: true, warning_glow_color: 'rgba(255, 152, 0, 0.6)', warning_glow_strength: 50, warning_glow_type: 'inner', warning_glow_speed: 2, busy_glow: true, busy_glow_color: 'rgba(255, 193, 7, 0.6)', busy_glow_strength: 50, busy_glow_type: 'inner', busy_glow_speed: 2, show_cpu: true, show_root: true, show_ram: true, show_net: true, chips_fit: 'auto', chips_smallest: 'icons', chips_hover: true, chips_row: 'auto', chips_row_width: 520, chips_interval: 0, chips_size: 100, cpu_decimals: 1, root_decimals: 1, ram_decimals: 1, net_decimals: 2, chips_show_label: true, icon_size: 40, icon_shape: 'none', tap_action: 'navigate' };
+      return { friendly_name: '', layout: 'bar', size: 'normal', theme: 'ha', show_updates: true, update_pictures: true, show_power: true, show_agent_buttons: true, offline_animation: true, error_glow: true, error_glow_color: 'rgba(219, 68, 55, 0.6)', error_glow_strength: 50, error_glow_type: 'inner', error_glow_speed: 2, warning_glow: true, warning_glow_color: 'rgba(255, 152, 0, 0.6)', warning_glow_strength: 50, warning_glow_type: 'inner', warning_glow_speed: 2, busy_glow: true, busy_glow_color: 'rgba(255, 193, 7, 0.6)', busy_glow_strength: 50, busy_glow_type: 'inner', busy_glow_speed: 2, show_cpu: true, show_root: true, show_ram: true, show_net: true, chips_fit: 'auto', chips_smallest: 'icons', chips_hover: true, chips_row: 'auto', chips_row_width: 520, chips_interval: 0, chips_size: 100, cpu_decimals: 1, root_decimals: 1, ram_decimals: 1, net_decimals: 2, chips_show_label: true, icon_size: 40, icon_shape: 'none', tap_action: 'navigate' };
     }
 
     static schema(lang) {
@@ -6992,6 +7077,7 @@
           ],
         },
         { name: 'show_updates', selector: { boolean: {} } },
+        { name: 'update_pictures', selector: { boolean: {} } },
         { name: 'show_power', selector: { boolean: {} } },
         { name: 'show_agent_buttons', selector: { boolean: {} } },
         { name: 'offline_animation', selector: { boolean: {} } },
@@ -7529,7 +7615,7 @@
             const p = String(prefix || '');
             if (p && text.length > p.length + 1 && text.toLowerCase().startsWith(`${p.toLowerCase()} `)) text = text.slice(p.length + 1);
           });
-          if (entityId.endsWith('_self_update')) {
+          if (entityId.endsWith('_self_update') || (config.update_pictures !== false && attrs.entity_picture)) {
             const img = document.createElement('img');
             img.src = attrs.entity_picture || CARD_LOGO_DATA_URI;
             img.alt = '';
