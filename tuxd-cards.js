@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '1.5.12';
+  const CARD_VERSION = '1.5.13';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABAwSURBVGhDxVkJVFPX1j6lIBQIJEAGQghIIBDGMCPiAA9wwiroq1ZrX9UiPrW2vqVYWzupFYcH/wOtQ/FpBxGKMimCoOKs2DohONQJrFTFAcucBHK/f51LoOVWre1f+39r7XUvIXfvbw93n31OCPkTAcAIwItUGIbpxzCMOcMwloZrv57/0e9xn/1/hYG4KcMwPIZhfM+cqZq+dWt2ekbGutzU1PSd9Jqdk5t68eL3UxiGUQGwMDj0AlfXXw4AxpQ8APft2/OWzJu38OKEif/AmLETMHLUOIwYmcBex4ydiImvvqFfkPz+2dLS0vkMw8h6ssLV+Zehp1Tq6+ujkpPfPzH65VcwNHIEBoRHITAoAn7qMPj6hbJX+jf9PDJqJMbGT8RHH39ayjC6QEMA/vqSoumncurUqdipU2fcGjJ0BEJCBsPbJxiubr5w7u8JJ2dVr/R38YKb0hc+viEIDRuKyKhRmDXnnapHj+759+ji2nju+PHHH93fmJp4MWxAFNT+A+Cm9GPJOsrdWZE7efRK92cecO6vgtJdDf+AcAyMiMacOfMOMgwjAcBV//xAjdHySU5+7zNKnkZV4erTh/BvCc0GLa9Bg2OxbNnyxVwbzx3bt28PjImNa/T0CoJS6Qd7qQKWPDEr9J5m4peE6d9CkRMseSJYWUvYjNBMeHkHIy4u4XrloUPOXBvPFTNnznqflgElIZb0h8ozECtWpmJ5ymq4e/hDJHbudYJebWxlGBo5HBlr1mPBgvchsVd0O6H0Q3DIYMyfP/8fXBvPDTU1NSZxcWOL3ZRqODq5Q+HqjQsXLqIHVVXVLDmpgxvrgJ3QCRGDoqHVanq/s3VrDuuUi8KbdX78+AkbuXaeG5KT33KIiIi65OTsCStreyz+YAlL6tatemzdmsXeL1r0IXhWEtYBnpUYxbv3oKHhHrKytkGj6XZk5KgEtqyc+3shMir2yMqVCyy5tp4L4uPjfQODwu/KHN1ZB0pK9qCzsxOxw+KwZOmnWL9+IwoLd7EOSGVubJS//fYUliz5FPMXvItZs+eyDnzw4VL2naHdKTRs8KUxY2JlXFvPBaNHjwhXq8N+cpAp2ReyouIQ6urqILCVIiBoAKJj4/DfLwvwgpkjeLbukCkGIDt3N5QevvDzD4WvOph14ONPlrMOyByVCA6JqBs7doQb19ZzwYQJE4ar1aEaWuc0ykuXpqClpQV2YjeQF0QYPnIsynPex5cLHFCR5oJ185QozkmD1NkP5AUhhkTFsQ6MGBkPO6GczUBQSMT9adOmBHJtPRdMmzYtifZwutrKZG6QOnqh8rsLSPnkbcyNF+Py1wqgQgxU2AMVEuCgBCh3xN6VLkiIEGJnQQ6+yNoJa76U7VBUT0BgeNfMmTMTuLb+dNBF7LUpUz+n/ZvWtr2DCt7urjiy1gM46Ql8JwQOiYDdYlaYYglQKgH2CIFjQuCIEDgeiH/P8oCdRAm5k4rV4+cXhsSkpGVce386ampOK+JGj7tGez01bGXngcQEL+A7Pk6k2mH7h3JUb5Kho1AKlEuBvVIwu6VoyHHEwTRn5C52RmOeKVoLHOGi8IFU5sGu4rSVJoybeAZoFXNt/ikwzPwkJWXlB3Sq9FAFsKl3lKvA48uwcVEgOg/IUf6xGf45Ro7hA90QE+6KmAEKRIW4YdRAFyyfLsG1TWbQHA7C6y+rYW4l7x30VJ4BGDQ4BuvWrZvVY4/L4Q/DQP6FmnPnIuPjJ9zzU/88uNHRIHbYWJy/fAfQ1AHVc4Gy/qjNNEXxe/2QM/8lHF5mikfbzIGjaqA2HXpdO/YePA1v7yDwBQ5sIOiKrvYPx4SJr9fduHEj5E+bUA2KjBhG6zljxuyzdBT28g6Ci8ILFpYiJIybhPb2dsP62g2m4w5w6wvg4ttAzVTg+0VAQymYrp9XYopr12+wA53ApntFpqM4HQ7nvDXvMACnnqz/YRimTiM67i5YsKg0YlAMfP3C2HmfRm7IkGFobW3tQ4oLPfcDDi5d/p7NAJ2nqF66+RkydDg+/mTZVoZhBIY9NJfas8Gw4+KlpKzeSHdSNMW0dOi0SXv31avXuXz6YO6FDsScbENt+9PdKCwq7h07evYK0TGjkZGxLoVhGLM/tO00pM84MzNzYUzsy/APGAh3DzVb9+YWQqxZu4HLow8+vqKBSUkTjEqaoD7SgrNNXdyv9MHUqTNZJ2g2PFT+CAiMwIgRYzuzs3MTf/f70JOysrKymNEvj2+m5GmXoMqFImcEBw/qHcgeh3V1WpjvaYJVWTPs9zXDuLQJrgdasP9BJ/ervaDTLC0jmUzJ2vH0CmSdGDd+0p0zZ84E/ZLXMwGA9fTpSXupEqqMtjqaYhr91LQMrv1ebL+tg3VZE8z2NGHl9+248pMWcSdb8WJJEyT7mvHNbR33kV5MmjyNXZ2pHWqPNovgkCGYM+ftHMPJB5fmk5GampoQMShaTxcYOu9TpQ4yN3bOv36jlmubxYEHnSxJ6/JmNvqH7nQA0OFf1W0w3dMEfnkzK2vrtNxHWeTnF/W+C1RcDQtcZOTw9s8//zySy/GJoJ5OnDh5Mx0XaGfo2VnRFNPjkfZ2SqwvzjV1weVAN3FaNryyZow62YJrjzRQHGiGoLyZzYpJaRNbXsuv/boEz5+vYXdqdDql9ugBQPdJRihee+2N1VyeT0RKSgp/8JDoU7QWqfxybyt1cGVPE+hLfPXqNdYwjWfQOcB8bxvs93WXCiWsPtyC6gca9K/odmrdtXYsqmkDb38HeEeBG/S9ZvQ4X12D5Sn/ZrsPzfIv7VH7tJz+9rfhZenpb/Xjcn0soqMHewQEht3s2RJyhe6iLHgi9n54TBz+/uZc2H24FdLyRvAr2tlIUwe8DrXg4kMNHPc3I+pEC1tOnZ0MFKV3IUjORNxrSYiOHM62Zboo0gxzDwOo0H1HcMjAqnC12p7L9bFQKOQBanVwrb3UpTedjxMaLVuhHAJrCZx4AohjJiH0eCveqOqAaF8zG/mq+xoEHGlB6Y8dONbYhaSTDZAEx0JuZQNbgT27X36aDZmjG6QOCgQEBp+1srJScLk+Ce6+vn7HHGQKSOydWSVcxX3EWQWZrT3EqlCcbaCRZjDpdCteLG3CiQYNLjZqUHGnA5YVGph+Uws5JSyRs8/9SlevuLN7DZHYCU5OSnh7++wkhEi5RJ8Enlhsl+rh4dVqJ5SxTjjKHx8lscQFfJ4Qjgpf2Kbvx6of9PihRctGnpbO8QYNLjzU9HYn+2N6SFPy4CRzhUQghkTq+iudVGhWxBIniMRyqFTeD3g8XjIhxIRL9GkIE4lEO729fetljm5dPWmmNWpr58jWLO3Z/n6hSJr1Dlx2XIFdJcArb4Xt/jZsqNPhSpMeda0Mxp/TgezVwPagFoKDOvBPAZbZV+H/ShJ83X3Y1kn1icQ/vwPdL7NS6+3tU2tjI/iKVgWX4LNAPTAiokDp7tclknrA0kaFfpYueHXydKSnf4a9+yrQ1NQEjVYLRVEdzHY/gvWuu7DMrwfJvoEPjlzHratXEF9wFnaZlXDLPAyvDfvg/1kJfDN2YfvJ83hw9y6KinZj1ao0RMfGw9i8PyxtVZA4eMDTK0AXGhqaSQhx5RJ7JgAwGTZs1EGhgw8GBvlg1Rw3TIsVYu36zX36t66jHau2bMPMtEy8u3Yzlq7fjNWZX2D1pq/Yc6AdubkoLszH/pJiHN9XhjNHDuDSt8fQ0fxTHz3J85Pxr3EifJKohJenLxyc/DBmTEIWl9dvomfJXrxwodrDN7IhPNAH97bLgYPWQIk5arOC0KnrO0YzmnZof3oAfXsLoNMA+qcPb1y0PbyO+q9kwH4L4Agf5zb0h4vCFwGhMdUrVnzk8EteT4Vh/qY/F5m9u6pofMLoEU2XNsmBMmvo8/hgCvlAPoHuwHDoO/tuZP4oulp/QFeJCig0hb5AAKZAAFQIsH+1O+JGj6tNy/4+wjBW03noyVvNnmPzG3faQh6ezfjy3oHEa+2lYV0ok0Kfbwt9AR/6Qio20GcTaI9PBMNl8zuh72yFrjwU+hzSrbdAAH0+n71inwOa9wzV3j80q+b+mc82XbrLeP/mWD0u/YrdjV2vncSpQOCQH1CqgL5IBH0BVU4VGyTfCp05BJrqZejQg91W0uPFZ4FOp0N7uwaaTj20xydD/w0BQ8kXURvddrqoE0X0ZEMJHPYFvgvG5aI3d0kS8RKXcx94DZgSW71R2YVdlmAKhWCK7AxREXRHKM+ave8qpBmxRNs2Y9yqysP1Hx7i5s2bbFeijjBM39zQv7VaLRobG1FbW4sb9U24XbkCmm0ETG9wBAYHbNCVR4PEB1Nki65CMVBsgUMZvo3G4nh2b/BEGJk4jlv2purB9QwT3P6vBTS51mDyBax05Qmgp0INFXXXqi7HBPVZSv3Ro0c7K789jcrKSly6dAn19fW4d+8e7t+/j4aGBta56upqnDhxAie+rcLxinzd/W1UpzmrR59PA0OdsGXLlaH3edZo+8YSNzMtcGmNBWaM87lMiGk4lzMX3gqF2751M0Q4vqwfaj+3QluOFfQF1mCoUMW9xuhLLUBXkSl2rBhyZ/GS/7mzadMmZGVlIT8/H8XFxSgpKWGveXl5+Prrr7Fhw0b9u4tX/XBkrXcjSnlgioTd2WX1WbP6mAJbNgNN23i4vM4Sx1L64dM3FVoLvmwzIeQ3D75MCDFKUnu7Xf3PVAH2vGeMmjWWePC1FTQ7KHEbgBKn6S2wAYpsgFIb3MuWdyiVygqFwq1m2LBhD6dMmdKWlJSknT17ti4xMVEzadKk1qioqHv2DvLvRkWqjnXuFutRIgSK7Nj6Zwq7yVNnOnKtcWeLFU6nWaDkPRN8ONle5+DoVEkIGcEl+yQICHnxAzcX5ysL4oW6rLkmqFhqhgtrrXB7Cx9NWXx05PKh3SGAdoc1OvMswewS453XB2QTQuhPRRmEkHxCSLmxsXEFIWQPISSXELKCEPL6hsVhR2lb7iwQoDPfBro8K2i2W6NpmzXqN/NQlW6JvR+ZYsscM8wY6dBuY+dwkj5HCHm2/YABNoSQeVY29ifjwh0fffSKNbbMMkXx4pdwZLklTqda4ny6Jar+Y4mzaWa4vEGEpFcHUwfMCSEWhBA5IcSTEOJLCPEghNDFqB8hfMelc0JO3dxEn7XAxTU8XMgwx5k0KxxazsPORabYNNMUC+NtOgf6yRuMzGyp83//vYNcD0wJIaMIMftCJJZeGOIvfZg0UqRdMomP9OkWWD/TAhv+aYYNs62wYLK7RiJ1opF/epsjROqpct+5PNG1a/Ncc2x5ywyb55gh401zfPQqH1NjRB2h3g4NPL7oFCFGaYSQp3edZwSdw18hxHiNUT/BAXux+LLKRVwfqJLcDfG2b3B3ldUZmwlopGK4Dz4GxrTMeAJJpb+X7HZ0qLwxKlje6KWQ/CgUii4QY+syQ6kNI4RYcR/+v4JHCPEnhEyk5UXHJYMkGT5/8jLfF2aEkChCyEJCjDIIMUqnvx3SddRQdr+VxV78L2t2aioqrc3mAAAAAElFTkSuQmCC';
 
   function resolveLang(raw) {
@@ -394,6 +394,7 @@
           offline_animation: 'Animate while the agent is offline (looks like reconnecting)',
           hide_header: 'Hide header',
           color_by_status: 'Color the card by status',
+          size: 'Size (%; 100 = the original size)',
           show_version: 'Show agent version',
           show_startup_time: 'Show when the agent started',
           show_update_status: 'Show agent update status',
@@ -522,10 +523,15 @@
         notFound: 'Entity not found: ',
         kernel: 'Kernel',
         newKernel: 'New kernel',
+        uptime: 'Up',
         editor: {
           entity: 'Update entity',
           title: 'Title',
           expanded: 'Update list expanded by default',
+          show_other_updates: 'Show the host\'s other updates (TugBoat, Docker, agent)',
+          show_kernel: 'Show the kernel version',
+          show_uptime: 'Show uptime (needs the agent\'s up_time or uptime_seconds sensor)',
+          device_id: 'Host (only needed when the entity is not <host>_host_update)',
           color_by_status: 'Color the card by status (green up to date, yellow update available)',
           language: 'Language',
         },
@@ -826,6 +832,7 @@
           offline_animation: 'Animer mens agenten er offline (ser ut som den kobler til på nytt)',
           hide_header: 'Skjul overskrift',
           color_by_status: 'Fargelegg kortet etter status',
+          size: 'Størrelse (%; 100 = opprinnelig størrelse)',
           show_version: 'Vis agentversjon',
           show_startup_time: 'Vis når agenten startet',
           show_update_status: 'Vis agentens oppdateringsstatus',
@@ -954,10 +961,15 @@
         notFound: 'Finner ikke enhet: ',
         kernel: 'Kjerne',
         newKernel: 'Ny kjerne',
+        uptime: 'Oppe',
         editor: {
           entity: 'Oppdateringsenhet',
           title: 'Tittel',
           expanded: 'Oppdateringsliste åpen som standard',
+          show_other_updates: 'Vis vertens andre oppdateringer (TugBoat, Docker, agent)',
+          show_kernel: 'Vis kjerneversjon',
+          show_uptime: 'Vis oppetid (krever agentens up_time- eller uptime_seconds-sensor)',
+          device_id: 'Vert (trengs bare når entiteten ikke er <vert>_host_update)',
           color_by_status: 'Fargelegg kortet etter status (grønn oppdatert, gul oppdatering tilgjengelig)',
           language: 'Språk',
         },
@@ -1666,17 +1678,13 @@
   }
 
 
-  const ROW_CARD_HEIGHT = 80;
-
   const UPDATE_STYLE = `
     :host { display: block; }
-    /* Same height as the status card without its header (ROW_CARD_HEIGHT). */
     ha-card {
       display: flex;
       flex-direction: column;
       justify-content: center;
       box-sizing: border-box;
-      min-height: ${ROW_CARD_HEIGHT}px;
       padding: 10px 16px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--primary-text-color);
@@ -1756,6 +1764,8 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
+    .kernel .meta-item { display: inline-flex; align-items: center; gap: 4px; min-width: 0; flex: 0 1 auto; }
+    .kernel .meta-item + .meta-item { margin-left: 10px; }
     .kernel .new-kernel {
       font-weight: 600;
       color: var(--warning-color, #ff9800);
@@ -1791,10 +1801,44 @@
       animation: tuxd-spin 0.8s linear infinite;
     }
     @keyframes tuxd-spin { to { transform: rotate(360deg); } }
-    details.changelog {
+    /* The update list, right under the row. */
+    .changelog {
       border-top: 1px solid var(--divider-color);
-      padding-top: 10px;
+      padding-top: 8px;
+      margin-top: -4px;
     }
+    .changelog[hidden] { display: none; }
+    button.chevron-btn {
+      flex: 0 0 auto;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      color: var(--secondary-text-color);
+      cursor: pointer;
+    }
+    button.chevron-btn:hover { background: rgba(var(--rgb-primary-text-color, 0, 0, 0), 0.08); color: var(--primary-text-color); }
+    button.chevron-btn .chevron { width: 20px; height: 20px; transition: transform 0.15s ease; }
+    button.chevron-btn.open .chevron { transform: rotate(180deg); }
+    .others { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px; flex: 0 1 auto; min-width: 0; }
+    button.other {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3px 6px;
+      border-radius: 14px;
+      border: 1px solid var(--warning-color, #ffa726);
+      background: color-mix(in srgb, var(--warning-color, #ffa726) 18%, transparent);
+      color: var(--warning-color, #ffa726);
+      cursor: pointer;
+    }
+    button.other ha-icon { --mdc-icon-size: 18px; }
+    button.other img { width: 18px; height: 18px; object-fit: contain; }
     summary.changelog-heading {
       cursor: pointer;
       font-size: 13px;
@@ -1830,7 +1874,7 @@
     }
     details[open] summary.changelog-heading .chevron { transform: rotate(180deg); }
     .summary-text {
-      margin-top: 10px;
+      margin-top: 0;
       font-size: 13px;
       line-height: 1.5;
       color: var(--primary-text-color);
@@ -1858,7 +1902,7 @@
     }
 
     static defaultConfig() {
-      return { expanded: false, layout: 'default', card_style: 'default', color_by_status: true };
+      return { expanded: false, layout: 'default', card_style: 'default', color_by_status: true, show_kernel: true, show_uptime: true };
     }
 
     static schema() {
@@ -1866,6 +1910,10 @@
         { name: 'entity', required: true, selector: { entity: { domain: ['update'] } } },
         { name: 'title', selector: { text: {} } },
         { name: 'expanded', selector: { boolean: {} } },
+        { name: 'show_other_updates', selector: { boolean: {} } },
+        { name: 'show_kernel', selector: { boolean: {} } },
+        { name: 'show_uptime', selector: { boolean: {} } },
+        { name: 'device_id', selector: { text: {} } },
         { name: 'color_by_status', selector: { boolean: {} } },
         LAYOUT_FIELD,
         CARD_STYLE_FIELD,
@@ -1920,10 +1968,11 @@
         this._renderUnavailable();
         return;
       }
-      const sig = JSON.stringify(stateObj);
+      const others = this._otherUpdates();
+      const sig = JSON.stringify([stateObj, others.map((id) => this._hass.states[id]), this._hostMeta()]);
       if (sig === this._lastSig) return;
       this._lastSig = sig;
-      this._render(stateObj);
+      this._render(stateObj, others);
     }
 
     _renderUnavailable() {
@@ -1942,7 +1991,47 @@
       root.appendChild(card);
     }
 
-    _render(stateObj) {
+    _hostSlug() {
+      const cfg = this._config;
+      if (cfg.device_id) return _jsSlug(cfg.device_id);
+      const own = String(cfg.entity).replace(/^update\./, '');
+      return own.endsWith('_host_update') ? own.slice(0, -'_host_update'.length) : '';
+    }
+
+    _hostMeta() {
+      const slug = this._hostSlug();
+      const states = (this._hass && this._hass.states) || {};
+      const text = (id) => {
+        const v = String((states[id] || {}).state || '').trim();
+        return ['', 'unknown', 'unavailable', 'None'].includes(v) ? '' : v;
+      };
+      if (!slug) return { kernel: '', uptime: '' };
+      let uptime = text(`sensor.${slug}_up_time`);
+      const secs = parseFloat(text(`sensor.${slug}_uptime_seconds`));
+      if (!uptime && Number.isFinite(secs)) uptime = _fmtDuration(secs);
+      return { kernel: text(`sensor.${slug}_kernel_version`), uptime };
+    }
+
+    _otherUpdates() {
+      const cfg = this._config;
+      if (cfg.show_other_updates === false) return [];
+      const slug = this._hostSlug();
+      if (!slug) return [];
+      if (this._idsRef !== this._hass.entities || this._idsSlug !== slug) {
+        this._idsRef = this._hass.entities;
+        this._idsSlug = slug;
+        this._ids = _hostUpdateIds(this._hass, slug);
+      }
+      return this._ids.filter((id) => id !== cfg.entity && _updatePending(this._hass.states[id]));
+    }
+
+    _moreInfo(entityId) {
+      const ev = new Event('hass-more-info', { bubbles: true, composed: true });
+      ev.detail = { entityId };
+      this.root.host.dispatchEvent(ev);
+    }
+
+    _render(stateObj, others = []) {
       const root = this.root;
       root.innerHTML = '';
       const style = document.createElement('style');
@@ -1961,7 +2050,7 @@
 
       const card = document.createElement('ha-card');
       _applyCardLook(card, this._config, true);
-      if (this._config.color_by_status !== false) card.classList.add(updateAvailable ? 'upd-pending' : 'upd-ok');
+      if (this._config.color_by_status !== false) card.classList.add(updateAvailable || others.length ? 'upd-pending' : 'upd-ok');
 
       const row = document.createElement('div');
       row.className = 'row';
@@ -1986,21 +2075,37 @@
         : `${this._t('upToDate')} • ${installed}`;
       info.appendChild(versions);
 
-      if (kernelVersion) {
-        const kernel = document.createElement('div');
-        kernel.className = 'kernel';
-        kernel.innerHTML = '<svg viewBox="0 0 24 24"><path d="M9 2h2v2H9V2zm4 0h2v2h-2V2zM9 20h2v2H9v-2zm4 0h2v2h-2v-2zM2 9h2v2H2V9zm0 4h2v2H2v-2zM20 9h2v2h-2V9zm0 4h2v2h-2v-2zM6 6h12v12H6V6z"/></svg>';
-        const kernelText = document.createElement('span');
-        kernelText.appendChild(document.createTextNode(`${this._t('kernel')} ${kernelVersion}`));
-        if (latestKernelVersion && latestKernelVersion !== kernelVersion) {
-          kernelText.appendChild(document.createTextNode(' → '));
-          const newKernel = document.createElement('span');
-          newKernel.className = 'new-kernel';
-          newKernel.textContent = latestKernelVersion;
-          kernelText.appendChild(newKernel);
+      const meta = this._hostMeta();
+      const kernelShown = this._config.show_kernel !== false ? (kernelVersion || meta.kernel) : '';
+      const uptime = this._config.show_uptime !== false ? meta.uptime : '';
+      if (kernelShown || uptime) {
+        const line = document.createElement('div');
+        line.className = 'kernel';
+        const item = (svgPath) => {
+          const el = document.createElement('span');
+          el.className = 'meta-item';
+          el.innerHTML = `<svg viewBox="0 0 24 24"><path d="${svgPath}"/></svg>`;
+          line.appendChild(el);
+          return el;
+        };
+        if (kernelShown) {
+          const kernelText = document.createElement('span');
+          kernelText.appendChild(document.createTextNode(`${this._t('kernel')} ${kernelShown}`));
+          if (latestKernelVersion && latestKernelVersion !== kernelShown) {
+            kernelText.appendChild(document.createTextNode(' → '));
+            const newKernel = document.createElement('span');
+            newKernel.className = 'new-kernel';
+            newKernel.textContent = latestKernelVersion;
+            kernelText.appendChild(newKernel);
+          }
+          item('M9 2h2v2H9V2zm4 0h2v2h-2V2zM9 20h2v2H9v-2zm4 0h2v2h-2v-2zM2 9h2v2H2V9zm0 4h2v2H2v-2zM20 9h2v2h-2V9zm0 4h2v2h-2v-2zM6 6h12v12H6V6z').appendChild(kernelText);
         }
-        kernel.appendChild(kernelText);
-        info.appendChild(kernel);
+        if (uptime) {
+          const upText = document.createElement('span');
+          upText.textContent = `${this._t('uptime')} ${uptime}`;
+          item('M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z').appendChild(upText);
+        }
+        info.appendChild(line);
       }
 
       row.appendChild(info);
@@ -2015,34 +2120,65 @@
         label.textContent = this._t('installing');
         installing.appendChild(label);
         row.appendChild(installing);
-      } else if (updateAvailable) {
+      }
+
+      if (others.length) {
+        const box = document.createElement('div');
+        box.className = 'others';
+        others.forEach((id) => {
+          const a = (this._hass.states[id] || {}).attributes || {};
+          const b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'other';
+          b.title = a.title || a.friendly_name || id;
+          b.setAttribute('aria-label', b.title);
+          if (a.entity_picture) {
+            const img = document.createElement('img');
+            img.src = a.entity_picture;
+            img.alt = '';
+            b.appendChild(img);
+          } else {
+            const ic = document.createElement('ha-icon');
+            ic.setAttribute('icon', _updateKindIcon(id));
+            b.appendChild(ic);
+          }
+          b.addEventListener('click', () => this._moreInfo(id));
+          box.appendChild(b);
+        });
+        row.appendChild(box);
+      }
+
+      if (updateAvailable && !inProgress) {
         const btn = document.createElement('button');
         btn.className = 'install';
         btn.type = 'button';
         btn.textContent = this._t('install');
-        btn.addEventListener('click', () => this._install(btn));
+        btn.addEventListener('click', () => this._moreInfo(this._config.entity));
         row.appendChild(btn);
+      }
+
+      let changelog = null;
+      if (summary) {
+        changelog = document.createElement('div');
+        changelog.className = 'changelog';
+        const toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'chevron-btn';
+        toggle.title = this._t('updatesHeading');
+        toggle.innerHTML = '<svg class="chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>';
+        const show = (open) => {
+          changelog.hidden = !open;
+          toggle.classList.toggle('open', open);
+          toggle.setAttribute('aria-expanded', String(open));
+        };
+        show(this._listOpen === undefined ? this._config.expanded === true : this._listOpen);
+        toggle.addEventListener('click', () => { this._listOpen = changelog.hidden; show(this._listOpen); });
+        row.appendChild(toggle);
       }
 
       card.appendChild(row);
 
-      if (summary) {
-        const changelog = document.createElement('details');
-        changelog.className = 'changelog';
-        changelog.open = this._config.expanded === true;
-
-        const heading = document.createElement('summary');
-        heading.className = 'changelog-heading';
-        const headingText = document.createElement('span');
-        headingText.className = 'heading-text';
-        headingText.textContent = this._t('updatesHeading');
-        heading.appendChild(headingText);
-        const chevronBtn = document.createElement('span');
-        chevronBtn.className = 'chevron-btn';
-        chevronBtn.innerHTML = '<svg class="chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>';
-        heading.appendChild(chevronBtn);
-        changelog.appendChild(heading);
-
+      if (changelog) {
         const text = document.createElement('div');
         text.className = 'summary-text';
         text.textContent = summary;
@@ -2064,12 +2200,6 @@
       root.appendChild(card);
     }
 
-    _install(btn) {
-      if (!this._hass || !this._config) return;
-      btn.disabled = true;
-      btn.textContent = this._t('installing');
-      this._hass.callService('update', 'install', { entity_id: this._config.entity });
-    }
   }
 
 
@@ -2757,6 +2887,34 @@
     const a = st.attributes || {};
     return st.state === 'off' && !!a.skipped_version && !!a.latest_version
       && a.skipped_version === a.latest_version && a.latest_version !== a.installed_version;
+  }
+
+  function _hostUpdateIds(hass, slug) {
+    if (!hass || !hass.states || !slug) return [];
+    const prefix = `update.${slug}_`;
+    const longer = _tuxdRealDevices(hass)
+      .map((d) => _jsSlug(d.deviceId))
+      .filter((x) => x !== slug && x.startsWith(`${slug}_`))
+      .map((x) => `update.${x}_`);
+    return Object.keys(hass.states)
+      .filter((id) => id.startsWith(prefix) && !longer.some((p) => id.startsWith(p)))
+      .sort();
+  }
+
+  function _updateKindIcon(entityId) {
+    if (entityId.endsWith('_host_update')) return 'mdi:package-up';
+    if (entityId.includes('_tugboat_')) return 'mdi:ferry';
+    if (entityId.includes('_image_')) return 'mdi:docker';
+    return 'mdi:update';
+  }
+
+  function _fmtDuration(seconds) {
+    const m = Math.floor(seconds / 60);
+    const d = Math.floor(m / 1440);
+    const h = Math.floor((m % 1440) / 60);
+    if (d) return `${d}d ${h}h`;
+    if (h) return `${h}h ${m % 60}m`;
+    return `${m}m`;
   }
 
   function _fmtPct(v, decimals) {
@@ -6391,9 +6549,18 @@
       .agent-state.offline ha-icon { animation-duration: 6s; }
       .tuxd-dots i { animation: none; opacity: 0.6; }
     }
-    /* Status card without its header: one row, as high as the update card. */
-    ha-card.row-card { display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; min-height: ${ROW_CARD_HEIGHT}px; }
-    ha-card.row-card .body { padding: 10px 16px; }
+    /* Status card: everything in it scales with "size" (--st-s, 0.5 = half
+       of the original), and shrinks further on its own when the card is
+       narrow (container units): the job line goes first, then the label. */
+    ha-card.status-card { container-type: inline-size; --st-s: 0.5; }
+    ha-card.status-card .body { padding: calc(12px * var(--st-s)) 16px; gap: calc(10px * var(--st-s)); }
+    ha-card.status-card .agent-state { gap: calc(14px * var(--st-s)); }
+    ha-card.status-card .agent-state ha-icon { --mdc-icon-size: max(16px, min(calc(48px * var(--st-s)), 22cqi)); }
+    ha-card.status-card .agent-label { font-size: max(11px, min(calc(10px + 6px * var(--st-s)), 9cqi)); }
+    ha-card.status-card .agent-job { font-size: max(10px, min(calc(9px + 4px * var(--st-s)), 8cqi)); }
+    ha-card.status-card .agent-info { font-size: calc(9px + 3px * var(--st-s)); }
+    @container (max-width: 180px) { .agent-job, .agent-info { display: none; } }
+    @container (max-width: 90px) { .agent-label { display: none; } }
     .agent-state { display: flex; align-items: center; gap: 14px; }
     .agent-state ha-icon { flex: 0 0 auto; --mdc-icon-size: 48px; color: var(--disabled-text-color, #9e9e9e); }
     .agent-state.idle ha-icon { color: var(--success-color, #43a047); }
@@ -6902,7 +7069,7 @@
     }
 
     static defaultConfig() {
-      return { title: '', icon: STATUS_DEFAULT_ICON, show_error: true, offline_animation: true, hide_header: false, color_by_status: false, show_version: false, show_startup_time: false, show_update_status: false, card_style: 'default' };
+      return { title: '', icon: STATUS_DEFAULT_ICON, show_error: true, offline_animation: true, hide_header: false, color_by_status: false, show_version: false, show_startup_time: false, show_update_status: false, card_style: 'default', size: 50 };
     }
 
     static schema() {
@@ -6912,6 +7079,7 @@
         { name: 'show_error', selector: { boolean: {} } },
         { name: 'offline_animation', selector: { boolean: {} } },
         { name: 'hide_header', selector: { boolean: {} } },
+        { name: 'size', selector: { number: { mode: 'slider', min: 20, max: 200, step: 5, unit_of_measurement: '%' } } },
         { name: 'icon', selector: { icon: {} } },
         { name: 'color', selector: { text: {} } },
         CARD_STYLE_FIELD,
@@ -6985,10 +7153,9 @@
     _render(busySt, jobSt, errorSt, reasonSt, onlineSt, startupSt, updateSt) {
       const config = this._config || {};
       const { card, header } = _tugboatCardShell(this.root, config, config.title || config.device_id || 'TuxD', STATUS_DEFAULT_ICON);
-      if (config.hide_header) {
-        header.remove();
-        card.classList.add('row-card');
-      }
+      card.classList.add('status-card');
+      card.style.setProperty('--st-s', String(Math.max(20, Math.min(200, Number(config.size) || 50)) / 100));
+      if (config.hide_header) header.remove();
       const body = document.createElement('div');
       body.className = 'body';
       card.appendChild(body);
@@ -7600,14 +7767,7 @@
       if (!hass || !hass.states) return [];
       if (this._entitiesRef === hass.entities && this._entitiesRef !== null) return this._updateIds;
       this._entitiesRef = hass.entities || null;
-      const prefix = `update.${slug}_`;
-      const longer = _tuxdRealDevices(hass)
-        .map((d) => _jsSlug(d.deviceId))
-        .filter((s) => s !== slug && s.startsWith(`${slug}_`))
-        .map((s) => `update.${s}_`);
-      this._updateIds = Object.keys(hass.states)
-        .filter((id) => id.startsWith(prefix) && !longer.some((p) => id.startsWith(p)))
-        .sort();
+      this._updateIds = _hostUpdateIds(hass, slug);
       return this._updateIds;
     }
 
