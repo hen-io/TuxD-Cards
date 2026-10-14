@@ -447,7 +447,7 @@
         passwordPlaceholder: 'Password',
         unlock: 'Unlock',
         editor: {
-          input_entity: 'Input entity (text)',
+          input_entity: 'Input entity (text, optional)',
           output_entity: 'Output entity (sensor)',
           title: 'Title',
           height: 'Height (e.g. 320px)',
@@ -474,6 +474,10 @@
         nothingSelected: 'Select at least one online agent first',
         sendFailed: 'could not send',
         confirmMulti: 'Run "{cmd}" on {n} agents?\n\n{hosts}',
+        passwordRequired: 'Device password required - type it and press Enter',
+        passwordIncorrect: 'Incorrect device password - try again',
+        masterRequired: 'Master password required - type it and press Enter',
+        masterIncorrect: 'Incorrect master password - try again',
         editor: {
           title: 'Title',
           devices: 'Agents to offer (comma separated device names, empty = all)',
@@ -496,8 +500,11 @@
         stop: 'Stop running command',
         run: 'Run',
         notFound: 'Entity not found: ',
+        noDevice: 'Could not determine the TuxD device for this entity',
+        passwordRequired: 'This device has a password - type it and press Enter',
+        passwordIncorrect: 'Incorrect password - try again',
         editor: {
-          input_entity: 'Input entity (text)',
+          input_entity: 'Input entity (text, MQTT hosts only)',
           output_entity: 'Output entity (sensor)',
           title: 'Title',
           height: 'Height (e.g. 320px)',
@@ -561,6 +568,10 @@
         reload: 'Reload',
         save: 'Save',
         saving: 'Saving...',
+        passwordRequired: 'This device has a password',
+        passwordIncorrect: 'Incorrect password - try again',
+        passwordPlaceholder: 'Password',
+        unlock: 'Unlock',
         editor: {
           device_id: 'TuxD device name',
           title: 'Title',
@@ -900,6 +911,10 @@
       },
       'multi-terminal': {
         title: 'Kjør på flere agenter',
+        passwordRequired: 'Enhetspassord kreves - skriv det og trykk Enter',
+        passwordIncorrect: 'Feil enhetspassord - prøv igjen',
+        masterRequired: 'Hovedpassord kreves - skriv det og trykk Enter',
+        masterIncorrect: 'Feil hovedpassord - prøv igjen',
         placeholder: 'Skriv en kommando til de valgte agentene og trykk Enter...',
         clear: 'Tøm skjermen',
         stop: 'Stopp kjørende kommando',
@@ -929,6 +944,9 @@
       },
       'terminal-integrated': {
         title: 'Terminal (integrert)',
+        noDevice: 'Fant ikke TuxD-enheten for denne entiteten',
+        passwordRequired: 'Enheten har passord - skriv det og trykk Enter',
+        passwordIncorrect: 'Feil passord - prøv igjen',
         placeholder: 'Skriv en kommando og trykk Enter...',
         clear: 'Tøm skjermen',
         stop: 'Stopp kjørende kommando',
@@ -991,6 +1009,10 @@
       },
       conf: {
         defaultTitle: 'Konfigurasjon',
+        passwordRequired: 'Enheten har passord',
+        passwordIncorrect: 'Feil passord - prøv igjen',
+        passwordPlaceholder: 'Passord',
+        unlock: 'Lås opp',
         missingDevice: 'Sett "device_id" til et TuxD-enhetsnavn',
         loading: 'Laster konfigurasjon...',
         loadFailed: 'Kunne ikke laste konfigurasjon',
@@ -1208,6 +1230,51 @@
     { value: 'light', label: 'Light' },
   ];
 
+  const AUTH_FORM_STYLE = `
+    .auth-form {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+    .auth-message {
+      font-size: 13px;
+      color: var(--secondary-text-color);
+      text-align: center;
+    }
+    .auth-input {
+      width: 100%;
+      max-width: 220px;
+      background: var(--card-background-color, transparent);
+      border: 1px solid var(--divider-color);
+      border-radius: 8px;
+      padding: 8px 12px;
+      color: var(--primary-text-color);
+      font: inherit;
+      font-size: 13px;
+      text-align: center;
+      outline: none;
+      box-sizing: border-box;
+    }
+    .auth-input:focus { border-color: var(--primary-color); }
+    .auth-submit {
+      background: rgba(var(--rgb-primary-color, 3, 169, 244), 0.12);
+      border: 1px solid rgba(var(--rgb-primary-color, 3, 169, 244), 0.4);
+      color: var(--primary-color);
+      border-radius: 8px;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .auth-submit:hover { background: rgba(var(--rgb-primary-color, 3, 169, 244), 0.2); }
+  `;
+
   const TERMINAL_STYLE = `
     :host { display: block; }
     ha-card {
@@ -1261,49 +1328,7 @@
       min-height: 0;
     }
     .term-container .terminal.xterm { height: 100%; }
-    .auth-form {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 16px;
-      box-sizing: border-box;
-    }
-    .auth-message {
-      font-size: 13px;
-      color: var(--secondary-text-color);
-      text-align: center;
-    }
-    .auth-input {
-      width: 100%;
-      max-width: 220px;
-      background: var(--card-background-color, transparent);
-      border: 1px solid var(--divider-color);
-      border-radius: 8px;
-      padding: 8px 12px;
-      color: var(--primary-text-color);
-      font: inherit;
-      font-size: 13px;
-      text-align: center;
-      outline: none;
-      box-sizing: border-box;
-    }
-    .auth-input:focus { border-color: var(--primary-color); }
-    .auth-submit {
-      background: rgba(var(--rgb-primary-color, 3, 169, 244), 0.12);
-      border: 1px solid rgba(var(--rgb-primary-color, 3, 169, 244), 0.4);
-      color: var(--primary-color);
-      border-radius: 8px;
-      padding: 6px 16px;
-      font-size: 12px;
-      font-weight: 500;
-      cursor: pointer;
-      font-family: inherit;
-    }
-    .auth-submit:hover { background: rgba(var(--rgb-primary-color, 3, 169, 244), 0.2); }
-    .unavailable { padding: 16px; color: var(--error-color, #db4437); font-size: 13px; }
+${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #db4437); font-size: 13px; }
   `;
 
   class TerminalRenderer {
@@ -1331,8 +1356,8 @@
 
     static schema() {
       return [
-        { name: 'input_entity', required: true, selector: { entity: { domain: ['text', 'input_text'] } } },
         { name: 'output_entity', required: true, selector: { entity: { domain: ['sensor'] } } },
+        { name: 'input_entity', selector: { entity: { domain: ['text', 'input_text'] } } },
         { name: 'title', selector: { text: {} } },
         { name: 'theme', selector: { select: { mode: 'dropdown', options: THEME_OPTIONS } } },
         { name: 'height', selector: { text: {} } },
@@ -1346,7 +1371,7 @@
     }
 
     static hasCandidate(entities) {
-      return (entities || []).some((e) => e.indexOf('text.') === 0 && e.indexOf('terminal_input') !== -1);
+      return (entities || []).some((e) => e.indexOf('sensor.') === 0 && e.indexOf('terminal_output') !== -1);
     }
 
     static stubFields(entities) {
@@ -1357,8 +1382,8 @@
     }
 
     setConfig(config) {
-      if (!config || !config.input_entity || !config.output_entity) {
-        throw new Error('tuxd-card (terminal): "input_entity" and "output_entity" are required');
+      if (!config || !config.output_entity) {
+        throw new Error('tuxd-card (terminal): "output_entity" is required');
       }
       this._config = Object.assign(TerminalRenderer.defaultConfig(), config);
       this._unavailable = false;
@@ -1473,11 +1498,9 @@
     }
 
     _render() {
-      const inState = this._hass.states[this._config.input_entity];
-      const outState = this._hass.states[this._config.output_entity];
-      if (!inState || !outState) {
+      if (!this._hass.states[this._config.output_entity]) {
         this._unavailable = true;
-        this._renderUnavailable(!inState ? this._config.input_entity : this._config.output_entity);
+        this._renderUnavailable(this._config.output_entity);
         return;
       }
       this._unavailable = false;
@@ -2675,10 +2698,14 @@
       this._error = null;
       this._render();
       try {
-        const result = await this._hass.connection.sendMessagePromise({
+        const result = await this._hass.connection.sendMessagePromise(this._withPassword({
           type: 'tuxd/config/get',
           device_id: this._config.device_id,
-        });
+        }));
+        if (result && result.auth) {
+          this._needPassword(result.auth);
+          return;
+        }
         if (result && result.ok) {
           this._content = result.content || '';
           this._editedContent = null;
@@ -2701,11 +2728,15 @@
       this._error = null;
       this._render();
       try {
-        const result = await this._hass.connection.sendMessagePromise({
+        const result = await this._hass.connection.sendMessagePromise(this._withPassword({
           type: 'tuxd/config/set',
           device_id: this._config.device_id,
           content: content,
-        });
+        }));
+        if (result && result.auth) {
+          this._needPassword(result.auth);
+          return;
+        }
         if (result && result.ok) {
           this._content = content;
           this._editedContent = null;
@@ -2728,6 +2759,52 @@
       this._render();
     }
 
+    _withPassword(msg) {
+      if (this._password) msg.password = this._password;
+      return msg;
+    }
+
+    _needPassword(auth) {
+      this._password = null;
+      this._status = 'locked';
+      this._authMessage = this._t(auth === 'incorrect' ? 'passwordIncorrect' : 'passwordRequired');
+      this._render();
+    }
+
+    _passwordForm() {
+      const form = document.createElement('form');
+      form.className = 'auth-form';
+      const msg = document.createElement('div');
+      msg.className = 'auth-message';
+      msg.textContent = this._authMessage || this._t('passwordRequired');
+      form.appendChild(msg);
+      const input = document.createElement('input');
+      input.type = 'password';
+      input.className = 'auth-input';
+      input.placeholder = this._t('passwordPlaceholder');
+      input.autocomplete = 'off';
+      form.appendChild(input);
+      const submit = document.createElement('button');
+      submit.type = 'submit';
+      submit.className = 'auth-submit';
+      submit.textContent = this._t('unlock');
+      form.appendChild(submit);
+      form.addEventListener('submit', (ev) => {
+        ev.preventDefault();
+        if (!input.value) return;
+        this._password = input.value;
+        this._status = 'idle';
+        if (this._editedContent != null) {
+          this._save();
+        } else {
+          this._content = null;
+          this._load();
+        }
+      });
+      window.requestAnimationFrame(() => input.focus());
+      return form;
+    }
+
     _updateSaveButton() {
       if (!this._saveBtn) return;
       this._saveBtn.disabled = this._editedContent === null || this._status === 'saving' || this._status === 'loading';
@@ -2739,7 +2816,7 @@
       root.innerHTML = '';
 
       const style = document.createElement('style');
-      style.textContent = CONFIG_EDITOR_STYLE + CARD_LOOK_STYLE;
+      style.textContent = CONFIG_EDITOR_STYLE + AUTH_FORM_STYLE + CARD_LOOK_STYLE;
       root.appendChild(style);
 
       const card = document.createElement('ha-card');
@@ -2764,6 +2841,8 @@
         msg.className = 'status-msg';
         msg.textContent = this._t('loading');
         body.appendChild(msg);
+      } else if (this._status === 'locked') {
+        body.appendChild(this._passwordForm());
       } else {
         const textarea = document.createElement('textarea');
         textarea.className = 'yaml-editor';
@@ -5639,8 +5718,8 @@
 
     static schema() {
       return [
-        { name: 'input_entity', required: true, selector: { entity: { domain: ['text', 'input_text'] } } },
         { name: 'output_entity', required: true, selector: { entity: { domain: ['sensor'] } } },
+        { name: 'input_entity', selector: { entity: { domain: ['text', 'input_text'] } } },
         { name: 'title', selector: { text: {} } },
         { name: 'theme', selector: { select: { mode: 'dropdown', options: THEME_OPTIONS } } },
         { name: 'height', selector: { text: {} } },
@@ -5656,7 +5735,7 @@
     }
 
     static hasCandidate(entities) {
-      return (entities || []).some((e) => e.indexOf('text.') === 0 && e.indexOf('terminal_input') !== -1);
+      return (entities || []).some((e) => e.indexOf('sensor.') === 0 && e.indexOf('terminal_output') !== -1);
     }
 
     static stubFields(entities) {
@@ -5667,14 +5746,14 @@
     }
 
     setConfig(config) {
-      if (!config || !config.input_entity || !config.output_entity) {
-        throw new Error('tuxd-card (terminal-integrated): "input_entity" and "output_entity" are required');
+      if (!config || !config.output_entity) {
+        throw new Error('tuxd-card (terminal-integrated): "output_entity" is required');
       }
       this._config = Object.assign(TerminalIntegratedRenderer.defaultConfig(), config);
       this._lastOutputState = undefined;
       this._unavailable = false;
-      if (this._historyLoadedFor !== this._config.input_entity) {
-        this._historyLoadedFor = this._config.input_entity;
+      if (this._historyLoadedFor !== this._historySource()) {
+        this._historyLoadedFor = this._historySource();
         this._loadHistory();
       }
       if (this._hass) this._render();
@@ -5705,7 +5784,7 @@
     }
 
     _historyKey() {
-      return `tuxd-terminal-card-history:${this._config.input_entity}`;
+      return `tuxd-terminal-card-history:${this._historySource()}`;
     }
 
     _loadHistory() {
@@ -5774,12 +5853,10 @@
     }
 
     _updateAvailability() {
-      const inState = this._hass.states[this._config.input_entity];
-      const outState = this._hass.states[this._config.output_entity];
-      const missing = !inState || !outState;
+      const missing = !this._hass.states[this._config.output_entity];
       if (missing && !this._unavailable) {
         this._unavailable = true;
-        this._renderUnavailable(!inState ? this._config.input_entity : this._config.output_entity);
+        this._renderUnavailable(this._config.output_entity);
       } else if (!missing && this._unavailable) {
         this._unavailable = false;
         this._lastOutputState = undefined;
@@ -5868,6 +5945,7 @@
       prompt.className = 'prompt';
       prompt.textContent = '❯';
       inputrow.appendChild(prompt);
+      this._promptEl = prompt;
 
       const input = document.createElement('input');
       input.type = 'text';
@@ -5934,6 +6012,13 @@
     }
 
     _onKeydown(ev) {
+      if (this._authRetry && ev.key === 'Escape') {
+        ev.preventDefault();
+        this._inputEl.value = '';
+        this._endPassword();
+        return;
+      }
+      if (this._authRetry && ev.key !== 'Enter') return;
       if (ev.key === 'Enter') {
         ev.preventDefault();
         this._submit();
@@ -5966,13 +6051,72 @@
       window.requestAnimationFrame(() => this._inputEl.setSelectionRange(pos, pos));
     }
 
+    _historySource() {
+      return this._config.input_entity || this._config.output_entity;
+    }
+
+    _terminalDevice() {
+      const out = String(this._config.output_entity || '');
+      return _deviceIdForEntity(this._hass, out)
+        || (out.startsWith('sensor.') && out.endsWith('_terminal_output') ? out.slice(7, -16) : null);
+    }
+
     _sendValue(value) {
       if (!this._hass || !this._config) return;
-      const domain = this._config.input_entity.split('.')[0];
-      this._hass.callService(domain, 'set_value', { entity_id: this._config.input_entity, value });
+      const deviceId = this._terminalDevice();
+      const stop = value === INTEGRATED_STOP_SENTINEL;
+      const viaEntity = () => {
+        const id = this._config.input_entity;
+        if (!id || !this._hass.states[id]) return false;
+        this._hass.callService(id.split('.')[0], 'set_value', { entity_id: id, value });
+        return true;
+      };
+      if (!deviceId) {
+        if (!viaEntity()) this._appendLine(`[${this._t('noDevice')}]`, false);
+        return;
+      }
+      const msg = { type: 'tuxd/terminal/send', device_id: deviceId, command: stop ? '' : value, stop };
+      if (this._password) msg.password = this._password;
+      this._hass.connection.sendMessagePromise(msg).then((r) => {
+        if (r && r.auth) {
+          this._password = null;
+          this._askPassword(this._t(r.auth === 'incorrect' ? 'passwordIncorrect' : 'passwordRequired'), (pw) => {
+            this._password = pw;
+            this._sendValue(value);
+          });
+        } else if (r && !r.ok && !(/not connected/i.test(r.error || '') && viaEntity())) {
+          this._appendLine(`[${r.error || 'failed'}]`, false);
+        }
+      }).catch((e) => this._appendLine(`[${(e && e.message) || e}]`, false));
+    }
+
+    _askPassword(message, retry) {
+      if (!this._inputEl) return;
+      this._authRetry = retry;
+      this._inputEl.type = 'password';
+      this._inputEl.value = '';
+      this._inputEl.placeholder = message;
+      if (this._promptEl) this._promptEl.textContent = '🔒';
+      this._inputEl.focus();
+    }
+
+    _endPassword() {
+      const retry = this._authRetry;
+      this._authRetry = null;
+      this._inputEl.type = 'text';
+      this._inputEl.placeholder = this._t('placeholder');
+      if (this._promptEl) this._promptEl.textContent = '❯';
+      return retry;
     }
 
     _submit() {
+      if (this._authRetry) {
+        const pw = this._inputEl.value;
+        this._inputEl.value = '';
+        const retry = this._endPassword();
+        if (pw) retry(pw);
+        return;
+      }
       const value = (this._inputEl.value || '').trim();
       if (!value) return;
       this._history.push(value);
@@ -6144,7 +6288,7 @@
             offline: !!online && online.state === 'off',
           };
         })
-        .filter((h) => states[h.input] && (!wanted.length || wanted.includes(h.id.toLowerCase()) || wanted.includes(h.name.toLowerCase())))
+        .filter((h) => states[h.output] && (!wanted.length || wanted.includes(h.id.toLowerCase()) || wanted.includes(h.name.toLowerCase())))
         .sort((a, b) => a.name.localeCompare(b.name));
     }
 
@@ -6263,6 +6407,7 @@
       const inputrow = document.createElement('div');
       inputrow.className = 'inputrow';
       const prompt = document.createElement('span');
+      this._promptEl = prompt;
       prompt.className = 'prompt';
       prompt.textContent = '❯';
       inputrow.appendChild(prompt);
@@ -6402,10 +6547,45 @@
           && !window.confirm(this._t('confirmMulti').replace('{cmd}', value).replace('{n}', targets.length).replace('{hosts}', targets.map((h) => h.name).join(', ')))) return false;
       this._note(`❯ ${shown}  →  ${targets.map((h) => h.name).join(', ')}`);
       if (value !== INTEGRATED_STOP_SENTINEL) this._startQueue(targets);
-      targets.forEach((h) => {
-        Promise.resolve(this._hass.callService('text', 'set_value', { entity_id: h.input, value }))
-          .catch((e) => this._appendHostLine(h, `${this._t('sendFailed')}: ${(e && e.message) || e}`));
-      });
+      this._dispatch(value, targets);
+    }
+
+    _dispatch(value, targets) {
+      const stop = value === INTEGRATED_STOP_SENTINEL;
+      const msg = { type: 'tuxd/terminal/send_multi', device_ids: targets.map((h) => h.id), command: stop ? '' : value, stop };
+      if (this._master) msg.master_password = this._master;
+      if (this._password) msg.password = this._password;
+      const failed = (h, e) => this._appendHostLine(h, `${this._t('sendFailed')}: ${(e && e.message) || e}`);
+      this._hass.connection.sendMessagePromise(msg).then((r) => {
+        if (r && r.master) {
+          this._master = null;
+          this._askPassword(this._t(r.master === 'incorrect' ? 'masterIncorrect' : 'masterRequired'), (pw) => {
+            this._master = pw;
+            this._dispatch(value, targets);
+          });
+          return;
+        }
+        const results = (r && r.results) || {};
+        const locked = [];
+        targets.forEach((h) => {
+          const res = results[h.id];
+          if (!res || res.ok) return;
+          if (res.auth) {
+            locked.push(h);
+            this._appendHostLine(h, `[${this._t(res.auth === 'incorrect' ? 'passwordIncorrect' : 'passwordRequired')}]`);
+          } else if (/not connected/i.test(res.error || '') && this._hass.states[h.input]) {
+            Promise.resolve(this._hass.callService('text', 'set_value', { entity_id: h.input, value })).catch((e) => failed(h, e));
+          } else {
+            failed(h, res.error || 'failed');
+          }
+        });
+        if (locked.length) {
+          this._askPassword(this._t('passwordRequired'), (pw) => {
+            this._password = pw;
+            this._dispatch(value, locked);
+          });
+        }
+      }).catch((e) => targets.forEach((h) => failed(h, e)));
     }
   }
 
