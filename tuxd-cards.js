@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '1.5.24';
+  const CARD_VERSION = '1.5.25';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABAwSURBVGhDxVkJVFPX1j6lIBQIJEAGQghIIBDGMCPiAA9wwiroq1ZrX9UiPrW2vqVYWzupFYcH/wOtQ/FpBxGKMimCoOKs2DohONQJrFTFAcucBHK/f51LoOVWre1f+39r7XUvIXfvbw93n31OCPkTAcAIwItUGIbpxzCMOcMwloZrv57/0e9xn/1/hYG4KcMwPIZhfM+cqZq+dWt2ekbGutzU1PSd9Jqdk5t68eL3UxiGUQGwMDj0AlfXXw4AxpQ8APft2/OWzJu38OKEif/AmLETMHLUOIwYmcBex4ydiImvvqFfkPz+2dLS0vkMw8h6ssLV+Zehp1Tq6+ujkpPfPzH65VcwNHIEBoRHITAoAn7qMPj6hbJX+jf9PDJqJMbGT8RHH39ayjC6QEMA/vqSoumncurUqdipU2fcGjJ0BEJCBsPbJxiubr5w7u8JJ2dVr/R38YKb0hc+viEIDRuKyKhRmDXnnapHj+759+ji2nju+PHHH93fmJp4MWxAFNT+A+Cm9GPJOsrdWZE7efRK92cecO6vgtJdDf+AcAyMiMacOfMOMgwjAcBV//xAjdHySU5+7zNKnkZV4erTh/BvCc0GLa9Bg2OxbNnyxVwbzx3bt28PjImNa/T0CoJS6Qd7qQKWPDEr9J5m4peE6d9CkRMseSJYWUvYjNBMeHkHIy4u4XrloUPOXBvPFTNnznqflgElIZb0h8ozECtWpmJ5ymq4e/hDJHbudYJebWxlGBo5HBlr1mPBgvchsVd0O6H0Q3DIYMyfP/8fXBvPDTU1NSZxcWOL3ZRqODq5Q+HqjQsXLqIHVVXVLDmpgxvrgJ3QCRGDoqHVanq/s3VrDuuUi8KbdX78+AkbuXaeG5KT33KIiIi65OTsCStreyz+YAlL6tatemzdmsXeL1r0IXhWEtYBnpUYxbv3oKHhHrKytkGj6XZk5KgEtqyc+3shMir2yMqVCyy5tp4L4uPjfQODwu/KHN1ZB0pK9qCzsxOxw+KwZOmnWL9+IwoLd7EOSGVubJS//fYUliz5FPMXvItZs+eyDnzw4VL2naHdKTRs8KUxY2JlXFvPBaNHjwhXq8N+cpAp2ReyouIQ6urqILCVIiBoAKJj4/DfLwvwgpkjeLbukCkGIDt3N5QevvDzD4WvOph14ONPlrMOyByVCA6JqBs7doQb19ZzwYQJE4ar1aEaWuc0ykuXpqClpQV2YjeQF0QYPnIsynPex5cLHFCR5oJ185QozkmD1NkP5AUhhkTFsQ6MGBkPO6GczUBQSMT9adOmBHJtPRdMmzYtifZwutrKZG6QOnqh8rsLSPnkbcyNF+Py1wqgQgxU2AMVEuCgBCh3xN6VLkiIEGJnQQ6+yNoJa76U7VBUT0BgeNfMmTMTuLb+dNBF7LUpUz+n/ZvWtr2DCt7urjiy1gM46Ql8JwQOiYDdYlaYYglQKgH2CIFjQuCIEDgeiH/P8oCdRAm5k4rV4+cXhsSkpGVce386ampOK+JGj7tGez01bGXngcQEL+A7Pk6k2mH7h3JUb5Kho1AKlEuBvVIwu6VoyHHEwTRn5C52RmOeKVoLHOGi8IFU5sGu4rSVJoybeAZoFXNt/ikwzPwkJWXlB3Sq9FAFsKl3lKvA48uwcVEgOg/IUf6xGf45Ro7hA90QE+6KmAEKRIW4YdRAFyyfLsG1TWbQHA7C6y+rYW4l7x30VJ4BGDQ4BuvWrZvVY4/L4Q/DQP6FmnPnIuPjJ9zzU/88uNHRIHbYWJy/fAfQ1AHVc4Gy/qjNNEXxe/2QM/8lHF5mikfbzIGjaqA2HXpdO/YePA1v7yDwBQ5sIOiKrvYPx4SJr9fduHEj5E+bUA2KjBhG6zljxuyzdBT28g6Ci8ILFpYiJIybhPb2dsP62g2m4w5w6wvg4ttAzVTg+0VAQymYrp9XYopr12+wA53ApntFpqM4HQ7nvDXvMACnnqz/YRimTiM67i5YsKg0YlAMfP3C2HmfRm7IkGFobW3tQ4oLPfcDDi5d/p7NAJ2nqF66+RkydDg+/mTZVoZhBIY9NJfas8Gw4+KlpKzeSHdSNMW0dOi0SXv31avXuXz6YO6FDsScbENt+9PdKCwq7h07evYK0TGjkZGxLoVhGLM/tO00pM84MzNzYUzsy/APGAh3DzVb9+YWQqxZu4HLow8+vqKBSUkTjEqaoD7SgrNNXdyv9MHUqTNZJ2g2PFT+CAiMwIgRYzuzs3MTf/f70JOysrKymNEvj2+m5GmXoMqFImcEBw/qHcgeh3V1WpjvaYJVWTPs9zXDuLQJrgdasP9BJ/ervaDTLC0jmUzJ2vH0CmSdGDd+0p0zZ84E/ZLXMwGA9fTpSXupEqqMtjqaYhr91LQMrv1ebL+tg3VZE8z2NGHl9+248pMWcSdb8WJJEyT7mvHNbR33kV5MmjyNXZ2pHWqPNovgkCGYM+ftHMPJB5fmk5GampoQMShaTxcYOu9TpQ4yN3bOv36jlmubxYEHnSxJ6/JmNvqH7nQA0OFf1W0w3dMEfnkzK2vrtNxHWeTnF/W+C1RcDQtcZOTw9s8//zySy/GJoJ5OnDh5Mx0XaGfo2VnRFNPjkfZ2SqwvzjV1weVAN3FaNryyZow62YJrjzRQHGiGoLyZzYpJaRNbXsuv/boEz5+vYXdqdDql9ugBQPdJRihee+2N1VyeT0RKSgp/8JDoU7QWqfxybyt1cGVPE+hLfPXqNdYwjWfQOcB8bxvs93WXCiWsPtyC6gca9K/odmrdtXYsqmkDb38HeEeBG/S9ZvQ4X12D5Sn/ZrsPzfIv7VH7tJz+9rfhZenpb/Xjcn0soqMHewQEht3s2RJyhe6iLHgi9n54TBz+/uZc2H24FdLyRvAr2tlIUwe8DrXg4kMNHPc3I+pEC1tOnZ0MFKV3IUjORNxrSYiOHM62Zboo0gxzDwOo0H1HcMjAqnC12p7L9bFQKOQBanVwrb3UpTedjxMaLVuhHAJrCZx4AohjJiH0eCveqOqAaF8zG/mq+xoEHGlB6Y8dONbYhaSTDZAEx0JuZQNbgT27X36aDZmjG6QOCgQEBp+1srJScLk+Ce6+vn7HHGQKSOydWSVcxX3EWQWZrT3EqlCcbaCRZjDpdCteLG3CiQYNLjZqUHGnA5YVGph+Uws5JSyRs8/9SlevuLN7DZHYCU5OSnh7++wkhEi5RJ8Enlhsl+rh4dVqJ5SxTjjKHx8lscQFfJ4Qjgpf2Kbvx6of9PihRctGnpbO8QYNLjzU9HYn+2N6SFPy4CRzhUQghkTq+iudVGhWxBIniMRyqFTeD3g8XjIhxIRL9GkIE4lEO729fetljm5dPWmmNWpr58jWLO3Z/n6hSJr1Dlx2XIFdJcArb4Xt/jZsqNPhSpMeda0Mxp/TgezVwPagFoKDOvBPAZbZV+H/ShJ83X3Y1kn1icQ/vwPdL7NS6+3tU2tjI/iKVgWX4LNAPTAiokDp7tclknrA0kaFfpYueHXydKSnf4a9+yrQ1NQEjVYLRVEdzHY/gvWuu7DMrwfJvoEPjlzHratXEF9wFnaZlXDLPAyvDfvg/1kJfDN2YfvJ83hw9y6KinZj1ao0RMfGw9i8PyxtVZA4eMDTK0AXGhqaSQhx5RJ7JgAwGTZs1EGhgw8GBvlg1Rw3TIsVYu36zX36t66jHau2bMPMtEy8u3Yzlq7fjNWZX2D1pq/Yc6AdubkoLszH/pJiHN9XhjNHDuDSt8fQ0fxTHz3J85Pxr3EifJKohJenLxyc/DBmTEIWl9dvomfJXrxwodrDN7IhPNAH97bLgYPWQIk5arOC0KnrO0YzmnZof3oAfXsLoNMA+qcPb1y0PbyO+q9kwH4L4Agf5zb0h4vCFwGhMdUrVnzk8EteT4Vh/qY/F5m9u6pofMLoEU2XNsmBMmvo8/hgCvlAPoHuwHDoO/tuZP4oulp/QFeJCig0hb5AAKZAAFQIsH+1O+JGj6tNy/4+wjBW03noyVvNnmPzG3faQh6ezfjy3oHEa+2lYV0ok0Kfbwt9AR/6Qio20GcTaI9PBMNl8zuh72yFrjwU+hzSrbdAAH0+n71inwOa9wzV3j80q+b+mc82XbrLeP/mWD0u/YrdjV2vncSpQOCQH1CqgL5IBH0BVU4VGyTfCp05BJrqZejQg91W0uPFZ4FOp0N7uwaaTj20xydD/w0BQ8kXURvddrqoE0X0ZEMJHPYFvgvG5aI3d0kS8RKXcx94DZgSW71R2YVdlmAKhWCK7AxREXRHKM+ave8qpBmxRNs2Y9yqysP1Hx7i5s2bbFeijjBM39zQv7VaLRobG1FbW4sb9U24XbkCmm0ETG9wBAYHbNCVR4PEB1Nki65CMVBsgUMZvo3G4nh2b/BEGJk4jlv2purB9QwT3P6vBTS51mDyBax05Qmgp0INFXXXqi7HBPVZSv3Ro0c7K789jcrKSly6dAn19fW4d+8e7t+/j4aGBta56upqnDhxAie+rcLxinzd/W1UpzmrR59PA0OdsGXLlaH3edZo+8YSNzMtcGmNBWaM87lMiGk4lzMX3gqF2751M0Q4vqwfaj+3QluOFfQF1mCoUMW9xuhLLUBXkSl2rBhyZ/GS/7mzadMmZGVlIT8/H8XFxSgpKWGveXl5+Prrr7Fhw0b9u4tX/XBkrXcjSnlgioTd2WX1WbP6mAJbNgNN23i4vM4Sx1L64dM3FVoLvmwzIeQ3D75MCDFKUnu7Xf3PVAH2vGeMmjWWePC1FTQ7KHEbgBKn6S2wAYpsgFIb3MuWdyiVygqFwq1m2LBhD6dMmdKWlJSknT17ti4xMVEzadKk1qioqHv2DvLvRkWqjnXuFutRIgSK7Nj6Zwq7yVNnOnKtcWeLFU6nWaDkPRN8ONle5+DoVEkIGcEl+yQICHnxAzcX5ysL4oW6rLkmqFhqhgtrrXB7Cx9NWXx05PKh3SGAdoc1OvMswewS453XB2QTQuhPRRmEkHxCSLmxsXEFIWQPISSXELKCEPL6hsVhR2lb7iwQoDPfBro8K2i2W6NpmzXqN/NQlW6JvR+ZYsscM8wY6dBuY+dwkj5HCHm2/YABNoSQeVY29ifjwh0fffSKNbbMMkXx4pdwZLklTqda4ny6Jar+Y4mzaWa4vEGEpFcHUwfMCSEWhBA5IcSTEOJLCPEghNDFqB8hfMelc0JO3dxEn7XAxTU8XMgwx5k0KxxazsPORabYNNMUC+NtOgf6yRuMzGyp83//vYNcD0wJIaMIMftCJJZeGOIvfZg0UqRdMomP9OkWWD/TAhv+aYYNs62wYLK7RiJ1opF/epsjROqpct+5PNG1a/Ncc2x5ywyb55gh401zfPQqH1NjRB2h3g4NPL7oFCFGaYSQp3edZwSdw18hxHiNUT/BAXux+LLKRVwfqJLcDfG2b3B3ldUZmwlopGK4Dz4GxrTMeAJJpb+X7HZ0qLwxKlje6KWQ/CgUii4QY+syQ6kNI4RYcR/+v4JHCPEnhEyk5UXHJYMkGT5/8jLfF2aEkChCyEJCjDIIMUqnvx3SddRQdr+VxV78L2t2aioqrc3mAAAAAElFTkSuQmCC';
 
   function resolveLang(raw) {
@@ -284,7 +284,7 @@
     en: {
       cardType: 'Card type',
       common: { layout: 'Layout', card_style: 'Card style', icon: 'Icon', color: 'Accent color (e.g. #03a9f4)' },
-      cardTypeOptions: { terminal: 'Terminal', 'terminal-integrated': 'Terminal (integrated)', 'multi-terminal': 'Multi-agent Command', update: 'Updates', cache: 'Site Cache', conf: 'Configuration', devices: 'Device Status', fleet: 'Fleet Summary', tugboat: 'TugBoat Actions', 'tugboat-health': 'TugBoat Stack Health', status: 'Agent Status', host: 'Host Overview' },
+      cardTypeOptions: { terminal: 'Terminal', 'terminal-integrated': 'Terminal (integrated)', 'multi-terminal': 'Multi-agent Command', update: 'Updates', cache: 'Site Cache', conf: 'Configuration', devices: 'Device Status', fleet: 'Fleet Summary', tugboat: 'TugBoat Actions', 'tugboat-health': 'TugBoat Stack Health', status: 'Agent Status', host: 'Host Overview', actions: 'Actions' },
       host: {
         missingDevice: 'Set "device_id" to a TuxD device name',
         offline: 'Offline',
@@ -387,10 +387,15 @@
         versionLabel: 'Version',
         startedLabel: 'Started',
         updateLabel: 'Update status',
+        warning: 'Warning',
+        allTitle: 'All agents',
+        allIdle: 'All {n} agents are idle',
+        noAgents: 'No TuxD agents found',
         editor: {
-          device_id: 'TuxD device name',
+          device_id: 'TuxD device name (empty = all agents)',
+          only_problems: 'All agents: list only those that are busy, warn, fail or are offline',
           title: 'Title',
-          show_error: 'Show the agent error state',
+          show_error: 'Show the agent error and warning state',
           offline_animation: 'Animate while the agent is offline (looks like reconnecting)',
           hide_header: 'Hide header',
           color_by_status: 'Color the card by status',
@@ -398,6 +403,32 @@
           show_version: 'Show agent version',
           show_startup_time: 'Show when the agent started',
           show_update_status: 'Show agent update status',
+          language: 'Language',
+        },
+      },
+      actions: {
+        defaultTitle: 'Actions',
+        hostLabel: 'Host',
+        actionLabel: 'Action',
+        targetLabel: 'Target',
+        run: 'Run',
+        running: 'Running...',
+        sending: 'Sending...',
+        started: '{action} started',
+        failed: 'Could not run the action',
+        offline: 'Device is offline',
+        noAgents: 'No TuxD agents with actions found',
+        noActions: 'This device offers no actions',
+        confirm: 'Run "{action}"{target} on {host}?',
+        authTitle: 'This device has a password',
+        authIncorrect: 'Incorrect password - try again',
+        passwordPlaceholder: 'Password',
+        unlock: 'Unlock',
+        editor: {
+          device_id: 'TuxD device name (empty = pick the host in the card)',
+          title: 'Title',
+          integration: 'Only these integrations (comma separated, e.g. systemd, tugboat; empty = all)',
+          confirm: 'Ask before actions that stop or change something',
           language: 'Language',
         },
       },
@@ -745,7 +776,7 @@
     nb: {
       cardType: 'Korttype',
       common: { layout: 'Oppsett', card_style: 'Kortstil', icon: 'Ikon', color: 'Aksentfarge (f.eks. #03a9f4)' },
-      cardTypeOptions: { terminal: 'Terminal', 'terminal-integrated': 'Terminal (integrert)', 'multi-terminal': 'Kommando til flere agenter', update: 'Oppdateringer', cache: 'Nettsted-cache', conf: 'Konfigurasjon', devices: 'Enhetsstatus', fleet: 'Flåteoversikt', tugboat: 'TugBoat-handlinger', 'tugboat-health': 'TugBoat stack-helse', status: 'Agentstatus', host: 'Vertsoversikt' },
+      cardTypeOptions: { terminal: 'Terminal', 'terminal-integrated': 'Terminal (integrert)', 'multi-terminal': 'Kommando til flere agenter', update: 'Oppdateringer', cache: 'Nettsted-cache', conf: 'Konfigurasjon', devices: 'Enhetsstatus', fleet: 'Flåteoversikt', tugboat: 'TugBoat-handlinger', 'tugboat-health': 'TugBoat stack-helse', status: 'Agentstatus', host: 'Vertsoversikt', actions: 'Handlinger' },
       host: {
         missingDevice: 'Sett "device_id" til et TuxD-enhetsnavn',
         offline: 'Offline',
@@ -839,6 +870,10 @@
         },
       },
       status: {
+        warning: 'Advarsel',
+        allTitle: 'Alle agenter',
+        allIdle: 'Alle {n} agenter er ledige',
+        noAgents: 'Fant ingen TuxD-agenter',
         missingDevice: 'Sett "device_id" til et TuxD-enhetsnavn',
         notFound: 'Fant ingen TuxD-statusentiteter for ',
         idle: 'Ledig',
@@ -859,6 +894,32 @@
           show_version: 'Vis agentversjon',
           show_startup_time: 'Vis når agenten startet',
           show_update_status: 'Vis agentens oppdateringsstatus',
+          language: 'Språk',
+        },
+      },
+      actions: {
+        defaultTitle: 'Handlinger',
+        hostLabel: 'Vert',
+        actionLabel: 'Handling',
+        targetLabel: 'Mål',
+        run: 'Kjør',
+        running: 'Kjører...',
+        sending: 'Sender...',
+        started: '{action} startet',
+        failed: 'Kunne ikke kjøre handlingen',
+        offline: 'Enheten er offline',
+        noAgents: 'Fant ingen TuxD-agenter med handlinger',
+        noActions: 'Denne enheten har ingen handlinger',
+        confirm: 'Kjøre "{action}"{target} på {host}?',
+        authTitle: 'Enheten har passord',
+        authIncorrect: 'Feil passord - prøv igjen',
+        passwordPlaceholder: 'Passord',
+        unlock: 'Lås opp',
+        editor: {
+          device_id: 'TuxD-enhetsnavn (tomt = velg vert i kortet)',
+          title: 'Tittel',
+          integration: 'Bare disse integrasjonene (kommaseparert, f.eks. systemd, tugboat; tomt = alle)',
+          confirm: 'Spør før handlinger som stopper eller endrer noe',
           language: 'Språk',
         },
       },
@@ -7147,6 +7208,14 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
     .agent-state.idle ha-icon { color: var(--success-color, #43a047); }
     .agent-state.error ha-icon { color: var(--error-color, #db4437); }
     .agent-state.busy ha-icon { color: var(--warning-color, #ffa726); }
+    .agent-state.warning ha-icon { color: var(--warning-color, #ffa726); }
+    /* All agents: one line each - icon, name, state. */
+    .agent-state.agent-row { cursor: pointer; padding: 2px 0; }
+    .agent-row .agent-name { flex: 0 1 auto; min-width: 0; font-weight: 600; font-size: max(12px, calc(10px + 6px * var(--st-s))); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .agent-row .agent-job { flex: 1 1 auto; min-width: 0; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .agent-row.error .agent-job { color: var(--error-color, #db4437); }
+    .agent-row.warning .agent-job, .agent-row.busy .agent-job { color: var(--warning-color, #ffa726); }
+    ha-card.status-all .body { gap: 2px; }
     .agent-info { font-size: 12px; color: var(--secondary-text-color); display: flex; flex-direction: column; gap: 2px; }
     .agent-state.busy ha-icon { animation: tug-spin 1.2s linear infinite; }
     @media (prefers-reduced-motion: reduce) { .agent-state.busy ha-icon { animation: none; } }
@@ -7657,7 +7726,8 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
 
     static schema() {
       return [
-        { name: 'device_id', required: true, selector: { text: {} } },
+        { name: 'device_id', selector: { text: {} } },
+        { name: 'only_problems', selector: { boolean: {} } },
         { name: 'title', selector: { text: {} } },
         { name: 'show_error', selector: { boolean: {} } },
         { name: 'offline_animation', selector: { boolean: {} } },
@@ -7709,9 +7779,15 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
     }
 
     _sync() {
+      if (!this._config.device_id) {
+        this._syncAll();
+        return;
+      }
       const slug = _jsSlug(this._config.device_id || '');
       const states = (this._hass && this._hass.states) || {};
       const deps = [
+        states[`binary_sensor.${slug}_warning`],
+        states[`sensor.${slug}_warning_reason`],
         states[`binary_sensor.${slug}_busy`],
         states[`sensor.${slug}_busy_job`],
         states[`binary_sensor.${slug}_error`],
@@ -7723,7 +7799,75 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       ];
       if (this._deps && deps.every((d, i) => d === this._deps[i])) return;
       this._deps = deps;
-      this._render(deps[0], deps[1], deps[2], deps[3], deps[4], deps[5], deps[6]);
+      this._warning = [deps[0], deps[1]];
+      this._render(deps[2], deps[3], deps[4], deps[5], deps[6], deps[7], deps[8]);
+    }
+
+    _agentState(deviceId) {
+      const slug = _jsSlug(deviceId);
+      const states = (this._hass && this._hass.states) || {};
+      const text = (id) => {
+        const v = String((states[id] || {}).state || '').trim();
+        return ['', 'unknown', 'unavailable', 'None'].includes(v) ? '' : v;
+      };
+      const on = (id) => (states[id] || {}).state === 'on';
+      const online = states[_onlineEntityId(deviceId)];
+      const busy = states[`binary_sensor.${slug}_busy`];
+      if (!busy) return ['none', this._t('notFound') + deviceId, '', 'mdi:help-circle-outline', 4];
+      if (busy.state === 'unavailable' || (online && online.state === 'off')) return ['offline', this._t('offline'), '', 'mdi:lan-disconnect', 0];
+      if (this._config.show_error !== false && on(`binary_sensor.${slug}_error`)) return ['error', this._t('error'), text(`sensor.${slug}_error_reason`), 'mdi:alert-circle-outline', 1];
+      if (this._config.show_error !== false && on(`binary_sensor.${slug}_warning`)) return ['warning', this._t('warning'), text(`sensor.${slug}_warning_reason`), 'mdi:alert-outline', 2];
+      if (busy.state === 'on') return ['busy', this._t('busy'), text(`sensor.${slug}_busy_job`), 'mdi:loading', 3];
+      return ['idle', this._t('idle'), '', 'mdi:check-circle-outline', 5];
+    }
+
+    _syncAll() {
+      if (!this._hass) return;
+      const devices = _tuxdRealDevices(this._hass).slice().sort((a, b) => String(a.name).localeCompare(String(b.name)));
+      const rows = devices.map((d) => [d, this._agentState(d.deviceId)]);
+      const key = JSON.stringify(rows.map(([d, st]) => [d.deviceId, st[0], st[2]]));
+      if (key === this._allKey) return;
+      this._allKey = key;
+      const config = this._config;
+      const { card, header } = _tugboatCardShell(this.root, config, config.title || this._t('allTitle'), STATUS_DEFAULT_ICON);
+      card.classList.add('status-card', 'status-all');
+      card.style.setProperty('--st-s', String(Math.max(20, Math.min(200, Number(config.size) || 50)) / 100));
+      if (config.hide_header) header.remove();
+      const body = document.createElement('div');
+      body.className = 'body';
+      card.appendChild(body);
+      if (!rows.length) {
+        body.appendChild(Object.assign(document.createElement('div'), { className: 'status-msg', textContent: this._t('noAgents') }));
+        return;
+      }
+      const shown = rows
+        .filter(([, st]) => !config.only_problems || st[0] !== 'idle')
+        .sort((a, b) => a[1][4] - b[1][4]);
+      if (!shown.length) {
+        body.appendChild(Object.assign(document.createElement('div'), { className: 'status-msg', textContent: this._t('allIdle').replace('{n}', rows.length) }));
+        return;
+      }
+      shown.forEach(([d, [kind, label, detail, icon]]) => {
+        const el = document.createElement('div');
+        el.className = `agent-state agent-row ${kind}`;
+        el.addEventListener('click', () => {
+          const ev = new Event('hass-more-info', { bubbles: true, composed: true });
+          ev.detail = { entityId: _onlineEntityId(d.deviceId) };
+          this.root.host.dispatchEvent(ev);
+        });
+        const mark = document.createElement('ha-icon');
+        mark.setAttribute('icon', icon);
+        el.appendChild(mark);
+        const name = document.createElement('div');
+        name.className = 'agent-name';
+        name.textContent = d.name;
+        el.appendChild(name);
+        const state = document.createElement('div');
+        state.className = 'agent-job';
+        state.textContent = detail ? `${label}: ${detail}` : label;
+        el.appendChild(state);
+        body.appendChild(el);
+      });
     }
 
     _agentVersion() {
@@ -7813,7 +7957,294 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       const hasError = config.show_error && errorSt && errorSt.state === 'on';
       if (config.color_by_status && busySt.state !== 'on') card.classList.add(hasError ? 'agent-error' : 'agent-idle');
       if (hasError) row('error',this._t('error'), text(reasonSt), 'mdi:alert-circle-outline');
+      const [warnSt, warnReasonSt] = this._warning || [];
+      if (config.show_error && warnSt && warnSt.state === 'on') row('warning', this._t('warning'), text(warnReasonSt), 'mdi:alert-outline');
       info();
+    }
+  }
+
+  const ACTIONS_DEFAULT_ICON = 'mdi:gesture-tap-button';
+  const ACTIONS_STYLE = `
+    .ok-msg { color: var(--success-color, #43a047); font-size: 12px; }
+    .job { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--secondary-text-color); min-width: 0; }
+    .job span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    /* Locked: a Material 3 tonal panel with the password field. */
+    form.auth {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 10px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid color-mix(in srgb, var(--primary-color) 40%, transparent);
+      background: color-mix(in srgb, var(--primary-color) 12%, transparent);
+    }
+    form.auth.error { border-color: color-mix(in srgb, var(--error-color, #db4437) 45%, transparent); background: color-mix(in srgb, var(--error-color, #db4437) 12%, transparent); }
+    form.auth svg { width: 22px; height: 22px; fill: var(--primary-color); flex: 0 0 auto; }
+    form.auth .auth-text { flex: 1 1 140px; font-size: 13px; color: var(--primary-text-color); }
+    form.auth.error .auth-text { color: var(--error-color, #db4437); }
+    form.auth input { flex: 1 1 140px; min-width: 0; height: 36px; box-sizing: border-box; padding: 0 10px; border-radius: 4px; border: 1px solid var(--outline-color, var(--divider-color)); background: var(--card-background-color, transparent); color: var(--primary-text-color); font: inherit; }
+    form.auth button { height: 36px; padding: 0 20px; border: none; border-radius: 18px; background: var(--primary-color); color: var(--text-primary-color, #fff); font: inherit; font-weight: 500; cursor: pointer; }
+  `;
+  const LOCK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2m6-9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V6a5 5 0 0 1 5-5 5 5 0 0 1 5 5v2h1m-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3z"/></svg>';
+
+  class ActionsRenderer {
+    constructor(root) {
+      this.root = root;
+      this._deps = null;
+      this._sel = {};
+      this._passwords = {};
+      this._msg = null;
+      this._auth = null;
+    }
+
+    static defaultConfig() {
+      return { title: '', icon: ACTIONS_DEFAULT_ICON, integration: '', confirm: true, layout: 'default', card_style: 'default' };
+    }
+
+    static schema() {
+      return [
+        { name: 'device_id', selector: { text: {} } },
+        { name: 'title', selector: { text: {} } },
+        { name: 'integration', selector: { text: {} } },
+        { name: 'confirm', selector: { boolean: {} } },
+      ].concat(TUGBOAT_LOOK_FIELDS, [
+        { name: 'language', selector: { select: { mode: 'dropdown', options: LANGUAGE_OPTIONS } } },
+      ]);
+    }
+
+    static hasCandidate() {
+      return false;
+    }
+
+    static stubFields() {
+      return {};
+    }
+
+    setConfig(config) {
+      this._config = Object.assign(ActionsRenderer.defaultConfig(), config);
+      if (this._config.device_id) this._sel.host = this._config.device_id;
+      this._deps = null;
+      this._sync();
+    }
+
+    setHass(hass) {
+      this._hass = hass;
+      if (this._config) this._sync();
+    }
+
+    getCardSize() {
+      return 3;
+    }
+
+    _lang() {
+      if (this._config && this._config.language) return resolveLang(this._config.language);
+      const hassLang = this._hass && (this._hass.language || (this._hass.locale && this._hass.locale.language));
+      return resolveLang(hassLang);
+    }
+
+    _t(key) {
+      const dict = modeDict(this._lang(), 'actions');
+      return dict[key] || I18N.en.actions[key] || key;
+    }
+
+    _hosts() {
+      const states = this._hass.states;
+      return _tuxdRealDevices(this._hass)
+        .filter((d) => states[`sensor.${_jsSlug(d.deviceId)}_actions`])
+        .sort((a, b) => String(a.name).localeCompare(String(b.name)));
+    }
+
+    _catalog(catSt) {
+      const list = catSt && catSt.attributes && Array.isArray(catSt.attributes.actions) ? catSt.attributes.actions : [];
+      const only = String(this._config.integration || '').split(',').map((x) => x.trim().toLowerCase()).filter(Boolean);
+      return list.filter((a) => a && a.id && a.integration && (!only.length || only.includes(String(a.integration).toLowerCase())));
+    }
+
+    _sync() {
+      if (!this._hass || !this._config) return;
+      const fixed = !!this._config.device_id;
+      const hosts = fixed ? [] : this._hosts();
+      if (!fixed && !hosts.some((h) => h.deviceId === this._sel.host)) this._sel.host = hosts.length ? hosts[0].deviceId : '';
+      const host = this._sel.host || '';
+      const slug = _jsSlug(host);
+      const states = this._hass.states;
+      const deps = [
+        states[`sensor.${slug}_actions`], states[`binary_sensor.${slug}_busy`], states[`sensor.${slug}_busy_job`],
+        states[_onlineEntityId(host)], hosts.map((h) => h.deviceId).join(','),
+      ];
+      if (this._deps && deps.every((d, i) => d === this._deps[i])) return;
+      this._deps = deps;
+      this._render(hosts, deps);
+    }
+
+    _rerender() {
+      this._deps = null;
+      this._sync();
+    }
+
+    _hostName(hosts) {
+      const h = hosts.find((x) => x.deviceId === this._sel.host);
+      return (h && h.name) || this._sel.host;
+    }
+
+    _render(hosts, [catSt, busySt, jobSt, onlineSt]) {
+      const config = this._config;
+      const { card } = _tugboatCardShell(this.root, config, config.title || this._t('defaultTitle'), ACTIONS_DEFAULT_ICON);
+      const extra = document.createElement('style');
+      extra.textContent = ACTIONS_STYLE;
+      this.root.insertBefore(extra, card);
+      const body = document.createElement('div');
+      body.className = 'body action';
+      card.appendChild(body);
+      const note = (cls, text) => body.appendChild(Object.assign(document.createElement('div'), { className: cls, textContent: text }));
+
+      if (!config.device_id && !hosts.length) {
+        note('status-msg', this._t('noAgents'));
+        return;
+      }
+      const catalog = this._catalog(catSt);
+      const keyOf = (a) => `${a.integration}/${a.id}`;
+      if (!catalog.some((a) => keyOf(a) === this._sel.action)) this._sel.action = catalog.length ? keyOf(catalog[0]) : '';
+      const action = catalog.find((a) => keyOf(a) === this._sel.action);
+      const targets = action && Array.isArray(action.targets) ? action.targets : null;
+      if (targets && !targets.includes(this._sel.target)) this._sel.target = targets[0] || '';
+
+      const fields = document.createElement('div');
+      fields.className = 'fields';
+      if (!config.device_id) {
+        fields.appendChild(this._select(this._t('hostLabel'), hosts.map((h) => [h.deviceId, h.name]), this._sel.host, (v) => {
+          this._sel = { host: v };
+          this._msg = null;
+          this._rerender();
+        }));
+      }
+      if (catalog.length) {
+        fields.appendChild(this._select(this._t('actionLabel'), catalog.map((a) => [keyOf(a), a.name, a.integration_name]), this._sel.action, (v) => {
+          this._sel.action = v;
+          this._sel.target = '';
+          this._msg = null;
+          this._rerender();
+        }));
+      }
+      if (targets) {
+        fields.appendChild(this._select(action.target_name || this._t('targetLabel'), targets.map((t) => [t, t]), this._sel.target, (v) => {
+          this._sel.target = v;
+        }));
+      }
+      body.appendChild(fields);
+      if (!catalog.length) note('status-msg', this._t('noActions'));
+      if (this._auth && this._auth.host === this._sel.host) body.appendChild(this._authForm());
+
+      const offline = !catSt || catSt.state === 'unavailable' || (onlineSt && onlineSt.state === 'off');
+      const busy = !!busySt && busySt.state === 'on';
+      const footer = document.createElement('div');
+      footer.className = 'footer';
+      if (offline) {
+        footer.appendChild(Object.assign(document.createElement('div'), { className: 'error-msg', textContent: this._t('offline') }));
+      } else if (this._msg) {
+        footer.appendChild(Object.assign(document.createElement('div'), {
+          className: this._msg.kind === 'error' ? 'error-msg' : (this._msg.kind === 'ok' ? 'ok-msg' : 'status-msg'),
+          textContent: this._msg.text,
+        }));
+      } else if (busy) {
+        const job = document.createElement('div');
+        job.className = 'job';
+        job.appendChild(Object.assign(document.createElement('span'), { className: 'spinner' }));
+        const v = String((jobSt && jobSt.state) || '');
+        job.appendChild(Object.assign(document.createElement('span'), { textContent: ['', 'unknown', 'unavailable'].includes(v) ? this._t('running') : v }));
+        footer.appendChild(job);
+      }
+      footer.appendChild(Object.assign(document.createElement('div'), { className: 'spacer' }));
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'run';
+      btn.textContent = this._t('run');
+      btn.disabled = !action || offline || (this._msg && this._msg.kind === 'pending');
+      btn.addEventListener('click', () => this._run(action, this._sel.target, hosts, false));
+      footer.appendChild(btn);
+      body.appendChild(footer);
+    }
+
+    _select(labelText, options, value, onChange) {
+      const field = document.createElement('label');
+      field.className = 'field';
+      field.appendChild(Object.assign(document.createElement('span'), { textContent: labelText }));
+      const select = document.createElement('select');
+      const groups = new Map();
+      options.forEach(([val, label, group]) => {
+        const opt = Object.assign(document.createElement('option'), { value: val, textContent: label });
+        if (group) {
+          if (!groups.has(group)) {
+            const og = document.createElement('optgroup');
+            og.label = group;
+            groups.set(group, og);
+            select.appendChild(og);
+          }
+          groups.get(group).appendChild(opt);
+        } else {
+          select.appendChild(opt);
+        }
+      });
+      select.value = value;
+      select.addEventListener('change', () => onChange(select.value));
+      field.appendChild(select);
+      return field;
+    }
+
+    _run(action, target, hosts, confirmed) {
+      if (!action) return;
+      const host = this._sel.host;
+      const hasTarget = Array.isArray(action.targets);
+      if (!confirmed && this._config.confirm !== false && action.confirm
+          && !window.confirm(this._t('confirm').replace('{action}', action.name)
+            .replace('{target}', hasTarget ? ` (${target})` : '').replace('{host}', this._hostName(hosts)))) return;
+      const msg = { type: 'tuxd/action/run', device_id: host, integration: action.integration, action: action.id };
+      if (hasTarget) msg.target = target;
+      if (this._passwords[host]) msg.password = this._passwords[host];
+      this._msg = { kind: 'pending', text: this._t('sending') };
+      this._rerender();
+      this._hass.connection.sendMessagePromise(msg).then((r) => {
+        if (r && r.auth) {
+          delete this._passwords[host];
+          this._auth = { host, error: r.auth === 'incorrect', action, target };
+          this._msg = null;
+        } else if (r && r.ok) {
+          this._auth = null;
+          this._msg = { kind: 'ok', text: this._t('started').replace('{action}', action.name) };
+          clearTimeout(this._msgTimer);
+          this._msgTimer = setTimeout(() => { this._msg = null; this._rerender(); }, 4000);
+        } else {
+          this._msg = { kind: 'error', text: (r && r.error) || this._t('failed') };
+        }
+        this._rerender();
+      }).catch((e) => {
+        this._msg = { kind: 'error', text: (e && e.message) || String(e) };
+        this._rerender();
+      });
+    }
+
+    _authForm() {
+      const auth = this._auth;
+      const form = document.createElement('form');
+      form.className = auth.error ? 'auth error' : 'auth';
+      form.innerHTML = LOCK_SVG;
+      form.appendChild(Object.assign(document.createElement('div'), {
+        className: 'auth-text', textContent: this._t(auth.error ? 'authIncorrect' : 'authTitle'),
+      }));
+      const input = Object.assign(document.createElement('input'), { type: 'password', autocomplete: 'off', placeholder: this._t('passwordPlaceholder') });
+      input.setAttribute('aria-label', input.placeholder);
+      form.appendChild(input);
+      form.appendChild(Object.assign(document.createElement('button'), { type: 'submit', textContent: this._t('unlock') }));
+      form.addEventListener('submit', (ev) => {
+        ev.preventDefault();
+        if (!input.value) return;
+        this._passwords[auth.host] = input.value;
+        this._auth = null;
+        this._run(auth.action, auth.target, [], true);
+      });
+      window.requestAnimationFrame(() => input.focus());
+      return form;
     }
   }
 
@@ -9085,7 +9516,7 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
     terminal: TerminalRenderer, 'terminal-integrated': TerminalIntegratedRenderer, 'multi-terminal': MultiCommandRenderer, update: UpdateRenderer, cache: CacheRenderer, conf: ConfigEditorRenderer,
     devices: DeviceStatusGridRenderer, fleet: FleetSummaryRenderer,
     tugboat: TugboatActionRenderer, 'tugboat-health': TugboatHealthRenderer,
-    status: AgentStatusRenderer, host: HostOverviewRenderer,
+    status: AgentStatusRenderer, host: HostOverviewRenderer, actions: ActionsRenderer,
   };
   const DEFAULT_CARD_TYPE = 'terminal';
 
@@ -9217,6 +9648,7 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       { value: 'tugboat-health', label: labels['tugboat-health'] },
       { value: 'status', label: labels.status },
       { value: 'host', label: labels.host },
+      { value: 'actions', label: labels.actions },
     ];
   }
 
