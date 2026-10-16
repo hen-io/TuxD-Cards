@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '1.5.32';
+  const CARD_VERSION = '1.5.33';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,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';
 
   function resolveLang(raw) {
@@ -451,28 +451,15 @@
         offline: 'Device is offline',
         noAgents: 'No TuxD agents with actions found',
         noActions: 'This device offers no actions',
-        noActionsMulti: 'The picked agents offer no actions',
-        pickAgents: 'Pick one or more agents',
-        multiToggle: 'Run on several agents',
-        all: 'All',
-        none: 'None',
-        pickedCount: '{n} of {total} picked',
-        runningOn: 'Running on {n} agent(s)...',
-        startedOn: '{action} started on {n} of {total}',
         confirm: 'Run "{action}"{target} on {host}?',
-        confirmMulti: 'Run "{action}"{target} on {n} agents ({hosts})?',
         authTitle: 'This device has a password',
         authIncorrect: 'Incorrect password - try again',
-        masterTitle: 'Several agents need the master password',
-        masterIncorrect: 'Incorrect master password - try again',
-        masterPlaceholder: 'Master password',
         passwordPlaceholder: 'Password',
         unlock: 'Unlock',
         editor: {
           device_id: 'TuxD device name (empty = pick the host in the card)',
           title: 'Title',
           integration: 'Only these integrations (comma separated, e.g. systemd, tugboat; empty = all)',
-          multi_host: 'Allow running on several agents (a switch in the card; not with a device name set)',
           devices: 'Only these agents (comma separated device names; empty = all)',
           confirm: 'Ask before actions that stop or change something',
           language: 'Language',
@@ -540,6 +527,15 @@
       },
       'multi-terminal': {
         title: 'Run on multiple agents',
+        agents: 'Agents',
+        actions: 'Actions',
+        action: 'Action',
+        target: 'Target',
+        runAction: 'Run action',
+        noActions: 'The selected agents offer no actions',
+        pickAgents: 'Select agents to see their actions',
+        actionStarted: 'action started',
+        confirmAction: 'Run "{action}" on {n} agent(s)?\n\n{hosts}',
         placeholder: 'Type a command for the selected agents and press Enter...',
         clear: 'Clear screen',
         stop: 'Stop running command',
@@ -548,7 +544,7 @@
         none: 'None',
         offline: 'offline',
         selected: '{n} of {total} selected',
-        noAgents: 'No TuxD agents with terminal input found',
+        noAgents: 'No TuxD agents with terminal input or actions found',
         nothingSelected: 'Select at least one online agent first',
         sendFailed: 'could not send',
         confirmMulti: 'Run "{cmd}" on {n} agents?\n\n{hosts}',
@@ -564,6 +560,8 @@
         editor: {
           title: 'Title',
           devices: 'Agents to offer (comma separated device names, empty = all)',
+          show_actions: 'Show actions (from the selected agents)',
+          integration: 'Only actions of these integrations (comma separated, e.g. systemd, proxmox; empty = all)',
           height: 'Height (e.g. 320px)',
           max_lines: 'Max lines',
           max_history: 'Max command history',
@@ -989,28 +987,15 @@
         offline: 'Enheten er offline',
         noAgents: 'Fant ingen TuxD-agenter med handlinger',
         noActions: 'Denne enheten har ingen handlinger',
-        noActionsMulti: 'De valgte agentene har ingen handlinger',
-        pickAgents: 'Velg én eller flere agenter',
-        multiToggle: 'Kjør på flere agenter',
-        all: 'Alle',
-        none: 'Ingen',
-        pickedCount: '{n} av {total} valgt',
-        runningOn: 'Kjører på {n} agent(er)...',
-        startedOn: '{action} startet på {n} av {total}',
         confirm: 'Kjøre "{action}"{target} på {host}?',
-        confirmMulti: 'Kjøre "{action}"{target} på {n} agenter ({hosts})?',
         authTitle: 'Enheten har passord',
         authIncorrect: 'Feil passord - prøv igjen',
-        masterTitle: 'Flere agenter krever hovedpassordet',
-        masterIncorrect: 'Feil hovedpassord - prøv igjen',
-        masterPlaceholder: 'Hovedpassord',
         passwordPlaceholder: 'Passord',
         unlock: 'Lås opp',
         editor: {
           device_id: 'TuxD-enhetsnavn (tomt = velg vert i kortet)',
           title: 'Tittel',
           integration: 'Bare disse integrasjonene (kommaseparert, f.eks. systemd, tugboat; tomt = alle)',
-          multi_host: 'Tillat kjøring på flere agenter (en bryter i kortet; ikke med enhetsnavn satt)',
           devices: 'Bare disse agentene (kommaseparerte enhetsnavn; tomt = alle)',
           confirm: 'Spør før handlinger som stopper eller endrer noe',
           language: 'Språk',
@@ -1078,6 +1063,15 @@
       },
       'multi-terminal': {
         title: 'Kjør på flere agenter',
+        agents: 'Agenter',
+        actions: 'Handlinger',
+        action: 'Handling',
+        target: 'Mål',
+        runAction: 'Kjør handling',
+        noActions: 'De valgte agentene har ingen handlinger',
+        pickAgents: 'Velg agenter for å se handlingene deres',
+        actionStarted: 'handling startet',
+        confirmAction: 'Kjøre "{action}" på {n} agent(er)?\n\n{hosts}',
         passwordRequired: 'Enhetspassord kreves - skriv det og trykk Enter',
         passwordIncorrect: 'Feil enhetspassord - prøv igjen',
         masterRequired: 'Hovedpassord kreves - skriv det og trykk Enter',
@@ -1095,13 +1089,15 @@
         none: 'Ingen',
         offline: 'offline',
         selected: '{n} av {total} valgt',
-        noAgents: 'Fant ingen TuxD-agenter med terminal-input',
+        noAgents: 'Fant ingen TuxD-agenter med terminal-input eller handlinger',
         nothingSelected: 'Velg minst én agent som er online først',
         sendFailed: 'kunne ikke sende',
         confirmMulti: 'Kjøre "{cmd}" på {n} agenter?\n\n{hosts}',
         editor: {
           title: 'Tittel',
           devices: 'Agenter som tilbys (enhetsnavn adskilt med komma, tom = alle)',
+          show_actions: 'Vis handlinger (fra de valgte agentene)',
+          integration: 'Bare handlinger fra disse integrasjonene (kommaseparert, f.eks. systemd, proxmox; tom = alle)',
           height: 'Høyde (f.eks. 320px)',
           max_lines: 'Maks antall linjer',
           max_history: 'Maks kommandohistorikk',
@@ -6665,39 +6661,69 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
     }
   }
 
-
   const MULTI_STYLE = `
-    .hosts {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 6px;
-      padding: 10px 16px;
-      border-bottom: 1px solid var(--divider-color);
+    ha-card { container-type: inline-size; }
+    .section { padding: 12px 16px; border-bottom: 1px solid var(--divider-color); }
+    .section-label { font-size: 12px; font-weight: 500; letter-spacing: 0.4px; color: var(--secondary-text-color); margin: 0 0 8px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    /* Material 3 filter chips. */
+    button.host {
+      display: inline-flex; align-items: center; gap: 8px; height: 32px; box-sizing: border-box; padding: 0 12px;
+      font: inherit; font-size: 13px; font-weight: 500; border-radius: 8px; cursor: pointer;
+      background: transparent; color: var(--primary-text-color);
+      border: 1px solid var(--outline-color, var(--divider-color));
     }
-    button.host, button.pick {
-      font: inherit;
-      font-size: 12px;
-      border-radius: 12px;
-      padding: 3px 10px;
-      cursor: pointer;
-      background: transparent;
-      color: var(--secondary-text-color);
-      border: 1px solid var(--divider-color);
-    }
-    button.host { display: inline-flex; align-items: center; gap: 6px; }
-    button.host i { width: 8px; height: 8px; border-radius: 50%; background: var(--tuxd-host-color); opacity: 0.45; }
-    button.host.on { color: var(--primary-text-color); border-color: var(--tuxd-host-color); background: color-mix(in srgb, var(--tuxd-host-color) 18%, transparent); }
+    button.host i { width: 8px; height: 8px; border-radius: 50%; background: var(--tuxd-host-color); opacity: 0.5; flex: 0 0 auto; }
+    button.host.on { border-color: transparent; background: color-mix(in srgb, var(--tuxd-host-color) 22%, transparent); }
     button.host.on i { opacity: 1; }
     button.host.offline { opacity: 0.45; text-decoration: line-through; }
-    button.pick { border-color: transparent; color: var(--primary-color); padding: 3px 6px; }
-    button.host:focus-visible, button.pick:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 1px; }
-    .hosts .count { margin-left: auto; font-size: 12px; color: var(--secondary-text-color); }
+    /* All / None and the count: always one row of their own, under the agents. */
+    .pickrow { display: flex; align-items: center; gap: 4px; margin-top: 10px; }
+    button.pick { height: 32px; padding: 0 12px; border: none; border-radius: 16px; background: transparent; color: var(--primary-color); font: inherit; font-size: 13px; font-weight: 500; cursor: pointer; }
+    button.pick:hover { background: color-mix(in srgb, var(--primary-color) 10%, transparent); }
+    .pickrow .count { margin-left: auto; font-size: 12px; color: var(--secondary-text-color); white-space: nowrap; }
+    button.host:focus-visible, button.pick:focus-visible, button.act:focus-visible, .actionsrow select:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 1px; }
+    /* Actions: action, target, run - one row, stacked on a narrow card. */
+    .actionsrow { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: 8px; align-items: end; }
+    .actionsrow.no-target { grid-template-columns: minmax(0, 1fr) auto; }
+    .actionsrow label { display: flex; flex-direction: column; gap: 4px; min-width: 0; font-size: 12px; color: var(--secondary-text-color); }
+    .actionsrow select { height: 40px; min-width: 0; width: 100%; box-sizing: border-box; padding: 0 10px; border-radius: 4px; border: 1px solid var(--outline-color, var(--divider-color)); background: var(--card-background-color, transparent); color: var(--primary-text-color); font: inherit; font-size: 14px; }
+    button.act { height: 40px; padding: 0 24px; border: none; border-radius: 20px; background: var(--primary-color); color: var(--text-primary-color, #fff); font: inherit; font-size: 14px; font-weight: 500; cursor: pointer; white-space: nowrap; }
+    button.act:disabled { opacity: 0.38; cursor: default; }
+    .actions-note { font-size: 13px; color: var(--secondary-text-color); }
+    @container (max-width: 440px) {
+      .actionsrow, .actionsrow.no-target { grid-template-columns: minmax(0, 1fr); }
+      button.act { width: 100%; }
+    }
     .line .tag { font-weight: 600; margin-right: 8px; color: var(--tuxd-host-color, var(--primary-color)); }
     .line.note { color: var(--secondary-text-color); font-style: italic; }
   `;
 
   const MULTI_COLORS = ['#4fc3f7', '#81c784', '#ffb74d', '#ba68c8', '#e57373', '#4db6ac', '#dce775', '#a1887f', '#90a4ae', '#f06292'];
+
+  function _actionCatalog(states, deviceId, only) {
+    const st = states[`sensor.${_jsSlug(deviceId)}_actions`];
+    const list = st && st.attributes && Array.isArray(st.attributes.actions) ? st.attributes.actions : [];
+    const wanted = String(only || '').split(',').map((x) => x.trim().toLowerCase()).filter(Boolean);
+    return list.filter((a) => a && a.id && a.integration && (!wanted.length || wanted.includes(String(a.integration).toLowerCase())));
+  }
+
+  const _actionKey = (a) => `${a.integration}/${a.id}`;
+
+  function _mergeCatalogs(lists) {
+    const merged = new Map();
+    lists.forEach((list) => list.forEach((a) => {
+      const have = merged.get(_actionKey(a));
+      if (!have) {
+        merged.set(_actionKey(a), Object.assign({}, a, { targets: Array.isArray(a.targets) ? a.targets.slice() : a.targets }));
+      } else if (Array.isArray(a.targets)) {
+        have.targets = Array.isArray(have.targets) ? have.targets : [];
+        a.targets.forEach((t) => { if (!have.targets.includes(t)) have.targets.push(t); });
+      }
+    }));
+    return Array.from(merged.values());
+  }
+
 
   class MultiCommandRenderer extends TerminalIntegratedRenderer {
     constructor(root) {
@@ -6707,6 +6733,10 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       this._selected = new Set();
       this._lastOut = {};
       this._hostsEl = null;
+      this._actionsEl = null;
+      this._actionsKey = null;
+      this._sel = { action: '', target: '' };
+      this._masterChecked = false;
       this._queue = [];
       this._held = {};
       this._sawBusy = {};
@@ -6718,6 +6748,8 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
     static defaultConfig() {
       return {
         devices: '',
+        show_actions: true,
+        integration: '',
         max_lines: DEFAULT_MAX_LINES,
         height: DEFAULT_HEIGHT,
         auto_scroll: true,
@@ -6732,6 +6764,8 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       return [
         { name: 'title', selector: { text: {} } },
         { name: 'devices', selector: { text: {} } },
+        { name: 'show_actions', selector: { boolean: {} } },
+        { name: 'integration', selector: { text: {} } },
         { name: 'theme', selector: { select: { mode: 'dropdown', options: THEME_OPTIONS } } },
         { name: 'height', selector: { text: {} } },
         { name: 'max_lines', selector: { number: { mode: 'box', min: 10, max: 5000 } } },
@@ -6752,6 +6786,7 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
     setConfig(config) {
       this._config = Object.assign(MultiCommandRenderer.defaultConfig(), config || {});
       this._hostsKey = null;
+      this._actionsKey = null;
       this._loadHistory();
       this._loadSelection();
       if (this._hass) {
@@ -6766,6 +6801,7 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       if (!this._config) return;
       if (isFirst) this._render();
       this._syncHosts();
+      this._syncActions();
       this._syncOutputs();
     }
 
@@ -6803,6 +6839,8 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
 
     _saveOutput() {}
 
+    _probeAuth() {}
+
     _clearScreen() {
       if (this._outputEl) this._outputEl.textContent = '';
     }
@@ -6815,6 +6853,8 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
         .map((d) => {
           const slug = _jsSlug(d.deviceId);
           const online = states[_onlineEntityId(d.deviceId)];
+          const out = states[`sensor.${slug}_terminal_output`];
+          const attrs = (out && out.attributes) || {};
           return {
             id: d.deviceId,
             name: d.name,
@@ -6822,20 +6862,25 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
             output: `sensor.${slug}_terminal_output`,
             busy: `binary_sensor.${slug}_busy`,
             offline: !!online && online.state === 'off',
+            terminal: !!out && attrs.terminal_input !== false,
+            actions: !!states[`sensor.${slug}_actions`],
+            locked: !!attrs.password_required,
           };
         })
-        .filter((h) => states[h.output] && (states[h.output].attributes || {}).terminal_input !== false && (!wanted.length || wanted.includes(h.id.toLowerCase()) || wanted.includes(h.name.toLowerCase())))
+        .filter((h) => (h.terminal || h.actions) && (!wanted.length || wanted.includes(h.id.toLowerCase()) || wanted.includes(h.name.toLowerCase())))
         .sort((a, b) => a.name.localeCompare(b.name));
     }
 
     _syncHosts() {
       const hosts = this._findHosts();
-      const key = JSON.stringify(hosts.map((h) => [h.id, h.name, h.offline]));
+      const key = JSON.stringify(hosts.map((h) => [h.id, h.name, h.offline, h.terminal, h.actions, h.locked]));
       if (key === this._hostsKey) return;
       this._hostsKey = key;
       this._hosts = hosts;
       hosts.forEach((h, i) => { h.color = MULTI_COLORS[i % MULTI_COLORS.length]; });
       this._renderHosts();
+      this._actionsKey = null;
+      this._syncActions();
     }
 
     _isSelected(h) {
@@ -6846,51 +6891,224 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       return this._hosts.filter((h) => this._isSelected(h) && !h.offline);
     }
 
+    _setSelected(ids, on) {
+      ids.forEach((id) => (on ? this._selected.add(id) : this._selected.delete(id)));
+      this._saveSelection();
+      this._renderHosts();
+      this._syncActions();
+    }
+
     _renderHosts() {
       const el = this._hostsEl;
       if (!el) return;
       el.textContent = '';
+      el.appendChild(Object.assign(document.createElement('div'), { className: 'section-label', textContent: this._t('agents') }));
       if (!this._hosts.length) {
-        const none = document.createElement('span');
-        none.className = 'count';
-        none.style.marginLeft = '0';
-        none.textContent = this._t('noAgents');
-        el.appendChild(none);
+        el.appendChild(Object.assign(document.createElement('div'), { className: 'actions-note', textContent: this._t('noAgents') }));
         return;
       }
+      const chips = document.createElement('div');
+      chips.className = 'chips';
       this._hosts.forEach((h) => {
+        const on = this._selected.has(h.id);
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = `host${this._selected.has(h.id) ? ' on' : ''}${h.offline ? ' offline' : ''}`;
+        btn.className = `host${on ? ' on' : ''}${h.offline ? ' offline' : ''}`;
         btn.style.setProperty('--tuxd-host-color', h.color);
-        btn.setAttribute('aria-pressed', this._selected.has(h.id) ? 'true' : 'false');
+        btn.setAttribute('aria-pressed', String(on));
         btn.title = h.offline ? `${h.name} - ${this._t('offline')}` : h.name;
         btn.appendChild(document.createElement('i'));
         btn.appendChild(document.createTextNode(h.name));
-        btn.addEventListener('click', () => {
-          if (this._selected.has(h.id)) this._selected.delete(h.id);
-          else this._selected.add(h.id);
-          this._saveSelection();
-          this._renderHosts();
-        });
-        el.appendChild(btn);
+        btn.addEventListener('click', () => this._setSelected([h.id], !on));
+        chips.appendChild(btn);
       });
+      el.appendChild(chips);
+      const pick = document.createElement('div');
+      pick.className = 'pickrow';
       [['all', true], ['none', false]].forEach(([label, on]) => {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'pick';
-        btn.textContent = this._t(label);
-        btn.addEventListener('click', () => {
-          this._hosts.forEach((h) => { if (on) this._selected.add(h.id); else this._selected.delete(h.id); });
-          this._saveSelection();
-          this._renderHosts();
-        });
-        el.appendChild(btn);
+        const btn = Object.assign(document.createElement('button'), { type: 'button', className: 'pick', textContent: this._t(label) });
+        btn.addEventListener('click', () => this._setSelected(this._hosts.map((h) => h.id), on));
+        pick.appendChild(btn);
       });
       const count = document.createElement('span');
       count.className = 'count';
       count.textContent = this._t('selected').replace('{n}', this._targets().length).replace('{total}', this._hosts.length);
-      el.appendChild(count);
+      pick.appendChild(count);
+      el.appendChild(pick);
+    }
+
+
+    _actionHosts() {
+      return this._targets().filter((h) => h.actions);
+    }
+
+    _catalog() {
+      const states = this._hass.states;
+      return _mergeCatalogs(this._actionHosts().map((h) => _actionCatalog(states, h.id, this._config.integration)));
+    }
+
+    _syncActions() {
+      if (!this._actionsEl || !this._hass) return;
+      const states = this._hass.states;
+      const key = [this._hostsKey].concat(this._actionHosts().map((h) => states[`sensor.${_jsSlug(h.id)}_actions`]));
+      if (this._actionsKey && key.length === this._actionsKey.length && key.every((k, i) => k === this._actionsKey[i])) return;
+      this._actionsKey = key;
+      this._renderActions();
+    }
+
+    _renderActions() {
+      const el = this._actionsEl;
+      el.textContent = '';
+      el.appendChild(Object.assign(document.createElement('div'), { className: 'section-label', textContent: this._t('actions') }));
+      const catalog = this._catalog();
+      if (!catalog.length) {
+        el.appendChild(Object.assign(document.createElement('div'), {
+          className: 'actions-note', textContent: this._t(this._actionHosts().length ? 'noActions' : 'pickAgents'),
+        }));
+        return;
+      }
+      if (!catalog.some((a) => _actionKey(a) === this._sel.action)) this._sel.action = _actionKey(catalog[0]);
+      const action = catalog.find((a) => _actionKey(a) === this._sel.action);
+      const targets = Array.isArray(action.targets) ? action.targets : null;
+      if (targets && !targets.includes(this._sel.target)) this._sel.target = targets[0] || '';
+
+      const row = document.createElement('div');
+      row.className = targets ? 'actionsrow' : 'actionsrow no-target';
+      row.appendChild(this._select(this._t('action'), catalog.map((a) => [_actionKey(a), a.name, a.integration_name]), this._sel.action, (v) => {
+        this._sel = { action: v, target: '' };
+        this._renderActions();
+      }));
+      if (targets) {
+        row.appendChild(this._select(action.target_name || this._t('target'), targets.map((t) => [t, t]), this._sel.target, (v) => {
+          this._sel.target = v;
+        }));
+      }
+      const run = Object.assign(document.createElement('button'), { type: 'button', className: 'act', textContent: this._t('runAction') });
+      run.addEventListener('click', () => this._runAction());
+      row.appendChild(run);
+      el.appendChild(row);
+    }
+
+    _select(labelText, options, value, onChange) {
+      const field = document.createElement('label');
+      field.appendChild(Object.assign(document.createElement('span'), { textContent: labelText }));
+      const select = document.createElement('select');
+      const groups = new Map();
+      options.forEach(([val, label, group]) => {
+        const opt = Object.assign(document.createElement('option'), { value: val, textContent: label });
+        if (!group) {
+          select.appendChild(opt);
+          return;
+        }
+        if (!groups.has(group)) {
+          const og = document.createElement('optgroup');
+          og.label = group;
+          groups.set(group, og);
+          select.appendChild(og);
+        }
+        groups.get(group).appendChild(opt);
+      });
+      select.value = value;
+      select.addEventListener('change', () => onChange(select.value));
+      field.appendChild(select);
+      return field;
+    }
+
+    _actionTargets(action, target) {
+      const states = this._hass.states;
+      const hasTarget = Array.isArray(action.targets);
+      return this._actionHosts().filter((h) => {
+        const own = _actionCatalog(states, h.id, this._config.integration).find((a) => _actionKey(a) === _actionKey(action));
+        return !!own && (!hasTarget || (Array.isArray(own.targets) && own.targets.includes(target)));
+      });
+    }
+
+    _runAction() {
+      const action = this._catalog().find((a) => _actionKey(a) === this._sel.action);
+      if (!action) return;
+      const target = this._sel.target;
+      const hosts = this._actionTargets(action, target);
+      if (!hosts.length) {
+        this._note(this._t('nothingSelected'));
+        return;
+      }
+      const label = action.name + (Array.isArray(action.targets) ? ` (${target})` : '');
+      const names = hosts.map((h) => h.name).join(', ');
+      const ask = hosts.length > 1 || action.confirm
+        ? this._t('confirmAction').replace('{action}', label).replace('{n}', hosts.length).replace('{hosts}', names) : null;
+      this._preflight(hosts, ask, () => {
+        this._note(`▶ ${label}  →  ${names}`);
+        this._startQueue(hosts);
+        this._dispatchAction(action, target, hosts);
+      });
+    }
+
+    _dispatchAction(action, target, hosts) {
+      const msg = { type: 'tuxd/action/run_multi', device_ids: hosts.map((h) => h.id), integration: action.integration, action: action.id };
+      if (Array.isArray(action.targets)) msg.target = target;
+      if (this._master) msg.master_password = this._master;
+      if (this._password) msg.password = this._password;
+      this._hass.connection.sendMessagePromise(msg).then((r) => {
+        if (r && r.master) {
+          this._masterAgain(r.master, () => this._dispatchAction(action, target, hosts));
+          return;
+        }
+        const results = (r && r.results) || {};
+        const locked = [];
+        hosts.forEach((h) => {
+          const res = results[h.id] || {};
+          if (res.ok) this._appendHostLine(h, `[${this._t('actionStarted')}]`);
+          else if (res.auth) {
+            locked.push(h);
+            this._appendHostLine(h, `[${this._t(res.auth === 'incorrect' ? 'passwordIncorrect' : 'passwordRequired')}]`);
+          } else this._appendHostLine(h, `[${res.error || this._t('sendFailed')}]`);
+        });
+        if (locked.length) this._passwordAgain(() => this._dispatchAction(action, target, locked));
+      }).catch((e) => this._note(`${this._t('sendFailed')}: ${(e && e.message) || e}`));
+    }
+
+
+    _preflight(hosts, confirmText, go) {
+      const again = () => this._preflight(hosts, confirmText, go);
+      if (!this._masterChecked) {
+        const msg = { type: 'tuxd/terminal/send_multi', device_ids: [], command: '' };
+        if (this._master) msg.master_password = this._master;
+        this._hass.connection.sendMessagePromise(msg).then((r) => {
+          if (r && r.master) {
+            this._masterAgain(r.master, again);
+            return;
+          }
+          this._masterChecked = true;
+          again();
+        }).catch((e) => this._note(`${this._t('sendFailed')}: ${(e && e.message) || e}`));
+        return;
+      }
+      if (!this._password && hosts.some((h) => h.locked)) {
+        this._askPassword(this._t('passwordRequired'), (pw) => {
+          this._password = pw;
+          again();
+        });
+        return;
+      }
+      if (confirmText && !window.confirm(confirmText)) return;
+      go();
+    }
+
+    _masterAgain(answer, retry) {
+      this._master = null;
+      this._masterChecked = false;
+      this._askPassword(this._t(answer === 'incorrect' ? 'masterIncorrect' : 'masterRequired'), (pw) => {
+        this._master = pw;
+        retry();
+      });
+    }
+
+    _passwordAgain(retry) {
+      this._password = null;
+      this._askPassword(this._t('passwordIncorrect'), (pw) => {
+        this._password = pw;
+        retry();
+      });
     }
 
     _render() {
@@ -6929,10 +7147,19 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       }
 
       const hosts = document.createElement('div');
-      hosts.className = 'hosts';
+      hosts.className = 'section hosts';
       if (this._config.hide_selector) hosts.style.display = 'none';
       card.appendChild(hosts);
       this._hostsEl = hosts;
+
+      this._actionsEl = null;
+      this._actionsKey = null;
+      if (this._config.show_actions !== false) {
+        const actions = document.createElement('div');
+        actions.className = 'section actions';
+        card.appendChild(actions);
+        this._actionsEl = actions;
+      }
 
       const output = document.createElement('div');
       output.className = 'output';
@@ -6969,26 +7196,8 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       card.appendChild(inputrow);
       root.appendChild(card);
       this._renderHosts();
+      this._syncActions();
       this._afterRender();
-    }
-
-    _probeAuth() {
-      if (this._probed || !this._hass || !this._hass.connection) return;
-      this._probed = true;
-      const check = () => {
-        const msg = { type: 'tuxd/terminal/send_multi', device_ids: [], command: '' };
-        if (this._master) msg.master_password = this._master;
-        this._hass.connection.sendMessagePromise(msg).then((r) => {
-          if (!r || !r.master) return;
-          this._master = null;
-          this._askPassword(this._t(this._probeAsked ? 'masterIncorrect' : 'masterLocked'), (pw) => {
-            this._master = pw;
-            check();
-          });
-          this._probeAsked = true;
-        }).catch(() => {});
-      };
-      check();
     }
 
     _syncOutputs() {
@@ -7092,18 +7301,23 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
     }
 
     _sendValue(value) {
-      if (!this._hass || !this._config || !this._outputEl) return;
-      const targets = this._targets();
+      if (!this._hass || !this._config || !this._outputEl) return false;
+      const stop = value === INTEGRATED_STOP_SENTINEL;
+      const targets = this._targets().filter((h) => h.terminal);
       if (!targets.length) {
         this._note(this._t('nothingSelected'));
-        return;
+        return false;
       }
-      const shown = value === INTEGRATED_STOP_SENTINEL ? this._t('stop') : value;
-      if (value !== INTEGRATED_STOP_SENTINEL && targets.length > 1
-          && !window.confirm(this._t('confirmMulti').replace('{cmd}', value).replace('{n}', targets.length).replace('{hosts}', targets.map((h) => h.name).join(', ')))) return false;
-      this._note(`❯ ${shown}  →  ${targets.map((h) => h.name).join(', ')}`);
-      if (value !== INTEGRATED_STOP_SENTINEL) this._startQueue(targets);
-      this._dispatch(value, targets);
+      const names = targets.map((h) => h.name).join(', ');
+      const ask = !stop && targets.length > 1
+        ? this._t('confirmMulti').replace('{cmd}', value).replace('{n}', targets.length).replace('{hosts}', names) : null;
+      this._preflight(targets, ask, () => {
+        if (!stop && this._inputEl && this._inputEl.value.trim() === value) this._inputEl.value = '';
+        this._note(`❯ ${stop ? this._t('stop') : value}  →  ${names}`);
+        if (!stop) this._startQueue(targets);
+        this._dispatch(value, targets);
+      });
+      return false;
     }
 
     _dispatch(value, targets) {
@@ -7114,11 +7328,7 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       const failed = (h, e) => this._appendHostLine(h, `${this._t('sendFailed')}: ${(e && e.message) || e}`);
       this._hass.connection.sendMessagePromise(msg).then((r) => {
         if (r && r.master) {
-          this._master = null;
-          this._askPassword(this._t(r.master === 'incorrect' ? 'masterIncorrect' : 'masterRequired'), (pw) => {
-            this._master = pw;
-            this._dispatch(value, targets);
-          });
+          this._masterAgain(r.master, () => this._dispatch(value, targets));
           return;
         }
         const results = (r && r.results) || {};
@@ -7135,12 +7345,7 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
             failed(h, res.error || 'failed');
           }
         });
-        if (locked.length) {
-          this._askPassword(this._t('passwordRequired'), (pw) => {
-            this._password = pw;
-            this._dispatch(value, locked);
-          });
-        }
+        if (locked.length) this._passwordAgain(() => this._dispatch(value, locked));
       }).catch((e) => targets.forEach((h) => failed(h, e)));
     }
   }
@@ -8229,24 +8434,6 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
 
   const ACTIONS_DEFAULT_ICON = 'mdi:gesture-tap-button';
   const ACTIONS_STYLE = `
-    /* One agent / several agents: a Material 3 switch. */
-    label.mode { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--primary-text-color); cursor: pointer; }
-    button.switch { position: relative; flex: 0 0 auto; width: 52px; height: 32px; padding: 0; border-radius: 16px; cursor: pointer; border: 2px solid var(--outline-color, var(--secondary-text-color)); background: var(--secondary-background-color, rgba(127, 127, 127, 0.15)); transition: background 0.15s, border-color 0.15s; }
-    button.switch i { position: absolute; top: 6px; left: 6px; width: 16px; height: 16px; border-radius: 50%; background: var(--outline-color, var(--secondary-text-color)); transition: all 0.15s; }
-    button.switch[aria-checked="true"] { background: var(--primary-color); border-color: var(--primary-color); }
-    button.switch[aria-checked="true"] i { top: 2px; left: 22px; width: 24px; height: 24px; background: var(--text-primary-color, #fff); }
-    button.switch:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 2px; }
-    /* The picked agents (chips, like the multi-agent terminal). */
-    .hostchips { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
-    .hostchips button.host, .hostchips button.pick { font: inherit; font-size: 12px; border-radius: 8px; padding: 4px 10px; cursor: pointer; background: transparent; color: var(--secondary-text-color); border: 1px solid var(--outline-color, var(--divider-color)); }
-    .hostchips button.host { display: inline-flex; align-items: center; gap: 6px; }
-    .hostchips button.host i { width: 8px; height: 8px; border-radius: 50%; background: var(--tuxd-host-color); opacity: 0.45; }
-    .hostchips button.host.on { color: var(--primary-text-color); border-color: var(--tuxd-host-color); background: color-mix(in srgb, var(--tuxd-host-color) 18%, transparent); }
-    .hostchips button.host.on i { opacity: 1; }
-    .hostchips button.host.offline { opacity: 0.45; text-decoration: line-through; }
-    .hostchips button.pick { border-color: transparent; color: var(--primary-color); padding: 4px 6px; }
-    .hostchips button:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 1px; }
-    .hostchips .count { margin-left: auto; font-size: 12px; color: var(--secondary-text-color); }
     .ok-msg { color: var(--success-color, #43a047); font-size: 12px; }
     .job { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--secondary-text-color); min-width: 0; }
     .job span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -8276,17 +8463,12 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       this._deps = null;
       this._sel = {};
       this._passwords = {};
-      this._password = null;
-      this._master = null;
       this._msg = null;
       this._auth = null;
-      this._multi = false;
-      this._picked = new Set();
-      this._busyKey = '';
     }
 
     static defaultConfig() {
-      return { title: '', icon: ACTIONS_DEFAULT_ICON, integration: '', devices: '', multi_host: false, confirm: true, layout: 'default', card_style: 'default' };
+      return { title: '', icon: ACTIONS_DEFAULT_ICON, integration: '', devices: '', confirm: true, layout: 'default', card_style: 'default' };
     }
 
     static schema() {
@@ -8294,7 +8476,6 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
         { name: 'device_id', selector: { text: {} } },
         { name: 'title', selector: { text: {} } },
         { name: 'integration', selector: { text: {} } },
-        { name: 'multi_host', selector: { boolean: {} } },
         { name: 'devices', selector: { text: {} } },
         { name: 'confirm', selector: { boolean: {} } },
       ].concat(TUGBOAT_LOOK_FIELDS, [
@@ -8313,7 +8494,6 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
     setConfig(config) {
       this._config = Object.assign(ActionsRenderer.defaultConfig(), config);
       if (this._config.device_id) this._sel.host = this._config.device_id;
-      this._loadMulti();
       this._deps = null;
       this._sync();
     }
@@ -8342,37 +8522,6 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       return dict[key] || I18N.en.actions[key] || key;
     }
 
-    _multiAllowed() {
-      return !!this._config.multi_host && !this._config.device_id;
-    }
-
-    _isMulti() {
-      return this._multiAllowed() && this._multi;
-    }
-
-    _storeKey() {
-      return `tuxd-actions-card:${this._config.devices || ''}:${this._config.integration || ''}`;
-    }
-
-    _loadMulti() {
-      this._multi = false;
-      this._picked = new Set();
-      if (!this._multiAllowed()) return;
-      try {
-        const saved = JSON.parse(window.localStorage.getItem(this._storeKey()) || '{}');
-        this._multi = !!saved.multi;
-        if (Array.isArray(saved.picked)) saved.picked.forEach((id) => this._picked.add(String(id)));
-      } catch (e) {
-      }
-    }
-
-    _saveMulti() {
-      try {
-        window.localStorage.setItem(this._storeKey(), JSON.stringify({ multi: this._multi, picked: Array.from(this._picked) }));
-      } catch (e) {
-      }
-    }
-
     _hosts() {
       const states = this._hass.states;
       const wanted = String(this._config.devices || '').split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
@@ -8382,39 +8531,21 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
         .sort((a, b) => String(a.name).localeCompare(String(b.name)));
     }
 
-    _catalog(catSt) {
-      const list = catSt && catSt.attributes && Array.isArray(catSt.attributes.actions) ? catSt.attributes.actions : [];
-      const only = String(this._config.integration || '').split(',').map((x) => x.trim().toLowerCase()).filter(Boolean);
-      return list.filter((a) => a && a.id && a.integration && (!only.length || only.includes(String(a.integration).toLowerCase())));
-    }
-
-    _hostState(deviceId) {
-      const slug = _jsSlug(deviceId);
-      const states = this._hass.states;
-      const catSt = states[`sensor.${slug}_actions`];
-      const onlineSt = states[_onlineEntityId(deviceId)];
-      const busySt = states[`binary_sensor.${slug}_busy`];
-      return {
-        catSt, busySt, jobSt: states[`sensor.${slug}_busy_job`], onlineSt,
-        offline: !catSt || catSt.state === 'unavailable' || (!!onlineSt && onlineSt.state === 'off'),
-        busy: !!busySt && busySt.state === 'on',
-      };
-    }
-
     _sync() {
       if (!this._hass || !this._config) return;
       const fixed = !!this._config.device_id;
       const hosts = fixed ? [] : this._hosts();
       if (!fixed && !hosts.some((h) => h.deviceId === this._sel.host)) this._sel.host = hosts.length ? hosts[0].deviceId : '';
-      const shown = this._isMulti() ? hosts.map((h) => h.deviceId) : [this._sel.host || ''];
-      const deps = [hosts.map((h) => h.deviceId).join(','), this._isMulti()];
-      shown.forEach((id) => {
-        const s = this._hostState(id);
-        deps.push(s.catSt, s.busySt, s.jobSt, s.onlineSt);
-      });
-      if (this._deps && deps.length === this._deps.length && deps.every((d, i) => d === this._deps[i])) return;
+      const host = this._sel.host || '';
+      const slug = _jsSlug(host);
+      const states = this._hass.states;
+      const deps = [
+        states[`sensor.${slug}_actions`], states[`binary_sensor.${slug}_busy`], states[`sensor.${slug}_busy_job`],
+        states[_onlineEntityId(host)], hosts.map((h) => h.deviceId).join(','),
+      ];
+      if (this._deps && deps.every((d, i) => d === this._deps[i])) return;
       this._deps = deps;
-      this._render(hosts);
+      this._render(hosts, deps);
     }
 
     _rerender() {
@@ -8422,32 +8553,13 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       this._sync();
     }
 
-    _hostName(hosts, id) {
-      const h = hosts.find((x) => x.deviceId === id);
-      return (h && h.name) || id;
+    _hostName(hosts) {
+      const h = hosts.find((x) => x.deviceId === this._sel.host);
+      return (h && h.name) || this._sel.host;
     }
 
-    _offered(hosts) {
-      if (!this._isMulti()) return this._catalog(this._hostState(this._sel.host || '').catSt);
-      const merged = new Map();
-      hosts.filter((h) => this._picked.has(h.deviceId)).forEach((h) => {
-        this._catalog(this._hostState(h.deviceId).catSt).forEach((a) => {
-          const key = `${a.integration}/${a.id}`;
-          const have = merged.get(key);
-          if (!have) {
-            merged.set(key, Object.assign({}, a, { targets: Array.isArray(a.targets) ? a.targets.slice() : a.targets }));
-          } else if (Array.isArray(a.targets)) {
-            have.targets = Array.isArray(have.targets) ? have.targets : [];
-            a.targets.forEach((t) => { if (!have.targets.includes(t)) have.targets.push(t); });
-          }
-        });
-      });
-      return Array.from(merged.values());
-    }
-
-    _render(hosts) {
+    _render(hosts, [catSt, busySt, jobSt, onlineSt]) {
       const config = this._config;
-      const multi = this._isMulti();
       const { card } = _tugboatCardShell(this.root, config, config.title || this._t('defaultTitle'), ACTIONS_DEFAULT_ICON);
       const extra = document.createElement('style');
       extra.textContent = ACTIONS_STYLE;
@@ -8461,19 +8573,15 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
         note('status-msg', this._t('noAgents'));
         return;
       }
-      if (this._multiAllowed()) body.appendChild(this._modeSwitch());
-
-      const catalog = this._offered(hosts);
-      const keyOf = (a) => `${a.integration}/${a.id}`;
-      if (!catalog.some((a) => keyOf(a) === this._sel.action)) this._sel.action = catalog.length ? keyOf(catalog[0]) : '';
-      const action = catalog.find((a) => keyOf(a) === this._sel.action);
+      const catalog = _actionCatalog(this._hass.states, this._sel.host || '', config.integration);
+      if (!catalog.some((a) => _actionKey(a) === this._sel.action)) this._sel.action = catalog.length ? _actionKey(catalog[0]) : '';
+      const action = catalog.find((a) => _actionKey(a) === this._sel.action);
       const targets = action && Array.isArray(action.targets) ? action.targets : null;
       if (targets && !targets.includes(this._sel.target)) this._sel.target = targets[0] || '';
 
-      if (multi) body.appendChild(this._hostChips(hosts));
       const fields = document.createElement('div');
       fields.className = 'fields';
-      if (!config.device_id && !multi) {
+      if (!config.device_id) {
         fields.appendChild(this._select(this._t('hostLabel'), hosts.map((h) => [h.deviceId, h.name]), this._sel.host, (v) => {
           this._sel = { host: v };
           this._msg = null;
@@ -8481,7 +8589,7 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
         }));
       }
       if (catalog.length) {
-        fields.appendChild(this._select(this._t('actionLabel'), catalog.map((a) => [keyOf(a), a.name, a.integration_name]), this._sel.action, (v) => {
+        fields.appendChild(this._select(this._t('actionLabel'), catalog.map((a) => [_actionKey(a), a.name, a.integration_name]), this._sel.action, (v) => {
           this._sel.action = v;
           this._sel.target = '';
           this._msg = null;
@@ -8494,15 +8602,11 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
         }));
       }
       body.appendChild(fields);
-      if (!catalog.length) note('status-msg', this._t(multi ? (this._picked.size ? 'noActionsMulti' : 'pickAgents') : 'noActions'));
-      if (this._auth && (multi ? this._auth.multi : !this._auth.multi && this._auth.hosts.includes(this._sel.host))) {
-        body.appendChild(this._authForm());
-      }
+      if (!catalog.length) note('status-msg', this._t('noActions'));
+      if (this._auth && this._auth.host === this._sel.host) body.appendChild(this._authForm());
 
-      const picked = multi ? hosts.filter((h) => this._picked.has(h.deviceId)) : [{ deviceId: this._sel.host || '' }];
-      const states = picked.map((h) => this._hostState(h.deviceId));
-      const offline = !multi && states[0].offline;
-      const busyCount = states.filter((s) => s.busy).length;
+      const offline = !catSt || catSt.state === 'unavailable' || (onlineSt && onlineSt.state === 'off');
+      const busy = !!busySt && busySt.state === 'on';
       const footer = document.createElement('div');
       footer.className = 'footer';
       if (offline) {
@@ -8512,14 +8616,12 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
           className: this._msg.kind === 'error' ? 'error-msg' : (this._msg.kind === 'ok' ? 'ok-msg' : 'status-msg'),
           textContent: this._msg.text,
         }));
-      } else if (busyCount) {
+      } else if (busy) {
         const job = document.createElement('div');
         job.className = 'job';
         job.appendChild(Object.assign(document.createElement('span'), { className: 'spinner' }));
-        const v = String((states[0].jobSt && states[0].jobSt.state) || '');
-        const text = multi ? this._t('runningOn').replace('{n}', busyCount)
-          : (['', 'unknown', 'unavailable'].includes(v) ? this._t('running') : v);
-        job.appendChild(Object.assign(document.createElement('span'), { textContent: text }));
+        const v = String((jobSt && jobSt.state) || '');
+        job.appendChild(Object.assign(document.createElement('span'), { textContent: ['', 'unknown', 'unavailable'].includes(v) ? this._t('running') : v }));
         footer.appendChild(job);
       }
       footer.appendChild(Object.assign(document.createElement('div'), { className: 'spacer' }));
@@ -8527,79 +8629,10 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       btn.type = 'button';
       btn.className = 'run';
       btn.textContent = this._t('run');
-      btn.disabled = !action || offline || (multi && !this._runnable(hosts, action, this._sel.target).length)
-        || (this._msg && this._msg.kind === 'pending');
-      btn.addEventListener('click', () => this._run(action, this._sel.target, hosts, false));
+      btn.disabled = !action || offline || (this._msg && this._msg.kind === 'pending');
+      btn.addEventListener('click', () => this._run(action, this._sel.target, hosts));
       footer.appendChild(btn);
       body.appendChild(footer);
-    }
-
-    _modeSwitch() {
-      const row = document.createElement('label');
-      row.className = 'mode';
-      row.appendChild(Object.assign(document.createElement('span'), { textContent: this._t('multiToggle') }));
-      const sw = document.createElement('button');
-      sw.type = 'button';
-      sw.className = 'switch';
-      sw.setAttribute('role', 'switch');
-      sw.setAttribute('aria-checked', String(this._multi));
-      sw.appendChild(document.createElement('i'));
-      sw.addEventListener('click', () => {
-        this._multi = !this._multi;
-        this._auth = null;
-        this._msg = null;
-        this._saveMulti();
-        if (this._multi) this._probeMaster();
-        this._rerender();
-      });
-      row.appendChild(sw);
-      return row;
-    }
-
-    _hostChips(hosts) {
-      const box = document.createElement('div');
-      box.className = 'hostchips';
-      const toggle = (ids, on) => {
-        ids.forEach((id) => (on ? this._picked.add(id) : this._picked.delete(id)));
-        this._msg = null;
-        this._saveMulti();
-        this._rerender();
-      };
-      hosts.forEach((h, i) => {
-        const on = this._picked.has(h.deviceId);
-        const offline = this._hostState(h.deviceId).offline;
-        const chip = document.createElement('button');
-        chip.type = 'button';
-        chip.className = `host${on ? ' on' : ''}${offline ? ' offline' : ''}`;
-        chip.style.setProperty('--tuxd-host-color', MULTI_COLORS[i % MULTI_COLORS.length]);
-        chip.setAttribute('aria-pressed', String(on));
-        chip.title = offline ? `${h.name} - ${this._t('offline')}` : h.name;
-        chip.appendChild(document.createElement('i'));
-        chip.appendChild(document.createTextNode(h.name));
-        chip.addEventListener('click', () => toggle([h.deviceId], !on));
-        box.appendChild(chip);
-      });
-      [['all', true], ['none', false]].forEach(([label, on]) => {
-        const b = Object.assign(document.createElement('button'), { type: 'button', className: 'pick', textContent: this._t(label) });
-        b.addEventListener('click', () => toggle(hosts.map((h) => h.deviceId), on));
-        box.appendChild(b);
-      });
-      const count = Object.assign(document.createElement('span'), { className: 'count' });
-      count.textContent = this._t('pickedCount').replace('{n}', hosts.filter((h) => this._picked.has(h.deviceId)).length).replace('{total}', hosts.length);
-      box.appendChild(count);
-      return box;
-    }
-
-    _runnable(hosts, action, target) {
-      if (!action) return [];
-      const hasTarget = Array.isArray(action.targets);
-      return hosts.filter((h) => {
-        if (!this._picked.has(h.deviceId)) return false;
-        const s = this._hostState(h.deviceId);
-        if (s.offline) return false;
-        const own = this._catalog(s.catSt).find((a) => a.integration === action.integration && a.id === action.id);
-        return !!own && (!hasTarget || (Array.isArray(own.targets) && own.targets.includes(target)));
-      });
     }
 
     _select(labelText, options, value, onChange) {
@@ -8628,132 +8661,62 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       return field;
     }
 
-    _run(action, target, hosts, confirmed, only) {
+    _run(action, target, hosts, confirmed) {
       if (!action) return;
-      if (this._isMulti()) {
-        this._runMulti(action, target, hosts, confirmed, only);
-        return;
-      }
       const host = this._sel.host;
       const hasTarget = Array.isArray(action.targets);
+      const out = this._hass.states[`sensor.${_jsSlug(host)}_terminal_output`];
+      if (!this._passwords[host] && out && out.attributes && out.attributes.password_required) {
+        this._auth = { host, error: false, action, target };
+        this._rerender();
+        return;
+      }
       if (!confirmed && this._config.confirm !== false && action.confirm
           && !window.confirm(this._t('confirm').replace('{action}', action.name)
-            .replace('{target}', hasTarget ? ` (${target})` : '').replace('{host}', this._hostName(hosts, host)))) return;
+            .replace('{target}', hasTarget ? ` (${target})` : '').replace('{host}', this._hostName(hosts)))) return;
       const msg = { type: 'tuxd/action/run', device_id: host, integration: action.integration, action: action.id };
       if (hasTarget) msg.target = target;
       if (this._passwords[host]) msg.password = this._passwords[host];
-      this._pending();
+      this._msg = { kind: 'pending', text: this._t('sending') };
+      this._rerender();
       this._hass.connection.sendMessagePromise(msg).then((r) => {
         if (r && r.auth) {
           delete this._passwords[host];
-          this._auth = { multi: false, hosts: [host], kind: 'device', error: r.auth === 'incorrect', action, target };
+          this._auth = { host, error: r.auth === 'incorrect', action, target, confirmed: true };
           this._msg = null;
         } else if (r && r.ok) {
           this._auth = null;
-          this._done(this._t('started').replace('{action}', action.name));
+          this._msg = { kind: 'ok', text: this._t('started').replace('{action}', action.name) };
+          clearTimeout(this._msgTimer);
+          this._msgTimer = setTimeout(() => { this._msg = null; this._rerender(); }, 4000);
         } else {
           this._msg = { kind: 'error', text: (r && r.error) || this._t('failed') };
         }
         this._rerender();
-      }).catch((e) => this._fail(e));
-    }
-
-    _runMulti(action, target, hosts, confirmed, only) {
-      const run = only || this._runnable(hosts, action, target);
-      if (!run.length) return;
-      const hasTarget = Array.isArray(action.targets);
-      const names = run.map((h) => h.name).join(', ');
-      if (!confirmed && (run.length > 1 || (this._config.confirm !== false && action.confirm))
-          && !window.confirm(this._t('confirmMulti').replace('{action}', action.name)
-            .replace('{target}', hasTarget ? ` (${target})` : '').replace('{n}', run.length).replace('{hosts}', names))) return;
-      const msg = { type: 'tuxd/action/run_multi', device_ids: run.map((h) => h.deviceId), integration: action.integration, action: action.id };
-      if (hasTarget) msg.target = target;
-      if (this._master) msg.master_password = this._master;
-      if (this._password) msg.password = this._password;
-      this._pending();
-      this._hass.connection.sendMessagePromise(msg).then((r) => {
-        if (r && r.master) {
-          this._master = null;
-          this._auth = { multi: true, hosts: run, kind: 'master', error: r.master === 'incorrect', action, target };
-          this._msg = null;
-          this._rerender();
-          return;
-        }
-        const results = (r && r.results) || {};
-        const locked = run.filter((h) => results[h.deviceId] && results[h.deviceId].auth);
-        const failed = run.filter((h) => !locked.includes(h) && !(results[h.deviceId] && results[h.deviceId].ok));
-        const started = run.length - locked.length - failed.length;
-        this._auth = null;
-        if (locked.length) {
-          this._password = null;
-          const wrong = locked.some((h) => results[h.deviceId].auth === 'incorrect');
-          this._auth = { multi: true, hosts: locked, kind: 'device', error: wrong, action, target };
-        }
-        if (failed.length) {
-          const why = failed.map((h) => `${h.name}: ${(results[h.deviceId] && results[h.deviceId].error) || this._t('failed')}`).join('; ');
-          this._msg = { kind: 'error', text: `${this._t('startedOn').replace('{action}', action.name).replace('{n}', started).replace('{total}', run.length)} - ${why}` };
-        } else if (started) {
-          this._done(this._t('startedOn').replace('{action}', action.name).replace('{n}', started).replace('{total}', run.length));
-        } else {
-          this._msg = null;
-        }
+      }).catch((e) => {
+        this._msg = { kind: 'error', text: (e && e.message) || String(e) };
         this._rerender();
-      }).catch((e) => this._fail(e));
-    }
-
-    _probeMaster() {
-      if (!this._hass || !this._hass.connection) return;
-      const msg = { type: 'tuxd/action/run_multi', device_ids: [], integration: '', action: '' };
-      if (this._master) msg.master_password = this._master;
-      this._hass.connection.sendMessagePromise(msg).then((r) => {
-        if (!r || !r.master || !this._isMulti()) return;
-        this._master = null;
-        this._auth = { multi: true, hosts: [], kind: 'master', error: false, action: null, target: null };
-        this._rerender();
-      }).catch(() => {});
-    }
-
-    _pending() {
-      this._msg = { kind: 'pending', text: this._t('sending') };
-      this._rerender();
-    }
-
-    _done(text) {
-      this._msg = { kind: 'ok', text };
-      clearTimeout(this._msgTimer);
-      this._msgTimer = setTimeout(() => { this._msg = null; this._rerender(); }, 4000);
-    }
-
-    _fail(e) {
-      this._msg = { kind: 'error', text: (e && e.message) || String(e) };
-      this._rerender();
+      });
     }
 
     _authForm() {
       const auth = this._auth;
-      const master = auth.kind === 'master';
       const form = document.createElement('form');
       form.className = auth.error ? 'auth error' : 'auth';
       form.innerHTML = LOCK_SVG;
-      let text = this._t(auth.error ? (master ? 'masterIncorrect' : 'authIncorrect') : (master ? 'masterTitle' : 'authTitle'));
-      if (auth.multi && !master && auth.hosts.length) text += `: ${auth.hosts.map((h) => h.name).join(', ')}`;
-      form.appendChild(Object.assign(document.createElement('div'), { className: 'auth-text', textContent: text }));
-      const input = Object.assign(document.createElement('input'), { type: 'password', autocomplete: 'off', placeholder: this._t(master ? 'masterPlaceholder' : 'passwordPlaceholder') });
+      form.appendChild(Object.assign(document.createElement('div'), {
+        className: 'auth-text', textContent: this._t(auth.error ? 'authIncorrect' : 'authTitle'),
+      }));
+      const input = Object.assign(document.createElement('input'), { type: 'password', autocomplete: 'off', placeholder: this._t('passwordPlaceholder') });
       input.setAttribute('aria-label', input.placeholder);
       form.appendChild(input);
       form.appendChild(Object.assign(document.createElement('button'), { type: 'submit', textContent: this._t('unlock') }));
       form.addEventListener('submit', (ev) => {
         ev.preventDefault();
         if (!input.value) return;
+        this._passwords[auth.host] = input.value;
         this._auth = null;
-        if (master) this._master = input.value;
-        else if (auth.multi) this._password = input.value;
-        else this._passwords[auth.hosts[0]] = input.value;
-        if (!auth.action) {
-          this._rerender();
-          return;
-        }
-        this._run(auth.action, auth.target, this._hosts(), true, auth.multi && !master ? auth.hosts : undefined);
+        this._run(auth.action, auth.target, this._hosts(), !!auth.confirmed);
       });
       window.requestAnimationFrame(() => input.focus());
       return form;
