@@ -230,7 +230,7 @@
 
   const CARD_TAG = 'tuxd-card';
   const EDITOR_TAG = 'tuxd-card-editor';
-  const CARD_VERSION = '1.5.31';
+  const CARD_VERSION = '1.5.32';
   const CARD_LOGO_DATA_URI = 'data:image/png;base64,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';
 
   function resolveLang(raw) {
@@ -451,15 +451,29 @@
         offline: 'Device is offline',
         noAgents: 'No TuxD agents with actions found',
         noActions: 'This device offers no actions',
+        noActionsMulti: 'The picked agents offer no actions',
+        pickAgents: 'Pick one or more agents',
+        multiToggle: 'Run on several agents',
+        all: 'All',
+        none: 'None',
+        pickedCount: '{n} of {total} picked',
+        runningOn: 'Running on {n} agent(s)...',
+        startedOn: '{action} started on {n} of {total}',
         confirm: 'Run "{action}"{target} on {host}?',
+        confirmMulti: 'Run "{action}"{target} on {n} agents ({hosts})?',
         authTitle: 'This device has a password',
         authIncorrect: 'Incorrect password - try again',
+        masterTitle: 'Several agents need the master password',
+        masterIncorrect: 'Incorrect master password - try again',
+        masterPlaceholder: 'Master password',
         passwordPlaceholder: 'Password',
         unlock: 'Unlock',
         editor: {
           device_id: 'TuxD device name (empty = pick the host in the card)',
           title: 'Title',
           integration: 'Only these integrations (comma separated, e.g. systemd, tugboat; empty = all)',
+          multi_host: 'Allow running on several agents (a switch in the card; not with a device name set)',
+          devices: 'Only these agents (comma separated device names; empty = all)',
           confirm: 'Ask before actions that stop or change something',
           language: 'Language',
         },
@@ -975,15 +989,29 @@
         offline: 'Enheten er offline',
         noAgents: 'Fant ingen TuxD-agenter med handlinger',
         noActions: 'Denne enheten har ingen handlinger',
+        noActionsMulti: 'De valgte agentene har ingen handlinger',
+        pickAgents: 'Velg én eller flere agenter',
+        multiToggle: 'Kjør på flere agenter',
+        all: 'Alle',
+        none: 'Ingen',
+        pickedCount: '{n} av {total} valgt',
+        runningOn: 'Kjører på {n} agent(er)...',
+        startedOn: '{action} startet på {n} av {total}',
         confirm: 'Kjøre "{action}"{target} på {host}?',
+        confirmMulti: 'Kjøre "{action}"{target} på {n} agenter ({hosts})?',
         authTitle: 'Enheten har passord',
         authIncorrect: 'Feil passord - prøv igjen',
+        masterTitle: 'Flere agenter krever hovedpassordet',
+        masterIncorrect: 'Feil hovedpassord - prøv igjen',
+        masterPlaceholder: 'Hovedpassord',
         passwordPlaceholder: 'Passord',
         unlock: 'Lås opp',
         editor: {
           device_id: 'TuxD-enhetsnavn (tomt = velg vert i kortet)',
           title: 'Tittel',
           integration: 'Bare disse integrasjonene (kommaseparert, f.eks. systemd, tugboat; tomt = alle)',
+          multi_host: 'Tillat kjøring på flere agenter (en bryter i kortet; ikke med enhetsnavn satt)',
+          devices: 'Bare disse agentene (kommaseparerte enhetsnavn; tomt = alle)',
           confirm: 'Spør før handlinger som stopper eller endrer noe',
           language: 'Språk',
         },
@@ -6796,7 +6824,7 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
             offline: !!online && online.state === 'off',
           };
         })
-        .filter((h) => states[h.output] && (!wanted.length || wanted.includes(h.id.toLowerCase()) || wanted.includes(h.name.toLowerCase())))
+        .filter((h) => states[h.output] && (states[h.output].attributes || {}).terminal_input !== false && (!wanted.length || wanted.includes(h.id.toLowerCase()) || wanted.includes(h.name.toLowerCase())))
         .sort((a, b) => a.name.localeCompare(b.name));
     }
 
@@ -8201,6 +8229,24 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
 
   const ACTIONS_DEFAULT_ICON = 'mdi:gesture-tap-button';
   const ACTIONS_STYLE = `
+    /* One agent / several agents: a Material 3 switch. */
+    label.mode { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--primary-text-color); cursor: pointer; }
+    button.switch { position: relative; flex: 0 0 auto; width: 52px; height: 32px; padding: 0; border-radius: 16px; cursor: pointer; border: 2px solid var(--outline-color, var(--secondary-text-color)); background: var(--secondary-background-color, rgba(127, 127, 127, 0.15)); transition: background 0.15s, border-color 0.15s; }
+    button.switch i { position: absolute; top: 6px; left: 6px; width: 16px; height: 16px; border-radius: 50%; background: var(--outline-color, var(--secondary-text-color)); transition: all 0.15s; }
+    button.switch[aria-checked="true"] { background: var(--primary-color); border-color: var(--primary-color); }
+    button.switch[aria-checked="true"] i { top: 2px; left: 22px; width: 24px; height: 24px; background: var(--text-primary-color, #fff); }
+    button.switch:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 2px; }
+    /* The picked agents (chips, like the multi-agent terminal). */
+    .hostchips { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+    .hostchips button.host, .hostchips button.pick { font: inherit; font-size: 12px; border-radius: 8px; padding: 4px 10px; cursor: pointer; background: transparent; color: var(--secondary-text-color); border: 1px solid var(--outline-color, var(--divider-color)); }
+    .hostchips button.host { display: inline-flex; align-items: center; gap: 6px; }
+    .hostchips button.host i { width: 8px; height: 8px; border-radius: 50%; background: var(--tuxd-host-color); opacity: 0.45; }
+    .hostchips button.host.on { color: var(--primary-text-color); border-color: var(--tuxd-host-color); background: color-mix(in srgb, var(--tuxd-host-color) 18%, transparent); }
+    .hostchips button.host.on i { opacity: 1; }
+    .hostchips button.host.offline { opacity: 0.45; text-decoration: line-through; }
+    .hostchips button.pick { border-color: transparent; color: var(--primary-color); padding: 4px 6px; }
+    .hostchips button:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 1px; }
+    .hostchips .count { margin-left: auto; font-size: 12px; color: var(--secondary-text-color); }
     .ok-msg { color: var(--success-color, #43a047); font-size: 12px; }
     .job { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--secondary-text-color); min-width: 0; }
     .job span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -8230,12 +8276,17 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       this._deps = null;
       this._sel = {};
       this._passwords = {};
+      this._password = null;
+      this._master = null;
       this._msg = null;
       this._auth = null;
+      this._multi = false;
+      this._picked = new Set();
+      this._busyKey = '';
     }
 
     static defaultConfig() {
-      return { title: '', icon: ACTIONS_DEFAULT_ICON, integration: '', confirm: true, layout: 'default', card_style: 'default' };
+      return { title: '', icon: ACTIONS_DEFAULT_ICON, integration: '', devices: '', multi_host: false, confirm: true, layout: 'default', card_style: 'default' };
     }
 
     static schema() {
@@ -8243,6 +8294,8 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
         { name: 'device_id', selector: { text: {} } },
         { name: 'title', selector: { text: {} } },
         { name: 'integration', selector: { text: {} } },
+        { name: 'multi_host', selector: { boolean: {} } },
+        { name: 'devices', selector: { text: {} } },
         { name: 'confirm', selector: { boolean: {} } },
       ].concat(TUGBOAT_LOOK_FIELDS, [
         { name: 'language', selector: { select: { mode: 'dropdown', options: LANGUAGE_OPTIONS } } },
@@ -8260,6 +8313,7 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
     setConfig(config) {
       this._config = Object.assign(ActionsRenderer.defaultConfig(), config);
       if (this._config.device_id) this._sel.host = this._config.device_id;
+      this._loadMulti();
       this._deps = null;
       this._sync();
     }
@@ -8273,6 +8327,10 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       return 3;
     }
 
+    disconnectedCallback() {
+      clearTimeout(this._msgTimer);
+    }
+
     _lang() {
       if (this._config && this._config.language) return resolveLang(this._config.language);
       const hassLang = this._hass && (this._hass.language || (this._hass.locale && this._hass.locale.language));
@@ -8284,10 +8342,43 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       return dict[key] || I18N.en.actions[key] || key;
     }
 
+    _multiAllowed() {
+      return !!this._config.multi_host && !this._config.device_id;
+    }
+
+    _isMulti() {
+      return this._multiAllowed() && this._multi;
+    }
+
+    _storeKey() {
+      return `tuxd-actions-card:${this._config.devices || ''}:${this._config.integration || ''}`;
+    }
+
+    _loadMulti() {
+      this._multi = false;
+      this._picked = new Set();
+      if (!this._multiAllowed()) return;
+      try {
+        const saved = JSON.parse(window.localStorage.getItem(this._storeKey()) || '{}');
+        this._multi = !!saved.multi;
+        if (Array.isArray(saved.picked)) saved.picked.forEach((id) => this._picked.add(String(id)));
+      } catch (e) {
+      }
+    }
+
+    _saveMulti() {
+      try {
+        window.localStorage.setItem(this._storeKey(), JSON.stringify({ multi: this._multi, picked: Array.from(this._picked) }));
+      } catch (e) {
+      }
+    }
+
     _hosts() {
       const states = this._hass.states;
+      const wanted = String(this._config.devices || '').split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
       return _tuxdRealDevices(this._hass)
         .filter((d) => states[`sensor.${_jsSlug(d.deviceId)}_actions`])
+        .filter((d) => !wanted.length || wanted.includes(d.deviceId.toLowerCase()) || wanted.includes(String(d.name).toLowerCase()))
         .sort((a, b) => String(a.name).localeCompare(String(b.name)));
     }
 
@@ -8297,21 +8388,33 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       return list.filter((a) => a && a.id && a.integration && (!only.length || only.includes(String(a.integration).toLowerCase())));
     }
 
+    _hostState(deviceId) {
+      const slug = _jsSlug(deviceId);
+      const states = this._hass.states;
+      const catSt = states[`sensor.${slug}_actions`];
+      const onlineSt = states[_onlineEntityId(deviceId)];
+      const busySt = states[`binary_sensor.${slug}_busy`];
+      return {
+        catSt, busySt, jobSt: states[`sensor.${slug}_busy_job`], onlineSt,
+        offline: !catSt || catSt.state === 'unavailable' || (!!onlineSt && onlineSt.state === 'off'),
+        busy: !!busySt && busySt.state === 'on',
+      };
+    }
+
     _sync() {
       if (!this._hass || !this._config) return;
       const fixed = !!this._config.device_id;
       const hosts = fixed ? [] : this._hosts();
       if (!fixed && !hosts.some((h) => h.deviceId === this._sel.host)) this._sel.host = hosts.length ? hosts[0].deviceId : '';
-      const host = this._sel.host || '';
-      const slug = _jsSlug(host);
-      const states = this._hass.states;
-      const deps = [
-        states[`sensor.${slug}_actions`], states[`binary_sensor.${slug}_busy`], states[`sensor.${slug}_busy_job`],
-        states[_onlineEntityId(host)], hosts.map((h) => h.deviceId).join(','),
-      ];
-      if (this._deps && deps.every((d, i) => d === this._deps[i])) return;
+      const shown = this._isMulti() ? hosts.map((h) => h.deviceId) : [this._sel.host || ''];
+      const deps = [hosts.map((h) => h.deviceId).join(','), this._isMulti()];
+      shown.forEach((id) => {
+        const s = this._hostState(id);
+        deps.push(s.catSt, s.busySt, s.jobSt, s.onlineSt);
+      });
+      if (this._deps && deps.length === this._deps.length && deps.every((d, i) => d === this._deps[i])) return;
       this._deps = deps;
-      this._render(hosts, deps);
+      this._render(hosts);
     }
 
     _rerender() {
@@ -8319,13 +8422,32 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       this._sync();
     }
 
-    _hostName(hosts) {
-      const h = hosts.find((x) => x.deviceId === this._sel.host);
-      return (h && h.name) || this._sel.host;
+    _hostName(hosts, id) {
+      const h = hosts.find((x) => x.deviceId === id);
+      return (h && h.name) || id;
     }
 
-    _render(hosts, [catSt, busySt, jobSt, onlineSt]) {
+    _offered(hosts) {
+      if (!this._isMulti()) return this._catalog(this._hostState(this._sel.host || '').catSt);
+      const merged = new Map();
+      hosts.filter((h) => this._picked.has(h.deviceId)).forEach((h) => {
+        this._catalog(this._hostState(h.deviceId).catSt).forEach((a) => {
+          const key = `${a.integration}/${a.id}`;
+          const have = merged.get(key);
+          if (!have) {
+            merged.set(key, Object.assign({}, a, { targets: Array.isArray(a.targets) ? a.targets.slice() : a.targets }));
+          } else if (Array.isArray(a.targets)) {
+            have.targets = Array.isArray(have.targets) ? have.targets : [];
+            a.targets.forEach((t) => { if (!have.targets.includes(t)) have.targets.push(t); });
+          }
+        });
+      });
+      return Array.from(merged.values());
+    }
+
+    _render(hosts) {
       const config = this._config;
+      const multi = this._isMulti();
       const { card } = _tugboatCardShell(this.root, config, config.title || this._t('defaultTitle'), ACTIONS_DEFAULT_ICON);
       const extra = document.createElement('style');
       extra.textContent = ACTIONS_STYLE;
@@ -8339,16 +8461,19 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
         note('status-msg', this._t('noAgents'));
         return;
       }
-      const catalog = this._catalog(catSt);
+      if (this._multiAllowed()) body.appendChild(this._modeSwitch());
+
+      const catalog = this._offered(hosts);
       const keyOf = (a) => `${a.integration}/${a.id}`;
       if (!catalog.some((a) => keyOf(a) === this._sel.action)) this._sel.action = catalog.length ? keyOf(catalog[0]) : '';
       const action = catalog.find((a) => keyOf(a) === this._sel.action);
       const targets = action && Array.isArray(action.targets) ? action.targets : null;
       if (targets && !targets.includes(this._sel.target)) this._sel.target = targets[0] || '';
 
+      if (multi) body.appendChild(this._hostChips(hosts));
       const fields = document.createElement('div');
       fields.className = 'fields';
-      if (!config.device_id) {
+      if (!config.device_id && !multi) {
         fields.appendChild(this._select(this._t('hostLabel'), hosts.map((h) => [h.deviceId, h.name]), this._sel.host, (v) => {
           this._sel = { host: v };
           this._msg = null;
@@ -8369,11 +8494,15 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
         }));
       }
       body.appendChild(fields);
-      if (!catalog.length) note('status-msg', this._t('noActions'));
-      if (this._auth && this._auth.host === this._sel.host) body.appendChild(this._authForm());
+      if (!catalog.length) note('status-msg', this._t(multi ? (this._picked.size ? 'noActionsMulti' : 'pickAgents') : 'noActions'));
+      if (this._auth && (multi ? this._auth.multi : !this._auth.multi && this._auth.hosts.includes(this._sel.host))) {
+        body.appendChild(this._authForm());
+      }
 
-      const offline = !catSt || catSt.state === 'unavailable' || (onlineSt && onlineSt.state === 'off');
-      const busy = !!busySt && busySt.state === 'on';
+      const picked = multi ? hosts.filter((h) => this._picked.has(h.deviceId)) : [{ deviceId: this._sel.host || '' }];
+      const states = picked.map((h) => this._hostState(h.deviceId));
+      const offline = !multi && states[0].offline;
+      const busyCount = states.filter((s) => s.busy).length;
       const footer = document.createElement('div');
       footer.className = 'footer';
       if (offline) {
@@ -8383,12 +8512,14 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
           className: this._msg.kind === 'error' ? 'error-msg' : (this._msg.kind === 'ok' ? 'ok-msg' : 'status-msg'),
           textContent: this._msg.text,
         }));
-      } else if (busy) {
+      } else if (busyCount) {
         const job = document.createElement('div');
         job.className = 'job';
         job.appendChild(Object.assign(document.createElement('span'), { className: 'spinner' }));
-        const v = String((jobSt && jobSt.state) || '');
-        job.appendChild(Object.assign(document.createElement('span'), { textContent: ['', 'unknown', 'unavailable'].includes(v) ? this._t('running') : v }));
+        const v = String((states[0].jobSt && states[0].jobSt.state) || '');
+        const text = multi ? this._t('runningOn').replace('{n}', busyCount)
+          : (['', 'unknown', 'unavailable'].includes(v) ? this._t('running') : v);
+        job.appendChild(Object.assign(document.createElement('span'), { textContent: text }));
         footer.appendChild(job);
       }
       footer.appendChild(Object.assign(document.createElement('div'), { className: 'spacer' }));
@@ -8396,10 +8527,79 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       btn.type = 'button';
       btn.className = 'run';
       btn.textContent = this._t('run');
-      btn.disabled = !action || offline || (this._msg && this._msg.kind === 'pending');
+      btn.disabled = !action || offline || (multi && !this._runnable(hosts, action, this._sel.target).length)
+        || (this._msg && this._msg.kind === 'pending');
       btn.addEventListener('click', () => this._run(action, this._sel.target, hosts, false));
       footer.appendChild(btn);
       body.appendChild(footer);
+    }
+
+    _modeSwitch() {
+      const row = document.createElement('label');
+      row.className = 'mode';
+      row.appendChild(Object.assign(document.createElement('span'), { textContent: this._t('multiToggle') }));
+      const sw = document.createElement('button');
+      sw.type = 'button';
+      sw.className = 'switch';
+      sw.setAttribute('role', 'switch');
+      sw.setAttribute('aria-checked', String(this._multi));
+      sw.appendChild(document.createElement('i'));
+      sw.addEventListener('click', () => {
+        this._multi = !this._multi;
+        this._auth = null;
+        this._msg = null;
+        this._saveMulti();
+        if (this._multi) this._probeMaster();
+        this._rerender();
+      });
+      row.appendChild(sw);
+      return row;
+    }
+
+    _hostChips(hosts) {
+      const box = document.createElement('div');
+      box.className = 'hostchips';
+      const toggle = (ids, on) => {
+        ids.forEach((id) => (on ? this._picked.add(id) : this._picked.delete(id)));
+        this._msg = null;
+        this._saveMulti();
+        this._rerender();
+      };
+      hosts.forEach((h, i) => {
+        const on = this._picked.has(h.deviceId);
+        const offline = this._hostState(h.deviceId).offline;
+        const chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = `host${on ? ' on' : ''}${offline ? ' offline' : ''}`;
+        chip.style.setProperty('--tuxd-host-color', MULTI_COLORS[i % MULTI_COLORS.length]);
+        chip.setAttribute('aria-pressed', String(on));
+        chip.title = offline ? `${h.name} - ${this._t('offline')}` : h.name;
+        chip.appendChild(document.createElement('i'));
+        chip.appendChild(document.createTextNode(h.name));
+        chip.addEventListener('click', () => toggle([h.deviceId], !on));
+        box.appendChild(chip);
+      });
+      [['all', true], ['none', false]].forEach(([label, on]) => {
+        const b = Object.assign(document.createElement('button'), { type: 'button', className: 'pick', textContent: this._t(label) });
+        b.addEventListener('click', () => toggle(hosts.map((h) => h.deviceId), on));
+        box.appendChild(b);
+      });
+      const count = Object.assign(document.createElement('span'), { className: 'count' });
+      count.textContent = this._t('pickedCount').replace('{n}', hosts.filter((h) => this._picked.has(h.deviceId)).length).replace('{total}', hosts.length);
+      box.appendChild(count);
+      return box;
+    }
+
+    _runnable(hosts, action, target) {
+      if (!action) return [];
+      const hasTarget = Array.isArray(action.targets);
+      return hosts.filter((h) => {
+        if (!this._picked.has(h.deviceId)) return false;
+        const s = this._hostState(h.deviceId);
+        if (s.offline) return false;
+        const own = this._catalog(s.catSt).find((a) => a.integration === action.integration && a.id === action.id);
+        return !!own && (!hasTarget || (Array.isArray(own.targets) && own.targets.includes(target)));
+      });
     }
 
     _select(labelText, options, value, onChange) {
@@ -8428,56 +8628,132 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       return field;
     }
 
-    _run(action, target, hosts, confirmed) {
+    _run(action, target, hosts, confirmed, only) {
       if (!action) return;
+      if (this._isMulti()) {
+        this._runMulti(action, target, hosts, confirmed, only);
+        return;
+      }
       const host = this._sel.host;
       const hasTarget = Array.isArray(action.targets);
       if (!confirmed && this._config.confirm !== false && action.confirm
           && !window.confirm(this._t('confirm').replace('{action}', action.name)
-            .replace('{target}', hasTarget ? ` (${target})` : '').replace('{host}', this._hostName(hosts)))) return;
+            .replace('{target}', hasTarget ? ` (${target})` : '').replace('{host}', this._hostName(hosts, host)))) return;
       const msg = { type: 'tuxd/action/run', device_id: host, integration: action.integration, action: action.id };
       if (hasTarget) msg.target = target;
       if (this._passwords[host]) msg.password = this._passwords[host];
-      this._msg = { kind: 'pending', text: this._t('sending') };
-      this._rerender();
+      this._pending();
       this._hass.connection.sendMessagePromise(msg).then((r) => {
         if (r && r.auth) {
           delete this._passwords[host];
-          this._auth = { host, error: r.auth === 'incorrect', action, target };
+          this._auth = { multi: false, hosts: [host], kind: 'device', error: r.auth === 'incorrect', action, target };
           this._msg = null;
         } else if (r && r.ok) {
           this._auth = null;
-          this._msg = { kind: 'ok', text: this._t('started').replace('{action}', action.name) };
-          clearTimeout(this._msgTimer);
-          this._msgTimer = setTimeout(() => { this._msg = null; this._rerender(); }, 4000);
+          this._done(this._t('started').replace('{action}', action.name));
         } else {
           this._msg = { kind: 'error', text: (r && r.error) || this._t('failed') };
         }
         this._rerender();
-      }).catch((e) => {
-        this._msg = { kind: 'error', text: (e && e.message) || String(e) };
+      }).catch((e) => this._fail(e));
+    }
+
+    _runMulti(action, target, hosts, confirmed, only) {
+      const run = only || this._runnable(hosts, action, target);
+      if (!run.length) return;
+      const hasTarget = Array.isArray(action.targets);
+      const names = run.map((h) => h.name).join(', ');
+      if (!confirmed && (run.length > 1 || (this._config.confirm !== false && action.confirm))
+          && !window.confirm(this._t('confirmMulti').replace('{action}', action.name)
+            .replace('{target}', hasTarget ? ` (${target})` : '').replace('{n}', run.length).replace('{hosts}', names))) return;
+      const msg = { type: 'tuxd/action/run_multi', device_ids: run.map((h) => h.deviceId), integration: action.integration, action: action.id };
+      if (hasTarget) msg.target = target;
+      if (this._master) msg.master_password = this._master;
+      if (this._password) msg.password = this._password;
+      this._pending();
+      this._hass.connection.sendMessagePromise(msg).then((r) => {
+        if (r && r.master) {
+          this._master = null;
+          this._auth = { multi: true, hosts: run, kind: 'master', error: r.master === 'incorrect', action, target };
+          this._msg = null;
+          this._rerender();
+          return;
+        }
+        const results = (r && r.results) || {};
+        const locked = run.filter((h) => results[h.deviceId] && results[h.deviceId].auth);
+        const failed = run.filter((h) => !locked.includes(h) && !(results[h.deviceId] && results[h.deviceId].ok));
+        const started = run.length - locked.length - failed.length;
+        this._auth = null;
+        if (locked.length) {
+          this._password = null;
+          const wrong = locked.some((h) => results[h.deviceId].auth === 'incorrect');
+          this._auth = { multi: true, hosts: locked, kind: 'device', error: wrong, action, target };
+        }
+        if (failed.length) {
+          const why = failed.map((h) => `${h.name}: ${(results[h.deviceId] && results[h.deviceId].error) || this._t('failed')}`).join('; ');
+          this._msg = { kind: 'error', text: `${this._t('startedOn').replace('{action}', action.name).replace('{n}', started).replace('{total}', run.length)} - ${why}` };
+        } else if (started) {
+          this._done(this._t('startedOn').replace('{action}', action.name).replace('{n}', started).replace('{total}', run.length));
+        } else {
+          this._msg = null;
+        }
         this._rerender();
-      });
+      }).catch((e) => this._fail(e));
+    }
+
+    _probeMaster() {
+      if (!this._hass || !this._hass.connection) return;
+      const msg = { type: 'tuxd/action/run_multi', device_ids: [], integration: '', action: '' };
+      if (this._master) msg.master_password = this._master;
+      this._hass.connection.sendMessagePromise(msg).then((r) => {
+        if (!r || !r.master || !this._isMulti()) return;
+        this._master = null;
+        this._auth = { multi: true, hosts: [], kind: 'master', error: false, action: null, target: null };
+        this._rerender();
+      }).catch(() => {});
+    }
+
+    _pending() {
+      this._msg = { kind: 'pending', text: this._t('sending') };
+      this._rerender();
+    }
+
+    _done(text) {
+      this._msg = { kind: 'ok', text };
+      clearTimeout(this._msgTimer);
+      this._msgTimer = setTimeout(() => { this._msg = null; this._rerender(); }, 4000);
+    }
+
+    _fail(e) {
+      this._msg = { kind: 'error', text: (e && e.message) || String(e) };
+      this._rerender();
     }
 
     _authForm() {
       const auth = this._auth;
+      const master = auth.kind === 'master';
       const form = document.createElement('form');
       form.className = auth.error ? 'auth error' : 'auth';
       form.innerHTML = LOCK_SVG;
-      form.appendChild(Object.assign(document.createElement('div'), {
-        className: 'auth-text', textContent: this._t(auth.error ? 'authIncorrect' : 'authTitle'),
-      }));
-      const input = Object.assign(document.createElement('input'), { type: 'password', autocomplete: 'off', placeholder: this._t('passwordPlaceholder') });
+      let text = this._t(auth.error ? (master ? 'masterIncorrect' : 'authIncorrect') : (master ? 'masterTitle' : 'authTitle'));
+      if (auth.multi && !master && auth.hosts.length) text += `: ${auth.hosts.map((h) => h.name).join(', ')}`;
+      form.appendChild(Object.assign(document.createElement('div'), { className: 'auth-text', textContent: text }));
+      const input = Object.assign(document.createElement('input'), { type: 'password', autocomplete: 'off', placeholder: this._t(master ? 'masterPlaceholder' : 'passwordPlaceholder') });
       input.setAttribute('aria-label', input.placeholder);
       form.appendChild(input);
       form.appendChild(Object.assign(document.createElement('button'), { type: 'submit', textContent: this._t('unlock') }));
       form.addEventListener('submit', (ev) => {
         ev.preventDefault();
         if (!input.value) return;
-        this._passwords[auth.host] = input.value;
         this._auth = null;
-        this._run(auth.action, auth.target, [], true);
+        if (master) this._master = input.value;
+        else if (auth.multi) this._password = input.value;
+        else this._passwords[auth.hosts[0]] = input.value;
+        if (!auth.action) {
+          this._rerender();
+          return;
+        }
+        this._run(auth.action, auth.target, this._hosts(), true, auth.multi && !master ? auth.hosts : undefined);
       });
       window.requestAnimationFrame(() => input.focus());
       return form;
@@ -9744,6 +10020,8 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       clearTimeout(this._hintTimer);
       clearTimeout(this._chipTimer);
       this._chipTimer = null;
+      clearInterval(this._agentPoll);
+      clearTimeout(this._agentDone);
     }
   }
 
