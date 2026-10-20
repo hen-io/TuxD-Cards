@@ -10244,11 +10244,15 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
       this._cardType = null;
     }
 
+    get _forcedType() {
+      return null;
+    }
+
     setConfig(config) {
       if (!config) {
         throw new Error('tuxd-card: config is required');
       }
-      const cardType = config.card || DEFAULT_CARD_TYPE;
+      const cardType = this._forcedType || config.card || DEFAULT_CARD_TYPE;
       const Renderer = RENDERERS[cardType];
       if (!Renderer) {
         throw new Error(`tuxd-card: unknown card type "${cardType}"`);
@@ -10320,6 +10324,30 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
     }
   }
 
+  class TuxdTerminalCardLegacy extends TuxdCardBase {
+    get _forcedType() { return 'terminal'; }
+    static getConfigElement() { return document.createElement('tuxd-terminal-card-editor'); }
+    static getStubConfig(hass, entities) {
+      return Object.assign({ type: 'custom:tuxd-terminal-card' }, TerminalRenderer.stubFields(entities));
+    }
+  }
+
+  class TuxdUpdateCardLegacy extends TuxdCardBase {
+    get _forcedType() { return 'update'; }
+    static getConfigElement() { return document.createElement('tuxd-update-card-editor'); }
+    static getStubConfig(hass, entities) {
+      return Object.assign({ type: 'custom:tuxd-update-card' }, UpdateRenderer.stubFields(entities));
+    }
+  }
+
+  class TuxdCacheCardLegacy extends TuxdCardBase {
+    get _forcedType() { return 'cache'; }
+    static getConfigElement() { return document.createElement('tuxd-cache-card-editor'); }
+    static getStubConfig() {
+      return Object.assign({ type: 'custom:tuxd-cache-card' }, CacheRenderer.stubFields());
+    }
+  }
+
 
   function cardTypeOptionsFor(lang) {
     const labels = (I18N[lang] || I18N.en).cardTypeOptions;
@@ -10342,6 +10370,10 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
   }
 
   class TuxdCardEditorBase extends HTMLElement {
+    get _forcedType() {
+      return null;
+    }
+
     setConfig(config) {
       if (this._form && JSON.stringify(config) === JSON.stringify(this._config)) return;
       this._config = Object.assign({}, config);
@@ -10372,11 +10404,12 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
     }
 
     _cardType() {
-      return (this._config && this._config.card) || DEFAULT_CARD_TYPE;
+      return this._forcedType || (this._config && this._config.card) || DEFAULT_CARD_TYPE;
     }
 
     _schema() {
       const modeSchema = RENDERERS[this._cardType()].schema(this._lang());
+      if (this._forcedType) return modeSchema;
       const cardField = {
         name: 'card',
         required: true,
@@ -10421,10 +10454,10 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
 
           const raw = Object.assign({}, ev.detail.value);
           const oldCardType = this._cardType();
-          const newCardType = raw.card || DEFAULT_CARD_TYPE;
+          const newCardType = this._forcedType || raw.card || DEFAULT_CARD_TYPE;
 
           let next;
-          const typeSwitched = newCardType !== oldCardType;
+          const typeSwitched = !this._forcedType && newCardType !== oldCardType;
           const oldLang = this._lang();
           if (typeSwitched) {
             next = Object.assign({ type: this._config.type, card: newCardType }, RENDERERS[newCardType].defaultConfig());
@@ -10440,6 +10473,7 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
             Object.keys(next).forEach((k) => {
               if (next[k] === '' || next[k] === undefined) delete next[k];
             });
+            if (this._forcedType) delete next.card;
           }
           if (!next.type && this._config.type) next.type = this._config.type;
           this._config = next;
@@ -10481,9 +10515,19 @@ ${AUTH_FORM_STYLE}    .unavailable { padding: 16px; color: var(--error-color, #d
   }
 
   class TuxdCardEditor extends TuxdCardEditorBase {}
+  class TuxdTerminalCardEditorLegacy extends TuxdCardEditorBase { get _forcedType() { return 'terminal'; } }
+  class TuxdUpdateCardEditorLegacy extends TuxdCardEditorBase { get _forcedType() { return 'update'; } }
+  class TuxdCacheCardEditorLegacy extends TuxdCardEditorBase { get _forcedType() { return 'cache'; } }
 
   customElements.define(EDITOR_TAG, TuxdCardEditor);
   customElements.define(CARD_TAG, TuxdCard);
+
+  customElements.define('tuxd-terminal-card-editor', TuxdTerminalCardEditorLegacy);
+  customElements.define('tuxd-terminal-card', TuxdTerminalCardLegacy);
+  customElements.define('tuxd-update-card-editor', TuxdUpdateCardEditorLegacy);
+  customElements.define('tuxd-update-card', TuxdUpdateCardLegacy);
+  customElements.define('tuxd-cache-card-editor', TuxdCacheCardEditorLegacy);
+  customElements.define('tuxd-cache-card', TuxdCacheCardLegacy);
 
   window.customCards = window.customCards || [];
   window.customCards.push({
